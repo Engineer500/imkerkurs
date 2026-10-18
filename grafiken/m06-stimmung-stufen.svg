@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 408" role="img" aria-labelledby="m06-ss-titel m06-ss-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="408" fill="#ffffff"/>
+  <title id="m06-ss-titel">Die Stufen der Schwarmstimmung</title>
+  <desc id="m06-ss-beschr">Vier Stationen untereinander, von schwach nach sehr weit. Ein leeres Näpfchen: beobachten. Ein Näpfchen mit Ei: Raum geben, schröpfen, bestiftete Näpfchen brechen. Eine Zelle mit Larve: Schwarm lenken. Eine verdeckelte Zelle: sofort lenken.</desc>
+
+  <defs>
+    <!-- Näpfchen im Längsschnitt, Ursprung oben in der Mitte (an der Wabenunterkante), nach unten offen, Wand 6 Einheiten -->
+    <path id="m06-ss-naepfchen" d="M-18 26V13C-18 5-11 0 0 0C11 0 18 5 18 13V26H12V13.5C12 9.5 7.5 6.5 0 6.5C-7.5 6.5-12 9.5-12 13.5V26Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- offene Weiselzelle in Eichelform, Spitze offen, Wand 4,5 Einheiten -->
+    <path id="m06-ss-zelle-offen" d="M-16 0H16V14C16 29 12 42 8 53H3C6.500 44 12 31 12 15C12 8 7 4.500 0 4.500C-7 4.500-12 8-12 15C-12 31-6.500 44-3 53H-8C-12 42-16 29-16 14Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- verdeckelte Weiselzelle in Eichelform mit Ringen (wie in m01-schwarmzelle.svg) -->
+    <g id="m06-ss-zelle-zu">
+      <path d="M-16 0H16V14C16 30 11 43 5 52Q0 57-5 52C-11 43-16 30-16 14Z" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-13 26H13M-11.500 34H11.500M-9 42H9" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45" stroke-linecap="round"/>
+    </g>
+    <!-- eingerollte Larve -->
+    <g id="m06-ss-larve" fill="none" stroke-linecap="round">
+      <path d="M-4.6 28.600A6.500 6.500 0 1 0 -4.600 19.400" stroke="#3a2a10" stroke-width="8.2"/>
+      <path d="M-4.6 28.600A6.500 6.500 0 1 0 -4.600 19.400" stroke="#fffaf0" stroke-width="6"/>
+    </g>
+  </defs>
+
+  <!-- Zeilenrahmen: von ruhig (dünn) bis kräftig (dick, Akzentfarbe); Zeile 2 ist höher für vier Textzeilen -->
+  <rect x="54" y="40" width="338" height="72" rx="8" fill="#ffffff" stroke="#3a2a10" stroke-opacity=".35" stroke-width="1"/>
+  <rect x="54" y="120" width="338" height="96" rx="8" fill="#ffffff" stroke="#3a2a10" stroke-opacity=".6" stroke-width="1.5"/>
+  <rect x="54" y="224" width="338" height="72" rx="8" fill="#fffaf0" stroke="#3a2a10" stroke-width="2"/>
+  <rect x="54" y="304" width="338" height="72" rx="8" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- Wabenunterkanten: kurze Holzleisten über jedem Symbol -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="70" y="44" width="60" height="10" rx="2"/>
+    <rect x="70" y="124" width="60" height="10" rx="2"/>
+    <rect x="70" y="228" width="60" height="10" rx="2"/>
+    <rect x="70" y="308" width="60" height="10" rx="2"/>
+  </g>
+
+  <!-- Zeile 1: leeres Näpfchen -->
+  <use href="#m06-ss-naepfchen" x="100" y="54"/>
+
+  <!-- Zeile 2: Näpfchen mit stehendem Ei am Grund -->
+  <use href="#m06-ss-naepfchen" x="100" y="134"/>
+  <ellipse cx="100" cy="150" rx="4" ry="8.5" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Zeile 3: offene Weiselzelle mit Larve -->
+  <use href="#m06-ss-zelle-offen" x="100" y="238"/>
+  <use href="#m06-ss-larve" x="100" y="238"/>
+
+  <!-- Zeile 4: verdeckelte Weiselzelle -->
+  <use href="#m06-ss-zelle-zu" x="100" y="318"/>
+
+  <!-- Pfeil: oben schmal und dünn, unten breit und kräftig -->
+  <path d="M28.5 36H31.5L38 354H46L30 386L14 354H22Z" fill="#b45309"/>
+
+  <!-- Beschriftungen am Pfeil -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="8" y="20">schwach</text>
+    <text x="8" y="402">sehr weit</text>
+  </g>
+
+  <!-- Name der Zelle (fett) und Maßnahme -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="150" y="69" font-weight="700">leeres Näpfchen</text>
+    <text x="150" y="91">beobachten</text>
+
+    <text x="150" y="148" font-weight="700">Näpfchen mit Ei</text>
+    <text x="150" y="168">Raum geben, schröpfen,</text>
+    <text x="150" y="188">bestiftete Näpfchen</text>
+    <text x="150" y="208">brechen</text>
+
+    <text x="150" y="253" font-weight="700">Zelle mit Larve</text>
+    <text x="150" y="275">Schwarm lenken</text>
+
+    <text x="150" y="333" font-weight="700">verdeckelte Zelle</text>
+    <text x="150" y="355">sofort lenken</text>
+  </g>
+</svg>

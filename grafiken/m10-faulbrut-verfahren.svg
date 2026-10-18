@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-labelledby="m10-fv-titel m10-fv-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="480" fill="#ffffff"/>
+  <title id="m10-fv-titel">Das amtliche Verfahren bei Amerikanischer Faulbrut</title>
+  <desc id="m10-fv-beschr">Sechs Schritte eines amtlichen Faulbrutverfahrens untereinander: Verdacht melden, Proben und Labor, Feststellung mit Sperrbezirk ab 1 km, Sanierung auf Anordnung, Nachuntersuchung zweimal im Abstand von mindestens 8 Wochen, Aufhebung der Maßnahmen.</desc>
+
+  <defs>
+    <!-- Beute: Zarge mit Deckel, Ursprung in der Mitte, Konturen vom aufrufenden Element -->
+    <g id="fv-beute">
+      <rect x="-20" y="17" width="40" height="5" fill="#b45309" fill-opacity=".45"/>
+      <rect x="-17" y="2" width="34" height="15" fill="#fff4d6"/>
+      <rect x="-17" y="-13" width="34" height="15" fill="#fff4d6"/>
+      <path d="M-7 -6H7M-7 9H7" fill="none"/>
+      <rect x="-22" y="-21" width="44" height="8" fill="#b45309" fill-opacity=".45"/>
+    </g>
+  </defs>
+
+  <!-- Pfeile zwischen den Kästen -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="204" y1="68" x2="204" y2="77"/>
+    <line x1="204" y1="140" x2="204" y2="149"/>
+    <line x1="204" y1="212" x2="204" y2="221"/>
+    <line x1="204" y1="284" x2="204" y2="293"/>
+    <line x1="204" y1="384" x2="204" y2="393"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M198.5 75H209.5L204 86Z"/>
+    <path d="M198.5 147H209.5L204 158Z"/>
+    <path d="M198.5 219H209.5L204 230Z"/>
+    <path d="M198.5 291H209.5L204 302Z"/>
+    <path d="M198.5 391H209.5L204 402Z"/>
+  </g>
+
+  <!-- sechs Kästen, der erste (Meldung durch dich) mit kräftigem Rand im Akzent -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="54" y="86" width="300" height="54" rx="10"/>
+    <rect x="54" y="158" width="300" height="54" rx="10"/>
+    <rect x="54" y="230" width="300" height="54" rx="10"/>
+    <rect x="54" y="302" width="300" height="82" rx="10"/>
+    <rect x="54" y="402" width="300" height="54" rx="10"/>
+  </g>
+  <rect x="55.75" y="15.75" width="296.5" height="50.5" rx="9" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- Ziffern in Kreisen -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="78" cy="41" r="14" fill="#b45309"/>
+    <circle cx="78" cy="113" r="14" fill="#f2c14e"/>
+    <circle cx="78" cy="185" r="14" fill="#f2c14e"/>
+    <circle cx="78" cy="257" r="14" fill="#f2c14e"/>
+    <circle cx="78" cy="334" r="14" fill="#f2c14e"/>
+    <circle cx="78" cy="429" r="14" fill="#f2c14e"/>
+  </g>
+
+  <!-- Telefon links vor Kasten 1: Du meldest -->
+  <g transform="translate(28 34) scale(.8)" stroke="#3a2a10" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-22 19L-17 4H17L22 19Z" fill="#fff4d6"/>
+    <circle cx="0" cy="12" r="4.5" fill="#fffaf0" stroke-width="1.5"/>
+    <path d="M-17 -5Q0 -21 17 -5" fill="none" stroke-width="9"/>
+    <rect x="-23" y="-9" width="12" height="15" rx="4" fill="#b45309"/>
+    <rect x="11" y="-9" width="12" height="15" rx="4" fill="#b45309"/>
+  </g>
+
+  <!-- Sperrbezirk: Kreis um eine Beute (Kasten 3) -->
+  <circle cx="322" cy="185" r="19" fill="#ffffff" stroke="#b45309" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <use href="#fv-beute" transform="translate(322 185) scale(.55)" stroke="#3a2a10" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Häkchen (Kasten 6) -->
+  <circle cx="322" cy="429" r="14" fill="#5b8c3a" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M315.5 429.5L320 434L329 424" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Klammer über den Kästen 2 bis 6 -->
+  <path d="M360 86Q368 86 368 98V259Q368 271 374 271Q368 271 368 283V444Q368 456 360 456" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <text x="78" y="47.5" fill="#ffffff">1</text>
+      <text x="78" y="119.5">2</text>
+      <text x="78" y="191.5">3</text>
+      <text x="78" y="263.5">4</text>
+      <text x="78" y="340.5">5</text>
+      <text x="78" y="435.5">6</text>
+    </g>
+    <text x="28" y="66" text-anchor="middle" font-weight="700">Du</text>
+    <text x="102" y="46.5">Verdacht melden</text>
+    <text x="102" y="118.5">Proben, Labor</text>
+    <text x="102" y="190.5">Sperrbezirk ab 1 km</text>
+    <text x="102" y="262.5">Sanierung auf Anordnung</text>
+    <text x="102" y="328">Nachuntersuchung</text>
+    <text x="102" y="349">2 bis 9 Monate danach</text>
+    <text x="66" y="372" font-size="14">zweimal, mindestens 8 Wochen Abstand</text>
+    <text x="102" y="434.5">Aufhebung</text>
+    <text transform="translate(391 271) rotate(-90)" text-anchor="middle" font-weight="700">Amt</text>
+  </g>
+</svg>

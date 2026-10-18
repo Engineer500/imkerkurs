@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-labelledby="m07-rq-titel m07-rq-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="440" fill="#ffffff"/>
+  <title id="m07-rq-titel">Rückstandsquellen und Gegenmaßnahmen</title>
+  <desc id="m07-rq-beschr">Fünf Rückstandsquellen mit je einer Gegenmaßnahme: Varroazide erst nach der letzten Ernte, Wachs als Jungwachs mit Nachweis je Charge, Smoker und Material mit Totholz und Spänen und ohne Repellent, Pflanzenschutz durch Absprache mit Landwirten, PFAS im Umfeld durch Auskunft vom Amt und Leitungswasser.</desc>
+
+  <!-- Quellenfelder links (Zeilen 1 bis 3 durchgezogen, 4 und 5 gestrichelt), Zeilenabstand 82, Höhe 70 -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="10" y="21" width="170" height="70" rx="8"/>
+    <rect x="10" y="103" width="170" height="70" rx="8"/>
+    <rect x="10" y="185" width="170" height="70" rx="8"/>
+    <rect x="10" y="267" width="170" height="70" rx="8" stroke-dasharray="6 4"/>
+    <rect x="10" y="349" width="170" height="70" rx="8" stroke-dasharray="6 4"/>
+  </g>
+  <!-- Maßnahmenfelder rechts -->
+  <g fill="#ffffff" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="204" y="21" width="188" height="70" rx="8"/>
+    <rect x="204" y="103" width="188" height="70" rx="8"/>
+    <rect x="204" y="185" width="188" height="70" rx="8"/>
+    <rect x="204" y="267" width="188" height="70" rx="8" stroke-dasharray="6 4"/>
+    <rect x="204" y="349" width="188" height="70" rx="8" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Pfeile von der Quelle zur Maßnahme -->
+  <g fill="#3a2a10" stroke="#3a2a10" stroke-width="2.5" stroke-linejoin="round">
+    <line x1="184" y1="56" x2="191" y2="56"/>
+    <path d="M201 56L191 50V62Z" stroke-width="1"/>
+    <line x1="184" y1="138" x2="191" y2="138"/>
+    <path d="M201 138L191 132V144Z" stroke-width="1"/>
+    <line x1="184" y1="220" x2="191" y2="220"/>
+    <path d="M201 220L191 214V226Z" stroke-width="1"/>
+    <line x1="184" y1="302" x2="191" y2="302"/>
+    <path d="M201 302L191 296V308Z" stroke-width="1"/>
+    <line x1="184" y1="384" x2="191" y2="384"/>
+    <path d="M201 384L191 378V390Z" stroke-width="1"/>
+  </g>
+
+  <!-- Symbol 1: Flasche mit Tropfen (Varroazide) -->
+  <g transform="translate(15 41) scale(1.15)" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M5 9Q5 7 8 7H14Q17 7 17 9V24Q17 26 15 26H7Q5 26 5 24Z" fill="#ffffff"/>
+    <path d="M5.6 16H16.4V24Q16.4 25.4 15 25.4H7Q5.6 25.4 5.6 24Z" fill="#4a7fb5" stroke="none"/>
+    <rect x="8" y="1" width="6" height="6" fill="#b8bcc2"/>
+    <path d="M22 12Q25 16.5 22 19.5Q19 16.5 22 12Z" fill="#4a7fb5" stroke-width="1.2"/>
+  </g>
+
+  <!-- Symbol 2: Wabe als Sechseck (Wachs) -->
+  <g transform="translate(15 123) scale(1.15)" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M25 13L19 23.4H7L1 13L7 2.6H19Z" fill="#f2c14e"/>
+    <path d="M19 13L16 18.2H10L7 13L10 7.8H16Z" fill="#fff4d6"/>
+  </g>
+
+  <!-- Symbol 3: Smoker im Umriss (Smoker und Material) -->
+  <g transform="translate(15 205) scale(1.15)" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M1 17L7 14V24L1 22Z" fill="#e8c99a"/>
+    <rect x="7" y="9" width="12" height="15" rx="2" fill="#b8bcc2"/>
+    <path d="M7 9L10 4H16L19 9Z" fill="#b8bcc2"/>
+    <path d="M15 5L24 1V6L17 8Z" fill="#b8bcc2"/>
+  </g>
+
+  <!-- Symbol 4: Sprühdüse über einem Feld (Pflanzenschutz) -->
+  <g transform="translate(15 287) scale(1.15)" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round">
+    <path d="M13 8L5 19M13 8V19M13 8L21 19" fill="none" stroke="#4a7fb5" stroke-width="1.6" stroke-dasharray="2 2"/>
+    <rect x="9" y="0" width="8" height="8" rx="2" fill="#b8bcc2"/>
+    <rect x="0" y="20" width="26" height="6" fill="#5b8c3a"/>
+  </g>
+
+  <!-- Symbol 5: Wassertropfen mit Ring (PFAS) -->
+  <g transform="translate(15 369) scale(1.15)" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round">
+    <circle cx="13" cy="13" r="12" fill="#ffffff"/>
+    <path d="M13 5C13 5 19 12 19 16A6 6 0 0 1 7 16C7 12 13 5 13 5Z" fill="#4a7fb5"/>
+  </g>
+
+  <!-- Quellen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="52" y="61">Varroazide</text>
+    <text x="52" y="143">Wachs</text>
+    <text x="52" y="215">Smoker und <tspan x="52" dy="20">Material</tspan></text>
+    <text x="52" y="307">Pflanzenschutz</text>
+    <text x="52" y="389">PFAS im Umfeld</text>
+  </g>
+
+  <!-- Maßnahmen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="214" y="51">erst nach der <tspan x="214" dy="20">letzten Ernte</tspan></text>
+    <text x="214" y="133">Jungwachs, Nachweis <tspan x="214" dy="20">je Charge</tspan></text>
+    <text x="214" y="215">Totholz, Späne, <tspan x="214" dy="20">kein Repellent</tspan></text>
+    <text x="214" y="297">Absprache mit <tspan x="214" dy="20">Landwirten</tspan></text>
+    <text x="214" y="379">Auskunft vom Amt, <tspan x="214" dy="20">Leitungswasser</tspan></text>
+  </g>
+</svg>

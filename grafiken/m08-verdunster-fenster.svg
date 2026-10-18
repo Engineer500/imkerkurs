@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 322" role="img" aria-labelledby="m08-vf-titel m08-vf-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="322" fill="#ffffff"/>
+  <title id="m08-vf-titel">Der Langzeitverdunster auf der Zanderbeute</title>
+  <desc id="m08-vf-beschr">Seitenschnitt der Beute: Unten der geschlossene Gitterboden, darüber untere und obere Zarge, darauf eine Leerzarge mit dem Verdunster und der Deckel. Das Flugloch ist offen. Rechts eine Temperaturskala: erlaubt 12 bis 30 °C Tageshöchstwert, ideal 20 bis 30 °C. Dazu 24 bis 40 ml am Tag.</desc>
+
+  <defs>
+    <!-- Gitter des Bodens -->
+    <pattern id="m08-vf-gitter" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 0H5M0 0V5" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".6"/>
+    </pattern>
+    <!-- Streifen im inneren Band der Skala -->
+    <pattern id="m08-vf-streifen" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#ffffff" stroke-width="2" stroke-opacity=".4"/>
+    </pattern>
+    <!-- Rähmchen im Schnitt: senkrechte Striche, Fenster 154 breit und 48 hoch, Ursprung links oben im Fenster -->
+    <path id="m08-vf-raehmchen" d="M12.83 0V48M25.67 0V48M38.5 0V48M51.33 0V48M64.17 0V48M77 0V48M89.83 0V48M102.67 0V48M115.5 0V48M128.33 0V48M141.17 0V48" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+  </defs>
+
+  <!-- Deckel: flache Platte aus Blech -->
+  <rect x="28" y="36" width="182" height="10" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Leerzarge, niedriger als die Zargen -->
+  <rect x="34" y="46" width="170" height="52" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="42" y="52" width="154" height="40" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Obere Zarge -->
+  <rect x="34" y="98" width="170" height="60" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="42" y="104" width="154" height="48" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#m08-vf-raehmchen" x="42" y="104"/>
+
+  <!-- Untere Zarge -->
+  <rect x="34" y="158" width="170" height="60" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="42" y="164" width="154" height="48" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#m08-vf-raehmchen" x="42" y="164"/>
+
+  <!-- Boden mit Gitter, darunter die dicke durchgehende Abdeckung: Gitterboden geschlossen -->
+  <rect x="34" y="218" width="170" height="30" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="42" y="222" width="154" height="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="42" y="222" width="154" height="10" fill="url(#m08-vf-gitter)"/>
+  <rect x="38" y="235" width="162" height="7" fill="#3a2a10"/>
+
+  <!-- Flugloch vorn unten über dem Boden: offene Öffnung in der Zargenwand, Pfeil nach außen -->
+  <rect x="33" y="204" width="10" height="13" fill="#ffffff" stroke="#3a2a10" stroke-width="1.2"/>
+  <path d="M31 210.5H14" fill="none" stroke="#b45309" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M15 204.8L6 210.5L15 216.2Z" fill="#b45309"/>
+
+  <!-- Verdunster auf den Oberträgern, auf der dem Flugloch abgewandten Seite: flache Wanne mit liegender Flasche -->
+  <rect x="128" y="83" width="68" height="9" rx="2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="136" y="68" width="46" height="15" rx="6" fill="#4a7fb5" fill-opacity=".45" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M139 76H179" stroke="#4a7fb5" stroke-width="1.6" stroke-opacity=".9"/>
+  <rect x="182" y="72" width="10" height="7" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Haltelinien -->
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="119" y1="28" x2="119" y2="36"/>
+    <line x1="218" y1="66" x2="204" y2="66"/>
+    <line x1="218" y1="114" x2="188" y2="76"/>
+    <line x1="119" y1="262" x2="119" y2="238"/>
+    <line x1="21" y1="292" x2="21" y2="210.5"/>
+    <line x1="352" y1="172" x2="366" y2="172"/>
+    <line x1="352" y1="246" x2="358" y2="246"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="119" cy="36" r="2.3"/>
+    <circle cx="204" cy="66" r="2.3"/>
+    <circle cx="188" cy="76" r="2.3"/>
+    <circle cx="119" cy="238" r="2.3"/>
+    <circle cx="21" cy="210.5" r="2.3"/>
+    <circle cx="366" cy="172" r="2.6" stroke="#ffffff" stroke-width="1.2"/>
+    <circle cx="358" cy="246" r="2.3"/>
+  </g>
+
+  <!-- Schilder hinter den Zargentexten -->
+  <g fill="#ffffff" fill-opacity=".92">
+    <rect x="62" y="114" width="114" height="28" rx="8"/>
+    <rect x="58" y="174" width="122" height="28" rx="8"/>
+  </g>
+
+  <!-- Temperaturskala: Thermometer, breites Band 12 bis 30 °C, darin das innere Band 20 bis 30 °C (12 Einheiten je Grad) -->
+  <rect x="370" y="36" width="8" height="30" rx="4" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="374" cy="68" r="7" fill="#b8322a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="372.5" y="46" width="3" height="22" fill="#b8322a"/>
+  <rect x="356" y="80" width="36" height="216" rx="4" fill="#f2c14e" fill-opacity=".5" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="364" y="80" width="20" height="120" fill="#b45309"/>
+  <rect x="364" y="80" width="20" height="120" fill="url(#m08-vf-streifen)"/>
+  <rect x="364" y="80" width="20" height="120" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="119" y="24" text-anchor="middle">Deckel</text>
+    <g text-anchor="middle">
+      <text x="119" y="133.5">obere Zarge</text>
+      <text x="119" y="193.5">untere Zarge</text>
+    </g>
+    <text x="222" y="62">Leerzarge</text>
+    <text x="222" y="82">mit Verdunster</text>
+    <g font-weight="700" fill="#b45309">
+      <text x="222" y="122">24 bis 40 ml</text>
+      <text x="222" y="142">am Tag</text>
+    </g>
+    <g text-anchor="end">
+      <text x="350" y="168">20 bis 30 °C</text>
+      <text x="350" y="188">ideal</text>
+      <text x="350" y="230">Tageshöchstwert</text>
+      <text x="350" y="250">12 bis 30 °C</text>
+      <text x="350" y="270">erlaubt</text>
+    </g>
+    <text x="44" y="280">Gitterboden geschlossen</text>
+    <text x="10" y="310">Flugloch offen</text>
+  </g>
+</svg>

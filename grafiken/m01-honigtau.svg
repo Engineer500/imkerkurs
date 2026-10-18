@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267" role="img" aria-labelledby="m01-ht-titel m01-ht-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="267" fill="#ffffff"/>
+  <title id="m01-ht-titel">So entsteht Honigtau</title>
+  <desc id="m01-ht-beschr">Ein Fichtenzweig mit einer Laus, die eine Siebröhre ansticht. Aus ihrem Hinterleib tritt ein Tropfen Honigtau aus, den eine Sammlerin aufnimmt. Eingetrocknet enthält er 60 bis 90 % Zucker.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten.
+         Teilgruppen: Flügel, Beine, Rumpf (Hinterleib mit drei Streifen, Brust), Kopf. -->
+    <g id="biene-arbeiterin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-arbeiterin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-arbeiterin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-arbeiterin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-arbeiterin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Lupenkreis (Ausschnitt in Siebröhre) -->
+    <clipPath id="lupe">
+      <circle cx="160" cy="200" r="53"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fichtenzweig: Nadeln, dann der Zweig mit Kontur -->
+  <path d="M16 74.4l8.2-7.3M28 77.2l8.2-7.3M40 80.1l8.2-7.3M52 83l8.2-7.3M64 85.8l8.2-7.3M76 88.7l8.2-7.3M88 91.6l8.2-7.3M100 94.4l8.2-7.3M112 97.3l8.2-7.3M124 100.2l8.2-7.3M136 103l8.2-7.3M148 105.9l8.2-7.3M20 79.4l4 10.2M32 82.2l4 10.2M44 85.1l4 10.2M56 88l4 10.2M68 90.8l4 10.2M80 93.7l4 10.2M92 96.6l4 10.2M104 99.4l4 10.2M116 102.3l4 10.2M128 105.2l4 10.2M140 108l4 10.2" fill="none" stroke="#5b8c3a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M6 74.5L218 125.1" fill="none" stroke="#3a2a10" stroke-width="8.5" stroke-linecap="round"/>
+  <path d="M6 74.5L218 125.1" fill="none" stroke="#d9a441" stroke-width="5.5" stroke-linecap="round"/>
+
+  <!-- Eingetrockneter Honigtau: kleiner, dunklerer Klecks mit Rissen an einer Nadelspitze -->
+  <g transform="translate(74.5 73)">
+    <ellipse rx="8.5" ry="6.5" fill="#a56a14" stroke="#3a2a10" stroke-width="1.5"/>
+    <path d="M-4.6 2.6L-1.6 -1L1.6 2.2L4.7 -1.8" fill="none" stroke="#3a2a10" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".7"/>
+  </g>
+
+  <!-- Laus: dunkle Ellipse mit sechs Beinchen, Rüssel zum Zweig -->
+  <g transform="translate(204 105) rotate(-8)" stroke="#3a2a10" stroke-linecap="round">
+    <path d="M-10 7L-14 13M-4 8L-6 14M4 8L6 14M-7 8L-9 12M0 9L1 13M8 7L11 12" fill="none" stroke-width="1.3"/>
+    <ellipse rx="16" ry="9.5" fill="#3a2a10" stroke="none"/>
+    <path d="M-8 -5.5Q0 -8.5 8 -5" fill="none" stroke="#fffaf0" stroke-opacity=".5" stroke-width="1.6"/>
+    <circle cx="-16.5" cy="1" r="5.2" fill="#3a2a10" stroke="none"/>
+    <path d="M-19 -2L-26 -8M-17.5 -3.5L-22 -10" fill="none" stroke-width="1.2"/>
+  </g>
+  <line x1="186" y1="112.5" x2="182.5" y2="119.5" stroke="#3a2a10" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Honigtau-Tropfen am Hinterleib der Laus -->
+  <g transform="translate(222.5 111)">
+    <path d="M0-8C5-1 8 3 8 6A8 8 0 0 1 -8 6C-8 3 -5-1 0-8Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M-5 6.5A5 5 0 0 1 -2 2" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-opacity=".9"/>
+  </g>
+
+  <!-- Sammlerin mit Rüssel zum Tropfen -->
+  <g transform="translate(292 116) scale(-1.6 1.6)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <path d="M268 118Q250 126 231.5 118" fill="none" stroke="#3a2a10" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Verbindung vom Stich zum Lupenkreis -->
+  <circle cx="184" cy="117" r="11" fill="none" stroke="#3a2a10" stroke-width="1" stroke-dasharray="3 3"/>
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="176.4" y1="109.1" x2="122.5" y2="161.2"/>
+    <line x1="194.7" y1="114.4" x2="212.5" y2="187.2"/>
+  </g>
+
+  <!-- Lupenkreis: Ausschnitt aus dem Trieb mit Siebröhre, Stechborsten und Saftstrom -->
+  <circle cx="160" cy="200" r="54" fill="#ffffff"/>
+  <g clip-path="url(#lupe)">
+    <rect x="100" y="174" width="120" height="52" fill="#5b8c3a" fill-opacity=".2"/>
+    <path d="M100 174H220M100 226H220" fill="none" stroke="#3a2a10" stroke-width="1"/>
+    <rect x="100" y="193" width="120" height="14" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+    <path d="M126 200h14m-4.5-3.5l4.5 3.5l-4.5 3.5M158 200h14m-4.5-3.5l4.5 3.5l-4.5 3.5M190 200h14m-4.5-3.5l4.5 3.5l-4.5 3.5" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="175" y1="152" x2="166" y2="198" stroke="#3a2a10" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <circle cx="160" cy="200" r="54" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="99" y1="183" x2="121" y2="193.5"/>
+    <line x1="223" y1="218" x2="202" y2="204.5"/>
+    <line x1="236" y1="30" x2="229.5" y2="108"/>
+    <line x1="74" y1="49" x2="74.5" y2="66.5"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="121" cy="193.5" r="2.3"/>
+    <circle cx="202" cy="204.5" r="2.3"/>
+    <circle cx="229.5" cy="108" r="2.3"/>
+    <circle cx="74.5" cy="66.5" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="8" y="118">Fichte</text>
+    <text x="200" y="84" text-anchor="middle">Laus</text>
+    <text x="238" y="22" text-anchor="middle" font-weight="700">Honigtau</text>
+    <text x="8" y="22" font-weight="700">eingetrocknet</text>
+    <text x="8" y="44" font-weight="700" fill="#b45309">60 bis 90 % Zucker</text>
+    <text x="296" y="158" text-anchor="middle">Sammlerin</text>
+    <text x="96" y="186" text-anchor="end">Siebröhre</text>
+    <text x="226" y="222">Siebröhrensaft</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="m04-sn-titel m04-sn-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="320" fill="#ffffff"/>
+  <title id="m04-sn-titel">Sanftmut von Volk 2 bei vier Durchsichten</title>
+  <desc id="m04-sn-beschr">Säulen für die Sanftmut von Volk 2 bei vier Durchsichten mit den Noten 3, 3, 1 und 3. Die dritte Säule ist mit schwülheißer Tag beschriftet. Eine gestrichelte Linie zeigt den Mittelwert 2,5. Ein leeres Feld für die fünfte Bewertung folgt.</desc>
+
+  <!-- Maßstab: Note 1 entspricht 50 Einheiten Höhe, Grundlinie bei y = 294 -->
+
+  <!-- Säulen: Plätze 1, 2 und 4 mit Note 3 (Höhe 150), Platz 3 mit Note 1 (Höhe 50) -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="8" y="144" width="50" height="150" fill="#f2c14e"/>
+    <rect x="66" y="144" width="50" height="150" fill="#f2c14e"/>
+    <rect x="124" y="244" width="50" height="50" fill="#b45309"/>
+    <rect x="182" y="144" width="50" height="150" fill="#f2c14e"/>
+  </g>
+
+  <!-- Platz 5: leeres Feld in der Höhe der Note 3 -->
+  <rect x="240" y="144" width="50" height="150" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Grundlinie -->
+  <line x1="4" y1="294" x2="296" y2="294" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Mittelwert 2,5: Höhe 125 -->
+  <line x1="4" y1="169" x2="296" y2="169" stroke="#3a2a10" stroke-width="2" stroke-dasharray="7 4"/>
+
+  <!-- Gewittersymbol über Platz 3: Wolke mit Blitz, Hilfslinie zur Säule -->
+  <g transform="translate(149 84)">
+    <path d="M-18 8C-26 8-26 -4-17 -5C-17 -15-2 -17 3 -9C9 -15 22 -10 20 -1C28 -1 28 8 20 8Z" fill="#4a7fb5" fill-opacity=".35" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M2 -1L-6 13H0L-3 23L9 7H2L6 -1Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+  <line x1="149" y1="110" x2="149" y2="222" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="149" cy="222" r="2.3" fill="#3a2a10"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="200" y="26" text-anchor="middle" font-size="19" font-weight="700">Sanftmut Volk 2</text>
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <text x="33" y="138">3</text>
+      <text x="91" y="138">3</text>
+      <text x="149" y="238">1</text>
+      <text x="207" y="138">3</text>
+    </g>
+    <text x="181" y="90">Schwülheißer Tag</text>
+    <text x="302" y="175" font-weight="700">Mittel 2,5</text>
+    <g text-anchor="middle">
+      <text x="265" y="203">5.</text>
+      <text x="265" y="225">Wert</text>
+      <text x="265" y="247">folgt</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m01-nh-titel m01-nh-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m01-nh-titel">Vom Nektar zum Honig</title>
+  <desc id="m01-nh-beschr">Vier Stationen von oben nach unten: Blüte mit Nektar (15 bis 65 % Zucker) und Sammlerin mit gefüllter Honigblase, Futterkette von Biene zu Biene, offene Zelle mit fächelnder Biene, verdeckelte Zelle. Wasser verdunstet in der Honigblase, in der Futterkette und in der offenen Zelle. Reifer Honig enthält im Mittel 17 % Wasser.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten.
+         Teilgruppen: Flügel, Beine, Rumpf (Hinterleib mit drei Streifen, Brust), Kopf. -->
+    <g id="biene-arbeiterin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-arbeiterin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-arbeiterin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-arbeiterin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-arbeiterin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Sammlerin: gleiche Form, Hinterleib durchscheinend, darin die Honigblase mit Nektar -->
+    <g id="biene-sammlerin">
+      <use href="#biene-arbeiterin-fluegel"/>
+      <use href="#biene-arbeiterin-beine"/>
+      <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#fffaf0" fill-opacity=".6" stroke="#3a2a10" stroke-width="1.5"/>
+      <circle cx="-14" cy="2" r="5.3" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.2"/>
+      <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5"/>
+      <use href="#biene-arbeiterin-kopf"/>
+    </g>
+
+    <!-- offene Zelle, halb mit Honig gefüllt, Mittelpunkt im Ursprung -->
+    <g id="zelle-offen">
+      <path d="M0-20L17.32-10V10L0 20L-17.32 10V-10Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M0-15L12.99-7.5V7.5L0 15L-12.99 7.5V-7.5Z" fill="#ffffff" stroke="#3a2a10" stroke-width="1"/>
+      <path d="M-12.99 0H12.99V7.5L0 15L-12.99 7.5Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+    </g>
+
+    <!-- verdeckelte Honigzelle: Honig in den Ecken, heller Wachsdeckel, Mittelpunkt im Ursprung -->
+    <g id="zelle-honig-verdeckelt">
+      <path d="M0-20L17.32-10V10L0 20L-17.32 10V-10Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M0-15L12.99-7.5V7.5L0 15L-12.99 7.5V-7.5Z" fill="#f2c14e"/>
+      <circle r="13" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+      <circle r="1.5" fill="#3a2a10" fill-opacity=".55"/>
+    </g>
+  </defs>
+
+  <!-- Felder der vier Stationen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5">
+    <rect x="6" y="6" width="388" height="134" rx="8"/>
+    <rect x="6" y="156" width="388" height="94" rx="8"/>
+    <rect x="6" y="266" width="388" height="132" rx="8"/>
+    <rect x="6" y="414" width="388" height="80" rx="8"/>
+  </g>
+
+  <!-- Pfeile nach unten zwischen den Stationen -->
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M200 143V149M200 252V259M200 400V407"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M194.5 147.5L200 155L205.5 147.5Z"/>
+    <path d="M194.5 257.5L200 265L205.5 257.5Z"/>
+    <path d="M194.5 405.5L200 413L205.5 405.5Z"/>
+  </g>
+
+  <!-- Ziffern, passend zur Liste im Text -->
+  <g fill="#3a2a10">
+    <circle cx="24" cy="26" r="11"/>
+    <circle cx="24" cy="176" r="11"/>
+    <circle cx="24" cy="286" r="11"/>
+    <circle cx="24" cy="434" r="11"/>
+  </g>
+  <g fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="24" y="31">1</text>
+    <text x="24" y="181">2</text>
+    <text x="24" y="291">3</text>
+    <text x="24" y="439">4</text>
+  </g>
+
+  <!-- Station 1: Blüte mit Nektar, Sammlerin mit Honigblase -->
+  <path d="M52 94C52 108 50 122 52 136" fill="none" stroke="#5b8c3a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M52 118C62 108 74 110 78 112C72 122 60 124 52 118Z" fill="#5b8c3a" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+  <g transform="translate(52 66)" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2">
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5"/>
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5" transform="rotate(120)"/>
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5" transform="rotate(240)"/>
+    <ellipse cx="0" cy="-15" rx="7.5" ry="12.5" transform="rotate(300)"/>
+    <circle r="7.5" fill="#f2c14e"/>
+  </g>
+  <g transform="translate(334 92) scale(-1.8 1.8)">
+    <use href="#biene-sammlerin"/>
+  </g>
+  <!-- Wellenlinien: Wasser verdunstet in der Honigblase -->
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M340 40q5-4.7 0-9.3t0-9.3t0-9.3"/>
+    <path d="M356 40q5-4.7 0-9.3t0-9.3t0-9.3"/>
+    <path d="M372 40q5-4.7 0-9.3t0-9.3t0-9.3"/>
+  </g>
+  <line x1="359.2" y1="105.5" x2="359.2" y2="119" stroke="#3a2a10" stroke-width="1"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="88" y="58">Nektar</text>
+    <text x="88" y="80">15 bis 65 % Zucker</text>
+    <text x="326" y="34" text-anchor="end">Wasser verdunstet</text>
+    <text x="344" y="133" text-anchor="middle">Honigblase</text>
+  </g>
+
+  <!-- Station 2: Weitergabe von Mund zu Mund in der Futterkette -->
+  <g transform="translate(70 216) scale(1.3)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <g transform="translate(142 216) scale(-1.3 1.3)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <g transform="translate(298 216) scale(-1.3 1.3)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <line x1="89" y1="217.5" x2="97.5" y2="218"/>
+    <line x1="123" y1="217.5" x2="114.5" y2="218"/>
+  </g>
+  <circle cx="106" cy="218" r="9" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <g fill="#3a2a10">
+    <circle cx="101.5" cy="216" r="1.5"/>
+    <circle cx="107" cy="214.5" r="1.5"/>
+    <circle cx="109.5" cy="221" r="1.5"/>
+    <circle cx="103" cy="221.5" r="1.5"/>
+  </g>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M102 205q3.5-4 0-8t0-8"/>
+    <path d="M110 205q3.5-4 0-8t0-8"/>
+  </g>
+  <line x1="184" y1="217" x2="256" y2="217" stroke="#3a2a10" stroke-width="2" stroke-linecap="round"/>
+  <path d="M266 217L255 211.5V222.5Z" fill="#3a2a10"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="225" y="176" text-anchor="middle">Futterkette</text>
+    <text x="108" y="244" text-anchor="middle">Enzyme</text>
+  </g>
+
+  <!-- Station 3: offene Zellen, Fächeln, Wasser verdunstet -->
+  <g>
+    <use href="#zelle-offen" transform="translate(72 347.5) scale(.85)"/>
+    <use href="#zelle-offen" transform="translate(101.4 347.5) scale(.85)"/>
+    <use href="#zelle-offen" transform="translate(130.9 347.5) scale(.85)"/>
+    <use href="#zelle-offen" transform="translate(86.7 373) scale(.85)"/>
+    <use href="#zelle-offen" transform="translate(116.2 373) scale(.85)"/>
+    <use href="#zelle-offen" transform="translate(145.6 373) scale(.85)"/>
+  </g>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M72 326q4.5-4.7 0-9.3t0-9.3t0-9.3"/>
+    <path d="M101.4 326q4.5-4.7 0-9.3t0-9.3t0-9.3"/>
+    <path d="M130.9 326q4.5-4.7 0-9.3t0-9.3t0-9.3"/>
+  </g>
+  <g transform="translate(190 298) scale(-1.1 1.1)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M226 280C240 272 254 285 266 281"/>
+    <path d="M226 297C240 289 254 302 266 298"/>
+    <path d="M226 314C240 306 254 319 266 315"/>
+  </g>
+  <g fill="#4a7fb5">
+    <path d="M273.6 278.5L267.3 285L264.7 277Z"/>
+    <path d="M273.6 295.5L267.3 302L264.7 294Z"/>
+    <path d="M273.6 312.5L267.3 319L264.7 311Z"/>
+  </g>
+  <line x1="177" y1="369" x2="152" y2="378" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="152" cy="378" r="2.3" fill="#3a2a10"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="283" y="303">Fächeln</text>
+    <text x="182" y="374">offene Zelle</text>
+  </g>
+
+  <!-- Station 4: verdeckelter Honig -->
+  <g>
+    <use href="#zelle-honig-verdeckelt" transform="translate(80 440) scale(.8)"/>
+    <use href="#zelle-honig-verdeckelt" transform="translate(107.7 440) scale(.8)"/>
+    <use href="#zelle-honig-verdeckelt" transform="translate(135.4 440) scale(.8)"/>
+    <use href="#zelle-honig-verdeckelt" transform="translate(93.9 464) scale(.8)"/>
+    <use href="#zelle-honig-verdeckelt" transform="translate(121.6 464) scale(.8)"/>
+    <use href="#zelle-honig-verdeckelt" transform="translate(149.3 464) scale(.8)"/>
+  </g>
+  <line x1="192" y1="439" x2="147" y2="440" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="147" cy="440" r="2.3" fill="#3a2a10"/>
+  <text x="196" y="444" font-size="16" fill="#1f1a12">verdeckelt</text>
+  <text x="196" y="473" font-size="19" font-weight="700" fill="#1f1a12">17 % Wasser</text>
+</svg>

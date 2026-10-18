@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m03-ss-titel m03-ss-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m03-ss-titel">Standortskizze von oben</title>
+  <desc id="m03-ss-beschr">Draufsicht auf einen Bienenstand: Im Norden steht eine Hecke als Windschutz, davor zwei Beuten mit dem Flugloch nach Süden an einem leichten Hang. Vor den Fluglöchern liegt die freie Flugschneise. Die Tränke steht außerhalb der Flugschneise, höchstens 400 m entfernt. Zur Nachbargrenze bleiben 5 bis 20 m. Die Zeichnung ist nicht maßstäblich.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin wie in den Grafiken von Modul 1. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust. -->
+    <g id="ss-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Pfeilspitzen, die Linie endet an der Basis der Spitze -->
+    <marker id="ss-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+    <marker id="ss-spitze-klein" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+    <marker id="ss-spitze-mass" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+  </defs>
+
+  <!-- Höhenlinien: das Gelände fällt nach Süden ab, nicht maßstäblich -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".3" stroke-dasharray="6 5">
+    <path d="M24 250Q200 242 376 250"/>
+    <path d="M24 345Q200 337 376 345"/>
+    <path d="M24 440Q200 432 376 440"/>
+  </g>
+
+  <!-- Flugschneise: sich öffnender Keil vor den Fluglöchern -->
+  <polygon points="128,162 214,162 294,420 52,420" fill="#f2c14e" fill-opacity=".22" stroke="#b45309" stroke-width="1.2" stroke-dasharray="6 4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#3a2a10" stroke-width="1.2">
+    <line x1="146" y1="170" x2="102.1" y2="332.3" marker-end="url(#ss-spitze-klein)"/>
+    <line x1="171" y1="170" x2="171" y2="342" marker-end="url(#ss-spitze-klein)"/>
+    <line x1="196" y1="170" x2="241.8" y2="332.3" marker-end="url(#ss-spitze-klein)"/>
+  </g>
+  <use href="#ss-biene" transform="translate(148 224) rotate(78) scale(.8)"/>
+  <use href="#ss-biene" transform="translate(198 276) rotate(100) scale(.8)"/>
+  <use href="#ss-biene" transform="translate(150 330) rotate(84) scale(.8)"/>
+  <text x="172" y="402" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">Flugschneise</text>
+
+  <!-- Hecke im Norden: Band aus Büschen über die ganze Breite -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="4" cy="38" r="22" fill="#5b8c3a"/>
+    <circle cx="26" cy="32" r="25" fill="#78a652"/>
+    <circle cx="52" cy="40" r="23" fill="#497a2c"/>
+    <circle cx="80" cy="34" r="26" fill="#5b8c3a"/>
+    <circle cx="106" cy="38" r="22" fill="#78a652"/>
+    <circle cx="132" cy="33" r="25" fill="#497a2c"/>
+    <circle cx="160" cy="40" r="23" fill="#5b8c3a"/>
+    <circle cx="188" cy="35" r="26" fill="#78a652"/>
+    <circle cx="214" cy="38" r="22" fill="#497a2c"/>
+    <circle cx="240" cy="32" r="25" fill="#5b8c3a"/>
+    <circle cx="268" cy="40" r="23" fill="#78a652"/>
+    <circle cx="294" cy="34" r="26" fill="#497a2c"/>
+    <circle cx="320" cy="38" r="22" fill="#5b8c3a"/>
+    <circle cx="346" cy="33" r="25" fill="#78a652"/>
+    <circle cx="372" cy="40" r="23" fill="#497a2c"/>
+    <circle cx="396" cy="36" r="22" fill="#5b8c3a"/>
+  </g>
+  <rect x="165" y="26" width="70" height="26" rx="13" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <text x="200" y="44" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">Hecke</text>
+
+  <!-- Nachbargrenze als gestrichelte Linie -->
+  <line x1="24" y1="70" x2="24" y2="492" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <text x="32" y="474" font-size="16" fill="#1f1a12">Nachbargrenze</text>
+
+  <!-- Zwei Zanderbeuten in der Draufsicht, Flugloch-Seite nach Süden (dicke Linie) -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="128" y="112" width="40" height="50"/>
+    <rect x="174" y="112" width="40" height="50"/>
+  </g>
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5">
+    <rect x="133" y="117" width="30" height="35"/>
+    <rect x="179" y="117" width="30" height="35"/>
+  </g>
+  <path d="M128 162H168M174 162H214" fill="none" stroke="#3a2a10" stroke-width="4.5"/>
+  <path d="M128 109V104H214V109" fill="none" stroke="#3a2a10" stroke-width="1.2"/>
+  <text x="171" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">2 Völker</text>
+
+  <!-- Kurze Maßlinie zur Nachbargrenze -->
+  <line x1="33" y1="137" x2="117" y2="137" stroke="#3a2a10" stroke-width="1.2" marker-start="url(#ss-spitze-mass)" marker-end="url(#ss-spitze-mass)"/>
+  <text x="75" y="128" text-anchor="middle" font-size="16" fill="#1f1a12">5 bis 20 m</text>
+
+  <!-- Maßlinie zur Tränke -->
+  <line x1="225" y1="137" x2="310" y2="137" stroke="#3a2a10" stroke-width="1.2" marker-start="url(#ss-spitze-mass)" marker-end="url(#ss-spitze-mass)"/>
+  <g text-anchor="middle" font-size="16" fill="#1f1a12">
+    <text x="267.5" y="112">höchstens</text>
+    <text x="267.5" y="128">400 m</text>
+  </g>
+
+  <!-- Tränke: Wasserschale in der Draufsicht mit Tropfen, außerhalb des Keils -->
+  <circle cx="340" cy="137" r="19" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="340" cy="137" r="14" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1"/>
+  <path d="M336 129C339 133 342 136 342 139A6 6 0 0 1 330 139C330 136 333 133 336 129Z" fill="#ffffff"/>
+  <path d="M347 141C348.8 143.4 350.4 145 350.4 146.8A3.4 3.4 0 0 1 343.6 146.8C343.6 145 345.2 143.4 347 141Z" fill="#ffffff"/>
+  <text x="340" y="174" text-anchor="middle" font-size="16" fill="#1f1a12">Tränke</text>
+
+  <!-- Hang: Pfeil nach Süden am rechten Rand -->
+  <line x1="388" y1="200" x2="388" y2="436" stroke="#3a2a10" stroke-width="2.5" marker-end="url(#ss-spitze)"/>
+  <g text-anchor="end" font-size="16" fill="#1f1a12">
+    <text x="374" y="286">leichter</text>
+    <text x="374" y="304">Hang</text>
+  </g>
+
+  <!-- Nordpfeil oben rechts -->
+  <line x1="372" y1="112" x2="372" y2="90" stroke="#3a2a10" stroke-width="2" marker-end="url(#ss-spitze)"/>
+  <text x="356" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">N</text>
+</svg>

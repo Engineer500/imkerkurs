@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267" role="img" aria-labelledby="m01-bj-titel m01-bj-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="267" fill="#ffffff"/>
+  <title id="m01-bj-titel">Das Bienenjahr von August bis Juli</title>
+  <desc id="m01-bj-beschr">Zeitleiste von August bis Juli mit drei Balken. Brut: von August bis Oktober, im November, Dezember und Januar gestrichelt als Brut, die es in milden Wintern gibt, spätestens ab Februar bis Juli. Drohnen: von März bis Ende Juli. Schwarmzeit: von Mitte April bis zur Sonnenwende. Drei Markierungen: Winterbienen im August, Brutbeginn im Februar, Sonnenwende im Juni.</desc>
+
+  <!-- Zeitachse: 12 Monatsspalten à 31,33 Einheiten von x = 12 (Anfang August) bis x = 388 (Ende Juli) -->
+
+  <!-- Monatsgrenzen als feine Hilfslinien -->
+  <path d="M12 50.7V213.6M43.3 50.7V213.6M74.7 50.7V213.6M106 50.7V213.6M137.3 50.7V213.6M168.7 50.7V213.6M200 50.7V213.6M231.3 50.7V213.6M262.7 50.7V213.6M294 50.7V213.6M325.3 50.7V213.6M356.7 50.7V213.6M388 50.7V213.6" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".15"/>
+
+  <!-- Balken: Brut (November bis Januar gestrichelt als mögliche Brut in milden Wintern) -->
+  <path d="M106 56.1H200V90.8H106Z" fill="#d9a441" fill-opacity=".35" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="4 3" stroke-linejoin="round"/>
+  <path d="M18 56.1H106V90.8H18A6 6 0 0 1 12 84.8V62.1A6 6 0 0 1 18 56.1Z" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M200 56.1H382A6 6 0 0 1 388 62.1V84.8A6 6 0 0 1 382 90.8H200Z" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Balken: Drohnen (März bis Ende Juli) -->
+  <rect x="231.2" y="109.5" width="156.8" height="34.7" rx="6" fill="#e07b39" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Balken: Schwarmzeit (Mitte April bis Sonnenwende) -->
+  <rect x="278.4" y="162.9" width="68.4" height="34.7" rx="6" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Achse mit Teilstrichen an den Monatsgrenzen -->
+  <line x1="12" y1="213.6" x2="388" y2="213.6" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M12 213.6V220M43.3 213.6V220M74.7 213.6V220M106 213.6V220M137.3 213.6V220M168.7 213.6V220M200 213.6V220M231.3 213.6V220M262.7 213.6V220M294 213.6V220M325.3 213.6V220M356.7 213.6V220M388 213.6V220" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- drei Wendepunkte als gestrichelte Markierungen -->
+  <g stroke="#b45309" stroke-width="1.5" stroke-dasharray="5 4">
+    <line x1="12" y1="48.1" x2="12" y2="213.6"/>
+    <line x1="200" y1="48.1" x2="200" y2="213.6"/>
+    <line x1="346.8" y1="48.1" x2="346.8" y2="213.6"/>
+  </g>
+
+  <!-- Beschriftungen der Markierungen -->
+  <g fill="#1f1a12" font-size="16" font-weight="700">
+    <text x="12" y="32">Winterbienen</text>
+    <text x="200" y="32" text-anchor="middle">Brutbeginn</text>
+    <text x="388" y="32" text-anchor="end">Sonnenwende</text>
+  </g>
+
+  <!-- Beschriftungen in den Balken, "Schwarmzeit" links neben dem Balken auf weißem Grund -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="18" y="79">Brut</text>
+    <text x="237.2" y="132.4">Drohnen</text>
+  </g>
+  <rect x="170" y="164" width="104" height="31" fill="#ffffff"/>
+  <text x="272" y="185.8" text-anchor="end" font-size="16" fill="#1f1a12">Schwarmzeit</text>
+
+  <!-- Monate -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="27.7" y="248.3">Aug</text>
+    <text x="121.7" y="248.3">Nov</text>
+    <text x="215.7" y="248.3">Feb</text>
+    <text x="309.7" y="248.3">Mai</text>
+  </g>
+</svg>

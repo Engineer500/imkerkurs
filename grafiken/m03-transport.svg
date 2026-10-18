@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m03-tp-titel m03-tp-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m03-tp-titel">Transport einer Beute</title>
+  <desc id="m03-tp-beschr">Schnitt durch eine Beute auf dem Transport: Flugloch geschlossen, Gitterboden offen mit freier Luft darunter, Trommelraum in einem Rahmen unter dem Deckel, Spanngurte, Fahrtrichtung in die Bildebene.</desc>
+
+  <defs>
+    <!-- Gitterboden: gerastertes Muster -->
+    <pattern id="tp-gitter" width="6" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0L6 8M6 0L0 8" fill="none" stroke="#3a2a10" stroke-width="1"/>
+    </pattern>
+    <!-- Trommelraum: schraffierter, leerer Raum -->
+    <pattern id="tp-schraffur" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#3a2a10" stroke-width="1" stroke-opacity=".3"/>
+    </pattern>
+    <!-- Kleine Biene zwischen den Waben, Längsachse senkrecht -->
+    <g id="tp-biene">
+      <ellipse rx="4.4" ry="2.5" fill="#f2c14e" stroke="#3a2a10" stroke-width=".9"/>
+      <path d="M-0.8 -2.3V2.3M1.6 -2.1V2.1" stroke="#3a2a10" stroke-width=".9"/>
+    </g>
+    <!-- Pfeilspitze der aufsteigenden Luft, die Linie endet an der Basis der Spitze -->
+    <marker id="tp-spitze-luft" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#4a7fb5"/>
+    </marker>
+  </defs>
+
+  <!-- Ladefläche und zwei Leisten, dazwischen bleibt ein Spalt freier Luft -->
+  <rect x="10" y="210" width="380" height="8" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="128" y="192" width="20" height="18"/>
+    <rect x="252" y="192" width="20" height="18"/>
+  </g>
+
+  <!-- Trommelraum: leerer Raum in einem flachen Rahmen unter dem Deckel, über den Waben -->
+  <rect x="124" y="72" width="152" height="24" fill="url(#tp-schraffur)"/>
+  <line x1="124" y1="96" x2="276" y2="96" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Waben als dünne senkrechte Linien -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1">
+    <rect x="157.5" y="96" width="5" height="70"/>
+    <rect x="173.5" y="96" width="5" height="70"/>
+    <rect x="189.5" y="96" width="5" height="70"/>
+    <rect x="205.5" y="96" width="5" height="70"/>
+    <rect x="221.5" y="96" width="5" height="70"/>
+    <rect x="237.5" y="96" width="5" height="70"/>
+  </g>
+
+  <!-- Bienen zwischen den Waben -->
+  <use href="#tp-biene" transform="translate(168 112) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(184 136) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(200 108) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(216 146) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(232 124) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(168 150) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(200 138) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(232 152) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(145 126) rotate(90)"/>
+  <use href="#tp-biene" transform="translate(255 140) rotate(90)"/>
+
+  <!-- Gitterboden -->
+  <rect x="118" y="184" width="164" height="8" fill="#ffffff"/>
+  <rect x="118" y="184" width="164" height="8" fill="url(#tp-gitter)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Aufsteigende Luft durch das Gitter -->
+  <path d="M168 206V179M200 206V179M232 206V179" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2.5">
+    <path d="M168 206V179" marker-end="url(#tp-spitze-luft)"/>
+    <path d="M200 206V179" marker-end="url(#tp-spitze-luft)"/>
+    <path d="M232 206V179" marker-end="url(#tp-spitze-luft)"/>
+  </g>
+
+  <!-- Seitenwände der Zargen (zwei Zargen übereinander), rechts mit der Öffnung des Fluglochs -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="118" y="72" width="6" height="112"/>
+    <rect x="276" y="72" width="6" height="112"/>
+  </g>
+  <!-- Fugen: Rahmen unter dem Deckel und Zarge, Zarge und Zarge; Lüftungsschlitze im Rahmen -->
+  <path d="M118 96H124M276 96H282M118 140H124M276 140H282" stroke="#3a2a10" stroke-width="1.5"/>
+  <g fill="#ffffff" stroke="#3a2a10" stroke-width=".8">
+    <rect x="119" y="78" width="4" height="3"/>
+    <rect x="119" y="86" width="4" height="3"/>
+    <rect x="277" y="78" width="4" height="3"/>
+    <rect x="277" y="86" width="4" height="3"/>
+  </g>
+
+  <!-- Deckel -->
+  <rect x="112" y="64" width="176" height="8" rx="2" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Flugloch an der Stirnseite (zum Betrachter hin, quer zu den Waben) mit eingesetztem Keil -->
+  <rect x="208" y="169" width="16" height="14" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M210 181L216 171L222 181Z" fill="#3a2a10" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Zwei Spanngurte: über den Deckel, an der Beute herunter, unter der Ladefläche hindurch -->
+  <g fill="none" stroke-linejoin="round">
+    <path d="M150 226H132Q128 226 128 222V60H272V222Q272 226 268 226H250" stroke="#3a2a10" stroke-width="7.5"/>
+    <path d="M150 226H132Q128 226 128 222V60H272V222Q272 226 268 226H250" stroke="#b45309" stroke-width="4.5"/>
+  </g>
+  <!-- Gurtschlösser -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="120" y="138" width="16" height="18" rx="2"/>
+    <rect x="264" y="138" width="16" height="18" rx="2"/>
+  </g>
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <rect x="125" y="144" width="6" height="6"/>
+    <rect x="269" y="144" width="6" height="6"/>
+  </g>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="109" y1="84" x2="150" y2="84"/>
+    <line x1="56" y1="122" x2="160" y2="122"/>
+    <line x1="58" y1="173" x2="140" y2="188"/>
+    <line x1="98" y1="201" x2="158" y2="201"/>
+    <line x1="40" y1="224" x2="40" y2="218"/>
+    <line x1="292" y1="45" x2="274" y2="59"/>
+    <line x1="300" y1="197" x2="224" y2="177"/>
+  </g>
+  <g fill="#3a2a10" stroke="#ffffff" stroke-width="1.2">
+    <circle cx="152" cy="84" r="2.6"/>
+    <circle cx="160" cy="122" r="2.6"/>
+    <circle cx="140" cy="188" r="2.6"/>
+    <circle cx="158" cy="201" r="2.6"/>
+    <circle cx="40" cy="218" r="2.6"/>
+    <circle cx="274" cy="59" r="2.6"/>
+    <circle cx="224" cy="177" r="2.6"/>
+  </g>
+
+  <!-- Beschriftungen links -->
+  <g font-size="16" fill="#1f1a12">
+    <text x="8" y="89">Trommelraum</text>
+    <text x="8" y="127">Waben</text>
+    <text x="8" y="160">Gitterboden</text>
+    <text x="8" y="178">offen</text>
+    <text x="8" y="203">freie Luft</text>
+    <text x="10" y="242">Ladefläche</text>
+  </g>
+
+  <!-- Beschriftungen rechts -->
+  <g font-size="16" fill="#1f1a12">
+    <text x="296" y="44">Spanngurt</text>
+    <text x="298" y="208">Flugloch zu</text>
+  </g>
+
+  <!-- Fahrtrichtung senkrecht zur Bildebene: Kreis mit Kreuz bedeutet "in die Bildebene hinein", die Waben stehen längs dazu -->
+  <circle cx="138" cy="266" r="11" fill="#ffffff" stroke="#3a2a10" stroke-width="2"/>
+  <path d="M132.5 260.5L143.5 271.5M143.5 260.5L132.5 271.5" fill="none" stroke="#3a2a10" stroke-width="2" stroke-linecap="round"/>
+  <g font-size="16" fill="#1f1a12">
+    <text x="158" y="262" font-weight="700">Fahrtrichtung:</text>
+    <text x="158" y="281">in die Bildebene</text>
+  </g>
+</svg>

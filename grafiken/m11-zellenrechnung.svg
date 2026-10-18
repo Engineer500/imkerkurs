@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="m11-zr-titel m11-zr-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="240" fill="#ffffff"/>
+  <title id="m11-zr-titel">Zellen im Vergleich</title>
+  <desc id="m11-zr-beschr">Zwei Balken. Oberer Balken: Bedarf einer Königin mit 2.000 Eiern am Tag, 42.000 Zellen, sieben Zanderwaben. Unterer Balken: zwei Zargen mit 20 Waben, etwa 125.000 Zellen, fast das Dreifache.</desc>
+
+  <defs>
+    <!-- Feines Zellmuster aus regelmäßigen Sechsecken mit senkrechten Seitenwänden, waagrecht versetzte Reihen -->
+    <pattern id="m11-zr-zellen" width="6" height="10.392" patternUnits="userSpaceOnUse">
+      <path d="M0 1.732L3 0L6 1.732V5.196L3 6.928L0 5.196ZM3 6.928V10.392" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Schraffur für den Überschuss -->
+    <pattern id="m11-zr-schraeg" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="1.400" stroke-opacity=".6"/>
+    </pattern>
+  </defs>
+
+  <!-- Rechnung über dem oberen Balken, Pfeil auf den Balken -->
+  <text x="20" y="30" font-size="16" fill="#1f1a12">2.000 Eier mal 21 Tage</text>
+  <path d="M82 37V54" fill="none" stroke="#3a2a10" stroke-width="1.500"/>
+  <path d="M82 62L77.500 53H86.500Z" fill="#3a2a10"/>
+
+  <!-- Oberer Balken: 7 Segmente je 17,6 breit (eine Zanderwabe, 6.160 Zellen) -->
+  <rect x="20" y="64" width="123.200" height="32" fill="#f2c14e"/>
+  <rect x="20" y="64" width="123.200" height="32" fill="url(#m11-zr-zellen)"/>
+  <path d="M37.600 64V96M55.200 64V96M72.800 64V96M90.400 64V96M108 64V96M125.600 64V96" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".6"/>
+  <rect x="20" y="64" width="123.200" height="32" fill="none" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Unterer Balken: 20 Segmente, die ersten 7 wie oben, die übrigen 13 schraffiert -->
+  <rect x="20" y="140" width="123.200" height="32" fill="#f2c14e"/>
+  <rect x="20" y="140" width="123.200" height="32" fill="url(#m11-zr-zellen)"/>
+  <rect x="143.200" y="140" width="228.800" height="32" fill="url(#m11-zr-schraeg)"/>
+  <path d="M37.600 140V172M55.200 140V172M72.800 140V172M90.400 140V172M108 140V172M125.600 140V172M160.800 140V172M178.400 140V172M196 140V172M213.600 140V172M231.200 140V172M248.800 140V172M266.400 140V172M284 140V172M301.600 140V172M319.200 140V172M336.800 140V172M354.400 140V172" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".6"/>
+  <rect x="20" y="140" width="352" height="32" fill="none" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Hilfslinie an der Grenze zwischen Segment 7 und 8, durch beide Balken -->
+  <line x1="143.200" y1="58" x2="143.200" y2="178" stroke="#b45309" stroke-width="1.500" stroke-dasharray="4 3"/>
+
+  <!-- Klammer unter den Segmenten 8 bis 20 -->
+  <path d="M147 178Q147 184 155 184H250Q258 184 258 190Q258 184 266 184H361Q369 184 369 178" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="156" y="85.500" font-weight="700" fill="#b45309">42.000 Zellen</text>
+    <text x="20" y="130" font-weight="700">Zwei Zargen</text>
+    <text x="380" y="130" text-anchor="end" font-weight="700" fill="#b45309">etwa 125.000 Zellen</text>
+    <text x="258" y="212" text-anchor="middle" font-weight="700">fast das Dreifache</text>
+  </g>
+  <g fill="#1f1a12" font-size="16" text-anchor="middle" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">
+    <text x="81.600" y="85.500">7 Waben</text>
+    <text x="257.600" y="161.500">20 Waben</text>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m05-gm-titel m05-gm-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m05-gm-titel">Gemüll auf dem Ausziehschub lesen</title>
+  <desc id="m05-gm-beschr">Der Ausziehschub von oben mit drei Häufchen: dunkle Wachskrümel für das Brutnest, helle Krümel für den Futterzugriff und durchsichtige Plättchen für Ausbau und Verdeckeln.</desc>
+
+  <defs>
+    <!-- Dunkle Wachskrümel: kompakte, kantige Brocken -->
+    <path id="m05-gm-brocken-a" d="M-6 -2L-2 -6L4 -5L6 0L3 5L-3 6L-7 2Z"/>
+    <path id="m05-gm-brocken-b" d="M-5 -4L1 -6L6 -2L4 4L-2 5L-6 1Z"/>
+    <path id="m05-gm-brocken-c" d="M-4 -5L3 -4L6 1L2 6L-4 4L-6 -1Z"/>
+    <!-- Helle Krümel: dünne, längliche Flocken -->
+    <path id="m05-gm-flocke-a" d="M-8 -1L-3 -3L4 -2L8 1L2 3L-5 2Z"/>
+    <path id="m05-gm-flocke-b" d="M-7 0L-2 -3L5 -2L7 1L1 3L-5 2Z"/>
+    <!-- Durchsichtige Plättchen: ein bis drei Wabenzellen, nur Umriss -->
+    <path id="m05-gm-platte-3" d="M0 -7L6.06 -3.5V3.5L0 7L-6.06 3.5V-3.5ZM12.12 -7L18.18 -3.5V3.5L12.12 7L6.06 3.5V-3.5ZM6.06 3.5L12.12 7V14L6.06 17.5L0 14V7Z"/>
+    <path id="m05-gm-platte-2" d="M0 -7L6.06 -3.5V3.5L0 7L-6.06 3.5V-3.5ZM12.12 -7L18.18 -3.5V3.5L12.12 7L6.06 3.5V-3.5Z"/>
+    <path id="m05-gm-platte-1" d="M0 -7L6.06 -3.5V3.5L0 7L-6.06 3.5V-3.5Z"/>
+  </defs>
+
+  <!-- Überschrift -->
+  <text x="200" y="27" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1a12">Ausziehschub von oben</text>
+
+  <!-- Ausziehschub als helles Rechteck mit Rand -->
+  <rect x="20" y="40" width="360" height="142" rx="4" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="27" y="47" width="346" height="128" rx="2" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45"/>
+
+  <g transform="translate(0 10)">
+  <!-- Links: dunkle Wachskrümel aus dem Brutnest -->
+  <g fill="#3a2a10" fill-opacity=".78" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round">
+    <use href="#m05-gm-brocken-a" transform="translate(44 120) rotate(20) scale(1.5)"/>
+    <use href="#m05-gm-brocken-b" transform="translate(60 122) rotate(-10) scale(1.6)"/>
+    <use href="#m05-gm-brocken-c" transform="translate(74 119) rotate(40) scale(1.3)"/>
+    <use href="#m05-gm-brocken-b" transform="translate(50 108) rotate(70) scale(1.5)"/>
+    <use href="#m05-gm-brocken-a" transform="translate(67 109) rotate(-30) scale(1.4)"/>
+    <use href="#m05-gm-brocken-c" transform="translate(58 96) rotate(15) scale(1.2)"/>
+    <use href="#m05-gm-brocken-c" transform="translate(36 106) rotate(-50) scale(1)"/>
+    <use href="#m05-gm-brocken-b" transform="translate(82 107) rotate(100) scale(1)"/>
+    <use href="#m05-gm-brocken-a" transform="translate(56 132) rotate(0) scale(1)"/>
+  </g>
+  <!-- Brutzelle mit gewölbtem Deckel -->
+  <g transform="translate(106 104)">
+    <path d="M0 -14L12.12 -7V7L0 14L-12.12 7V-7Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle r="8" fill="#d9a441" stroke="#3a2a10" stroke-width="1"/>
+    <path d="M-4.5 -1.5Q0 -6 4.5 -1.5" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55" stroke-linecap="round"/>
+  </g>
+
+  <!-- Mitte: helle Wachskrümel vom Futterzugriff -->
+  <g fill="#f2c14e" fill-opacity=".6" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round">
+    <use href="#m05-gm-flocke-a" transform="translate(162 120) rotate(20) scale(1.5)"/>
+    <use href="#m05-gm-flocke-b" transform="translate(180 124) rotate(-15) scale(1.5)"/>
+    <use href="#m05-gm-flocke-a" transform="translate(196 118) rotate(50) scale(1.3)"/>
+    <use href="#m05-gm-flocke-b" transform="translate(170 109) rotate(75) scale(1.4)"/>
+    <use href="#m05-gm-flocke-a" transform="translate(188 108) rotate(-35) scale(1.4)"/>
+    <use href="#m05-gm-flocke-b" transform="translate(178 96) rotate(10) scale(1.2)"/>
+    <use href="#m05-gm-flocke-a" transform="translate(152 104) rotate(-55) scale(1)"/>
+    <use href="#m05-gm-flocke-b" transform="translate(204 105) rotate(105) scale(1)"/>
+    <use href="#m05-gm-flocke-a" transform="translate(176 134) rotate(5) scale(1)"/>
+  </g>
+  <!-- Futterzelle mit geöffnetem Deckel -->
+  <g transform="translate(228 104)">
+    <path d="M0 -14L12.12 -7V7L0 14L-12.12 7V-7Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle r="8" fill="none" stroke="#3a2a10" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M-8 0A8 8 0 0 1 0 -8L0 -3Q-4 -3 -8 0Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Rechts: durchsichtige Plättchen, nur Umriss mit leichter Füllung -->
+  <g fill="#4a7fb5" fill-opacity=".14" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round">
+    <use href="#m05-gm-platte-3" transform="translate(290 92) rotate(15) scale(1.2)"/>
+    <use href="#m05-gm-platte-2" transform="translate(318 82) rotate(-20) scale(1.2)"/>
+    <use href="#m05-gm-platte-3" transform="translate(340 108) rotate(35) scale(1.2)"/>
+    <use href="#m05-gm-platte-2" transform="translate(298 126) rotate(-8) scale(1.2)"/>
+    <use href="#m05-gm-platte-1" transform="translate(338 140) rotate(10) scale(1.2)"/>
+  </g>
+
+  </g>
+
+  <!-- Verbindungslinien von den Häufchen zu den Beschriftungsfeldern -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="58" y1="156" x2="58" y2="214"/>
+    <line x1="178" y1="156" x2="178" y2="214"/>
+    <line x1="324" y1="158" x2="324" y2="214"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="58" cy="156" r="2.3"/>
+    <circle cx="178" cy="156" r="2.3"/>
+    <circle cx="324" cy="158" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungsfelder -->
+  <g fill="#ffffff" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="12" y="214" width="100" height="74" rx="6"/>
+    <rect x="122" y="214" width="128" height="74" rx="6"/>
+    <rect x="260" y="214" width="128" height="74" rx="6"/>
+  </g>
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="62" y="246.5"><tspan x="64.2">dunkel: </tspan><tspan x="62" dy="20">Brutnest</tspan></text>
+    <text x="186" y="246.5"><tspan x="188.2">hell: </tspan><tspan x="186" dy="20">Futterzugriff</tspan></text>
+    <text x="324" y="236.5"><tspan x="326.2">durchsichtig: </tspan><tspan x="326.2" dy="20">Ausbau und </tspan><tspan x="324" dy="20">Verdeckeln</tspan></text>
+  </g>
+</svg>

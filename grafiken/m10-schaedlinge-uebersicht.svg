@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="m10-sc-titel m10-sc-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="460" fill="#ffffff"/>
+  <title id="m10-sc-titel">Vier Schädlinge im Überblick</title>
+  <desc id="m10-sc-beschr">Vier Schädlinge mit Erkennungsmerkmal untereinander: Kleiner Beutenkäfer etwa 5 mal 3 mm mit keulenförmigen Fühlern, Tropilaelaps etwa 1 mal 0,5 mm und länger als breit, beide meldepflichtig, Wachsmotte mit Larve in Altwaben und Entwicklungsstopp unter 9 °C, Maus mit Fluglochgitter spätestens ab Ende Oktober und keiner Öffnung über 7 mm.</desc>
+
+  <defs>
+    <!-- Sechseckzelle, Spitze nach oben, Umkreisradius 11 -->
+    <path id="sc-zelle" d="M0-11L9.53-5.5V5.5L0 11L-9.53 5.5V-5.5Z"/>
+    <!-- Schild "meldepflichtig": Warndreieck mit Ausrufezeichen, Ursprung links in der Mitte des Schildes -->
+    <g id="sc-schild">
+      <rect x="0" y="-12" width="156" height="24" rx="5" fill="#ffffff" stroke="#b45309" stroke-width="2.5"/>
+      <path d="M9 8L18 -8L27 8Z" fill="#b45309" stroke="#b45309" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M18 -3V2.2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="18" cy="5" r="1.1" fill="#ffffff"/>
+    </g>
+  </defs>
+
+  <!-- vier Zeilen -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="6" y="6" width="388" height="106" rx="10"/>
+    <rect x="6" y="120" width="388" height="106" rx="10"/>
+    <rect x="6" y="234" width="388" height="106" rx="10"/>
+    <rect x="6" y="348" width="388" height="106" rx="10"/>
+  </g>
+
+  <!-- Zeile 1: Kleiner Beutenkäfer in Aufsicht, schematisch -->
+  <g transform="translate(60 70)" stroke="#3a2a10" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Beine -->
+    <path d="M-17 -18L-31 -26M-19 -4L-33 -4M-17 9L-30 18M17 -18L31 -26M19 -4L33 -4M17 9L30 18" fill="none" stroke-width="2"/>
+    <!-- Fühler mit Keule am Ende -->
+    <path d="M-5 -41L-12.5 -49M5 -41L12.5 -49" fill="none" stroke-width="1.5"/>
+    <ellipse cx="-15" cy="-52" rx="3.4" ry="5.2" transform="rotate(40 -15 -52)" fill="#3a2a10" stroke-width="1.2"/>
+    <ellipse cx="15" cy="-52" rx="3.4" ry="5.2" transform="rotate(-40 15 -52)" fill="#3a2a10" stroke-width="1.2"/>
+    <!-- Körper -->
+    <ellipse cx="0" cy="0" rx="21" ry="35" fill="#3a2a10" stroke-width="1.5"/>
+    <!-- Kopf -->
+    <ellipse cx="0" cy="-37" rx="8" ry="6" fill="#5a3a1a" stroke-width="1.5"/>
+    <!-- Halsschild -->
+    <path d="M-17 -15Q-17 -26 -9 -30Q0 -33 9 -30Q17 -26 17 -15Z" fill="#5a3a1a" stroke="none"/>
+    <!-- Flügeldecken: enden vor dem Hinterleib -->
+    <path d="M-19 -15H19V14H-19Z" fill="#5a3a1a" stroke="none"/>
+    <path d="M-17 -15H17M0 -15V14M-19 14H19" fill="none" stroke="#fff4d6" stroke-opacity=".6" stroke-width="1"/>
+    <!-- freiliegender Hinterleib mit Segmenten -->
+    <path d="M-15 21Q0 24 15 21M-11 27Q0 30 11 27M-6 32Q0 34 6 32" fill="none" stroke="#fff4d6" stroke-opacity=".6" stroke-width="1"/>
+  </g>
+  <use href="#sc-schild" x="232" y="26"/>
+
+  <!-- Zeile 2: Tropilaelaps-Milbe, schematisch, mit Vergrößerungshinweis -->
+  <g stroke="#3a2a10" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Lupenkreis und Verbindungslinien zum kleinen Kreis -->
+    <path d="M23.6 219.8L77.7 204.7M16.3 212.1L33.8 158.8" fill="none" stroke-width="1" stroke-dasharray="3 2"/>
+    <circle cx="22" cy="214" r="6" fill="#ffffff" stroke-width="1.5"/>
+    <circle cx="22" cy="214" r="1.4" fill="#e07b39" stroke-width=".8"/>
+    <circle cx="68" cy="170" r="36" fill="#ffffff" stroke-width="1.5"/>
+    <!-- vergrößerte Milbe: Beine, Körper, Rückenschild -->
+    <g transform="translate(68 170)">
+      <path d="M-12.5 -14L-27 -22M-13 -5L-29 -8M-13 5L-29 8M-12.5 14L-27 22M12.5 -14L27 -22M13 -5L29 -8M13 5L29 8M12.5 14L27 22" fill="none" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="13" ry="26" fill="#e07b39" fill-opacity=".7" stroke-width="1.5"/>
+      <ellipse cx="0" cy="2" rx="8.5" ry="18" fill="none" stroke-width="1" stroke-opacity=".5"/>
+      <ellipse cx="0" cy="-27" rx="4" ry="3" fill="#3a2a10" stroke="none"/>
+    </g>
+  </g>
+  <use href="#sc-schild" x="232" y="140"/>
+
+  <!-- Zeile 3: Wachsmotte, Larve durchzieht eine Wabenzelle, Thermometer -->
+  <g transform="translate(44 287)" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round">
+    <g fill="#d9a441">
+      <use href="#sc-zelle" x="-9.53" y="-16.5"/>
+      <use href="#sc-zelle" x="9.53" y="-16.5"/>
+      <use href="#sc-zelle" x="-19.05" y="0"/>
+      <use href="#sc-zelle" x="19.05" y="0"/>
+      <use href="#sc-zelle" x="-9.53" y="16.5"/>
+      <use href="#sc-zelle" x="9.53" y="16.5"/>
+    </g>
+    <!-- die durchzogene Zelle: offen, dunkler Grund -->
+    <use href="#sc-zelle" fill="#5a3a1a" stroke-width="1.5"/>
+    <!-- Larve: helle Raupe mit Gliederung, Kopf am oberen Ende -->
+    <path d="M-16 12C-9 10 -5 3 1 0S9 -9 15 -14" fill="none" stroke="#3a2a10" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-16 12C-9 10 -5 3 1 0S9 -9 15 -14" fill="none" stroke="#fffaf0" stroke-width="6.4" stroke-linecap="round"/>
+    <path d="M-16 12C-9 10 -5 3 1 0S9 -9 15 -14" fill="none" stroke="#3a2a10" stroke-opacity=".55" stroke-width="6.4" stroke-dasharray="1 4.2"/>
+    <circle cx="15" cy="-14" r="3.1" fill="#5a3a1a" stroke-width="1"/>
+  </g>
+  <!-- Thermometer: niedriger Stand -->
+  <g transform="translate(94 287)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="0" cy="19" r="8" fill="#fffaf0"/>
+    <rect x="-4" y="-27" width="8" height="42" rx="4" fill="#fffaf0"/>
+    <rect x="-4.2" y="11.6" width="8.4" height="5.4" fill="#fffaf0" stroke="none"/>
+    <circle cx="0" cy="19" r="5" fill="#4a7fb5" stroke="none"/>
+    <rect x="-1.5" y="8" width="3" height="11" fill="#4a7fb5" stroke="none"/>
+    <path d="M7 -19H11M7 -9H11M7 1H11" fill="none" stroke-width="1"/>
+  </g>
+
+  <!-- Zeile 4: Maus vor einem Fluglochkeil mit schmalem Schlitz -->
+  <g stroke="#3a2a10" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Boden -->
+    <path d="M14 425H106" fill="none" stroke-width="1.5"/>
+    <!-- Stirnseite mit Flugloch: Brett, Öffnung mit Fluglochgitter 5 mal 5 mm -->
+    <rect x="84" y="373" width="22" height="52" fill="#e8c99a" stroke-width="1.5"/>
+    <rect x="87" y="409" width="16" height="16" fill="#fff4d6" stroke-width="1.2"/>
+    <path d="M91 409V425M95 409V425M99 409V425M87 413H103M87 417H103M87 421H103" fill="none" stroke-width=".8"/>
+    <!-- Maus: Blick nach rechts -->
+    <g transform="translate(44 425) scale(1.2)">
+      <path d="M-14 -8Q-23 -6 -25 -15Q-27 -22 -22 -26" fill="none" stroke-width="1.7"/>
+      <ellipse cx="-8" cy="-1" rx="3.4" ry="1.7" fill="#b8bcc2" stroke-width="1.1"/>
+      <ellipse cx="9" cy="-1" rx="3.2" ry="1.7" fill="#b8bcc2" stroke-width="1.1"/>
+      <ellipse cx="0" cy="-10" rx="15" ry="9" fill="#b8bcc2" stroke-width="1.3"/>
+      <path d="M8 -16Q17 -18 26 -9.5Q17 -3 8 -4Z" fill="#b8bcc2" stroke-width="1.3"/>
+      <circle cx="12" cy="-18" r="4.4" fill="#e8c99a" stroke-width="1.1"/>
+      <circle cx="19" cy="-10.5" r="1.3" fill="#1f1a12" stroke="none"/>
+      <circle cx="26" cy="-9.5" r="1.5" fill="#3a2a10" stroke="none"/>
+      <path d="M23 -8L29 -10M23 -7L29 -5" fill="none" stroke-width=".9"/>
+    </g>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <g font-weight="700">
+      <text x="116" y="56">Kleiner Beutenkäfer</text>
+      <text x="116" y="170">Tropilaelaps</text>
+      <text x="116" y="270">Wachsmotte</text>
+      <text x="116" y="384">Maus</text>
+    </g>
+    <text x="116" y="78">etwa 5 mal 3 mm,</text>
+    <text x="116" y="99">keulenförmige Fühler</text>
+    <text x="116" y="192">etwa 1 mal 0,5 mm,</text>
+    <text x="116" y="213">länger als breit</text>
+    <text x="116" y="292">Larve frisst Altwaben,</text>
+    <text x="116" y="313">Entwicklung stoppt unter 9 °C</text>
+    <text x="116" y="406">Gitter bis Ende Oktober,</text>
+    <text x="116" y="427">keine Öffnung über 7 mm</text>
+    <g font-size="14">
+      <text x="266" y="31">meldepflichtig</text>
+      <text x="266" y="145">meldepflichtig</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 248" role="img" aria-labelledby="m08-ag-titel m08-ag-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="248" fill="#ffffff"/>
+  <title id="m08-ag-titel">Die Ampel für den Milbenfall pro Tag</title>
+  <desc id="m08-ag-beschr">Eine waagerechte Skala für den Milbenfall pro Tag. Von 0 bis 5 liegt der grüne Bereich unter 5, von 5 bis 10 der gelbe Bereich, über 10 der rote Bereich. Darunter steht, dass die Skala für Anfang Juli, September und die Kontrolle bis zum 1. November gilt und dass du ab 1. November bei über 0,5 Milben pro Tag behandelst, nur im brutfreien Volk.</desc>
+
+  <defs>
+    <!-- Grün: Punkte -->
+    <pattern id="m08-ag-punkte" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.9" fill="#ffffff" fill-opacity=".6"/>
+    </pattern>
+    <!-- Gelb: Schrägstriche -->
+    <pattern id="m08-ag-schraeg" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#3a2a10" stroke-width="1.6" stroke-opacity=".4"/>
+    </pattern>
+    <!-- Rot: Kreuzschraffur -->
+    <pattern id="m08-ag-kreuz" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0L8 8M8 0L0 8" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-opacity=".5"/>
+    </pattern>
+  </defs>
+
+  <!-- Skala von 0 bis 15 Milben pro Tag, 340 breit, je Stufe 113,3 -->
+  <rect x="20" y="40" width="113.3" height="56" fill="#5b8c3a"/>
+  <rect x="20" y="40" width="113.3" height="56" fill="url(#m08-ag-punkte)"/>
+  <rect x="133.3" y="40" width="113.4" height="56" fill="#e0b020"/>
+  <rect x="133.3" y="40" width="113.4" height="56" fill="url(#m08-ag-schraeg)"/>
+  <rect x="246.7" y="40" width="113.3" height="56" fill="#b8322a"/>
+  <rect x="246.7" y="40" width="113.3" height="56" fill="url(#m08-ag-kreuz)"/>
+  <!-- Pfeil nach rechts: nach oben offen -->
+  <path d="M360 34L388 68L360 102Z" fill="#b8322a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M360 34L388 68L360 102Z" fill="url(#m08-ag-kreuz)"/>
+  <rect x="20" y="40" width="340" height="56" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M133.3 40V96M246.7 40V96" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Schilder mit dem Wort der Stufe im Balken -->
+  <g fill="#ffffff" fill-opacity=".93">
+    <rect x="35.5" y="48" width="82" height="40" rx="8"/>
+    <rect x="149" y="48" width="82" height="40" rx="8"/>
+    <rect x="262.5" y="48" width="82" height="40" rx="8"/>
+  </g>
+
+  <!-- Marken bei 5 und 10 -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="133.3" y1="96" x2="133.3" y2="108"/>
+    <line x1="246.7" y1="96" x2="246.7" y2="108"/>
+  </g>
+
+  <!-- Trennlinie zwischen den beiden Textzeilen -->
+  <line x1="20" y1="188" x2="380" y2="188" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="20" y="26" font-size="18" font-weight="700">Milbenfall pro Tag</text>
+    <g text-anchor="middle" font-weight="700">
+      <text x="76.5" y="63.5">Grün:</text>
+      <text x="189.5" y="63.5">Gelb:</text>
+      <text x="303.5" y="63.5">Rot:</text>
+    </g>
+    <g text-anchor="middle">
+      <text x="76.5" y="83.5">unter 5</text>
+      <text x="189.5" y="83.5">5 bis 10</text>
+      <text x="303.5" y="83.5">über 10</text>
+      <text x="133.3" y="128">5</text>
+      <text x="246.7" y="128">10</text>
+    </g>
+    <text x="20" y="156">Gilt für Anfang Juli, September und</text>
+    <text x="20" y="176">die Kontrolle bis zum 1. November</text>
+    <g font-weight="700" fill="#b45309">
+      <text x="20" y="210">Ab 1. November behandelst du bei</text>
+      <text x="20" y="230">über 0,5 Milben pro Tag, nur brutfrei</text>
+    </g>
+  </g>
+</svg>

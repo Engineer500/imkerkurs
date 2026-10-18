@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m02-zb-titel m02-zb-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m02-zb-titel">Die Zanderbeute auseinandergezogen</title>
+  <desc id="m02-zb-beschr">Explosionszeichnung einer Zanderbeute von unten nach oben: Gitterboden mit Ausziehschub und Fluglochkeil, zwei Zargen als Brutraum, Absperrgitter, Honigraum, Abdeckfolie, Innendeckel und Blechdeckel. Eine Zarge ist 227 mm hoch.</desc>
+
+  <defs>
+    <!-- Zarge von vorn, Ursprung links oben: Holzrahmen mit Fenster, darin zehn Rähmchen als dünne Striche.
+         Die Füllung des Rahmens kommt vom aufrufenden use-Element. -->
+    <g id="m02-zb-zarge">
+      <rect x="110" y="0" width="132" height="72" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="118" y="9" width="116" height="54" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+      <path transform="translate(118 9)" d="M5.8 0V54M17.4 0V54M29 0V54M40.6 0V54M52.2 0V54M63.8 0V54M75.4 0V54M87 0V54M98.6 0V54M110.2 0V54" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".6"/>
+    </g>
+    <!-- Gitter des Bodens -->
+    <pattern id="m02-zb-gitter" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 0H5M0 0V5" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Sehr feines Gitter des Absperrgitters -->
+    <pattern id="m02-zb-gitter-fein" width="3" height="3" patternUnits="userSpaceOnUse">
+      <path d="M0 0H3M0 0V3" fill="none" stroke="#3a2a10" stroke-width=".6" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Schraffur der Dämmschicht -->
+    <pattern id="m02-zb-daemm" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1" stroke-opacity=".4"/>
+    </pattern>
+  </defs>
+
+  <!-- Achse und gestrichelte Verbindungslinien, hinter allen Teilen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5" stroke-dasharray="3 3">
+    <path d="M176 8V484"/>
+    <path d="M118 48V428M234 48V428"/>
+  </g>
+
+  <!-- 1 Blechdeckel: Kasten mit überstehendem Rand -->
+  <path d="M120 40L126 18Q126 16 128 16H224Q226 16 226 18L232 40Z" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="108" y="40" width="136" height="8" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <line x1="134" y1="25" x2="218" y2="25" stroke="#ffffff" stroke-width="2" stroke-opacity=".7" stroke-linecap="round"/>
+
+  <!-- 2 Innendeckel: Brett mit dicker Dämmschicht -->
+  <rect x="114" y="69" width="124" height="16" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="114" y="69" width="124" height="16" fill="url(#m02-zb-daemm)"/>
+  <rect x="104" y="62" width="144" height="7" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- 3 Abdeckfolie: dünnes, leicht gewelltes, durchscheinendes Blatt -->
+  <path d="M110 97Q121 91 132 97T154 97T176 97T198 97T220 97T242 97V104Q231 110 220 104Q209 98 198 104Q187 110 176 104Q165 98 154 104Q143 110 132 104Q121 98 110 104Z" fill="#4a7fb5" fill-opacity=".25" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- 4 Honigzarge, honiggelb getönt -->
+  <use href="#m02-zb-zarge" y="123" fill="#f2c14e"/>
+
+  <!-- 5 Absperrgitter -->
+  <rect x="110" y="209" width="132" height="9" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="110" y="209" width="132" height="9" fill="url(#m02-zb-gitter-fein)"/>
+
+  <!-- 6 Obere und untere Zarge: Brutraum -->
+  <use href="#m02-zb-zarge" y="232" fill="#e8c99a"/>
+  <use href="#m02-zb-zarge" y="316" fill="#e8c99a"/>
+
+  <!-- 7 Gitterboden mit Schlitz als Flugloch -->
+  <rect x="110" y="404" width="132" height="24" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="118" y="408" width="116" height="11" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="118" y="408" width="116" height="11" fill="url(#m02-zb-gitter)"/>
+  <rect x="152" y="421" width="48" height="5" fill="#3a2a10"/>
+
+  <!-- 8 Fluglochkeil, aus dem Flugloch gezogen -->
+  <path d="M156 452H196V439Z" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- 9 Ausziehschub, seitlich herausgezogen -->
+  <rect x="86" y="464" width="132" height="16" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="78" y="468" width="8" height="8" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Klammer um beide untere Zargen -->
+  <path d="M248 233Q256 233 256 245V298Q256 310 262 310Q256 310 256 322V375Q256 387 248 387" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Maßpfeil Zargenhöhe -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="88" y1="123" x2="108" y2="123"/>
+    <line x1="88" y1="195" x2="108" y2="195"/>
+  </g>
+  <line x1="92" y1="123" x2="92" y2="195" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M92 123L88 133H96ZM92 195L88 185H96Z" fill="#3a2a10"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="229" y1="30" x2="262" y2="30"/>
+    <line x1="248" y1="65.5" x2="262" y2="65.5"/>
+    <line x1="242" y1="100.5" x2="262" y2="100.5"/>
+    <line x1="242" y1="159" x2="262" y2="159"/>
+    <line x1="242" y1="213.5" x2="262" y2="213.5"/>
+    <line x1="242" y1="416" x2="262" y2="416"/>
+    <line x1="196" y1="446" x2="262" y2="446"/>
+    <line x1="218" y1="472" x2="262" y2="472"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="229" cy="30" r="2.3"/>
+    <circle cx="248" cy="65.5" r="2.3"/>
+    <circle cx="242" cy="100.5" r="2.3"/>
+    <circle cx="242" cy="159" r="2.3"/>
+    <circle cx="242" cy="213.5" r="2.3"/>
+    <circle cx="242" cy="416" r="2.3"/>
+    <circle cx="196" cy="446" r="2.3"/>
+    <circle cx="218" cy="472" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="268" y="35.5">Blechdeckel</text>
+    <text x="268" y="71">Innendeckel</text>
+    <text x="268" y="106">Abdeckfolie</text>
+    <text x="268" y="164.5">Honigraum</text>
+    <text x="268" y="219">Absperrgitter</text>
+    <text x="268" y="315.5">Brutraum</text>
+    <text x="268" y="421.5">Gitterboden</text>
+    <text x="268" y="451.5">Fluglochkeil</text>
+    <text x="268" y="477.5">Ausziehschub</text>
+    <text x="84" y="164.5" text-anchor="end" font-weight="700" fill="#b45309">227 mm</text>
+  </g>
+</svg>

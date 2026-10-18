@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="m07-sa-titel m07-sa-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="460" fill="#ffffff"/>
+  <title id="m07-sa-titel">Vom Entdeckeln zum klaren Honig</title>
+  <desc id="m07-sa-beschr">Vier Schritte untereinander: 1 Entdeckeln mit der Gabel knapp unter den Deckeln, 2 Schleudern: anschleudern, wenden, ausschleudern, 3 Sieben mit Doppelsieb und dann Spitzsieb 0,2 mm, 4 Klären im geschlossenen Eimer mit Schaum abnehmen. Daneben der Hinweis, dass der Honig nie über 40 °C erwärmt wird.</desc>
+
+  <defs>
+    <!-- Pfeilspitze für den Drehpfeil im Schleuderkessel, die Linie endet an der Basis der Spitze -->
+    <marker id="m07-sa-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Vier Kästchen, Abstand 112, Höhe 82 -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="6" y="21" width="348" height="82" rx="10"/>
+    <rect x="6" y="133" width="348" height="82" rx="10"/>
+    <rect x="6" y="245" width="348" height="82" rx="10"/>
+    <rect x="6" y="357" width="348" height="82" rx="10"/>
+  </g>
+
+  <!-- Pfeile nach unten zwischen den Kästchen -->
+  <g fill="#b45309" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round">
+    <line x1="180" y1="107" x2="180" y2="118"/>
+    <path d="M180 130L174 118H186Z" stroke-width="1"/>
+    <line x1="180" y1="219" x2="180" y2="230"/>
+    <path d="M180 242L174 230H186Z" stroke-width="1"/>
+    <line x1="180" y1="331" x2="180" y2="342"/>
+    <path d="M180 354L174 342H186Z" stroke-width="1"/>
+  </g>
+
+  <!-- Symbol 1: Entdeckelungsgabel an einer Wabe -->
+  <g transform="translate(10 40)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="2" y="4" width="24" height="36" rx="2" fill="#f2c14e"/>
+    <rect x="2" y="4" width="24" height="16" rx="2" fill="#fff4d6"/>
+    <path d="M20 8H33M20 13H33M20 18H33M20 23H33" fill="none" stroke-width="1.2"/>
+    <line x1="33" y1="5" x2="33" y2="26" stroke-width="4.5"/>
+    <line x1="33" y1="5" x2="33" y2="26" stroke="#b8bcc2" stroke-width="2"/>
+    <rect x="33" y="13.5" width="13" height="6" rx="2" fill="#e8c99a"/>
+  </g>
+
+  <!-- Symbol 2: Schleuderkessel von oben mit Waben und Drehpfeil -->
+  <g transform="translate(10 152)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <circle cx="23" cy="23" r="15" fill="#b8bcc2"/>
+    <circle cx="23" cy="23" r="12" fill="#fff4d6" stroke-width="1"/>
+    <rect x="20.5" y="12" width="5" height="22" fill="#f2c14e" stroke-width="1"/>
+    <rect x="12" y="20.5" width="22" height="5" fill="#f2c14e" stroke-width="1"/>
+    <path d="M40.3 13A20 20 0 1 1 7.7 10.1" fill="none" stroke="#b45309" stroke-width="2.5" marker-end="url(#m07-sa-spitze)"/>
+  </g>
+
+  <!-- Symbol 3: Trichtersieb über einem Eimer -->
+  <g transform="translate(10 264)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M11 29H35L32.5 44H13.5Z" fill="#ffffff"/>
+    <path d="M12 29Q23 21 34 29" fill="none"/>
+    <path d="M23 18V31" fill="none" stroke="#f2c14e" stroke-width="3.5"/>
+    <ellipse cx="23" cy="33" rx="6" ry="1.8" fill="#f2c14e" stroke-width="1"/>
+    <rect x="3" y="3" width="40" height="4" rx="1.5" fill="#b8bcc2"/>
+    <path d="M5 7H41L28 19H18Z" fill="#b8bcc2"/>
+    <path d="M13 11H33M17 15H29" fill="none" stroke-width="1" stroke-opacity=".6"/>
+  </g>
+
+  <!-- Symbol 4: geschlossener Eimer mit Deckel, daneben kleiner Schaumrand -->
+  <g transform="translate(10 376)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="14" y="5" width="8" height="5" rx="1.5" fill="#e8c99a"/>
+    <path d="M5 17H31L28.5 43H7.5Z" fill="#ffffff"/>
+    <rect x="3" y="10" width="30" height="7" rx="2" fill="#e8c99a"/>
+    <path d="M36 43V35H46V43Z" fill="#f2c14e" stroke-width="1.2"/>
+    <g fill="#ffffff" stroke-width="1">
+      <circle cx="39.5" cy="32" r="3"/>
+      <circle cx="44" cy="31" r="2.6"/>
+      <circle cx="41.5" cy="27.5" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- Titel und Zusätze der vier Schritte -->
+  <g fill="#1f1a12">
+    <text x="66" y="57" font-size="17" font-weight="700">1 Entdeckeln</text>
+    <text x="66" y="81" font-size="14">Gabel knapp unter den Deckeln</text>
+    <text x="66" y="169" font-size="17" font-weight="700">2 Schleudern</text>
+    <text x="66" y="193" font-size="14">anschleudern, wenden, ausschleudern</text>
+    <text x="66" y="281" font-size="17" font-weight="700">3 Sieben</text>
+    <text x="66" y="305" font-size="14">Doppelsieb, dann Spitzsieb 0,2 mm</text>
+    <text x="66" y="393" font-size="17" font-weight="700">4 Klären</text>
+    <text x="66" y="417" font-size="14">Eimer geschlossen, Schaum abnehmen</text>
+  </g>
+
+  <!-- Senkrechte Klammer über alle vier Schritte mit der Temperaturgrenze -->
+  <path d="M362 21Q368 21 368 31V214Q368 230 376 230Q368 230 368 246V429Q368 439 362 439" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+  <text transform="translate(392 230) rotate(-90)" text-anchor="middle" font-size="16" font-weight="700" fill="#b45309">nie über 40 °C</text>
+</svg>

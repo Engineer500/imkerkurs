@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 430" role="img" aria-labelledby="m09-nf-titel m09-nf-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="430" fill="#ffffff"/>
+  <title id="m09-nf-titel">Die Reihenfolge der Nestförderung</title>
+  <desc id="m09-nf-beschr">Ablauf der Nestförderung. Erst melden: Nestfund auf beewarned.de, dann die Melde-ID erhalten. Parallel den Förderantrag an die FüAk stellen und die Eingangsbestätigung abwarten. Mit beidem darf eine sachkundige Person das Nest entnehmen. Die Fotos vor und nach der Entnahme gehen innerhalb von 14 Tagen an beewarned, danach folgt der Zahlungsantrag.</desc>
+
+  <!-- Pfeile: Stiele und Spitzen, Linie endet an der Basis der Spitze -->
+  <g stroke="#3a2a10" stroke-width="1.5" fill="none">
+    <line x1="103" y1="90" x2="103" y2="111"/>
+    <line x1="297" y1="90" x2="297" y2="111"/>
+    <line x1="103" y1="188" x2="103" y2="239"/>
+    <line x1="297" y1="188" x2="297" y2="239"/>
+    <line x1="297" y1="314" x2="297" y2="339"/>
+    <line x1="46" y1="314" x2="46" y2="329"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M103 122L96.5 110H109.5Z"/>
+    <path d="M297 122L290.5 110H303.5Z"/>
+    <path d="M103 250L96.5 238H109.5Z"/>
+    <path d="M297 250L290.5 238H303.5Z"/>
+    <path d="M297 350L290.5 338H303.5Z"/>
+  </g>
+
+  <!-- Kästen der beiden Spuren -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="14" y="24" width="178" height="66" rx="10"/>
+    <rect x="208" y="24" width="178" height="66" rx="10"/>
+    <rect x="14" y="122" width="178" height="66" rx="10"/>
+    <rect x="208" y="122" width="178" height="66" rx="10"/>
+  </g>
+
+  <!-- gemeinsamer, hervorgehobener Kasten der Nestentnahme -->
+  <rect x="15.75" y="251.75" width="368.5" height="60.5" rx="9" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- letzter, abgesetzter Kasten: Zahlungsantrag -->
+  <rect x="211" y="350" width="172" height="54" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- kleine Kamera für die Fotos, am Kasten der Entnahme -->
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M37 334L40 329H52L55 334Z" fill="#b8bcc2"/>
+    <rect x="29" y="334" width="36" height="22" rx="4" fill="#b8bcc2"/>
+    <circle cx="47" cy="345" r="7.5" fill="#fffaf0"/>
+    <circle cx="47" cy="345" r="3.6" fill="#3a2a10" stroke="none"/>
+  </g>
+  <circle cx="59" cy="339" r="1.6" fill="#b45309"/>
+
+  <!-- Ziffern in Kreisen an den Kastenecken -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="28" cy="24" r="12.5" fill="#f2c14e"/>
+    <circle cx="222" cy="24" r="12.5" fill="#f2c14e"/>
+    <circle cx="28" cy="122" r="12.5" fill="#f2c14e"/>
+    <circle cx="222" cy="122" r="12.5" fill="#f2c14e"/>
+    <circle cx="28" cy="250" r="12.5" fill="#b45309"/>
+    <circle cx="225" cy="350" r="12.5" fill="#f2c14e"/>
+  </g>
+  <g font-size="16" font-weight="700" text-anchor="middle" fill="#1f1a12">
+    <text x="28" y="29.5">1</text>
+    <text x="222" y="29.5">3</text>
+    <text x="28" y="127.5">2</text>
+    <text x="222" y="127.5">4</text>
+    <text x="28" y="255.5" fill="#ffffff">5</text>
+    <text x="225" y="355.5">6</text>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="103" y="55">Nestfund melden</text>
+    <text x="297" y="53">Förderantrag</text>
+    <text x="297" y="73">an die FüAk</text>
+    <text x="103" y="150">Melde-ID,</text>
+    <text x="103" y="170">14 Tage gültig</text>
+    <text x="297" y="160">Eingangsbestätigung</text>
+    <text x="200" y="283" font-size="17" font-weight="700">Nestentnahme durch</text>
+    <text x="200" y="304" font-size="17" font-weight="700">sachkundige Person</text>
+    <text x="297" y="382">Zahlungsantrag</text>
+  </g>
+  <text x="103" y="78" font-size="14" text-anchor="middle" fill="#1f1a12">beewarned.de</text>
+  <text x="200" y="226" font-size="14" text-anchor="middle" fill="#b45309" font-weight="700">beides vor der Entnahme</text>
+  <text x="76" y="341" font-size="16" fill="#1f1a12">Fotos vor und nach</text>
+  <text x="76" y="359" font-size="16" fill="#1f1a12">an beewarned</text>
+  <text x="76" y="377" font-size="16" fill="#1f1a12">in 14 Tagen</text>
+</svg>

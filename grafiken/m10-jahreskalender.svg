@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="m10-jk-titel m10-jk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="460" fill="#ffffff"/>
+  <title id="m10-jk-titel">Das zweite Imkerjahr von Dezember bis Dezember</title>
+  <desc id="m10-jk-beschr">Jahreskalender für das zweite Imkerjahr mit acht Zeilen untereinander: Dez bis Feb auswerten, sortieren, Antrag stellen. Bis 15.04. Förderantrag, falls ein Programm läuft. Mär bis Apr auswintern, erweitern. Apr bis Jun Schwarmzeit, Ableger, Umweiseln. Mai bis Jul Honig ernten. Jun bis Sep Befall messen, behandeln. Aug bis Okt einfüttern, einwintern. Nov bis Dez Winterbehandlung.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin, Seitenansicht, Blick nach rechts (wie in den Grafiken von Modul 1) -->
+    <g id="jk-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Schneeflocke: drei Achsen, Ursprung in der Mitte, Radius 9 -->
+    <path id="jk-achse" d="M-9 0H9M-6 -2.6L-3.8 0L-6 2.6M6 -2.6L3.8 0L6 2.6" fill="none"/>
+  </defs>
+
+  <!-- Zeitlinie links, Zeit läuft von oben nach unten -->
+  <line x1="16" y1="30" x2="16" y2="444" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M16 454L10.5 442H21.5Z" fill="#3a2a10"/>
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="21" y1="59" x2="34" y2="59"/>
+    <line x1="21" y1="109" x2="34" y2="109"/>
+    <line x1="21" y1="159" x2="34" y2="159"/>
+    <line x1="21" y1="209" x2="34" y2="209"/>
+    <line x1="21" y1="259" x2="34" y2="259"/>
+    <line x1="21" y1="309" x2="34" y2="309"/>
+    <line x1="21" y1="359" x2="34" y2="359"/>
+    <line x1="21" y1="409" x2="34" y2="409"/>
+  </g>
+  <g fill="#3a2a10" stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="16" cy="59" r="5.5"/>
+    <circle cx="16" cy="109" r="5.5" fill="#b45309"/>
+    <circle cx="16" cy="159" r="5.5"/>
+    <circle cx="16" cy="209" r="5.5"/>
+    <circle cx="16" cy="259" r="5.5"/>
+    <circle cx="16" cy="309" r="5.5"/>
+    <circle cx="16" cy="359" r="5.5"/>
+    <circle cx="16" cy="409" r="5.5"/>
+  </g>
+
+  <!-- Zeilen: Winter kühl (1 und 8), Frist mit Akzentrand (2), Saison warm (3 bis 7) -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="34" y="36" width="360" height="46" rx="9" fill="#4a7fb5" fill-opacity=".16"/>
+    <rect x="34" y="136" width="360" height="46" rx="9" fill="#f2c14e" fill-opacity=".38"/>
+    <rect x="34" y="186" width="360" height="46" rx="9" fill="#f2c14e" fill-opacity=".38"/>
+    <rect x="34" y="236" width="360" height="46" rx="9" fill="#f2c14e" fill-opacity=".38"/>
+    <rect x="34" y="286" width="360" height="46" rx="9" fill="#f2c14e" fill-opacity=".38"/>
+    <rect x="34" y="336" width="360" height="46" rx="9" fill="#f2c14e" fill-opacity=".38"/>
+    <rect x="34" y="386" width="360" height="46" rx="9" fill="#4a7fb5" fill-opacity=".16"/>
+  </g>
+  <rect x="35.75" y="87.75" width="356.5" height="42.5" rx="8" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- Symbol Zeile 1: Schneeflocke -->
+  <g transform="translate(370 52) scale(1.2)" stroke="#4a7fb5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#jk-achse"/>
+    <use href="#jk-achse" transform="rotate(60)"/>
+    <use href="#jk-achse" transform="rotate(120)"/>
+  </g>
+
+  <!-- Symbol Zeile 2: Kalenderblatt -->
+  <g transform="translate(370 101)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-10" y="-9" width="20" height="19" rx="2.5" fill="#ffffff"/>
+    <path d="M-10 -3V-6.5Q-10 -9 -7.5 -9H7.5Q10 -9 10 -6.5V-3Z" fill="#b45309"/>
+    <path d="M-4.5 -11.5V-6.5M4.5 -11.5V-6.5" fill="none" stroke-width="2"/>
+    <path d="M-10 2.5H10M-3.3 -3V10M3.3 -3V10" fill="none" stroke-width="1"/>
+  </g>
+
+  <!-- Symbol Zeile 4: Biene -->
+  <use href="#jk-biene" transform="translate(371 204) scale(.7)"/>
+
+  <!-- Symbol Zeile 5: Honigglas -->
+  <g transform="translate(370 252) scale(1.2)" stroke="#3a2a10" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-7 -5Q-10 -3 -10 1V8Q-10 11 -7 11H7Q10 11 10 8V1Q10 -3 7 -5Z" fill="#f2c14e"/>
+    <rect x="-7" y="-9.5" width="14" height="4.5" rx="1.2" fill="#b45309"/>
+    <path d="M-5.5 2H5.5" fill="none" stroke-width="1" stroke-opacity=".6"/>
+  </g>
+
+  <!-- Symbol Zeile 8: Schneeflocke -->
+  <g transform="translate(370 402) scale(1.2)" stroke="#4a7fb5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#jk-achse"/>
+    <use href="#jk-achse" transform="rotate(60)"/>
+    <use href="#jk-achse" transform="rotate(120)"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="214" y="24" text-anchor="middle" font-size="19" font-weight="700">Das zweite Imkerjahr</text>
+    <g font-weight="700">
+      <text x="46" y="55">Dez bis Feb</text>
+      <text x="46" y="105">Bis 15.04.</text>
+      <text x="46" y="155">Mär bis Apr</text>
+      <text x="46" y="205">Apr bis Jun</text>
+      <text x="46" y="255">Mai bis Jul</text>
+      <text x="46" y="305">Jun bis Sep</text>
+      <text x="46" y="355">Aug bis Okt</text>
+      <text x="46" y="405">Nov bis Dez</text>
+    </g>
+    <text x="46" y="75">auswerten, sortieren, Antrag stellen</text>
+    <text x="46" y="125">Förderantrag, falls ein Programm läuft</text>
+    <text x="46" y="175">auswintern, erweitern</text>
+    <text x="46" y="225">Schwarmzeit, Ableger, Umweiseln</text>
+    <text x="46" y="275">Honig ernten</text>
+    <text x="46" y="325">Befall messen, behandeln</text>
+    <text x="46" y="375">einfüttern, einwintern</text>
+    <text x="46" y="425">Winterbehandlung</text>
+  </g>
+</svg>

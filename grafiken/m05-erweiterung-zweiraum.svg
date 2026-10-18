@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 258" role="img" aria-labelledby="m05-ez-titel m05-ez-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="258" fill="#ffffff"/>
+  <title id="m05-ez-titel">Erweitern im Zweiraum vom Winter bis zur Kirschblüte</title>
+  <desc id="m05-ez-beschr">Drei Stufen nebeneinander. Winter: 1 bis 2 Zargen als Brutraum. Frühjahr, wenn eine Zarge 6 bis 7 Brutwaben trägt: 2 Zargen Brutraum. Kirschblüte: 2 Zargen Brutraum, darüber Absperrgitter und Honigraum, zusammen 3 Zargen.</desc>
+
+  <defs>
+    <!-- Zarge von vorn (wie in m02-zanderbeute-aufbau.svg, verkleinert): Holzrahmen mit Fenster und zehn Rähmchen.
+         Die Füllung des Rahmens kommt vom aufrufenden use-Element. -->
+    <g id="m05-ez-zarge">
+      <rect x="0" y="0" width="70" height="42" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="5" y="6" width="60" height="30" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+      <path transform="translate(5 6)" d="M6 0V30M12 0V30M18 0V30M24 0V30M30 0V30M36 0V30M42 0V30M48 0V30M54 0V30" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".6"/>
+    </g>
+    <!-- Boden mit Flugloch und Blechdeckel, Ursprung links oben -->
+    <g id="m05-ez-boden">
+      <rect x="0" y="0" width="76" height="9" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="18" y="4" width="40" height="3" fill="#3a2a10"/>
+    </g>
+    <g id="m05-ez-deckel">
+      <rect x="0" y="0" width="76" height="10" rx="1.5" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+      <line x1="8" y1="3.5" x2="68" y2="3.5" stroke="#ffffff" stroke-width="1.5" stroke-opacity=".7" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Überschriften -->
+  <g fill="#1f1a12" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="46" y="26">Winter</text>
+    <text x="144" y="26">Frühjahr</text>
+    <text x="350" y="26">Kirschblüte</text>
+  </g>
+
+  <!-- Pfeile nach rechts zwischen den Stufen -->
+  <g stroke="#3a2a10" stroke-width="2" fill="#3a2a10" stroke-linejoin="round">
+    <line x1="62" y1="44" x2="120" y2="44" fill="none"/>
+    <path d="M130 44L120 39V49Z"/>
+    <line x1="160" y1="44" x2="292" y2="44" fill="none"/>
+    <path d="M302 44L292 39V49Z"/>
+  </g>
+  <text x="96" y="68" text-anchor="middle" font-size="16" fill="#1f1a12">bei 1 Zarge:</text>
+  <text x="96" y="86" text-anchor="middle" font-size="16" fill="#1f1a12"><tspan font-weight="700" fill="#b45309">6 bis 7</tspan> Brutwaben</text>
+
+  <!-- Boden der Aufstellung -->
+  <line x1="4" y1="202" x2="396" y2="202" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Spalte 1, Winter: eine Zarge, darüber der gestrichelte Umriss einer zweiten -->
+  <use href="#m05-ez-boden" x="8" y="193"/>
+  <use href="#m05-ez-zarge" x="11" y="151" fill="#e8c99a"/>
+  <rect x="11" y="109" width="70" height="42" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <use href="#m05-ez-deckel" x="8" y="99"/>
+
+  <!-- Spalte 2, Frühjahr: zwei Zargen als Brutraum -->
+  <use href="#m05-ez-boden" x="106" y="193"/>
+  <use href="#m05-ez-zarge" x="109" y="151" fill="#e8c99a"/>
+  <use href="#m05-ez-zarge" x="109" y="109" fill="#e8c99a"/>
+  <use href="#m05-ez-deckel" x="106" y="99"/>
+
+  <!-- Spalte 3, Kirschblüte: Brutraum, Absperrgitter, Honigraum -->
+  <use href="#m05-ez-boden" x="312" y="193"/>
+  <use href="#m05-ez-zarge" x="315" y="151" fill="#e8c99a"/>
+  <use href="#m05-ez-zarge" x="315" y="109" fill="#e8c99a"/>
+  <rect x="315" y="104" width="70" height="5" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m05-ez-zarge" x="315" y="62" fill="#f2c14e"/>
+  <use href="#m05-ez-deckel" x="312" y="52"/>
+
+  <!-- Klammern um den Brutraum: rechts von Spalte 2, links von Spalte 3 -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M186 116Q193 116 193 124V145Q193 151 199 151Q193 151 193 157V180Q193 188 186 188"/>
+    <path d="M311 116Q304 116 304 124V145Q304 151 298 151Q304 151 304 157V180Q304 188 311 188"/>
+  </g>
+
+  <!-- Linien zu Honigraum und Absperrgitter -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="304" y1="83" x2="315" y2="83"/>
+    <line x1="304" y1="106.5" x2="315" y2="106.5"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="315" cy="83" r="2.3"/>
+    <circle cx="315" cy="106.5" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen am Aufbau -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="302" y="88.5" text-anchor="end">Honigraum</text>
+    <text x="302" y="112" text-anchor="end">Absperrgitter</text>
+    <text x="248.5" y="156.5" text-anchor="middle">Brutraum</text>
+  </g>
+
+  <!-- Zahl der Zargen unter jeder Spalte -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="48.2" y="226"><tspan x="48.2" font-size="17" font-weight="700" fill="#b45309">1 bis 2 </tspan><tspan x="46" dy="20">Zargen</tspan></text>
+    <text x="146.2" y="226"><tspan x="146.2" font-size="17" font-weight="700" fill="#b45309">2 </tspan><tspan x="144" dy="20">Zargen</tspan></text>
+    <text x="352.2" y="226"><tspan x="352.2" font-size="17" font-weight="700" fill="#b45309">3 </tspan><tspan x="350" dy="20">Zargen</tspan></text>
+  </g>
+</svg>

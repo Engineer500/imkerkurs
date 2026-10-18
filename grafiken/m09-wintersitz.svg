@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" role="img" aria-labelledby="m09-ws-titel m09-ws-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="380" fill="#ffffff"/>
+  <title id="m09-ws-titel">Der Wintersitz im Zweiraum</title>
+  <desc id="m09-ws-beschr">Schnitt durch eine Zweiraumbeute im Winter. Der Blechdeckel ist mit einem Stein beschwert, die Folie halb umgeschlagen. In beiden Zargen hängen die Waben als Block in der Mitte, seitlich ist je eine Randwabe entnommen und bleibt Platz. Der Gitterboden ist offen und ohne Ausziehschub, das Flugloch ist höchstens 6 mm hoch und mit einem Fluglochgitter mit 5 mal 5 mm geschützt.</desc>
+
+  <defs>
+    <!-- Form der acht Wabenstreifen, jeder 8 breit, Abstand 3, Höhe 76, Ursprung links oben -->
+    <clipPath id="m09-ws-clip">
+      <rect x="157.5" y="0" width="8" height="76"/>
+      <rect x="168.5" y="0" width="8" height="76"/>
+      <rect x="179.5" y="0" width="8" height="76"/>
+      <rect x="190.5" y="0" width="8" height="76"/>
+      <rect x="201.5" y="0" width="8" height="76"/>
+      <rect x="212.5" y="0" width="8" height="76"/>
+      <rect x="223.5" y="0" width="8" height="76"/>
+      <rect x="234.5" y="0" width="8" height="76"/>
+    </clipPath>
+    <!-- Wabenblock: dunkle Streifen, oben ein heller Bogen als Futterkranz -->
+    <g id="m09-ws-block">
+      <g fill="#d9a441">
+        <rect x="157.5" y="0" width="8" height="76"/>
+        <rect x="168.5" y="0" width="8" height="76"/>
+        <rect x="179.5" y="0" width="8" height="76"/>
+        <rect x="190.5" y="0" width="8" height="76"/>
+        <rect x="201.5" y="0" width="8" height="76"/>
+        <rect x="212.5" y="0" width="8" height="76"/>
+        <rect x="223.5" y="0" width="8" height="76"/>
+        <rect x="234.5" y="0" width="8" height="76"/>
+      </g>
+      <path d="M157.5 26Q200 -14 242.5 26V38Q200 -2 157.5 38Z" fill="#fff4d6" clip-path="url(#m09-ws-clip)"/>
+      <path d="M157.5 26Q200 -14 242.5 26M157.5 38Q200 -2 242.5 38" fill="none" stroke="#3a2a10" stroke-width="1.2" clip-path="url(#m09-ws-clip)"/>
+      <g fill="none" stroke="#3a2a10" stroke-width="1">
+        <rect x="157.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="168.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="179.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="190.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="201.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="212.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="223.5" y="0" width="8" height="76" rx="1.2"/>
+        <rect x="234.5" y="0" width="8" height="76" rx="1.2"/>
+      </g>
+    </g>
+    <!-- kleiner Bienenkörper der Traube -->
+    <ellipse id="m09-ws-b" rx="5.5" ry="3.2" fill="#d9a441" stroke="#3a2a10" stroke-width=".8"/>
+    <!-- Mäusegitter: feines Raster in Metallfarbe -->
+    <pattern id="m09-ws-gitter" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 0H4M0 0V4" fill="none" stroke="#b8bcc2" stroke-width=".9"/>
+    </pattern>
+  </defs>
+
+  <!-- Stein auf dem Deckel -->
+  <path d="M172 28L176 17Q178 12 184 12H220Q226 12 228 17L232 28Z" fill="#a4a9b0" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M186 20Q192 17 198 20M206 21Q212 18 218 21" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5" stroke-linecap="round"/>
+
+  <!-- Blechdeckel: flache Kappe mit Rand -->
+  <path d="M139 44L145 29Q145 28 146 28H254Q255 28 255 29L261 44Z" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="121" y="44" width="158" height="7" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <line x1="152" y1="34" x2="248" y2="34" stroke="#ffffff" stroke-width="2" stroke-opacity=".7" stroke-linecap="round"/>
+
+  <!-- Innendeckel -->
+  <rect x="127" y="51" width="146" height="9" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Folie: linke Hälfte liegt auf den Rähmchen, rechte Hälfte nach hinten zurückgeschlagen -->
+  <g fill="none" stroke="#4a7fb5" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M133 91H204Q212 91 212 86.5Q212 82 204 82H164"/>
+  </g>
+  <!-- drei kleine Pfeile über der offenen Hälfte: Feuchtigkeit steigt nach oben -->
+  <g fill="none" stroke="#b45309" stroke-width="2.2" stroke-linecap="round">
+    <path d="M224 87V73M240 87V73M256 87V73"/>
+  </g>
+  <g fill="#b45309">
+    <path d="M224 66L219 75H229Z"/>
+    <path d="M240 66L235 75H245Z"/>
+    <path d="M256 66L251 75H261Z"/>
+  </g>
+
+  <!-- Obere Zarge -->
+  <rect x="133" y="92" width="134" height="84" fill="#fff4d6"/>
+  <use href="#m09-ws-block" y="96"/>
+  <rect x="147" y="96" width="9" height="76" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <rect x="244" y="96" width="9" height="76" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <!-- Bienentraube: Oval in der Mitte des Blocks -->
+  <ellipse cx="200" cy="140" rx="25" ry="16" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <g>
+    <use href="#m09-ws-b" transform="translate(188 132) rotate(-20)"/>
+    <use href="#m09-ws-b" transform="translate(206 130) rotate(15)"/>
+    <use href="#m09-ws-b" transform="translate(196 142) rotate(8)"/>
+    <use href="#m09-ws-b" transform="translate(212 144) rotate(-12)"/>
+    <use href="#m09-ws-b" transform="translate(184 147) rotate(22)"/>
+    <use href="#m09-ws-b" transform="translate(200 151) rotate(-6)"/>
+  </g>
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="125" y="92" width="8" height="84"/>
+    <rect x="267" y="92" width="8" height="84"/>
+  </g>
+
+  <!-- Untere Zarge -->
+  <rect x="133" y="176" width="134" height="84" fill="#fff4d6"/>
+  <use href="#m09-ws-block" y="180"/>
+  <rect x="147" y="180" width="9" height="76" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <rect x="244" y="180" width="9" height="76" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="125" y="176" width="8" height="84"/>
+    <rect x="267" y="176" width="8" height="84"/>
+  </g>
+
+  <!-- Gitterboden offen: Linie mit Gitterstrichen, darunter freie Luft, kein Einschub -->
+  <line x1="121" y1="260" x2="279" y2="260" stroke="#3a2a10" stroke-width="2"/>
+  <path d="M127 260V268M133 260V268M139 260V268M145 260V268M151 260V268M157 260V268M163 260V268M169 260V268M175 260V268M181 260V268M187 260V268M193 260V268M199 260V268M205 260V268M211 260V268M217 260V268M223 260V268M229 260V268M235 260V268M241 260V268M247 260V268M253 260V268M259 260V268M265 260V268M271 260V268" fill="none" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Flugloch von vorn, als eigenes Detail: flacher Schlitz mit Mäusegitter -->
+  <rect x="130" y="314" width="140" height="48" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="144" y="330" width="112" height="12" fill="#3a2a10"/>
+  <rect x="144" y="330" width="112" height="12" fill="url(#m09-ws-gitter)"/>
+  <rect x="144" y="330" width="112" height="12" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- Maßpfeil für die Höhe -->
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="256" y1="330" x2="294" y2="330"/>
+    <line x1="256" y1="342" x2="294" y2="342"/>
+    <line x1="286" y1="314" x2="286" y2="325"/>
+    <line x1="286" y1="358" x2="286" y2="347"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M286 330L282.5 321H289.5Z"/>
+    <path d="M286 342L282.5 351H289.5Z"/>
+  </g>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#ffffff" stroke-width="4" fill="none">
+    <line x1="118" y1="31" x2="173" y2="22"/>
+    <line x1="118" y1="83" x2="156" y2="89"/>
+    <line x1="118" y1="124" x2="163" y2="119"/>
+    <line x1="118" y1="210" x2="148" y2="208"/>
+    <line x1="284" y1="148" x2="238" y2="150"/>
+    <line x1="284" y1="266" x2="268" y2="263"/>
+    <line x1="124" y1="336" x2="146" y2="336"/>
+  </g>
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="118" y1="31" x2="173" y2="22"/>
+    <line x1="118" y1="83" x2="156" y2="89"/>
+    <line x1="118" y1="124" x2="163" y2="119"/>
+    <line x1="118" y1="210" x2="148" y2="208"/>
+    <line x1="284" y1="148" x2="238" y2="150"/>
+    <line x1="284" y1="266" x2="268" y2="263"/>
+    <line x1="124" y1="336" x2="146" y2="336"/>
+  </g>
+  <g fill="#3a2a10" stroke="#ffffff" stroke-width="1">
+    <circle cx="173" cy="22" r="2.5"/>
+    <circle cx="156" cy="89" r="2.5"/>
+    <circle cx="163" cy="119" r="2.5"/>
+    <circle cx="148" cy="208" r="2.5"/>
+    <circle cx="238" cy="150" r="2.5"/>
+    <circle cx="268" cy="263" r="2.5"/>
+    <circle cx="146" cy="336" r="2.5"/>
+  </g>
+
+  <!-- Beschriftungen links -->
+  <g fill="#1f1a12" font-size="16" text-anchor="end" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">
+    <text x="114" y="19">Deckel mit</text>
+    <text x="114" y="37">Stein</text>
+    <text x="114" y="55">beschwert</text>
+    <text x="114" y="79">Folie halb</text>
+    <text x="114" y="97">umgeschlagen</text>
+    <text x="114" y="126">Futterkranz</text>
+    <text x="114" y="214">Randwabe</text>
+    <text x="114" y="232">entnommen</text>
+    <text x="120" y="330" font-size="14">Fluglochgitter</text>
+    <text x="120" y="348" font-size="14">5 mal 5 mm</text>
+  </g>
+  <!-- Beschriftungen rechts -->
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">
+    <text x="288" y="154">Wabenblock</text>
+    <text x="288" y="270">Gitterboden</text>
+    <text x="288" y="288">offen, ohne</text>
+    <text x="288" y="306">Ausziehschub</text>
+    <text x="300" y="338">Flugloch</text>
+    <text x="300" y="356">höchstens</text>
+    <text x="300" y="374">6 mm</text>
+  </g>
+</svg>

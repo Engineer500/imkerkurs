@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Imkerkurs</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf-innen">
+      <a class="marke" href="#/">
+        <svg class="marke-zeichen" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/></svg>
+        Imkerkurs
+      </a>
+      <nav class="hauptnav" aria-label="Hauptnavigation">
+        <a href="#/" data-nav="kurs">Kurs</a>
+        <a href="#/wiederholen" data-nav="wiederholen">Wiederholen <span id="zaehler-wiederholen" class="zaehler" hidden></span></a>
+        <a href="#/glossar" data-nav="glossar">Glossar</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt" class="inhalt" tabindex="-1"></main>
+  <footer class="fuss">
+    <p id="speicher-hinweis" class="hinweis" role="status"></p>
+    <button id="zuruecksetzen" class="link-knopf" type="button">Fortschritt zurücksetzen</button>
+  </footer>
+  <noscript><p class="inhalt">Bitte JavaScript aktivieren.</p></noscript>
+  <script src="assets/kurs-daten.js"></script>
+  <script src="assets/logik.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

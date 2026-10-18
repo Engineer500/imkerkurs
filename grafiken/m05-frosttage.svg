@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m05-ft-titel m05-ft-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m05-ft-titel">Frosttage je Monat von Februar bis Mai</title>
+  <desc id="m05-ft-beschr">Säulendiagramm der Frosttage je Monat an einer Beispielstation des Deutschen Wetterdienstes in Südbayern, Mittel 1991 bis 2020: Februar 22,3, März 17,8, April 7,3, Mai 0,3. Eine Klammer über allen vier Monaten zeigt, dass die Brut läuft. Die Frosttage nehmen von Februar bis Mai stark ab, im April sind es noch 7,3.</desc>
+
+  <!-- Achsenbeschriftung -->
+  <text x="12" y="26" font-size="17" font-weight="700" fill="#1f1a12">Frosttage je Monat</text>
+
+  <!-- Klammer über allen vier Säulen -->
+  <path d="M54 78Q54 70 62 70H198Q206 70 208 64Q210 70 218 70H354Q362 70 362 78" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="208" y="54" text-anchor="middle" font-size="16" font-weight="700" fill="#b45309">Brut läuft</text>
+
+  <!-- Säulen: Grundlinie y = 262, 160 Einheiten für 22,3 Frosttage (7,175 je Frosttag) -->
+  <g fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="54" y="102" width="56" height="160"/>
+    <rect x="138" y="134.3" width="56" height="127.7"/>
+    <rect x="222" y="209.6" width="56" height="52.4"/>
+    <rect x="306" y="259.85" width="56" height="2.15"/>
+  </g>
+  <line x1="36" y1="262" x2="380" y2="262" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Werte über den Säulen und Monate darunter -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <g font-weight="700">
+      <text x="82" y="94">22,3</text>
+      <text x="166" y="126.3">17,8</text>
+      <text x="250" y="201.6">7,3</text>
+      <text x="334" y="251.6">0,3</text>
+    </g>
+    <text x="82" y="284">Februar</text>
+    <text x="166" y="284">März</text>
+    <text x="250" y="284">April</text>
+    <text x="334" y="284">Mai</text>
+  </g>
+</svg>

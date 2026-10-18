@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m11-fp-titel m11-fp-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m11-fp-titel">Der Fütterungsplan nach der Brutentnahme</title>
+  <desc id="m11-fp-beschr">Zeitleiste von Juli bis Oktober. Nach der Brutentnahme im Juli gibt es wöchentlich etwa 5 Liter: bis Mitte August 700 g Zucker je Liter Wasser, ab Mitte August 1:1, im September 3:2. Die Fütterung endet Ende September, spätestens Anfang Oktober. Im September und Oktober schlüpfen die Winterbienen.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin, Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust (wie in m01) -->
+    <g id="m11-fp-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.100">
+        <ellipse cx="-11" cy="-10.900" rx="12.500" ry="5.200" transform="rotate(28 -11 -10.900)"/>
+        <ellipse cx="-5.400" cy="-15.200" rx="11.500" ry="4.800" transform="rotate(62 -5.400 -15.200)"/>
+      </g>
+      <path d="M-3 6.500L-6 12.500M1 7.200L1.500 13.500M4.500 6.500L8.500 11.500" fill="none" stroke="#3a2a10" stroke-width="1.200" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.500">
+        <ellipse cx="-12.500" cy="2" rx="12.500" ry="7.500" fill="#f2c14e"/>
+        <path d="M-12.600 -5.500A12.500 7.500 0 0 1 -9.600 -5.300L-9.600 9.300A12.500 7.500 0 0 1 -12.600 9.500ZM-18.400 -4.610A12.500 7.500 0 0 1 -15.400 -5.300L-15.400 9.300A12.500 7.500 0 0 1 -18.400 8.610ZM-24.200 -0.640A12.500 7.500 0 0 1 -21.200 -3.390L-21.200 7.390A12.500 7.500 0 0 1 -24.200 4.640Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.800" ry="7.200" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.500 -9M14.500 -1.500L21 -5.500" fill="none" stroke="#3a2a10" stroke-width="1.200" stroke-linecap="round"/>
+      <ellipse cx="10.600" cy="0.600" rx="5" ry="4.800" fill="#3a2a10"/>
+      <circle cx="12.200" cy="-0.800" r="1.300" fill="#ffffff"/>
+    </g>
+    <!-- Punktmuster: 700 g je Liter (hellstes Grün) -->
+    <pattern id="m11-fp-punkte" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#5b8c3a" fill-opacity=".28"/>
+      <circle cx="3" cy="3" r="1.400" fill="#3a2a10" fill-opacity=".8"/>
+    </pattern>
+    <!-- Schrägschraffur: 1:1 (mittleres Grün) -->
+    <pattern id="m11-fp-schraeg" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#5b8c3a" fill-opacity=".55"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="1.600" stroke-opacity=".65"/>
+    </pattern>
+    <!-- Wellenmuster: Winterbienen schlüpfen -->
+    <pattern id="m11-fp-welle" width="12" height="8" patternUnits="userSpaceOnUse">
+      <rect width="12" height="8" fill="#f2c14e"/>
+      <path d="M0 4Q3 0 6 4T12 4" fill="none" stroke="#3a2a10" stroke-width="1.200" stroke-opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <!-- Kopfzeile mit den vier Monaten, Spaltenbreite 90 ab x = 20 -->
+  <rect x="20" y="10" width="360" height="28" rx="6" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Hilfslinien zwischen den Monaten -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".3">
+    <line x1="20" y1="38" x2="20" y2="250"/>
+    <line x1="110" y1="10" x2="110" y2="250"/>
+    <line x1="200" y1="10" x2="200" y2="250"/>
+    <line x1="290" y1="10" x2="290" y2="250"/>
+    <line x1="380" y1="38" x2="380" y2="250"/>
+    <line x1="20" y1="250" x2="380" y2="250"/>
+  </g>
+
+  <!-- Gestrichelte Hilfslinie bei Anfang Oktober, über alle Zeilen -->
+  <line x1="295" y1="40" x2="295" y2="254" stroke="#b45309" stroke-width="1.500" stroke-dasharray="5 4"/>
+
+  <!-- Zeile 1: Brutentnahme im letzten Drittel des Juli, Marker und Biene -->
+  <circle cx="92" cy="74" r="9" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.500"/>
+  <use href="#m11-fp-biene" transform="translate(134 76) scale(.6)"/>
+
+  <!-- Zeile 2: drei aneinanderstoßende Balken in drei Abstufungen von Grün -->
+  <rect x="92" y="120" width="63" height="18" fill="url(#m11-fp-punkte)" stroke="#3a2a10" stroke-width="1.500"/>
+  <rect x="155" y="120" width="45" height="18" fill="url(#m11-fp-schraeg)" stroke="#3a2a10" stroke-width="1.500"/>
+  <rect x="200" y="120" width="95" height="18" fill="#5b8c3a" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Linie von der Beschriftung zum ersten Balken -->
+  <path d="M123.500 107V120" fill="none" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Zeile 3: Ende der Fütterung, dicke Markierung mit Flagge -->
+  <line x1="295" y1="154" x2="295" y2="188" stroke="#3a2a10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M297 155L319 162L297 169Z" fill="#b45309" stroke="#3a2a10" stroke-width="1.500" stroke-linejoin="round"/>
+
+  <!-- Zeile 4: Winterbienen schlüpfen im September und Oktober -->
+  <rect x="200" y="216" width="180" height="18" fill="url(#m11-fp-welle)" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="65" y="29">Jul</text>
+    <text x="155" y="29">Aug</text>
+    <text x="245" y="29">Sep</text>
+    <text x="335" y="29">Okt</text>
+  </g>
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">
+    <text x="84" y="58">Brutentnahme</text>
+    <text x="155" y="102" text-anchor="end">700 g je Liter</text>
+    <text x="177.500" y="114" text-anchor="middle" font-weight="700">1:1</text>
+    <text x="247.500" y="114" text-anchor="middle" font-weight="700">3:2</text>
+    <text x="380" y="210" text-anchor="end">Winterbienen schlüpfen</text>
+  </g>
+  <text x="380" y="274" text-anchor="end" font-size="16" font-weight="700" fill="#b45309">Ende spätestens Anfang Okt</text>
+</svg>

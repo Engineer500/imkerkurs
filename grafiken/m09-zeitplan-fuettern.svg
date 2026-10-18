@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 310" role="img" aria-labelledby="m09-zf-titel m09-zf-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="310" fill="#ffffff"/>
+  <title id="m09-zf-titel">Zeitplan des Fütterns von Juli bis September</title>
+  <desc id="m09-zf-beschr">Zeitplan von Juli bis September: Im Juli Honig ernten und erste Gabe, einige Tage später Ameisensäure, bis Mitte August kleine Gaben, ab Mitte August die Hauptfütterung bis etwa 10. September, der Rest bis Ende September.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten. -->
+    <g id="m09-zf-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+    <!-- Punktmuster: kleine Gaben (hellstes Grün) -->
+    <pattern id="m09-zf-punkte" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#5b8c3a" fill-opacity=".28"/>
+      <circle cx="3" cy="3" r="1.4" fill="#3a2a10" fill-opacity=".8"/>
+    </pattern>
+    <!-- Schrägschraffur: Rest bis Ende September (mittleres Grün) -->
+    <pattern id="m09-zf-schraeg" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#5b8c3a" fill-opacity=".55"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="1.6" stroke-opacity=".65"/>
+    </pattern>
+  </defs>
+
+  <!-- Kopfzeile mit den drei Monaten, Spaltenbreite 120 ab x = 20 -->
+  <rect x="20" y="10" width="360" height="28" rx="6" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- Hilfslinien zwischen den Monaten -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".3">
+    <line x1="20" y1="38" x2="20" y2="288"/>
+    <line x1="140" y1="10" x2="140" y2="288"/>
+    <line x1="260" y1="10" x2="260" y2="288"/>
+    <line x1="380" y1="38" x2="380" y2="288"/>
+    <line x1="20" y1="288" x2="380" y2="288"/>
+  </g>
+
+  <!-- Zwei gestrichelte Hilfslinien: Mitte August und 10. September -->
+  <g stroke="#b45309" stroke-width="1.5" stroke-dasharray="5 4">
+    <line x1="194" y1="40" x2="194" y2="290"/>
+    <line x1="296" y1="40" x2="296" y2="290"/>
+  </g>
+
+  <!-- Zeile 1: Ernte, Marker um den 20. Juli und eine kleine Biene -->
+  <circle cx="94" cy="79" r="9" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m09-zf-biene" transform="translate(126 79) scale(.6)"/>
+
+  <!-- Zeile 2: Ameisensäure, gestrichelter Umriss, helle graublaue Füllung -->
+  <rect x="109" y="117" width="54" height="20" fill="#4a7fb5" fill-opacity=".18" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+  <!-- Zeile 3: kleine Gaben, Punktmuster -->
+  <rect x="163" y="165" width="31" height="20" fill="url(#m09-zf-punkte)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zeile 4: Hauptfütterung, volle Füllung -->
+  <rect x="194" y="213" width="102" height="20" fill="#5b8c3a" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zeile 5: Rest bis Ende September, Schrägschraffur -->
+  <rect x="296" y="261" width="84" height="20" fill="url(#m09-zf-schraeg)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="80" y="30">Jul</text>
+    <text x="200" y="30">Aug</text>
+    <text x="320" y="30">Sep</text>
+  </g>
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">
+    <text x="85" y="63">Ernte, erste Gabe</text>
+    <text x="109" y="111">Ameisensäure (Modul 8)</text>
+    <text x="163" y="159">kleine Gaben</text>
+    <text x="198" y="207" font-weight="700">Hauptfütterung</text>
+    <text x="380" y="255" text-anchor="end">Rest bis Ende Sep</text>
+  </g>
+  <g fill="#b45309" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="194" y="304">Mitte Aug</text>
+    <text x="296" y="304">10. Sep</text>
+  </g>
+</svg>

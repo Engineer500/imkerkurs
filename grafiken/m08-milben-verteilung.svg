@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m08-mv-titel m08-mv-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m08-mv-titel">Wo die Milben sitzen: in der Brut oder auf den Bienen</title>
+  <desc id="m08-mv-beschr">Zwei Balken. Trachtzeit: etwa zwei Drittel der Milben in der Brut, etwa ein Drittel auf den Bienen. Winter ohne Brut: alle Milben auf den Bienen. Darunter die Rechnung: Von 1000 Milben sitzen etwa 330 auf den Bienen, bei 33.000 Bienen sind das etwa 1 Prozent.</desc>
+
+  <defs>
+    <!-- Wabenraster für die Brut (wie in m01-wabe-aufbau.svg) -->
+    <pattern id="m08-mv-raster" width="12.124" height="21" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5L6.062 0L12.124 3.5V10.5L6.062 14L0 10.5ZM6.062 14V21" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".45"/>
+    </pattern>
+    <!-- Bienensilhouetten für den Bienenanteil: zwei kleine Bienen je Kachel, Blick nach rechts -->
+    <pattern id="m08-mv-bienen" width="32" height="24" patternUnits="userSpaceOnUse">
+      <g transform="translate(9 8.5)">
+        <ellipse cx="-3" cy="-4.6" rx="5.6" ry="2.4" fill="#ffffff" fill-opacity=".85" stroke="#3a2a10" stroke-width=".7" transform="rotate(-25 -3 -4.6)"/>
+        <ellipse cx="-3" cy="0" rx="7" ry="3.8" fill="#3a2a10" fill-opacity=".8"/>
+        <ellipse cx="5.6" cy="0" rx="3.3" ry="3" fill="#3a2a10"/>
+        <path d="M-6.6 -3.4V3.4M-3 -3.8V3.8" stroke="#f2c14e" stroke-width="1.3" fill="none"/>
+      </g>
+      <g transform="translate(25 20.5)">
+        <ellipse cx="-3" cy="-4.6" rx="5.6" ry="2.4" fill="#ffffff" fill-opacity=".85" stroke="#3a2a10" stroke-width=".7" transform="rotate(-25 -3 -4.6)"/>
+        <ellipse cx="-3" cy="0" rx="7" ry="3.8" fill="#3a2a10" fill-opacity=".8"/>
+        <ellipse cx="5.6" cy="0" rx="3.3" ry="3" fill="#3a2a10"/>
+        <path d="M-6.6 -3.4V3.4M-3 -3.8V3.8" stroke="#f2c14e" stroke-width="1.3" fill="none"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- Oberer Balken: Trachtzeit, Brut etwa zwei Drittel (227 von 340), Bienen etwa ein Drittel (113) -->
+  <g>
+    <rect x="30" y="34" width="227" height="40" fill="#d9a441"/>
+    <rect x="30" y="34" width="227" height="40" fill="url(#m08-mv-raster)"/>
+    <rect x="257" y="34" width="113" height="40" fill="#f2c14e"/>
+    <rect x="257" y="34" width="113" height="40" fill="url(#m08-mv-bienen)"/>
+    <rect x="30" y="34" width="340" height="40" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+    <line x1="257" y1="34" x2="257" y2="74" stroke="#3a2a10" stroke-width="1.5"/>
+  </g>
+
+  <!-- Unterer Balken: Winter ohne Brut, alle Milben auf den Bienen -->
+  <g>
+    <rect x="30" y="166" width="340" height="40" fill="#f2c14e"/>
+    <rect x="30" y="166" width="340" height="40" fill="url(#m08-mv-bienen)"/>
+    <rect x="30" y="166" width="340" height="40" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+    <rect x="115" y="173" width="170" height="26" rx="8" fill="#ffffff" fill-opacity=".92"/>
+  </g>
+
+  <!-- Haltelinien zu den Segmenttexten -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="143.5" y1="74" x2="143.5" y2="87"/>
+    <line x1="313.5" y1="74" x2="313.5" y2="87"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="143.5" cy="74" r="2.3"/>
+    <circle cx="313.5" cy="74" r="2.3"/>
+  </g>
+
+  <!-- Rechenkasten -->
+  <rect x="20" y="224" width="360" height="64" rx="8" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="30" y="24" font-weight="700">Trachtzeit</text>
+    <text x="30" y="156" font-weight="700">Winter ohne Brut</text>
+    <g text-anchor="middle">
+      <text x="143.5" y="105">in der Brut:</text>
+      <text x="143.5" y="125">etwa zwei Drittel</text>
+      <text x="313.5" y="105">auf Bienen:</text>
+      <text x="313.5" y="125">etwa ein Drittel</text>
+      <text x="200" y="191">auf Bienen: alle</text>
+    </g>
+    <text x="36" y="250">1000 Milben: etwa 330 auf den Bienen</text>
+    <text x="36" y="274" font-weight="700" fill="#b45309">33.000 Bienen: etwa 1 % Befall</text>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 270" role="img" aria-labelledby="m02-zp-titel m02-zp-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="270" fill="#ffffff"/>
+  <title id="m02-zp-titel">Zeitplan der Ausstattung von November bis April</title>
+  <desc id="m02-zp-beschr">Zeitleiste von November bis April mit vier Schritten: November bis Januar bestellen, im Februar Anfangsstreifen setzen, im März Smoker und Schutzkleidung kaufen, ab April kommen die Völker.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten. -->
+    <g id="m02-zp-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+  </defs>
+
+  <!-- Kopfzeile mit den sechs Monaten, Spaltenbreite 56 ab x = 32 -->
+  <rect x="32" y="22" width="336" height="30" rx="6" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- Hilfslinien zwischen den Spalten -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".3">
+    <line x1="32" y1="52" x2="32" y2="252"/>
+    <line x1="88" y1="22" x2="88" y2="252"/>
+    <line x1="144" y1="22" x2="144" y2="252"/>
+    <line x1="200" y1="22" x2="200" y2="252"/>
+    <line x1="256" y1="22" x2="256" y2="252"/>
+    <line x1="312" y1="22" x2="312" y2="252"/>
+    <line x1="368" y1="52" x2="368" y2="252"/>
+    <line x1="32" y1="252" x2="368" y2="252"/>
+  </g>
+
+  <!-- Zeile 1: November bis Januar, blau -->
+  <rect x="34" y="65" width="164" height="30" fill="#4a7fb5" fill-opacity=".4"/>
+  <rect x="34" y="65" width="8" height="30" fill="#4a7fb5"/>
+  <rect x="34" y="65" width="164" height="30" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zeile 2: Februar, grün -->
+  <rect x="202" y="113" width="52" height="30" fill="#5b8c3a" fill-opacity=".4"/>
+  <rect x="202" y="113" width="8" height="30" fill="#5b8c3a"/>
+  <rect x="202" y="113" width="52" height="30" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zeile 3: März, orange -->
+  <rect x="258" y="161" width="52" height="30" fill="#e07b39" fill-opacity=".4"/>
+  <rect x="258" y="161" width="8" height="30" fill="#e07b39"/>
+  <rect x="258" y="161" width="52" height="30" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zeile 4: Fahne im April in den Farben der Biene, darunter eine Biene -->
+  <line x1="322" y1="202" x2="322" y2="250" stroke="#3a2a10" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M322 204L364 216L322 228Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M332 206.9V225.1M344 210.4V221.6" fill="none" stroke="#3a2a10" stroke-width="3.5"/>
+  <use href="#m02-zp-biene" transform="translate(345 239) scale(.7)"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="60" y="43">Nov</text>
+    <text x="116" y="43">Dez</text>
+    <text x="172" y="43">Jan</text>
+    <text x="228" y="43">Feb</text>
+    <text x="284" y="43">Mär</text>
+    <text x="340" y="43">Apr</text>
+    <text x="120" y="85.5" font-weight="700">Bestellen</text>
+  </g>
+  <g fill="#1f1a12" font-size="16" text-anchor="end" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">
+    <text x="196" y="133.5">Streifen setzen</text>
+    <text x="252" y="181.5">Smoker, Schutz</text>
+    <text x="312" y="226" font-weight="700">Völker ab April</text>
+  </g>
+</svg>

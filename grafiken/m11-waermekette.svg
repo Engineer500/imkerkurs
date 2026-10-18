@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m11-wk-titel m11-wk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m11-wk-titel">Binders Wärmekette</title>
+  <desc id="m11-wk-beschr">Zwei Ketten untereinander. Oben: großer Raum und offener Boden, viel Heizen, viel Futterverbrauch, kürzeres Bienenleben. Unten: enger gedämmter Raum, wenig Heizen, wenig Futterverbrauch, längeres Bienenleben.</desc>
+
+  <defs>
+    <!-- Schraffur der ungünstigen Kette (oben) -->
+    <pattern id="m11-wk-schraeg" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#d8d2c4" fill-opacity=".55"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="1" stroke-opacity=".35"/>
+    </pattern>
+    <!-- Flamme als Hinweis auf die Heizarbeit, Ursprung unten in der Mitte, Höhe 34.
+         Kontur und Strichstärke kommen vom aufrufenden use-Element. -->
+    <g id="m11-wk-flamme">
+      <path d="M0 0C-11 0-14-9-10-17C-8-13-6-12-4.5-13C-6-21-3-29 2-34C3-26 13-22 13-11C13-4 8 0 0 0Z" fill="#e07b39" stroke-linejoin="round"/>
+      <path d="M0 0C-5 0-7-5-4.5-10C-3.500-8-2-8-1-9C-1.500-13 0-16 2.500-19C3-15 7-13 7-7C7-2 4 0 0 0Z" fill="#f2c14e" stroke="none"/>
+    </g>
+  </defs>
+
+  <!-- Obere Zeile: ungünstige Kette, Schraffur und gestrichelter Umriss -->
+  <g fill="url(#m11-wk-schraeg)" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 3">
+    <rect x="20" y="50" width="76" height="80" rx="4"/>
+    <rect x="114.700" y="50" width="76" height="80" rx="4"/>
+    <rect x="209.300" y="50" width="76" height="80" rx="4"/>
+    <rect x="304" y="50" width="76" height="80" rx="4"/>
+  </g>
+  <!-- Dicke Pfeile -->
+  <g fill="#b45309" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round">
+    <path d="M98 86H105.700V82L112.700 90L105.700 98V94H98Z"/>
+    <path d="M192.700 86H200.400V82L207.400 90L200.400 98V94H192.700Z"/>
+    <path d="M287.300 86H295V82L302 90L295 98V94H287.300Z"/>
+  </g>
+  <!-- Große Flamme über dem Kästchen Heizen -->
+  <use href="#m11-wk-flamme" x="152.700" y="46" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- Lebensbalken kurz -->
+  <rect x="304" y="136" width="38" height="12" rx="3" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Untere Zeile: günstige Kette, volle Füllung in Grün und fester Umriss -->
+  <g fill="#5b8c3a" fill-opacity=".4" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="20" y="190" width="76" height="80" rx="4"/>
+    <rect x="114.700" y="190" width="76" height="80" rx="4"/>
+    <rect x="209.300" y="190" width="76" height="80" rx="4"/>
+    <rect x="304" y="190" width="76" height="80" rx="4"/>
+  </g>
+  <!-- Dünne Pfeile -->
+  <g fill="#3a2a10" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M98 230H106M192.700 230H200.700M287.300 230H295.300" fill="none"/>
+    <path d="M112.700 230L105 226V234Z M207.400 230L199.700 226V234Z M302 230L294.300 226V234Z" stroke-width="1"/>
+  </g>
+  <!-- Kleine Flamme über dem Kästchen Heizen -->
+  <use href="#m11-wk-flamme" x="152.700" y="186" stroke="#3a2a10" stroke-width="3" transform="translate(152.700 186) scale(.5) translate(-152.700 -186)"/>
+  <!-- Lebensbalken lang -->
+  <rect x="304" y="276" width="76" height="12" rx="3" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen, 14 Einheiten wegen der schmalen Kästchen -->
+  <g fill="#1f1a12" font-size="14" text-anchor="middle" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">
+    <!-- oben -->
+    <text x="58" y="70.300">Großer</text>
+    <text x="58" y="86.800">Raum,</text>
+    <text x="58" y="103.300">offener</text>
+    <text x="58" y="119.800">Boden</text>
+    <text x="152.700" y="86.800">viel</text>
+    <text x="152.700" y="103.300">Heizen</text>
+    <text x="247.300" y="78.500">viel</text>
+    <text x="247.300" y="95">Futter-</text>
+    <text x="247.300" y="111.500">verbrauch</text>
+    <text x="342" y="78.500">kürzeres</text>
+    <text x="342" y="95">Bienen-</text>
+    <text x="342" y="111.500">leben</text>
+  </g>
+  <g fill="#1f1a12" font-size="14" text-anchor="middle">
+    <!-- unten -->
+    <text x="58" y="218.500">Enger,</text>
+    <text x="58" y="235">gedämmter</text>
+    <text x="58" y="251.500">Raum</text>
+    <text x="152.700" y="226.800">wenig</text>
+    <text x="152.700" y="243.300">Heizen</text>
+    <text x="247.300" y="218.500">wenig</text>
+    <text x="247.300" y="235">Futter-</text>
+    <text x="247.300" y="251.500">verbrauch</text>
+    <text x="342" y="218.500">längeres</text>
+    <text x="342" y="235">Bienen-</text>
+    <text x="342" y="251.500">leben</text>
+  </g>
+</svg>

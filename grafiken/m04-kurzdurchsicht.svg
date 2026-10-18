@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 248" role="img" aria-labelledby="m04-kd-titel m04-kd-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="248" fill="#ffffff"/>
+  <title id="m04-kd-titel">Kurzdurchsicht im Frühjahr</title>
+  <desc id="m04-kd-beschr">Schematische Aufsicht auf eine Zarge mit zehn Wabenplätzen. Im Zweiraumbetrieb gehst du in beiden Zargen so vor. Von beiden Randwaben laufen Pfeile nach innen bis zur ersten Brutwabe. Außen liegen Futterwaben, in der Mitte das Brutnest, das nicht gezogen wird. Eier und verdeckelte Brut zeigen: weiselrichtig.</desc>
+
+  <defs>
+    <!-- Feines Zellmuster der Futterwaben (wie in m01-wabe-aufbau.svg) -->
+    <pattern id="kd-zellmuster" width="12.124" height="21" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5L6.062 0L12.124 3.5V10.5L6.062 14L0 10.5ZM6.062 14V21" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".3"/>
+    </pattern>
+    <!-- Deckelmuster der Brutwaben: ein Kreis je Zelle -->
+    <pattern id="kd-deckelmuster" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="3.2" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".45"/>
+    </pattern>
+
+    <!-- Wabenplätze, Ursprung links oben, 31 mal 48 -->
+    <g id="kd-futter">
+      <rect width="31" height="48" fill="#f2c14e"/>
+      <rect width="31" height="48" fill="url(#kd-zellmuster)"/>
+      <rect width="31" height="48" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+    </g>
+    <g id="kd-brut">
+      <rect width="31" height="48" fill="#d9a441"/>
+      <rect width="31" height="48" fill="url(#kd-deckelmuster)"/>
+      <rect width="31" height="48" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+    </g>
+    <g id="kd-erste">
+      <rect width="31" height="48" fill="#d9a441"/>
+      <rect width="31" height="48" fill="url(#kd-deckelmuster)"/>
+      <rect width="31" height="48" fill="none" stroke="#b45309" stroke-width="3.5"/>
+    </g>
+
+    <!-- Zellsymbole im Längsschnitt, Ursprung in der Mitte -->
+    <path id="kd-zelle" d="M-12 -12V10L0 16L12 10V-12" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  </defs>
+
+  <!-- Überschrift -->
+  <text x="200" y="20" text-anchor="middle" font-size="18" font-weight="700" fill="#1f1a12">Jede Zarge von oben</text>
+
+  <!-- Zargenrahmen -->
+  <rect x="16" y="70" width="368" height="60" rx="4" fill="#b45309" fill-opacity=".45" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- zehn Wabenplätze, Pitch 35 -->
+  <use href="#kd-futter" x="27" y="76"/>
+  <use href="#kd-futter" x="62" y="76"/>
+  <use href="#kd-erste" x="97" y="76"/>
+  <use href="#kd-brut" x="132" y="76"/>
+  <use href="#kd-brut" x="167" y="76"/>
+  <use href="#kd-brut" x="202" y="76"/>
+  <use href="#kd-brut" x="237" y="76"/>
+  <use href="#kd-erste" x="272" y="76"/>
+  <use href="#kd-futter" x="307" y="76"/>
+  <use href="#kd-futter" x="342" y="76"/>
+
+  <!-- Brutnest: gestrichelter Umriss um die Plätze 4 bis 7 -->
+  <rect x="130" y="73" width="140" height="54" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Pfeile von beiden Rändern bis zur ersten Brutwabe -->
+  <g fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 76V58H104V65"/>
+    <path d="M348 76V58H296V65"/>
+  </g>
+  <g fill="#b45309">
+    <circle cx="52" cy="76" r="3.5"/>
+    <circle cx="348" cy="76" r="3.5"/>
+    <path d="M98.5 65H109.5L104 76Z"/>
+    <path d="M290.5 65H301.5L296 76Z"/>
+  </g>
+
+  <!-- Hilfslinien zu Randwabe und erster Brutwabe -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="34" y1="50" x2="34" y2="81"/>
+    <line x1="122" y1="50" x2="122" y2="81"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="34" cy="81" r="2.3"/>
+    <circle cx="122" cy="81" r="2.3"/>
+  </g>
+
+  <!-- Klammern unter den Futterwaben und dem Brutnest -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M27 135V139Q27 142 30 142H90Q93 142 93 139V135M60 142V147"/>
+    <path d="M132 135V139Q132 142 135 142H265Q268 142 268 139V135M200 142V147"/>
+  </g>
+
+  <!-- Feld mit Ei und verdeckelter Zelle -->
+  <rect x="24" y="178" width="352" height="58" rx="8" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#kd-zelle" x="50" y="208"/>
+  <ellipse cx="50" cy="216.5" rx="3" ry="6.5" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2"/>
+  <use href="#kd-zelle" x="92" y="208"/>
+  <path d="M80 196Q92 182 104 196Z" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="8" y="44">Randwabe</text>
+    <text x="96" y="44">erste Brutwabe</text>
+    <text x="60" y="166" text-anchor="middle">Futter</text>
+    <text x="200" y="166" text-anchor="middle">Brutnest, nicht gezogen</text>
+    <text x="122" y="202">Eier und verdeckelte Brut:</text>
+    <text x="122" y="223" font-weight="700">weiselrichtig</text>
+  </g>
+</svg>

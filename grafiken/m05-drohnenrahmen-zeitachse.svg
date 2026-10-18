@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="m05-dz-titel m05-dz-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="320" fill="#ffffff"/>
+  <title id="m05-dz-titel">Zeitachse einer Drohnenzelle mit Schnittfenster</title>
+  <desc id="m05-dz-beschr">Zeitachse einer Drohnenzelle von Tag 0 bis Tag 24 nach der Eiablage: 3 Tage Ei, 7 Tage offene Larve, 14 Tage verdeckelt. Das Verdeckeln liegt bei Tag 10, der Schlupf bei Tag 24. Das Schnittfenster liegt zwischen Verdeckeln und Schlupf, Kontrollen kommen alle 7 bis 9 Tage. Nach dem Schlupf ist es zu spät, die Milben schlüpfen mit.</desc>
+
+  <defs>
+    <!-- Deckelmuster der verdeckelten Zellen: kleine Kreise, damit der Abschnitt auch ohne Farbe erkennbar ist -->
+    <pattern id="m05-dz-deckel" width="12" height="10" patternUnits="userSpaceOnUse">
+      <g fill="#d9a441" stroke="#3a2a10" stroke-opacity=".55" stroke-width=".8">
+        <circle cx="3" cy="2.5" r="2.4"/>
+        <circle cx="9" cy="7.5" r="2.4"/>
+      </g>
+    </pattern>
+    <!-- Schraffur der Warnzone -->
+    <pattern id="m05-dz-schraffur" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#ffffff"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#b45309" stroke-width="3" stroke-opacity=".55"/>
+    </pattern>
+  </defs>
+
+  <!-- Zeitbalken: 12 Einheiten je Tag, Tag 0 bei x = 16 -->
+  <rect x="16" y="66" width="36" height="64" fill="#fffaf0"/>
+  <rect x="52" y="66" width="84" height="64" fill="#f2c14e" fill-opacity=".38"/>
+  <rect x="136" y="66" width="168" height="64" fill="#f2c14e"/>
+  <rect x="136" y="66" width="168" height="64" fill="url(#m05-dz-deckel)"/>
+  <rect x="16" y="66" width="288" height="64" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M52 66V130M136 66V130" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Warnzone nach dem Schlupf -->
+  <rect x="304" y="66" width="88" height="64" fill="url(#m05-dz-schraffur)" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M348 74L370 114H326Z" fill="#b45309" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"/>
+  <text x="348" y="108" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">!</text>
+
+  <!-- Linien von den Beschriftungen zum Ei-Abschnitt und zur Warnzone -->
+  <line x1="34" y1="50" x2="34" y2="66" stroke="#3a2a10" stroke-width="1"/>
+  <line x1="372" y1="54" x2="372" y2="66" stroke="#3a2a10" stroke-width="1"/>
+  <g fill="#3a2a10">
+    <circle cx="34" cy="66" r="2.3"/>
+    <circle cx="372" cy="66" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen im und am Balken -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="16" y="44">Ei <tspan font-weight="700">3 Tage</tspan></text>
+    <text x="392" y="28" text-anchor="end"><tspan x="396.5">zu spät: Milben </tspan><tspan x="392" dy="20">schlüpfen mit</tspan></text>
+    <text x="94" y="84" text-anchor="middle"><tspan x="96.2">offene </tspan><tspan x="96.2" dy="19">Larve </tspan><tspan x="94" dy="19" font-weight="700">7 Tage</tspan></text>
+  </g>
+  <rect x="168" y="77" width="104" height="42" rx="8" fill="#ffffff" fill-opacity=".92"/>
+  <text x="220" y="94" text-anchor="middle" font-size="16" fill="#1f1a12"><tspan x="222.2">verdeckelt </tspan><tspan x="220" dy="19" font-weight="700">14 Tage</tspan></text>
+
+  <!-- Skalenstriche und Tagesangaben -->
+  <path d="M16 130V142M136 130V142M304 130V142" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="10" y="162">Tag 0</text>
+    <text x="136" y="162" text-anchor="middle"><tspan x="138.2">Tag 10: </tspan><tspan x="136" dy="18">Verdeckeln</tspan></text>
+    <text x="304" y="162" text-anchor="middle"><tspan x="306.2">Tag 24: </tspan><tspan x="304" dy="18">Schlupf</tspan></text>
+  </g>
+
+  <!-- Klammer über dem verdeckelten Abschnitt: das Schnittfenster, rechts ein kräftiger Strich bei Tag 24 -->
+  <path d="M136 194Q136 200 144 200H212Q220 200 220 206Q220 200 228 200H296Q304 200 304 194" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="304" y1="186" x2="304" y2="200" stroke="#b45309" stroke-width="4"/>
+
+  <!-- Schere vor der Beschriftung -->
+  <g transform="translate(122 214)" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M0 2L22.5 13.2M0 16L22.5 4.8"/>
+    <circle cx="26" cy="15" r="3.8"/>
+    <circle cx="26" cy="3" r="3.8"/>
+    <circle cx="14" cy="9" r="1.4" fill="#3a2a10" stroke="none"/>
+  </g>
+  <text x="220" y="228" text-anchor="middle" font-size="16" fill="#1f1a12">Schnittfenster</text>
+
+  <!-- Zwei Kontrollmarken im Abstand von 8 Tagen (Tag 11 und Tag 19), verbunden durch einen Doppelpfeil -->
+  <g stroke="#3a2a10" stroke-width="2" fill="#3a2a10" stroke-linejoin="round">
+    <line x1="164" y1="262" x2="228" y2="262" fill="none"/>
+    <path d="M156 262L166 257V267Z"/>
+    <path d="M236 262L226 257V267Z"/>
+  </g>
+  <g fill="#b45309" stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="148" cy="262" r="6"/>
+    <circle cx="244" cy="262" r="6"/>
+  </g>
+  <text x="196" y="294" text-anchor="middle" font-size="16" fill="#1f1a12">Kontrolle alle 7 bis 9 Tage</text>
+</svg>

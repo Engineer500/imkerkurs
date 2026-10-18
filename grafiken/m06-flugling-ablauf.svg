@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 432" role="img" aria-labelledby="m06-fa-titel m06-fa-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="432" fill="#ffffff"/>
+  <title id="m06-fa-titel">Der Königinnenflugling im Ablauf</title>
+  <desc id="m06-fa-beschr">Zwei Beuten in zwei Zuständen. Vorher steht ein Volk in Schwarmstimmung am alten Platz. Nachher steht am alten Platz der Flugling mit einer Brutwabe samt Königin, am neuen Platz das verstellte Restvolk mit Stockbienen und Schwarmzellen, aber ohne Königin. Ein Pfeil zeigt die Flugbienen, die zum alten Platz zurückfliegen.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin (wie in m01-nektar-zu-honig.svg), Seitenansicht, Blick nach rechts -->
+    <g id="biene-arbeiterin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- BIENENFORM: Königin mit kleiner Krone (wie in m01-schwarmzelle.svg) -->
+    <g id="biene-koenigin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-9.3" cy="-9.9" rx="10.5" ry="4.6" transform="rotate(28 -9.3 -9.9)"/>
+        <ellipse cx="-5.5" cy="-12.8" rx="9.5" ry="4.2" transform="rotate(55 -5.5 -12.8)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-17.5" cy="2" rx="17.5" ry="7.2" fill="#f2c14e"/>
+        <path d="M-15 -5.13A17.5 7.2 0 0 1 -12 -4.84L-12 8.84A17.5 7.2 0 0 1 -15 9.13ZM-21.5 -5.01A17.5 7.2 0 0 1 -18.5 -5.19L-18.5 9.19A17.5 7.2 0 0 1 -21.5 9.01ZM-28 -3.76A17.5 7.2 0 0 1 -25 -4.51L-25 8.51A17.5 7.2 0 0 1 -28 7.76Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      <path d="M5.5 -4.5L6.500 -12L9.500 -8.500L12.500 -13.500L15.500 -8.500L18.500 -12L19.500 -4.500Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Zarge von der Seite, Ursprung links oben, 96 mal 28: Holzrahmen mit hellem Fenster -->
+    <g id="m06-fa-zarge">
+      <rect width="96" height="28" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="6" y="5" width="84" height="18" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+    </g>
+    <!-- Boden: kräftige Leiste, Ursprung links oben, 108 mal 8 -->
+    <rect id="m06-fa-boden" width="108" height="8" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+    <!-- Weiselzelle in Eichelform, klein, Ursprung oben in der Mitte -->
+    <g id="m06-fa-zelle">
+      <path d="M-4.500 0H4.500V6C4.500 11 3 15 1.500 17Q0 19-1.500 17C-3 15-4.500 11-4.500 6Z" fill="#fff4d6" stroke="#b45309" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-3.500 8H3.500M-2.800 12H2.800" fill="none" stroke="#b45309" stroke-width="1" stroke-linecap="round"/>
+    </g>
+    <!-- Pfeilspitze, weiß umrandet -->
+    <marker id="m06-fa-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Zeile 1: vorher ===== -->
+  <text x="10" y="22" font-size="18" font-weight="700" fill="#1f1a12">vorher</text>
+
+  <!-- alter Platz: gestrichelter Rahmen -->
+  <rect x="20" y="32" width="120" height="110" rx="6" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="6 4"/>
+
+  <!-- hohes Volk: drei Zargen auf einem Boden, Flugloch links -->
+  <use href="#m06-fa-boden" x="26" y="128"/>
+  <use href="#m06-fa-zarge" x="32" y="100"/>
+  <use href="#m06-fa-zarge" x="32" y="72"/>
+  <use href="#m06-fa-zarge" x="32" y="44"/>
+  <!-- Brutnest in der mittleren Zarge mit Königin und Schwarmzelle -->
+  <ellipse cx="80" cy="86" rx="36" ry="9" fill="#d9a441" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#m06-fa-zelle" x="106" y="77"/>
+  <use href="#biene-koenigin" transform="translate(84 86) scale(.5)"/>
+  <!-- Flugloch links: dunkler Schlitz und Pfeil nach links -->
+  <rect x="32" y="114" width="6" height="10" fill="#3a2a10"/>
+  <line x1="30" y1="119" x2="24" y2="119" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+
+  <!-- Beschriftungen Zeile 1 -->
+  <line x1="128" y1="92" x2="150" y2="92" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="128" cy="92" r="2.300" fill="#3a2a10"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="156" y="97.500">Volk in Schwarmstimmung</text>
+    <text x="80" y="164" text-anchor="middle">alter Platz</text>
+  </g>
+
+  <line x1="10" y1="176" x2="390" y2="176" stroke="#3a2a10" stroke-opacity=".25" stroke-width="1"/>
+
+  <!-- ===== Zeile 2: nachher ===== -->
+  <text x="10" y="196" font-size="18" font-weight="700" fill="#1f1a12">nachher</text>
+
+  <!-- Beschriftungen oben: Flugling links, Restvolk rechts -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="10" y="222" font-weight="700">Flugling:</text>
+    <text x="10" y="244">Brutwabe mit Königin</text>
+    <text x="258" y="222" font-weight="700">Restvolk:</text>
+    <text x="258" y="242">Stockbienen und</text>
+    <text x="258" y="262">Schwarmzellen,</text>
+    <text x="258" y="282">ohne Königin</text>
+  </g>
+
+  <g transform="translate(0 12)">
+  <!-- alter Platz und neuer Platz: gestrichelte Rahmen -->
+  <rect x="20" y="284" width="120" height="110" rx="6" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <rect x="260" y="284" width="120" height="110" rx="6" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-dasharray="6 4"/>
+
+  <!-- Flugling: niedrige Beute am alten Platz, eine Zarge mit einer Brutwabe, Flugloch links -->
+  <use href="#m06-fa-boden" x="26" y="380"/>
+  <use href="#m06-fa-zarge" x="32" y="352"/>
+  <rect x="62" y="356" width="40" height="20" fill="#d9a441" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#biene-koenigin" transform="translate(79 366) scale(.45)"/>
+  <rect x="32" y="366" width="6" height="10" fill="#3a2a10"/>
+  <line x1="30" y1="371" x2="24" y2="371" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+
+  <!-- Restvolk: hohes Volk am neuen Platz, Flugloch um 180 Grad gedreht nach rechts, nur noch eine Schwarmzelle -->
+  <use href="#m06-fa-boden" x="266" y="380"/>
+  <use href="#m06-fa-zarge" x="272" y="352"/>
+  <use href="#m06-fa-zarge" x="272" y="324"/>
+  <use href="#m06-fa-zarge" x="272" y="296"/>
+  <ellipse cx="320" cy="338" rx="36" ry="9" fill="#d9a441" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#m06-fa-zelle" x="320" y="329"/>
+  <use href="#m06-fa-zelle" x="338" y="332"/>
+  <rect x="362" y="366" width="6" height="10" fill="#3a2a10"/>
+  <line x1="370" y1="371" x2="376" y2="371" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+
+  <!-- Linien zu den Beschriftungen Flugling und Restvolk -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="48" y1="240" x2="66" y2="360"/>
+    <line x1="290" y1="278" x2="300" y2="332"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="66" cy="360" r="2.300"/>
+    <circle cx="300" cy="332" r="2.300"/>
+  </g>
+
+  <!-- Flugbienen: gebogener Pfeil vom Restvolk zum Flugling am alten Platz -->
+  <path d="M268 330C240 284 176 284 142 344" fill="none" stroke="#b45309" stroke-width="6" stroke-linecap="round" marker-end="url(#m06-fa-spitze)"/>
+  <use href="#biene-arbeiterin" transform="translate(238 296) rotate(24) scale(-.55 .55)"/>
+  <use href="#biene-arbeiterin" transform="translate(204 288) rotate(-4) scale(-.55 .55)"/>
+  <use href="#biene-arbeiterin" transform="translate(170 300) rotate(-32) scale(-.55 .55)"/>
+  <text x="200" y="334" text-anchor="middle" font-size="16" fill="#1f1a12">Flugbienen</text>
+
+  <!-- Beschriftungen unten -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="80" y="414" text-anchor="middle">alter Platz</text>
+    <text x="320" y="414" text-anchor="middle">neuer Platz</text>
+  </g>
+  </g>
+</svg>

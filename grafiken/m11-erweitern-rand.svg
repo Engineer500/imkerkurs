@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="m11-er-titel m11-er-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="240" fill="#ffffff"/>
+  <title id="m11-er-titel">Erweitern am Rand</title>
+  <desc id="m11-er-beschr">Zwei Aufsichten untereinander. Vorher: Schied, fünf bebrütete Waben, Schied, zwei Futterwaben. Nachher: Schied rückt nach außen, die erste Futterwabe hängt am Rand des Nests, die zweite Futterwabe bleibt hinter dem Schied.</desc>
+
+  <defs>
+    <!-- Zellmuster: regelmäßige Sechsecke mit senkrechten Seitenwänden, waagrecht versetzte Reihen -->
+    <pattern id="m11-er-zellen" width="7.500" height="12.990" patternUnits="userSpaceOnUse">
+      <path d="M0 2.165L3.750 0L7.500 2.165V6.495L3.750 8.660L0 6.495ZM3.750 8.660V12.990" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Schraffur des Schieds -->
+    <pattern id="m11-er-schraeg" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1.500" stroke-opacity=".75"/>
+    </pattern>
+    <!-- Waagrechte Linien der Futterwabe -->
+    <pattern id="m11-er-linien" width="30" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="30" y2="3" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </pattern>
+
+    <!-- Ein Platz, Ursprung links oben, 30 breit und 40 hoch -->
+    <g id="m11-er-schied">
+      <rect x="7.500" y="0" width="15" height="40" fill="url(#m11-er-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+    </g>
+    <g id="m11-er-brut">
+      <rect width="30" height="40" fill="#d9a441"/>
+      <rect width="30" height="40" fill="url(#m11-er-zellen)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-er-futter">
+      <rect width="30" height="40" fill="#f2c14e"/>
+      <rect width="30" height="40" fill="url(#m11-er-linien)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-er-frei">
+      <rect width="30" height="40" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".7" stroke-dasharray="4 3"/>
+    </g>
+  </defs>
+
+  <!-- Überschriften -->
+  <g fill="#1f1a12" font-size="18" font-weight="700">
+    <text x="20" y="20">Vorher</text>
+    <text x="20" y="138">Nachher</text>
+  </g>
+
+  <!-- Zargenrahmen mit zehn Plätzen -->
+  <g fill="#fffaf0" stroke="#3a2a10" stroke-width="1.500">
+    <rect x="16" y="26" width="344" height="48"/>
+    <rect x="16" y="144" width="344" height="48"/>
+  </g>
+
+  <!-- Vorher: Schied, fünf bebrütete Waben, Schied, zwei Futterwaben, ein freier Platz -->
+  <use href="#m11-er-schied" x="20" y="30"/>
+  <use href="#m11-er-brut" x="54" y="30"/>
+  <use href="#m11-er-brut" x="88" y="30"/>
+  <use href="#m11-er-brut" x="122" y="30"/>
+  <use href="#m11-er-brut" x="156" y="30"/>
+  <use href="#m11-er-brut" x="190" y="30"/>
+  <use href="#m11-er-schied" x="224" y="30"/>
+  <use href="#m11-er-futter" x="258" y="30"/>
+  <use href="#m11-er-futter" x="292" y="30"/>
+  <use href="#m11-er-frei" x="326" y="30"/>
+
+  <!-- Nachher: Schied, fünf bebrütete Waben, erste Futterwabe, Schied, zweite Futterwabe, ein freier Platz -->
+  <use href="#m11-er-schied" x="20" y="148"/>
+  <use href="#m11-er-brut" x="54" y="148"/>
+  <use href="#m11-er-brut" x="88" y="148"/>
+  <use href="#m11-er-brut" x="122" y="148"/>
+  <use href="#m11-er-brut" x="156" y="148"/>
+  <use href="#m11-er-brut" x="190" y="148"/>
+  <use href="#m11-er-futter" x="224" y="148"/>
+  <use href="#m11-er-schied" x="258" y="148"/>
+  <use href="#m11-er-futter" x="292" y="148"/>
+  <use href="#m11-er-frei" x="326" y="148"/>
+
+  <!-- Die erste Futterwabe in beiden Zeilen mit Akzentrahmen -->
+  <rect x="258" y="30" width="30" height="40" fill="none" stroke="#b45309" stroke-width="2.500"/>
+  <rect x="224" y="148" width="30" height="40" fill="none" stroke="#b45309" stroke-width="2.500"/>
+
+  <!-- Gebogener Pfeil: erste Futterwabe rückt an den Rand -->
+  <path d="M273 77C273 102 239 112 239 134" fill="none" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+  <path d="M239 141L233.500 131H244.500Z" fill="#b45309" stroke="#b45309" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Klammer unter den fünf bebrüteten Waben -->
+  <path d="M54 80Q54 86 62 86H129Q137 86 137 92Q137 86 145 86H212Q220 86 220 80" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- Kurzer Pfeil: Schied rückt einen Platz nach außen -->
+  <path d="M241 204H264" fill="none" stroke="#3a2a10" stroke-width="2" stroke-linecap="round"/>
+  <path d="M274 204L264 199.500V208.500Z" fill="#3a2a10" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <path d="M239 24V36"/>
+    <path d="M307 24V36"/>
+    <path d="M35 214V182"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="239" cy="36" r="2.500"/>
+    <circle cx="307" cy="36" r="2.500"/>
+    <circle cx="35" cy="182" r="2.500"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="254" y="20" text-anchor="end">Schied</text>
+    <text x="272" y="20">Futterwabe</text>
+    <text x="137" y="110" text-anchor="middle">bebrütet, 80 bis 90 %</text>
+    <text x="292" y="100">rückt an</text>
+    <text x="292" y="118">den Rand</text>
+    <text x="20" y="230">Schied</text>
+    <text x="256" y="230" text-anchor="middle">Schied rückt nach</text>
+  </g>
+</svg>

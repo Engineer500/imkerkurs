@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" role="img" aria-labelledby="m11-ws-titel m11-ws-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="350" fill="#ffffff"/>
+  <title id="m11-ws-titel">Der Wintersitz im angepassten Brutraum</title>
+  <desc id="m11-ws-beschr">Querschnitt durch eine einzargige Zanderbeute im Winter. Unten der geschlossene Boden mit Wärmebrett auf dem Gitter. In der Zarge sitzt die Traube auf fünf Waben zwischen zwei Schieden, hinter den Schieden hängen Futterwaben. Über den Oberträgern liegt die Thermofolie, darüber ein gedämmter Deckel.</desc>
+
+  <defs>
+    <!-- Zellmuster der Waben im Schnitt: regelmäßige Sechsecke mit senkrechten Seitenwänden -->
+    <pattern id="m11-ws-zellen" width="6" height="10.392" patternUnits="userSpaceOnUse">
+      <path d="M0 1.732L3 0L6 1.732V5.196L3 6.928L0 5.196ZM3 6.928V10.392" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Schraffur des Schieds -->
+    <pattern id="m11-ws-schraeg" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1.500" stroke-opacity=".75"/>
+    </pattern>
+    <!-- Waagrechte Linien der Futterwabe -->
+    <pattern id="m11-ws-linien" width="14" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="14" y2="3" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Dämmschraffur des Deckels, hell, damit die Schrift lesbar bleibt -->
+    <pattern id="m11-ws-daemm" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="1.200" stroke-opacity=".45"/>
+    </pattern>
+    <!-- Luftpolster der Thermofolie: kleine Kreise -->
+    <pattern id="m11-ws-blasen" width="8" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="3" r="2.200" fill="#ffffff" stroke="#3a2a10" stroke-width=".7"/>
+    </pattern>
+  </defs>
+
+  <!-- Innenraum der Beute, Seitenwände und Boden -->
+  <rect x="20" y="110" width="360" height="206" fill="#fffaf0"/>
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500">
+    <rect x="12" y="110" width="8" height="206"/>
+    <rect x="380" y="110" width="8" height="206"/>
+    <rect x="12" y="316" width="376" height="20"/>
+  </g>
+
+  <!-- Oberträger der zehn Plätze, je 36 Platz mit 8 Spalt -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1">
+    <rect x="24" y="116" width="28" height="7"/>
+    <rect x="60" y="116" width="28" height="7"/>
+    <rect x="96" y="116" width="28" height="7"/>
+    <rect x="132" y="116" width="28" height="7"/>
+    <rect x="168" y="116" width="28" height="7"/>
+    <rect x="204" y="116" width="28" height="7"/>
+    <rect x="240" y="116" width="28" height="7"/>
+    <rect x="276" y="116" width="28" height="7"/>
+    <rect x="312" y="116" width="28" height="7"/>
+    <rect x="348" y="116" width="28" height="7"/>
+  </g>
+
+  <!-- Platz 1 und 2: Futterwaben -->
+  <g fill="#f2c14e">
+    <rect x="31" y="123" width="14" height="117"/>
+    <rect x="67" y="123" width="14" height="117"/>
+  </g>
+  <g fill="url(#m11-ws-linien)" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="31" y="123" width="14" height="117"/>
+    <rect x="67" y="123" width="14" height="117"/>
+  </g>
+  <!-- Platz 3: Schied -->
+  <rect x="105" y="123" width="10" height="117" fill="url(#m11-ws-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+  <!-- Platz 4 bis 8: fünf Waben mit Zellmuster -->
+  <g fill="#d9a441">
+    <rect x="139" y="123" width="14" height="117"/>
+    <rect x="175" y="123" width="14" height="117"/>
+    <rect x="211" y="123" width="14" height="117"/>
+    <rect x="247" y="123" width="14" height="117"/>
+    <rect x="283" y="123" width="14" height="117"/>
+  </g>
+  <g fill="url(#m11-ws-zellen)" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="139" y="123" width="14" height="117"/>
+    <rect x="175" y="123" width="14" height="117"/>
+    <rect x="211" y="123" width="14" height="117"/>
+    <rect x="247" y="123" width="14" height="117"/>
+    <rect x="283" y="123" width="14" height="117"/>
+  </g>
+  <!-- Platz 9: Schied -->
+  <rect x="321" y="123" width="10" height="117" fill="url(#m11-ws-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+  <!-- Platz 10: Futterwabe -->
+  <rect x="355" y="123" width="14" height="117" fill="#f2c14e"/>
+  <rect x="355" y="123" width="14" height="117" fill="url(#m11-ws-linien)" stroke="#3a2a10" stroke-width="1.200"/>
+
+  <!-- Traube: Ellipse um die Waben der Plätze 4 bis 8, reicht bis an die beiden Schiede -->
+  <ellipse cx="218" cy="182" rx="98" ry="54" fill="#f2c14e" fill-opacity=".5" stroke="#3a2a10" stroke-width="1.500"/>
+  <g fill="#3a2a10" fill-opacity=".75">
+    <circle cx="208.700" cy="188.500" r="1.900"/> <circle cx="301.100" cy="178.300" r="1.900"/> <circle cx="219.500" cy="191.400" r="1.900"/> <circle cx="156.200" cy="183.300" r="1.900"/>
+    <circle cx="243.500" cy="213.600" r="1.900"/> <circle cx="138.400" cy="160.800" r="1.900"/> <circle cx="248.200" cy="194.500" r="1.900"/> <circle cx="223.600" cy="134.400" r="1.900"/>
+    <circle cx="157.300" cy="154.100" r="1.900"/> <circle cx="206.300" cy="219" r="1.900"/> <circle cx="209.600" cy="158" r="1.900"/> <circle cx="284.700" cy="204.400" r="1.900"/>
+    <circle cx="181.800" cy="152.800" r="1.900"/> <circle cx="270.200" cy="171.200" r="1.900"/> <circle cx="285.900" cy="169.700" r="1.900"/> <circle cx="134.300" cy="196" r="1.900"/>
+    <circle cx="272.600" cy="157.100" r="1.900"/> <circle cx="276.200" cy="147.200" r="1.900"/> <circle cx="229.600" cy="176.300" r="1.900"/> <circle cx="157.400" cy="207" r="1.900"/>
+    <circle cx="145.700" cy="197.500" r="1.900"/> <circle cx="142.800" cy="173.400" r="1.900"/> <circle cx="179.600" cy="223.600" r="1.900"/> <circle cx="161.300" cy="170.600" r="1.900"/>
+    <circle cx="167.600" cy="192.900" r="1.900"/> <circle cx="192.900" cy="176.900" r="1.900"/> <circle cx="232.600" cy="221.600" r="1.900"/> <circle cx="168.900" cy="148.500" r="1.900"/>
+    <circle cx="292.900" cy="193.200" r="1.900"/> <circle cx="202.600" cy="139.200" r="1.900"/> <circle cx="170.400" cy="217" r="1.900"/> <circle cx="236.900" cy="159.700" r="1.900"/>
+    <circle cx="232.100" cy="142.200" r="1.900"/> <circle cx="191" cy="224.200" r="1.900"/> <circle cx="214.500" cy="206.900" r="1.900"/> <circle cx="264.500" cy="204" r="1.900"/>
+    <circle cx="189" cy="202" r="1.900"/> <circle cx="242.500" cy="169.300" r="1.900"/> <circle cx="234.200" cy="193.800" r="1.900"/> <circle cx="264.100" cy="190.700" r="1.900"/>
+    <circle cx="256.900" cy="181.700" r="1.900"/> <circle cx="242.600" cy="181.300" r="1.900"/> <circle cx="254.200" cy="149.500" r="1.900"/> <circle cx="213.100" cy="147.300" r="1.900"/>
+    <circle cx="173.400" cy="165.300" r="1.900"/> <circle cx="197.100" cy="213.500" r="1.900"/>
+  </g>
+  <!-- Klammer unter der Traube über den Plätzen 4 bis 8 -->
+  <path d="M128 244Q128 248 136 248H209Q218 248 218 252Q218 248 227 248H300Q308 248 308 244" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- Wärmebrett auf dem Gitter, Gitter als gestrichelte Linie, Boden geschlossen -->
+  <rect x="20" y="272" width="360" height="24" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.500"/>
+  <line x1="20" y1="300" x2="380" y2="300" stroke="#3a2a10" stroke-width="1.500" stroke-dasharray="4 3"/>
+
+  <!-- Thermofolie direkt auf den Oberträgern, darüber der gedämmte Deckel -->
+  <rect x="14" y="109" width="372" height="6" fill="#b8bcc2" stroke="#3a2a10" stroke-width=".8"/>
+  <rect x="14" y="109" width="372" height="6" fill="url(#m11-ws-blasen)"/>
+  <rect x="12" y="80" width="376" height="29" fill="url(#m11-ws-daemm)" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Linien zu den Beschriftungen oben, mit weißer Unterlage über dem Deckel -->
+  <g fill="none" stroke="#ffffff" stroke-width="4">
+    <path d="M38 50V150"/>
+    <path d="M150 50V102"/>
+    <path d="M326 50V150"/>
+  </g>
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <path d="M38 50V150"/>
+    <path d="M150 50V102"/>
+    <path d="M326 50V150"/>
+  </g>
+  <path d="M150 110.500L145.500 102H154.500Z" fill="#3a2a10" stroke="#ffffff" stroke-width=".8"/>
+  <g fill="#3a2a10" stroke="#ffffff" stroke-width="1">
+    <circle cx="38" cy="150" r="2.500"/>
+    <circle cx="326" cy="150" r="2.500"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="20" y="46">Futterwabe</text>
+    <text x="124" y="46">Thermofolie</text>
+    <text x="326" y="46" text-anchor="middle">Schied</text>
+    <text x="218" y="267" text-anchor="middle">Traube auf 5 Waben</text>
+    <text x="200" y="289" text-anchor="middle">Wärmebrett auf dem Gitter</text>
+  </g>
+  <text x="238" y="100.500" text-anchor="middle" font-size="16" fill="#1f1a12" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">gedämmter Deckel</text>
+</svg>

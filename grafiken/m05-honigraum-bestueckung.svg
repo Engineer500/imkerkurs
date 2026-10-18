@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="m05-hb-titel m05-hb-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="240" fill="#ffffff"/>
+  <title id="m05-hb-titel">Honigraum mit zehn Wabenplätzen bestücken</title>
+  <desc id="m05-hb-beschr">Aufsicht auf einen Honigraum mit 10 Wabenplätzen. In der Mitte hängen 4 ausgebaute Waben, links und rechts je 3 Mittelwände. Der Bereich der ausgebauten Waben ist mit 3 bis 5 beschriftet, der Bereich der Mittelwände am Rand mit 5 bis 7.</desc>
+
+  <defs>
+    <!-- Mittelwand: sehr feines, flaches Zellmuster -->
+    <pattern id="m05-hb-fein" width="5.05" height="8.75" patternUnits="userSpaceOnUse">
+      <path d="M0 1.458L2.525 0L5.05 1.458V4.375L2.525 5.833L0 4.375ZM2.525 5.833V8.75" fill="none" stroke="#3a2a10" stroke-width=".6" stroke-opacity=".28"/>
+    </pattern>
+    <!-- Ausgebaute Wabe: deutliches Zellmuster -->
+    <pattern id="m05-hb-deutlich" width="9.7" height="16.8" patternUnits="userSpaceOnUse">
+      <path d="M0 2.8L4.85 0L9.7 2.8V8.4L4.85 11.2L0 8.4ZM4.85 11.2V16.8" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".6"/>
+    </pattern>
+  </defs>
+
+  <!-- Überschrift -->
+  <text x="200" y="22" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1a12">Honigraum von oben</text>
+
+  <!-- Klammer über den ausgebauten Waben -->
+  <path d="M133 66Q133 60 141 60H192Q200 60 200 54Q200 60 208 60H259Q267 60 267 66" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Zarge von oben: Holzrahmen mit Fenster -->
+  <rect x="16" y="72" width="368" height="88" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="24" y="80" width="352" height="72" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Zehn Wabenplätze: 1 bis 3 und 8 bis 10 Mittelwände, 4 bis 7 ausgebaute Waben -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="27.1" y="84" width="29" height="64"/>
+    <rect x="62.3" y="84" width="29" height="64"/>
+    <rect x="97.5" y="84" width="29" height="64"/>
+    <rect x="273.5" y="84" width="29" height="64"/>
+    <rect x="308.7" y="84" width="29" height="64"/>
+    <rect x="343.9" y="84" width="29" height="64"/>
+  </g>
+  <g fill="url(#m05-hb-fein)">
+    <rect x="27.1" y="84" width="29" height="64"/>
+    <rect x="62.3" y="84" width="29" height="64"/>
+    <rect x="97.5" y="84" width="29" height="64"/>
+    <rect x="273.5" y="84" width="29" height="64"/>
+    <rect x="308.7" y="84" width="29" height="64"/>
+    <rect x="343.9" y="84" width="29" height="64"/>
+  </g>
+  <g fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="132.7" y="84" width="29" height="64"/>
+    <rect x="167.9" y="84" width="29" height="64"/>
+    <rect x="203.1" y="84" width="29" height="64"/>
+    <rect x="238.3" y="84" width="29" height="64"/>
+  </g>
+  <g fill="url(#m05-hb-deutlich)">
+    <rect x="132.7" y="84" width="29" height="64"/>
+    <rect x="167.9" y="84" width="29" height="64"/>
+    <rect x="203.1" y="84" width="29" height="64"/>
+    <rect x="238.3" y="84" width="29" height="64"/>
+  </g>
+
+  <!-- Klammern unter den Mittelwänden am Rand, verbunden durch eine Linie -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M28 164Q28 170 36 170H69Q77 170 77 176Q77 170 85 170H118Q126 170 126 164"/>
+    <path d="M274 164Q274 170 282 170H315Q323 170 323 176Q323 170 331 170H364Q372 170 372 164"/>
+  </g>
+  <path d="M77 176V186H323V176" fill="none" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="64" y="48">ausgebaute Waben mittig</text>
+    <text x="274" y="48" font-weight="700" fill="#b45309">3 bis 5</text>
+    <text x="80" y="208">Mittelwände am Rand</text>
+    <text x="257" y="208" font-weight="700" fill="#b45309">5 bis 7</text>
+    <text x="200" y="232" text-anchor="middle">Beispiel: 4 und 6</text>
+  </g>
+</svg>

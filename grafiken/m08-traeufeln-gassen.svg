@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 384" role="img" aria-labelledby="m08-tg-titel m08-tg-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="384" fill="#ffffff"/>
+  <title id="m08-tg-titel">Träufeln beim Zander: besetzte Wabengassen</title>
+  <desc id="m08-tg-beschr">Zarge von oben mit elf Wabengassen. Neun Gassen in der Mitte sind besetzt und tragen je 3 bis 4 ml, die beiden äußeren sind leer. Beispiel: 9 besetzte Gassen ergeben 27 bis 36 ml. Höchstens 50 ml je Volk.</desc>
+
+  <defs>
+    <!-- Streifen im hervorgehobenen Abschnitt -->
+    <pattern id="m08-tg-streifen" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#b45309" stroke-width="2" stroke-opacity=".55"/>
+    </pattern>
+
+    <!-- BIENE von oben: Umriss mit Flügeln, Kopf oben, Ursprung in der Mitte der Brust -->
+    <g id="m08-tg-biene">
+      <ellipse cx="-4.4" cy="-1" rx="2.2" ry="5" fill="#ffffff" fill-opacity=".85" stroke="#3a2a10" stroke-width=".7" transform="rotate(-15 -4.4 -1)"/>
+      <ellipse cx="4.4" cy="-1" rx="2.2" ry="5" fill="#ffffff" fill-opacity=".85" stroke="#3a2a10" stroke-width=".7" transform="rotate(15 4.4 -1)"/>
+      <ellipse cx="0" cy="2" rx="3.6" ry="6" fill="#f2c14e" stroke="#3a2a10" stroke-width="1"/>
+      <path d="M-3.3 1.4H3.3M-3 4.6H3" fill="none" stroke="#3a2a10" stroke-width="1.4"/>
+      <circle cx="0" cy="-5.8" r="2.6" fill="#3a2a10"/>
+    </g>
+  </defs>
+
+  <!-- Spritze über der ersten besetzten Gasse (Mitte x = 72) -->
+  <rect x="64" y="4" width="16" height="4" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+  <rect x="70.5" y="8" width="3" height="14" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+  <rect x="65" y="22" width="14" height="30" rx="2" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="66.5" y="34" width="11" height="17" fill="#4a7fb5" fill-opacity=".45"/>
+  <path d="M65 28H69M65 34H69M65 40H69M65 46H69" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="61" y="20" width="22" height="3" rx="1" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+  <path d="M68 52H76L73 60H71Z" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round"/>
+  <line x1="72" y1="60" x2="72" y2="72" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="72" y1="74" x2="72" y2="92" stroke="#3a2a10" stroke-width="1" stroke-dasharray="1 3.5" stroke-linecap="round"/>
+
+  <!-- Zarge von oben: Holzrahmen, innen zehn Waben und elf Gassen (Gasse 18, Wabe 14, Innenmaß 338) -->
+  <rect x="20" y="80" width="360" height="120" rx="4" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="31" y="91" width="338" height="98" fill="#ffffff" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- zehn Waben -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.2">
+    <rect x="49" y="91" width="14" height="98"/>
+    <rect x="81" y="91" width="14" height="98"/>
+    <rect x="113" y="91" width="14" height="98"/>
+    <rect x="145" y="91" width="14" height="98"/>
+    <rect x="177" y="91" width="14" height="98"/>
+    <rect x="209" y="91" width="14" height="98"/>
+    <rect x="241" y="91" width="14" height="98"/>
+    <rect x="273" y="91" width="14" height="98"/>
+    <rect x="305" y="91" width="14" height="98"/>
+    <rect x="337" y="91" width="14" height="98"/>
+  </g>
+
+  <!-- Tropfen fällt in die erste besetzte Gasse -->
+  <path d="M72 94C72 94 67.8 100 67.8 103A4.2 4.2 0 0 0 76.2 103C76.2 100 72 94 72 94Z" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Bienen in den neun besetzten Gassen, die beiden äußeren bleiben leer -->
+  <g>
+    <use href="#m08-tg-biene" transform="translate(72 120) rotate(-6)"/>
+    <use href="#m08-tg-biene" transform="translate(72 146) rotate(8)"/>
+    <use href="#m08-tg-biene" transform="translate(72 170) rotate(180)"/>
+    <use href="#m08-tg-biene" transform="translate(104 122) rotate(176)"/>
+    <use href="#m08-tg-biene" transform="translate(104 146) rotate(-8)"/>
+    <use href="#m08-tg-biene" transform="translate(104 174) rotate(6)"/>
+    <use href="#m08-tg-biene" transform="translate(136 120) rotate(8)"/>
+    <use href="#m08-tg-biene" transform="translate(136 148) rotate(184)"/>
+    <use href="#m08-tg-biene" transform="translate(136 172) rotate(-6)"/>
+    <use href="#m08-tg-biene" transform="translate(168 122) rotate(180)"/>
+    <use href="#m08-tg-biene" transform="translate(168 146) rotate(6)"/>
+    <use href="#m08-tg-biene" transform="translate(168 170) rotate(-8)"/>
+    <use href="#m08-tg-biene" transform="translate(200 118) rotate(-4)"/>
+    <use href="#m08-tg-biene" transform="translate(200 146) rotate(174)"/>
+    <use href="#m08-tg-biene" transform="translate(200 174) rotate(8)"/>
+    <use href="#m08-tg-biene" transform="translate(232 122) rotate(184)"/>
+    <use href="#m08-tg-biene" transform="translate(232 148) rotate(-6)"/>
+    <use href="#m08-tg-biene" transform="translate(232 172) rotate(4)"/>
+    <use href="#m08-tg-biene" transform="translate(264 120) rotate(6)"/>
+    <use href="#m08-tg-biene" transform="translate(264 144) rotate(176)"/>
+    <use href="#m08-tg-biene" transform="translate(264 174) rotate(-8)"/>
+    <use href="#m08-tg-biene" transform="translate(296 122) rotate(-6)"/>
+    <use href="#m08-tg-biene" transform="translate(296 148) rotate(182)"/>
+    <use href="#m08-tg-biene" transform="translate(296 172) rotate(8)"/>
+    <use href="#m08-tg-biene" transform="translate(328 118) rotate(178)"/>
+    <use href="#m08-tg-biene" transform="translate(328 144) rotate(-4)"/>
+    <use href="#m08-tg-biene" transform="translate(328 170) rotate(6)"/>
+  </g>
+
+  <!-- Haltelinien zu einer besetzten und zu einer leeren Gasse -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="104" y1="186" x2="104" y2="219"/>
+    <line x1="360" y1="186" x2="360" y2="219"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="104" cy="186" r="2.3"/>
+    <circle cx="360" cy="186" r="2.3"/>
+  </g>
+
+  <!-- Balken von 0 bis 50 ml (340 breit, 6,8 je ml), hervorgehoben 27 bis 36 ml -->
+  <rect x="24" y="322" width="340" height="24" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="207.6" y="322" width="61.2" height="24" fill="#f2c14e"/>
+  <rect x="207.6" y="322" width="61.2" height="24" fill="url(#m08-tg-streifen)"/>
+  <rect x="207.6" y="322" width="61.2" height="24" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <rect x="24" y="322" width="340" height="24" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <line x1="364" y1="312" x2="364" y2="356" stroke="#3a2a10" stroke-width="4.5"/>
+
+  <!-- Haltelinie vom hervorgehobenen Abschnitt zum Text -->
+  <line x1="238.2" y1="346" x2="238.2" y2="358" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="238.2" cy="346" r="2.3" fill="#3a2a10"/>
+
+  <!-- Pfeil von der Rechnung zum hervorgehobenen Abschnitt -->
+  <path d="M182 304Q198 304 204 316" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+  <path d="M198.5 314L205.5 321L209.5 312Z" fill="#b45309"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="250" y="26" text-anchor="middle" font-size="18" font-weight="700">Träufeln beim Zander</text>
+    <text x="64" y="238">besetzte Gasse:</text>
+    <text x="64" y="258" font-weight="700" fill="#b45309">3 bis 4 ml</text>
+    <text x="388" y="238" text-anchor="end">leere Gasse: nichts</text>
+    <text x="24" y="310">9 besetzte Gassen</text>
+    <g text-anchor="end">
+      <text x="392" y="290">höchstens 50 ml</text>
+      <text x="392" y="310">je Volk</text>
+    </g>
+    <text x="24" y="374" text-anchor="middle">0</text>
+    <text x="238.2" y="378" text-anchor="middle" font-weight="700" fill="#b45309">27 bis 36 ml</text>
+  </g>
+</svg>

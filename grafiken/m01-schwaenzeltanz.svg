@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m01-st-titel m01-st-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m01-st-titel">Der Schwänzeltanz als Karte</title>
+  <desc id="m01-st-beschr">Zwei Felder übereinander. Oben eine senkrechte Wabe mit einer tanzenden Biene: Ihr Schwänzellauf weicht um einen Winkel von der Senkrechten ab. Unten das Gelände von oben gesehen: Von der Beute aus liegt die Futterquelle um denselben Winkel neben der Richtung zur Sonne.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten.
+         Teilgruppen: Flügel, Beine, Rumpf (Hinterleib mit drei Streifen, Brust), Kopf. -->
+    <g id="biene-arbeiterin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-arbeiterin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-arbeiterin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-arbeiterin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-arbeiterin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Sechsecke der Wabe, zart angedeutet -->
+    <pattern id="st-hex" width="17.32" height="30" patternUnits="userSpaceOnUse">
+      <rect width="17.32" height="30" fill="#fff4d6"/>
+      <path d="M8.66 0L17.32 5V15L8.66 20L0 15V5ZM8.66 20V30" fill="none" stroke="#3a2a10" stroke-opacity=".22" stroke-width="1"/>
+    </pattern>
+
+    <!-- Pfeilspitze, die Linie endet an der Basis der Spitze -->
+    <marker id="st-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Oberes Feld: Auf der Wabe ===== -->
+  <text x="10" y="24" font-size="17" font-weight="700" fill="#1f1a12">Auf der Wabe</text>
+
+  <!-- Wabe von vorn: schmaler Rahmen, Sechsecke in Wachsfarbe -->
+  <rect x="75" y="40" width="150" height="202" rx="3" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="82" y="47" width="136" height="188" fill="url(#st-hex)" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Senkrechte als Bezugslinie -->
+  <line x1="150" y1="238" x2="150" y2="30" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Rückläufe der Acht: zwei dünne gestrichelte Bögen links und rechts -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-dasharray="3 3">
+    <path d="M192 103.2Q139.8 121.6 150 176"/>
+    <path d="M192 103.2Q202.2 157.6 150 176"/>
+  </g>
+
+  <!-- Schwänzellauf: kräftiger Pfeil, 30 Grad von der Senkrechten, Länge 84 -->
+  <line x1="150" y1="176" x2="185" y2="115.4" stroke="#3a2a10" stroke-width="4" marker-end="url(#st-spitze)"/>
+
+  <!-- Winkelbogen (Akzentfarbe) mit verlängertem Strahl -->
+  <path d="M192 103.2L200 89.3" fill="none" stroke="#b45309" stroke-width="1" stroke-dasharray="2 2"/>
+  <path d="M150 76A100 100 0 0 1 200 89.3" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Folgerinnen, seitlich hinter der Tänzerin -->
+  <use href="#biene-arbeiterin" transform="translate(109 217) rotate(-22) scale(.8)"/>
+  <use href="#biene-arbeiterin" transform="translate(158.5 217.6) scale(-.8 .8) rotate(-30)"/>
+
+  <!-- Tänzerin: Kopf in Pfeilrichtung, am Hinterleib ein Zickzack für das Wackeln -->
+  <g transform="translate(141 191.6) rotate(-60) scale(1.1)">
+    <use href="#biene-arbeiterin"/>
+    <path d="M-25 2L-28.5 -2L-32 6L-35.5 -2L-39 6L-42 2" fill="none" stroke="#b45309" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Leitlinie zu "Schwänzellauf" -->
+  <line x1="170" y1="141.4" x2="240" y2="141.4" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="170" cy="141.4" r="2.4" fill="#3a2a10"/>
+
+  <!-- Beschriftungen oben -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="158" y="34">Senkrechte</text>
+    <text x="246" y="147" font-weight="700">Schwänzellauf</text>
+    <text x="142" y="84" text-anchor="end" font-weight="700" fill="#b45309" stroke="#fff4d6" stroke-width="4" stroke-linejoin="round" paint-order="stroke">Winkel</text>
+  </g>
+
+  <!-- Trennlinie -->
+  <line x1="0" y1="250.5" x2="400" y2="250.5" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45"/>
+
+  <!-- ===== Unteres Feld: Draußen ===== -->
+  <rect x="0" y="251" width="400" height="249" fill="#5b8c3a" fill-opacity=".08"/>
+  <text x="10" y="274" font-size="17" font-weight="700" fill="#1f1a12">Draußen</text>
+
+  <!-- Richtung zur Sonne: gestrichelte Bezugslinie von der Beute -->
+  <line x1="150" y1="448" x2="150" y2="338" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Sonne -->
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <path d="M166 312H173M161.3 323.3L166.3 328.3M150 328V335M138.7 323.3L133.7 328.3M134 312H127M138.7 300.7L133.7 295.7M150 296V289M161.3 300.7L166.3 295.7" fill="none"/>
+    <circle cx="150" cy="312" r="12" fill="#f2c14e"/>
+  </g>
+
+  <!-- Winkelbogen (Akzentfarbe) mit verlängertem Strahl, gleich gestaltet wie oben -->
+  <path d="M150 348A100 100 0 0 1 200 361.3" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Blüte mit grünem Stiel -->
+  <path d="M220 327V348" fill="none" stroke="#5b8c3a" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="226.5" cy="341" rx="6.5" ry="3" fill="#5b8c3a" transform="rotate(-35 226.5 341)"/>
+  <g fill="#fffaf0" stroke="#3a2a10" stroke-width="1">
+    <circle cx="220" cy="319.3" r="5.8"/>
+    <circle cx="227.1" cy="324.5" r="5.8"/>
+    <circle cx="224.4" cy="332.8" r="5.8"/>
+    <circle cx="215.6" cy="332.8" r="5.8"/>
+    <circle cx="212.9" cy="324.5" r="5.8"/>
+  </g>
+  <circle cx="220" cy="326.8" r="4.6" fill="#f2c14e" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Weg zur Futterquelle: durchgezogener Pfeil im selben Winkel -->
+  <line x1="150" y1="448" x2="205" y2="352.7" stroke="#3a2a10" stroke-width="4" marker-end="url(#st-spitze)"/>
+
+  <!-- Beute von oben mit Flugloch-Strich -->
+  <rect x="136" y="448" width="28" height="28" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <line x1="142" y1="448" x2="158" y2="448" stroke="#3a2a10" stroke-width="5"/>
+
+  <!-- Beschriftungen unten -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="120" y="318" text-anchor="end">Sonne</text>
+    <text x="130" y="467" text-anchor="end">Beute</text>
+    <text x="142" y="359" text-anchor="end" font-weight="700" fill="#b45309">gleicher Winkel</text>
+    <text x="238" y="332">Futterquelle</text>
+  </g>
+</svg>

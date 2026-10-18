@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m01-en-titel m01-en-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m01-en-titel">Entwicklungsdauer von Königin, Arbeiterin und Drohn</title>
+  <desc id="m01-en-beschr">Drei Balken im gleichen Zeitmaßstab. Jeder Balken zeigt nacheinander Ei, offene Larve und verdeckelte Zelle. Der Balken der Königin ist mit 16 Tagen am kürzesten, der der Arbeiterin mit 21 Tagen länger, der des Drohns mit 24 Tagen am längsten.</desc>
+
+  <defs>
+    <!-- Muster der offenen Larve: feine schräge Linien -->
+    <pattern id="en-streifen" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Deckelzeichen: kleiner Halbkreis -->
+    <path id="en-deckel" d="M-6 3a6 6 0 0 1 12 0z" fill="#3a2a10" fill-opacity=".4" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+  </defs>
+
+  <!-- Maßstab: 1 Tag = 8,5 Einheiten, Startlinie bei x = 104 -->
+
+  <!-- Königin: 3 + 5 + 8 = 16 Tage -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="104" y="94" width="25.5" height="44" fill="#fffaf0"/>
+    <rect x="129.5" y="94" width="42.5" height="44" fill="#fff4d6"/>
+    <rect x="129.5" y="94" width="42.5" height="44" fill="url(#en-streifen)" stroke="none"/>
+    <rect x="172" y="94" width="68" height="44" fill="#d9a441"/>
+  </g>
+  <ellipse cx="116.75" cy="116" rx="6" ry="4.2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#en-deckel" x="186" y="116"/>
+  <use href="#en-deckel" x="206" y="116"/>
+  <use href="#en-deckel" x="226" y="116"/>
+
+  <!-- Arbeiterin: 3 + 6 + 12 = 21 Tage -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="104" y="164" width="25.5" height="44" fill="#fffaf0"/>
+    <rect x="129.5" y="164" width="51" height="44" fill="#fff4d6"/>
+    <rect x="129.5" y="164" width="51" height="44" fill="url(#en-streifen)" stroke="none"/>
+    <rect x="180.5" y="164" width="102" height="44" fill="#d9a441"/>
+  </g>
+  <ellipse cx="116.75" cy="186" rx="6" ry="4.2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#en-deckel" x="201.5" y="186"/>
+  <use href="#en-deckel" x="221.5" y="186"/>
+  <use href="#en-deckel" x="241.5" y="186"/>
+  <use href="#en-deckel" x="261.5" y="186"/>
+
+  <!-- Drohn: 3 + 7 + 14 = 24 Tage -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="104" y="234" width="25.5" height="44" fill="#fffaf0"/>
+    <rect x="129.5" y="234" width="59.5" height="44" fill="#fff4d6"/>
+    <rect x="129.5" y="234" width="59.5" height="44" fill="url(#en-streifen)" stroke="none"/>
+    <rect x="189" y="234" width="119" height="44" fill="#d9a441"/>
+  </g>
+  <ellipse cx="116.75" cy="256" rx="6" ry="4.2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#en-deckel" x="208.5" y="256"/>
+  <use href="#en-deckel" x="228.5" y="256"/>
+  <use href="#en-deckel" x="248.5" y="256"/>
+  <use href="#en-deckel" x="268.5" y="256"/>
+  <use href="#en-deckel" x="288.5" y="256"/>
+
+  <!-- Startlinie -->
+  <line x1="104" y1="86" x2="104" y2="286" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Deckel: kräftiger Strich an der Grenze zwischen offener Larve und verdeckelt -->
+  <g stroke="#3a2a10" stroke-width="4.5">
+    <line x1="172" y1="88" x2="172" y2="144"/>
+    <line x1="180.5" y1="158" x2="180.5" y2="214"/>
+    <line x1="189" y1="228" x2="189" y2="284"/>
+  </g>
+
+  <!-- Hilfsstriche zu den Abschnittsnamen über dem obersten Balken -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="206" y1="32" x2="206" y2="92"/>
+    <line x1="150.75" y1="57" x2="150.75" y2="92"/>
+    <line x1="116.75" y1="83" x2="116.75" y2="92"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="206" cy="92" r="2.3"/>
+    <circle cx="150.75" cy="92" r="2.3"/>
+    <circle cx="116.75" cy="92" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="206" y="26" text-anchor="middle">verdeckelt</text>
+    <text x="196" y="52" text-anchor="end">offene Larve</text>
+    <text x="116.75" y="78" text-anchor="middle">Ei</text>
+    <g font-weight="700" text-anchor="end">
+      <text x="96" y="121.5">Königin</text>
+      <text x="96" y="191.5">Arbeiterin</text>
+      <text x="96" y="261.5">Drohn</text>
+    </g>
+    <g font-weight="700" fill="#b45309">
+      <text x="248" y="121.5">16 Tage</text>
+      <text x="290.5" y="191.5">21 Tage</text>
+      <text x="316" y="261.5">24 Tage</text>
+    </g>
+  </g>
+</svg>

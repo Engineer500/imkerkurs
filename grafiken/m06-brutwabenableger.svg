@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 372" role="img" aria-labelledby="m06-bw-titel m06-bw-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="372" fill="#ffffff"/>
+  <title id="m06-bw-titel">Der Brutwabenableger nach Hohenheim</title>
+  <desc id="m06-bw-beschr">Querschnitt durch eine Zarge mit vier Rähmchen nebeneinander: eine Futterwabe, zwei Brutwaben mit Bienen ohne Königin und ein gedrahtetes Rähmchen mit Mittelwand. Von oben kommen Bienen von fünf Honigraumwaben dazu, unten am Rand der Vorderwand ist das Flugloch etwa 1 cm offen.</desc>
+
+  <defs>
+    <!-- Zellmuster der Futterwabe und der Mittelwand (wie in m04-kurzdurchsicht.svg und m02-raehmchen.svg) -->
+    <pattern id="m06-bw-zellen" width="12.124" height="21" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5L6.062 0L12.124 3.5V10.5L6.062 14L0 10.5ZM6.062 14V21" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".3"/>
+    </pattern>
+    <pattern id="m06-bw-deckel" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="3.200" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".45"/>
+    </pattern>
+
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten. -->
+    <g id="biene-arbeiterin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- BIENENFORM: Königin mit kleiner Krone (wie in m01-schwarmzelle.svg, Krone ergänzt) -->
+    <g id="biene-koenigin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-9.3" cy="-9.9" rx="10.5" ry="4.6" transform="rotate(28 -9.3 -9.9)"/>
+        <ellipse cx="-5.5" cy="-12.8" rx="9.5" ry="4.2" transform="rotate(55 -5.5 -12.8)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-17.5" cy="2" rx="17.5" ry="7.2" fill="#f2c14e"/>
+        <path d="M-15 -5.13A17.5 7.2 0 0 1 -12 -4.84L-12 8.84A17.5 7.2 0 0 1 -15 9.13ZM-21.5 -5.01A17.5 7.2 0 0 1 -18.5 -5.19L-18.5 9.19A17.5 7.2 0 0 1 -21.5 9.01ZM-28 -3.76A17.5 7.2 0 0 1 -25 -4.51L-25 8.51A17.5 7.2 0 0 1 -28 7.76Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      <!-- Krone -->
+      <path d="M5.5 -4.5L6.500 -12L9.500 -8.500L12.500 -13.500L15.500 -8.500L18.500 -12L19.500 -4.500Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- Bienen von oben: kleine Gruppe am Pfeilanfang -->
+  <use href="#biene-arbeiterin" transform="translate(174 32) rotate(70) scale(.7)"/>
+  <use href="#biene-arbeiterin" transform="translate(193 24) rotate(98) scale(.7)"/>
+  <use href="#biene-arbeiterin" transform="translate(212 32) rotate(112) scale(.7)"/>
+  <use href="#biene-arbeiterin" transform="translate(231 22) rotate(84) scale(.7)"/>
+
+  <!-- Pfeil von oben in die Zarge, in die Gasse zwischen den Brutwaben -->
+  <line x1="200" y1="48" x2="200" y2="86" stroke="#b45309" stroke-width="7"/>
+  <path d="M188 84H212L200 102Z" fill="#b45309"/>
+
+  <!-- Zarge: Seitenwände und unten die Vorderwand als Streifen, am Rand der Vorderwand das Flugloch (Lücke von 14 Einheiten) -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="24" y="100" width="8" height="228"/>
+    <rect x="368" y="100" width="8" height="228"/>
+    <path d="M32 316H368V328H207V320H193V328H32Z"/>
+  </g>
+
+  <!-- Oberträger der vier Rähmchen -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="60" y="108" width="58" height="6"/>
+    <rect x="134" y="108" width="58" height="6"/>
+    <rect x="208" y="108" width="58" height="6"/>
+    <rect x="282" y="108" width="58" height="6"/>
+  </g>
+
+  <!-- Platte 1: Futterwabe, vollständig mit Honig gefüllt -->
+  <rect x="64" y="114" width="50" height="124" fill="#f2c14e"/>
+  <rect x="64" y="114" width="50" height="124" fill="url(#m06-bw-zellen)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Platte 2 und 3: Brutwaben mit verdeckelter Brut -->
+  <rect x="138" y="114" width="50" height="124" fill="#d9a441"/>
+  <rect x="138" y="114" width="50" height="124" fill="url(#m06-bw-deckel)" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="212" y="114" width="50" height="124" fill="#d9a441"/>
+  <rect x="212" y="114" width="50" height="124" fill="url(#m06-bw-deckel)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Platte 4: Rähmchen mit Mittelwand und vier senkrechten Drähten -->
+  <rect x="286" y="114" width="50" height="124" fill="#fff4d6"/>
+  <rect x="286" y="114" width="50" height="124" fill="url(#m06-bw-zellen)" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M294 114V238M305 114V238M317 114V238M328 114V238" fill="none" stroke="#7b8088" stroke-width="1.2"/>
+
+  <!-- Bienen auf beiden Seiten der beiden Brutwaben -->
+  <g>
+    <use href="#biene-arbeiterin" transform="translate(133.500 138) rotate(90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(133.500 172) rotate(-90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(133.500 206) rotate(80) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(192.500 130) rotate(-90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(192.500 164) rotate(90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(192.500 198) rotate(-100) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(207.500 138) rotate(90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(207.500 172) rotate(-80) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(207.500 206) rotate(90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(266.500 130) rotate(90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(266.500 164) rotate(-90) scale(.5)"/>
+    <use href="#biene-arbeiterin" transform="translate(266.500 198) rotate(100) scale(.5)"/>
+  </g>
+
+  <!-- Klammer unter den Platten 2 und 3 -->
+  <path d="M138 244V248Q138 252 142 252H196Q200 252 200 255Q200 252 204 252H258Q262 252 262 248V244M200 255V266" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Königin, durchgestrichen (nur Zierde) -->
+  <use href="#biene-koenigin" transform="translate(293 307) scale(.55)"/>
+  <line x1="270" y1="317" x2="308" y2="297" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+
+  <!-- Maßklammer am Flugloch -->
+  <path d="M193 332V337Q193 340 196 340H204Q207 340 207 337V332M200 340V346" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="222" y="68">Bienen von fünf</text>
+    <text x="222" y="88">Honigraumwaben</text>
+    <text x="36" y="262">Futterwabe</text>
+    <text x="364" y="262" text-anchor="end">gedrahtetes</text>
+    <text x="364" y="282" text-anchor="end">Rähmchen</text>
+    <text x="150" y="288" text-anchor="middle">zwei Brutwaben mit Bienen,</text>
+    <text x="150" y="308" text-anchor="middle">ohne Königin</text>
+    <text x="200" y="366" text-anchor="middle">Flugloch etwa 1 cm</text>
+  </g>
+</svg>

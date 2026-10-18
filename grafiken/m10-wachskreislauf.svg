@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" role="img" aria-labelledby="m10-wk-titel m10-wk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="440" fill="#ffffff"/>
+  <title id="m10-wk-titel">Der offene Wachskreislauf</title>
+  <desc id="m10-wk-beschr">Schema des offenen Wachskreislaufs: Aus dem Volk kommen Jungwachs aus Entdeckelung und Baurahmen und Altwachs aus bebrüteten Waben. Beides wird eingeschmolzen und gereinigt. Jungwachs wird zu Mittelwänden und Anfangsstreifen und kehrt ins Volk zurück. Altwachs wird zu Kerzen und Holzpflege und bleibt aus der Beute heraus. Die Blöcke werden mit J oder A und dem Jahr markiert.</desc>
+
+  <defs>
+    <!-- Beute: Zarge mit Deckel, Ursprung in der Mitte, Konturen vom aufrufenden Element -->
+    <g id="wk-beute">
+      <rect x="-20" y="17" width="40" height="5" fill="#b45309" fill-opacity=".45"/>
+      <rect x="-17" y="2" width="34" height="15" fill="#fff4d6"/>
+      <rect x="-17" y="-13" width="34" height="15" fill="#fff4d6"/>
+      <path d="M-7 -6H7M-7 9H7" fill="none"/>
+      <rect x="-22" y="-21" width="44" height="8" fill="#b45309" fill-opacity=".45"/>
+    </g>
+  </defs>
+
+  <!-- Rückweg des Jungwachses: dicker, geschlossener Pfeil am linken Rand bis zum Volk -->
+  <path d="M46 325H34Q24 325 24 315V50Q24 40 34 40H160" fill="none" stroke="#b45309" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M158 30L174 40L158 50Z" fill="#b45309"/>
+
+  <!-- Volk: Beute -->
+  <use href="#wk-beute" transform="translate(201 30)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Pfeile vom Volk zu den beiden Kästen -->
+  <g stroke="#3a2a10" stroke-width="1.5" fill="none">
+    <path d="M201 77V88M124 88H278M124 88V91M278 88V91"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M118.5 91H129.5L124 102Z"/>
+    <path d="M272.5 91H283.5L278 102Z"/>
+  </g>
+
+  <!-- Kästen Jungwachs (Honigfarbe, durchgezogener Rand) und Altwachs (dunkleres Braun, gestrichelter Rand) -->
+  <rect x="46" y="102" width="156" height="80" rx="10" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="214" y="102" width="128" height="80" rx="10" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="7 4"/>
+
+  <!-- Pfeile in den Schmelzkasten -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="124" y1="182" x2="124" y2="207"/>
+    <line x1="278" y1="182" x2="278" y2="207"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M118.5 205H129.5L124 216Z"/>
+    <path d="M272.5 205H283.5L278 216Z"/>
+  </g>
+
+  <!-- breiter Kasten: Einschmelzen und reinigen -->
+  <rect x="46" y="216" width="296" height="46" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Topfsymbol (Schmelzgerät) -->
+  <g transform="translate(78 240)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-6 -10Q-9 -14 -6 -17M3 -10Q0 -14 3 -17" fill="none" stroke-opacity=".6"/>
+    <rect x="-21" y="-4" width="7" height="4.5" rx="1.5" fill="#b8bcc2"/>
+    <rect x="14" y="-4" width="7" height="4.5" rx="1.5" fill="#b8bcc2"/>
+    <path d="M-15 -7H15V8Q15 14 9 14H-9Q-15 14 -15 8Z" fill="#b8bcc2"/>
+    <ellipse cx="0" cy="-7" rx="15" ry="3.6" fill="#f2c14e"/>
+  </g>
+
+  <!-- Pfeile aus dem Schmelzkasten -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="124" y1="262" x2="124" y2="287"/>
+    <line x1="278" y1="262" x2="278" y2="287"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M118.5 285H129.5L124 296Z"/>
+    <path d="M272.5 285H283.5L278 296Z"/>
+  </g>
+
+  <!-- untere Kästen: Mittelwände (zurück ins Volk) und Kerzen (Ende des Kreislaufs) -->
+  <rect x="46" y="296" width="156" height="58" rx="10" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="214" y="296" width="128" height="58" rx="10" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="7 4"/>
+
+  <!-- Verbotszeichen über einer kleinen Beute -->
+  <use href="#wk-beute" transform="translate(371 325) scale(.55)" stroke="#3a2a10" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="371" cy="325" r="22" fill="none" stroke="#b45309" stroke-width="3.5"/>
+  <line x1="355.5" y1="309.5" x2="386.5" y2="340.5" stroke="#b45309" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Notiz mit Etikettsymbol -->
+  <rect x="6" y="394" width="388" height="34" rx="8" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <g transform="translate(25 411)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M-10 -7H4L11 0L4 7H-10Z" fill="#f2c14e"/>
+    <circle cx="3" cy="0" r="1.8" fill="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="36" y="26">zurück ins Volk</text>
+    <text x="201" y="71" text-anchor="middle">Volk</text>
+    <g text-anchor="middle">
+      <text x="124" y="127" font-weight="700">Jungwachs</text>
+      <text x="124" y="148">Entdeckelung,</text>
+      <text x="124" y="169">Baurahmen</text>
+      <text x="278" y="127" font-weight="700">Altwachs</text>
+      <text x="278" y="148">aus bebrüteten</text>
+      <text x="278" y="169">Waben</text>
+      <text x="124" y="319">Mittelwände und</text>
+      <text x="124" y="340">Anfangsstreifen</text>
+      <text x="278" y="319">Kerzen und</text>
+      <text x="278" y="340">Holzpflege</text>
+    </g>
+    <text x="108" y="244.5">Einschmelzen und reinigen</text>
+    <text x="394" y="378" text-anchor="end">nicht in die Beute</text>
+    <text x="48" y="416.5">Blöcke mit J oder A und Jahr markieren</text>
+  </g>
+</svg>

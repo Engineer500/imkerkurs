@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 346" role="img" aria-labelledby="m07-ra-titel m07-ra-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="346" fill="#ffffff"/>
+  <title id="m07-ra-titel">Vom flüssigen Honig zum Cremehonig</title>
+  <desc id="m07-ra-beschr">Drei Gläser nebeneinander. Links klarer, flüssiger Honig. In der Mitte leicht trüber Honig, hier beginnt das Rühren. Rechts heller, matter Honig mit Perlmuttschimmer, hier endet das Rühren; eine Furche bleibt länger als 5 Sekunden stehen. Der Rührraum hat etwa 14 °C. Darunter zwei Zeitbalken: Raps etwa 3 Tage, fruktosereich bis 7 Tage und mehr.</desc>
+
+  <defs>
+    <!-- Feines Punktmuster für den leicht trüben Honig -->
+    <pattern id="m07-ra-punkte" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="3.5" cy="3.5" r="1.3" fill="#fff4d6"/>
+    </pattern>
+    <!-- Schräge helle Streifen als Perlmuttschimmer -->
+    <pattern id="m07-ra-glanz" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(60)">
+      <rect x="0" y="0" width="4" height="12" fill="#ffffff" fill-opacity=".85"/>
+    </pattern>
+    <!-- Pfeilspitze für den kreisenden Rührpfeil, die Linie endet an der Basis der Spitze -->
+    <marker id="m07-ra-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Thermometer oben links: Rührraum -->
+  <path d="M18 50V14Q18 10 22 10Q26 10 26 14V50" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="22" cy="56" r="8" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="20.5" y="26" width="3" height="30" fill="#4a7fb5"/>
+  <path d="M26 16H31M26 24H31M26 32H31M26 40H31" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="44" y="32">Rührraum: <tspan x="44" dy="20">etwa 14 °C</tspan></text>
+  </g>
+
+  <!-- Hinweis zum Löffel: Furche bleibt stehen, Beschriftung oben rechts -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="262" y="24">Furche bleibt <tspan x="262" dy="19">länger als 5 </tspan><tspan x="262" dy="19">Sekunden stehen</tspan></text>
+  </g>
+  <line x1="345" y1="70" x2="345" y2="174" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="345" cy="174" r="2.3" fill="#3a2a10"/>
+
+  <!-- Beschriftung des Rührens mit Linie zum Rührpfeil -->
+  <text x="216" y="86" font-size="16" text-anchor="middle" fill="#1f1a12">1 bis 2 Mal täglich rühren</text>
+  <line x1="227" y1="92" x2="227" y2="113" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="227" cy="113" r="2.3" fill="#3a2a10"/>
+
+  <!-- Glas 1: klarer, glatter, goldgelber Honig -->
+  <rect x="12" y="114" width="76" height="90" rx="10" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="16" y="126" width="68" height="74" rx="6" fill="#f2c14e"/>
+  <rect x="21" y="132" width="5" height="56" rx="2.5" fill="#ffffff" fill-opacity=".4"/>
+  <rect x="18" y="104" width="64" height="12" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M26 106V114M34 106V114M42 106V114M50 106V114M58 106V114M66 106V114M74 106V114" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+
+  <!-- Glas 2: etwas trüber, feines Punktmuster -->
+  <rect x="130" y="114" width="76" height="90" rx="10" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="134" y="126" width="68" height="74" rx="6" fill="#f2c14e"/>
+  <rect x="134" y="126" width="68" height="74" rx="6" fill="url(#m07-ra-punkte)"/>
+  <rect x="139" y="132" width="5" height="56" rx="2.5" fill="#ffffff" fill-opacity=".4"/>
+  <rect x="136" y="104" width="64" height="12" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M144 106V114M152 106V114M160 106V114M168 106V114M176 106V114M184 106V114M192 106V114" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+
+  <!-- Glas 3: hellere, matte Füllung mit schrägen Glanzstreifen -->
+  <rect x="248" y="114" width="76" height="90" rx="10" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="252" y="126" width="68" height="74" rx="6" fill="#ffffff"/>
+  <rect x="252" y="126" width="68" height="74" rx="6" fill="#f2c14e" fill-opacity=".45"/>
+  <rect x="252" y="126" width="68" height="74" rx="6" fill="url(#m07-ra-glanz)"/>
+  <rect x="254" y="104" width="64" height="12" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M262 106V114M270 106V114M278 106V114M286 106V114M294 106V114M302 106V114M310 106V114" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+
+  <!-- Pfeile zwischen den Gläsern -->
+  <g fill="#3a2a10" stroke="#3a2a10" stroke-width="2.5" stroke-linejoin="round">
+    <line x1="94" y1="160" x2="112" y2="160"/>
+    <path d="M124 160L112 153V167Z" stroke-width="1"/>
+    <line x1="212" y1="160" x2="230" y2="160"/>
+    <path d="M242 160L230 153V167Z" stroke-width="1"/>
+  </g>
+  <!-- Kreisender Rührpfeil auf dem zweiten Pfeil -->
+  <path d="M231.5 128.2A9 9 0 1 1 219.2 131.5" fill="none" stroke="#b45309" stroke-width="2.5" marker-end="url(#m07-ra-spitze)"/>
+
+  <!-- Schale mit Cremehonig und Löffel, dessen Furche stehen bleibt -->
+  <path d="M334 176H392Q392 203 363 203Q334 203 334 176Z" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <ellipse cx="363" cy="176" rx="29" ry="9" fill="#ffffff"/>
+  <ellipse cx="363" cy="176" rx="29" ry="9" fill="#f2c14e" fill-opacity=".45" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M345 179Q363 184 381 179" fill="none" stroke="#3a2a10" stroke-width="2" stroke-linecap="round"/>
+  <path d="M347 182Q363 187 379 182" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <g stroke-linecap="round">
+    <line x1="388" y1="122" x2="372" y2="162" stroke="#3a2a10" stroke-width="7"/>
+    <line x1="388" y1="122" x2="372" y2="162" stroke="#b8bcc2" stroke-width="4"/>
+  </g>
+  <ellipse cx="368" cy="169" rx="8.5" ry="5.5" transform="rotate(-20 368 169)" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen unter den Gläsern -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="50" y="228" text-anchor="middle">flüssig</text>
+    <text x="108" y="228">erste Trübung: <tspan x="108" dy="19">Rühren beginnt</tspan></text>
+    <text x="244" y="228">Perlmuttschimmer: <tspan x="244" dy="19">Rühren endet</tspan></text>
+  </g>
+
+  <!-- Zeitbalken auf derselben Skala: 26 Einheiten je Tag, ohne Zahlenachse -->
+  <rect x="12" y="270" width="78" height="18" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M12 306H192L204 309L194 312L208 315L196 318L206 321L198 324H12Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <g fill="#1f1a12" font-size="16">
+    <text x="98" y="284">Raps: etwa 3 Tage</text>
+    <text x="222" y="309.5">fruktosereich: <tspan x="222" dy="19">bis 7 Tage und mehr</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="m03-zr-titel m03-zr-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="240" fill="#ffffff"/>
+  <title id="m03-zr-titel">Zwei Völker bei 14,3 Prozent Winterverlust</title>
+  <desc id="m03-zr-beschr">Ein Balken teilt zwei Völker bei 14,3 Prozent Winterverlust auf: Beide überleben zu etwa 73 Prozent, mindestens ein Volk geht zu etwa 27 Prozent verloren, beide zu etwa 2 Prozent.</desc>
+
+  <defs>
+    <!-- Kleine Beute: Deckel, Körper und Flugloch -->
+    <g id="zr-beute">
+      <rect x="-13" y="0" width="26" height="5" rx="1.5" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="-11" y="5" width="22" height="19" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="-6" y="19" width="12" height="3" fill="#3a2a10"/>
+    </g>
+  </defs>
+
+  <!-- Überschrift -->
+  <text x="200" y="24" text-anchor="middle" font-size="19" font-weight="700" fill="#1f1a12">14,3 % Winterverlust je Volk</text>
+
+  <!-- Beschriftungen über den Abschnitten -->
+  <g fill="#1f1a12" font-size="16" font-weight="700">
+    <text x="20" y="80">Beide überleben</text>
+    <text x="290" y="44">Mindestens</text>
+    <text x="290" y="62">ein Volk</text>
+    <text x="290" y="80">verloren</text>
+  </g>
+
+  <!-- Balken: 73 % beide überleben, 27 % mindestens ein Volk verloren, darin 2 % beide verloren -->
+  <rect x="20" y="92" width="264.4" height="48" fill="#5b8c3a" fill-opacity=".3"/>
+  <rect x="284.4" y="92" width="95.6" height="48" fill="#e07b39"/>
+  <rect x="372.8" y="92" width="7.2" height="48" fill="#b45309"/>
+  <rect x="20" y="92" width="360" height="48" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <line x1="284.4" y1="92" x2="284.4" y2="140" stroke="#3a2a10" stroke-width="2"/>
+  <line x1="372.8" y1="92" x2="372.8" y2="140" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Zahlen im Balken -->
+  <g text-anchor="middle" fill="#1f1a12">
+    <text x="152.2" y="117" font-size="16" font-weight="700">etwa 73 %</text>
+    <text x="152.2" y="134" font-size="15">0,857 × 0,857</text>
+    <text x="328.6" y="121" font-size="16" font-weight="700">etwa 27 %</text>
+  </g>
+
+  <!-- Linke Hälfte: zwei Beuten mit Haken -->
+  <use href="#zr-beute" x="126" y="150"/>
+  <use href="#zr-beute" x="178" y="150"/>
+  <g stroke="#3a2a10" stroke-width="1">
+    <circle cx="138" cy="172" r="7" fill="#5b8c3a"/>
+    <circle cx="190" cy="172" r="7" fill="#5b8c3a"/>
+  </g>
+  <path d="M134.5 172L137 174.6L141.8 169M186.5 172L189 174.6L193.8 169" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Rechte Hälfte: eine Beute mit Haken, eine durchgestrichene Beute -->
+  <use href="#zr-beute" x="300" y="150"/>
+  <circle cx="312" cy="172" r="7" fill="#5b8c3a" stroke="#3a2a10" stroke-width="1"/>
+  <path d="M308.5 172L311 174.6L315.8 169" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g opacity=".55">
+    <use href="#zr-beute" x="348" y="150"/>
+  </g>
+  <path d="M335 152L361 176M361 152L335 176" fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Verbindungslinie vom schmalen Streifen zur Beschriftung -->
+  <line x1="376.4" y1="140" x2="376.4" y2="191" stroke="#3a2a10" stroke-width="1"/>
+  <g text-anchor="end" fill="#1f1a12" font-size="16">
+    <text x="386" y="208">davon beide verloren</text>
+    <text x="386" y="227" font-weight="700">etwa 2 %</text>
+  </g>
+</svg>

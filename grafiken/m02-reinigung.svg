@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 430" role="img" aria-labelledby="m02-rg-titel m02-rg-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="430" fill="#ffffff"/>
+  <title id="m02-rg-titel">Ablauf der Werkzeugreinigung</title>
+  <desc id="m02-rg-beschr">Ablauf der Reinigung: zuerst abkratzen, dann mit heißer Sodalauge 3 bis 5 % reinigen, spülen und trocknen. Zum Desinfizieren folgt das Abflammen.</desc>
+
+  <defs>
+    <!-- Pfeilspitze, die Linie endet an der Basis der Spitze -->
+    <marker id="m02-rg-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+
+    <!-- Symbole, Mittelpunkt im Ursprung, etwa 40 mal 40 -->
+    <!-- Stockmeißel kratzt über einen Wachsrest -->
+    <g id="m02-rg-meissel" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-21 15H21" fill="none"/>
+      <path d="M2 15C2 5 18 5 18 15Z" fill="#d9a441"/>
+      <path d="M-16 14L2 -16L9 -12L-9 17Z" fill="#b8bcc2"/>
+    </g>
+    <!-- Wanne mit Lauge und Wellenlinie -->
+    <g id="m02-rg-wanne" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-18 -6H18L14 14H-14Z" fill="#ffffff"/>
+      <path d="M-16.5 1H16.5L13.8 12.6H-13.8Z" fill="#4a7fb5" fill-opacity=".5" stroke="none"/>
+      <path d="M-16 1Q-12 -3 -8 1T0 1T8 1T16 1" fill="none" stroke="#4a7fb5" stroke-width="2.5"/>
+      <path d="M-18 -6H18L14 14H-14Z" fill="none"/>
+    </g>
+    <!-- Flamme -->
+    <g id="m02-rg-flamme" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M0 -20C4 -10 14 -6 14 6C14 14 8 20 0 20C-8 20 -14 14 -14 6C-14 -2 -8 -4 -6 -12C-3 -8 -2 -12 0 -20Z" fill="#e07b39"/>
+      <path d="M0 -2C3 4 8 6 8 11C8 15 4 17 0 17C-4 17 -8 15 -8 11C-8 6 -3 4 0 -2Z" fill="#f2c14e" stroke="none"/>
+    </g>
+    <!-- Wassertropfen -->
+    <g id="m02-rg-tropfen">
+      <path d="M0 -17C6 -7 13 -1 13 6C13 13 7 18 0 18C-7 18 -13 13 -13 6C-13 -1 -6 -7 0 -17Z" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-6 6C-6 10 -3 12 0 13" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-opacity=".85"/>
+    </g>
+    <!-- Sonne -->
+    <g id="m02-rg-sonne" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+      <path d="M13 0H19M9.2 9.2L13.4 13.4M0 13V19M-9.2 9.2L-13.4 13.4M-13 0H-19M-9.2 -9.2L-13.4 -13.4M0 -13V-19M9.2 -9.2L13.4 -13.4" fill="none"/>
+      <circle r="9" fill="#f2c14e"/>
+    </g>
+  </defs>
+
+  <!-- Gruppe Reinigen: Lauge, Spülen, Trocknen -->
+  <rect x="20" y="92" width="360" height="236" rx="12" fill="#4a7fb5" fill-opacity=".08" stroke="#3a2a10" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <!-- Pfeile von oben nach unten -->
+  <g fill="none" stroke="#3a2a10" stroke-width="2.5">
+    <line x1="200" y1="68" x2="200" y2="78" marker-end="url(#m02-rg-spitze)"/>
+    <line x1="200" y1="180" x2="200" y2="190" marker-end="url(#m02-rg-spitze)"/>
+    <line x1="200" y1="248" x2="200" y2="258" marker-end="url(#m02-rg-spitze)"/>
+    <line x1="200" y1="328" x2="200" y2="340" marker-end="url(#m02-rg-spitze)"/>
+  </g>
+
+  <!-- Reihe 1: Abkratzen -->
+  <rect x="100" y="16" width="200" height="52" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m02-rg-meissel" transform="translate(132 42) scale(1.05)"/>
+
+  <!-- Reinigen, blaue Kette: Sodalauge, Spülen, Trocknen -->
+  <rect x="60" y="124" width="280" height="56" rx="10" fill="#4a7fb5" fill-opacity=".22" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m02-rg-wanne" x="90" y="152"/>
+  <rect x="60" y="204" width="280" height="44" rx="10" fill="#4a7fb5" fill-opacity=".22" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m02-rg-tropfen" transform="translate(90 226) scale(.85)"/>
+  <rect x="60" y="272" width="280" height="44" rx="10" fill="#4a7fb5" fill-opacity=".22" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m02-rg-sonne" transform="translate(90 294) scale(.85)"/>
+
+  <!-- Desinfizieren, orange: Abflammen -->
+  <rect x="60" y="354" width="280" height="56" rx="10" fill="#e07b39" fill-opacity=".25" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#m02-rg-flamme" x="90" y="382"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="226" y="47.5" text-anchor="middle" font-weight="700">Abkratzen</text>
+    <text x="36" y="112" font-weight="700">Reinigen</text>
+    <text x="124" y="146" font-weight="700">Heiße Sodalauge</text>
+    <text x="124" y="167" font-weight="700">3 bis 5 %</text>
+    <text x="124" y="231.5" font-weight="700">Spülen</text>
+    <text x="124" y="299.5" font-weight="700">Trocknen</text>
+    <text x="124" y="376" font-weight="700">Abflammen</text>
+    <text x="124" y="397">desinfiziert</text>
+  </g>
+</svg>

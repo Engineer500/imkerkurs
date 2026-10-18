@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="m06-kk-titel m06-kk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="320" fill="#ffffff"/>
+  <title id="m06-kk-titel">Die Kippkontrolle im Schnitt</title>
+  <desc id="m06-kk-beschr">Schnitt durch zwei Zargen von der Seite. Die untere Zarge liegt flach auf dem Boden. Die obere Zarge ist an einer Seite aufgekippt und steht auf der anderen Kante. Zwischen den Waben verlaufen die Wabengassen. Von der geöffneten Seite fällt der Blick einer Taschenlampe auf die Unterkanten der oberen Waben, an denen eine Schwarmzelle hängt.</desc>
+
+  <defs>
+    <!-- Sechsecke der Wabe, zart angedeutet (wie in m02-raehmchen.svg) -->
+    <pattern id="m06-kk-zellen" width="10.392" height="18" patternUnits="userSpaceOnUse">
+      <rect width="10.392" height="18" fill="#fff4d6"/>
+      <path d="M5.196 0L10.392 3V9L5.196 12L0 9V3ZM5.196 12V18" fill="none" stroke="#3a2a10" stroke-opacity=".3" stroke-width=".8"/>
+    </pattern>
+    <!-- Zarge im Schnitt entlang der Wabengassen, Ursprung links oben, 165 mal 60:
+         Holzrahmen, darin die Wabe mit kräftiger Oberkante (6) und kräftiger Unterkante (7) -->
+    <g id="m06-kk-zarge">
+      <rect width="165" height="60" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="6" y="6" width="153" height="47" fill="url(#m06-kk-zellen)" stroke="#3a2a10" stroke-width="1"/>
+    </g>
+    <!-- Pfeilspitze für die Blickrichtung -->
+    <marker id="m06-kk-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <!-- Lichtkegel der Taschenlampe, hinter den Zargen -->
+  <path d="M87 83L300 200V226L74 101Z" fill="#f2c14e" fill-opacity=".4"/>
+
+  <!-- Boden mit Schraffur -->
+  <path d="M20 286l-8 8M36 286l-8 8M52 286l-8 8M68 286l-8 8M84 286l-8 8M100 286l-8 8M116 286l-8 8M132 286l-8 8M148 286l-8 8M164 286l-8 8M180 286l-8 8M196 286l-8 8M212 286l-8 8M228 286l-8 8M244 286l-8 8M260 286l-8 8M276 286l-8 8M292 286l-8 8M308 286l-8 8M324 286l-8 8M340 286l-8 8M356 286l-8 8M372 286l-8 8M388 286l-8 8" fill="none" stroke="#3a2a10" stroke-opacity=".5" stroke-width="1"/>
+  <line x1="8" y1="286" x2="392" y2="286" stroke="#3a2a10" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- untere Zarge, flach -->
+  <use href="#m06-kk-zarge" x="200" y="226"/>
+  <rect x="222" y="242" width="120" height="28" rx="8" fill="#ffffff" fill-opacity=".92"/>
+
+  <!-- obere Zarge: um die rechte untere Ecke 20 Grad aufgekippt, die linke Seite steht schräg nach oben -->
+  <use href="#m06-kk-zarge" x="200" y="166" transform="rotate(20 365 226)"/>
+
+  <!-- Näpfchen und Schwarmzelle an der Unterkante der oberen Wabe (im Rahmen der gekippten Zarge gezeichnet) -->
+  <g transform="rotate(20 365 226)">
+    <!-- Hervorhebung der Schwarmzelle -->
+    <circle cx="255" cy="241" r="19" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- Schwarmzelle: längliche Eichelform, verdeckelt -->
+    <path d="M246 226H264V235C264 245 262 251 258 255Q255 258 252 255C248 251 246 245 246 235Z" fill="#d9a441" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M248.500 241H261.500M249.500 247H260.500" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45" stroke-linecap="round"/>
+    <!-- kleines Näpfchen, nach unten offen -->
+    <path d="M291 240V232C291 228 295 226 300 226C305 226 309 228 309 232V240H304.500V232.500C304.500 230.500 302.500 230 300 230C297.500 230 295.500 230.500 295.500 232.500V240Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Spalt: feiner Doppelpfeil im Keil -->
+  <g stroke="#b45309" stroke-width="1.5" fill="#b45309">
+    <line x1="282" y1="202" x2="282" y2="220"/>
+    <path d="M282 196L278.500 203H285.500Z M282 226L278.500 219H285.500Z" stroke="none"/>
+  </g>
+
+  <!-- Lampe: Gehäuse mit Kopf, Strahl nach rechts unten -->
+  <g transform="translate(80 92) rotate(32)">
+    <rect x="-52" y="-7" width="42" height="14" rx="3" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+    <path d="M-10 -7H-5L1 -12V12L-5 7H-10Z" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="-30" cy="0" r="2.600" fill="#b45309"/>
+  </g>
+
+  <!-- Auge mit Blickrichtung entlang der Wabengassen -->
+  <g transform="translate(46 226)">
+    <path d="M-24 0Q0 -17 24 0Q0 17 -24 0Z" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="7" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="3" fill="#3a2a10"/>
+    <circle cx="2" cy="-2" r="1.200" fill="#ffffff"/>
+  </g>
+  <line x1="76" y1="225" x2="210" y2="212" stroke="#b45309" stroke-width="3" stroke-linecap="round" marker-end="url(#m06-kk-spitze)"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-linecap="round">
+    <line x1="320" y1="70" x2="320" y2="146"/>
+    <line x1="140" y1="173" x2="236" y2="179"/>
+    <line x1="116" y1="198" x2="249" y2="198"/>
+    <line x1="30" y1="298" x2="30" y2="287"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="320" cy="146" r="2.300"/>
+    <circle cx="236" cy="179" r="2.300"/>
+    <circle cx="249" cy="198" r="2.300"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="392" y="64" text-anchor="end">obere Zarge, gekippt</text>
+    <text x="282" y="261" text-anchor="middle">untere Zarge</text>
+    <text x="4" y="156">Unterkanten der</text>
+    <text x="4" y="176">oberen Waben</text>
+    <text x="4" y="204">Schwarmzelle</text>
+    <text x="8" y="56">Taschenlampe</text>
+    <text x="8" y="252">Blick in die</text>
+    <text x="8" y="272">Wabengassen</text>
+    <text x="8" y="312">Boden</text>
+  </g>
+</svg>

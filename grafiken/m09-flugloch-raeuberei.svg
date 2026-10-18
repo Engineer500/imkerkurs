@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" role="img" aria-labelledby="m09-fr-titel m09-fr-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="360" fill="#ffffff"/>
+  <title id="m09-fr-titel">Ruhiges Flugloch und Flugloch bei Räuberei im Vergleich</title>
+  <desc id="m09-fr-beschr">Zwei Fluglöcher nebeneinander. Links ein ruhiges Flugloch, an dem beladene Bienen einfliegen. Rechts ein Flugloch mit Räuberei: kämpfende Bienen, eine Wespe, schmierige Spuren aus Futter und Wachs, Räuber, die leer ankommen und voll abfliegen, und Flug nach Feierabend.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten. -->
+    <g id="m09-fr-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Biene mit Pollenhöschen am Hinterbein, nur links verwendet -->
+    <g id="m09-fr-beladen">
+      <use href="#m09-fr-biene"/>
+      <ellipse cx="-6.8" cy="12.6" rx="4.4" ry="3.3" fill="#e07b39" stroke="#3a2a10" stroke-width=".9"/>
+    </g>
+
+    <!-- Biene mit schmalem Hinterleib: kommt leer an -->
+    <clipPath id="m09-fr-hl-schmal"><ellipse cx="-12.5" cy="2" rx="12.5" ry="4.6"/></clipPath>
+    <g id="m09-fr-schmal">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g clip-path="url(#m09-fr-hl-schmal)">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="4.6" fill="#f2c14e"/>
+        <rect x="-12.6" y="-4" width="3" height="12" fill="#3a2a10"/>
+        <rect x="-18.4" y="-4" width="3" height="12" fill="#3a2a10"/>
+        <rect x="-24.2" y="-4" width="3" height="12" fill="#3a2a10"/>
+      </g>
+      <ellipse cx="-12.5" cy="2" rx="12.5" ry="4.6" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5"/>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Biene mit dickem Hinterleib: fliegt voll ab -->
+    <clipPath id="m09-fr-hl-dick"><ellipse cx="-15" cy="4" rx="15" ry="11"/></clipPath>
+    <g id="m09-fr-dick">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 7.5L-6 13.5M1 7.8L1.5 14M4.5 7L8.5 12" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g clip-path="url(#m09-fr-hl-dick)">
+        <ellipse cx="-15" cy="4" rx="15" ry="11" fill="#f2c14e"/>
+        <rect x="-14.6" y="-8" width="3.4" height="24" fill="#3a2a10"/>
+        <rect x="-21.4" y="-8" width="3.4" height="24" fill="#3a2a10"/>
+        <rect x="-28.2" y="-8" width="3.4" height="24" fill="#3a2a10"/>
+      </g>
+      <ellipse cx="-15" cy="4" rx="15" ry="11" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5"/>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Wespe: schlank, scharf abgesetzter Hinterleib mit breiten gelb schwarzen Bändern, Blick nach links -->
+    <clipPath id="m09-fr-hl-wespe"><path d="M-2 0C0-7 10-8 20-4L27 0L20 4C10 8 0 7-2 0Z"/></clipPath>
+    <g id="m09-fr-wespe">
+      <path d="M-15 5L-19 13L-22 17M-10 5.5L-9 14L-11 19M-5 5L0 13L3 17" fill="none" stroke="#3a2a10" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="2" cy="-7" rx="24" ry="3.4" transform="rotate(-8 2 -7)" fill="#ffffff" fill-opacity="0.65" stroke="#3a2a10" stroke-width="1"/>
+      <g clip-path="url(#m09-fr-hl-wespe)">
+        <path d="M-2 0C0-7 10-8 20-4L27 0L20 4C10 8 0 7-2 0Z" fill="#f2c14e"/>
+        <rect x="3" y="-9" width="5" height="18" fill="#1f1a12"/>
+        <rect x="12" y="-9" width="5" height="18" fill="#1f1a12"/>
+        <rect x="21" y="-9" width="7" height="18" fill="#1f1a12"/>
+      </g>
+      <path d="M-2 0C0-7 10-8 20-4L27 0L20 4C10 8 0 7-2 0Z" fill="none" stroke="#3a2a10" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="-4.5" cy="0" rx="2.6" ry="2.2" fill="#1f1a12"/>
+      <ellipse cx="-13" cy="0" rx="8.5" ry="6.5" fill="#1f1a12" stroke="#3a2a10" stroke-width="1.4"/>
+      <path d="M-15.5 -4.2V4.2M-10.5 -4.4V4.4" fill="none" stroke="#f2c14e" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M-27 -3L-34 -9M-26 -1.5L-35 -5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="-24.5" cy="0.5" rx="6.5" ry="5.8" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.4"/>
+      <ellipse cx="-26" cy="-1.2" rx="2.4" ry="3.1" fill="#1f1a12"/>
+      <path d="M-29.5 3.5L-32 6.5" fill="none" stroke="#3a2a10" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Beutenfront: Blechdeckel, Holzwand mit Zargenfuge, schmaler Schlitz als Flugloch, Anflugbrett, Ständer. Linke Seite, rechts verschoben verwendet. -->
+    <g id="m09-fr-beute" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+      <rect x="44" y="284" width="12" height="34" fill="#e8c99a"/>
+      <rect x="154" y="284" width="12" height="34" fill="#e8c99a"/>
+      <rect x="30" y="126" width="150" height="158" fill="#e8c99a"/>
+      <path d="M30 150H180" fill="none" stroke-width="1"/>
+      <path d="M62 284L148 284L156 298L54 298Z" fill="#e8c99a"/>
+      <rect x="24" y="118" width="162" height="8" fill="#b8bcc2"/>
+      <rect x="80" y="220" width="50" height="9" fill="#3a2a10" stroke="none"/>
+    </g>
+  </defs>
+
+  <!-- Himmel, Boden und Mitteltrennlinie -->
+  <rect x="20" y="38" width="170" height="280" fill="#4a7fb5" fill-opacity=".12"/>
+  <rect x="210" y="38" width="170" height="280" fill="#4a7fb5" fill-opacity=".24"/>
+  <g fill="#5b8c3a" fill-opacity=".38">
+    <rect x="20" y="318" width="170" height="28"/>
+    <rect x="210" y="318" width="170" height="28"/>
+  </g>
+  <line x1="200" y1="30" x2="200" y2="350" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45"/>
+
+  <!-- Überschriften -->
+  <g fill="#1f1a12" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="105" y="28">ruhig</text>
+    <text x="295" y="28">Räuberei</text>
+  </g>
+
+  <!-- ===== Links: ruhiges Flugloch ===== -->
+  <use href="#m09-fr-beute"/>
+  <!-- zwei Bienen im Anflug, eine am Brett, alle mit Pollenhöschen -->
+  <use href="#m09-fr-beladen" transform="translate(78 96) rotate(66) scale(.9)"/>
+  <use href="#m09-fr-beladen" transform="translate(150 176) rotate(-52) scale(-.9 .9)"/>
+  <use href="#m09-fr-beladen" transform="translate(128 273) scale(-.9 .9)"/>
+  <!-- Linie zur beladenen Biene -->
+  <line x1="60" y1="70" x2="68" y2="96" stroke="#ffffff" stroke-width="4"/>
+  <line x1="60" y1="70" x2="68" y2="96" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="68" cy="96" r="2.5" fill="#3a2a10" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- ===== Rechts: Räuberei ===== -->
+  <use href="#m09-fr-beute" transform="translate(190 0)"/>
+  <!-- braune, schmierige Streifen und Tropfen unter dem Schlitz -->
+  <g fill="none" stroke="#b45309" stroke-width="4.5" stroke-linecap="round" stroke-opacity=".9">
+    <path d="M280 233C277 242 283 248 280 258"/>
+    <path d="M292 233C289 245 295 253 292 266"/>
+    <path d="M304 233C301 241 307 246 304 254"/>
+    <path d="M316 233C313 247 320 262 317 280"/>
+  </g>
+  <g fill="#b45309">
+    <path d="M280 261.5C278 265 278 267.5 280 267.5C282 267.5 282 265 280 261.5Z"/>
+    <path d="M292 269.5C290 273 290 275.5 292 275.5C294 275.5 294 273 292 269.5Z"/>
+    <path d="M304 257.5C302 261 302 263.5 304 263.5C306 263.5 306 261 304 257.5Z"/>
+        <ellipse cx="327" cy="290" rx="6" ry="2.6"/>
+    <ellipse cx="341" cy="292.5" rx="3" ry="1.8"/>
+    <ellipse cx="316" cy="291" rx="3.5" ry="2"/>
+  </g>
+  <!-- zwei ineinander verschlungene, kämpfende Bienen auf dem Anflugbrett -->
+  <use href="#m09-fr-biene" transform="translate(284 274) rotate(-24) scale(.85)"/>
+  <use href="#m09-fr-biene" transform="translate(310 271) rotate(22) scale(-.85 .85)"/>
+  <g fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round">
+    <path d="M297 248V254M287 251L290 256M307 251L304 256"/>
+  </g>
+  <!-- Wespe über dem Schlitz -->
+  <use href="#m09-fr-wespe" transform="translate(298 205) scale(.95)"/>
+  <!-- Pfeil zum Flugloch hin mit schmaler Biene, Pfeil vom Flugloch weg mit dicker Biene -->
+  <use href="#m09-fr-schmal" transform="translate(237 225) scale(.62)"/>
+  <path d="M256 225H263" fill="none" stroke="#3a2a10" stroke-width="2"/>
+  <path d="M270 225L261 220.5V229.5Z" fill="#3a2a10"/>
+  <path d="M324 225H331" fill="none" stroke="#3a2a10" stroke-width="2"/>
+  <path d="M338 225L329 220.5V229.5Z" fill="#3a2a10"/>
+  <use href="#m09-fr-dick" transform="translate(358 226) scale(.55)"/>
+  <!-- Mond mit zwei kleinen Bienen davor -->
+  <path d="M353.66 49.08A17 17 0 1 0 367.24 73.54A14 14 0 0 1 353.66 49.08Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <use href="#m09-fr-biene" transform="translate(344 86) scale(-.5 .5)"/>
+  <use href="#m09-fr-biene" transform="translate(366 98) scale(-.5 .5)"/>
+
+  <!-- Linien zu den Beschriftungen rechts -->
+  <g stroke="#ffffff" stroke-width="4" fill="none">
+    <line x1="298" y1="181" x2="298" y2="198"/>
+    <line x1="274" y1="254" x2="283" y2="266"/>
+    <line x1="327" y1="326" x2="327" y2="292"/>
+    <line x1="323" y1="62" x2="336" y2="62"/>
+  </g>
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="298" y1="181" x2="298" y2="198"/>
+    <line x1="274" y1="254" x2="283" y2="266"/>
+    <line x1="327" y1="326" x2="327" y2="292"/>
+    <line x1="323" y1="62" x2="336" y2="62"/>
+  </g>
+  <g fill="#3a2a10" stroke="#ffffff" stroke-width="1">
+    <circle cx="298" cy="198" r="2.5"/>
+    <circle cx="283" cy="266" r="2.5"/>
+    <circle cx="327" cy="292" r="2.5"/>
+    <circle cx="336" cy="62" r="2.5"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">
+    <text x="26" y="66">beladene Bienen</text>
+    <text x="298" y="176" text-anchor="middle">Wespe</text>
+    <text x="221" y="250">Kämpfe</text>
+    <text x="297" y="342" text-anchor="middle">schmierige Spuren</text>
+    <text x="237" y="207" text-anchor="middle">leer</text>
+    <text x="356" y="207" text-anchor="middle">voll</text>
+    <text x="320" y="56" text-anchor="end">Flug nach</text>
+    <text x="320" y="75" text-anchor="end">Feierabend</text>
+  </g>
+</svg>

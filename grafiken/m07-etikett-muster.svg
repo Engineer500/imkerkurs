@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" role="img" aria-labelledby="m07-et-titel m07-et-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="420" fill="#ffffff"/>
+  <title id="m07-et-titel">Muster eines Etiketts für ein verschenktes Glas</title>
+  <desc id="m07-et-beschr">Muster eines Etiketts für ein verschenktes Glas: groß die Bezeichnung Honig, darunter die Nettofüllmenge 500 g im selben Sichtfeld, dann Ursprungsland Deutschland, Mindestens haltbar bis 15.08.20XX, Name und Anschrift als Platzhalter und der Lagerhinweis kühl, dunkel, trocken lagern. Ein Hinweis erklärt: Mit eigenem Tagesdatum je Charge entfällt die Losnummer.</desc>
+
+  <defs>
+    <!-- Pfeilspitze der Hinweise, die Linie endet an der Basis der Spitze -->
+    <marker id="m07-et-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Etikett mit dünnem Rahmen -->
+  <rect x="40" y="10" width="320" height="284" rx="14" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Oberes Feld, gestrichelt: Bezeichnung und Füllmenge im selben Sichtfeld -->
+  <rect x="58" y="24" width="284" height="84" rx="6" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Trennlinien in der unteren Hälfte -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".4">
+    <line x1="58" y1="182" x2="342" y2="182"/>
+    <line x1="58" y1="248" x2="342" y2="248"/>
+  </g>
+
+  <!-- Angaben auf dem Etikett -->
+  <g fill="#1f1a12" text-anchor="middle">
+    <text x="200" y="68" font-size="36" font-weight="700">Honig</text>
+    <text x="200" y="94" font-size="16">Nettofüllmenge: 500 g</text>
+    <text x="200" y="138" font-size="16">Ursprungsland: Deutschland</text>
+    <text x="200" y="166" font-size="16">Mindestens haltbar bis: 15.08.20XX</text>
+    <text x="200" y="206" font-size="16" font-weight="700">Name und Anschrift:</text>
+    <text x="200" y="230" font-size="16" font-style="italic">Vorname Name, Straße Nr., PLZ Ort</text>
+    <text x="200" y="272" font-size="16">Kühl, dunkel, trocken lagern</text>
+  </g>
+
+  <!-- Hinweis 8: zeigt auf das gestrichelte obere Feld -->
+  <path d="M22 336V66H46" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#m07-et-spitze)"/>
+  <!-- Hinweis 9: zeigt auf die Zeile mit dem Datum -->
+  <path d="M382 376V160H372" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#m07-et-spitze)"/>
+
+  <!-- Hinweise unter dem Etikett -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="40" y="324">Bezeichnung und Füllmenge <tspan x="40" dy="19">im selben Sichtfeld</tspan></text>
+    <text x="40" y="372">Mit eigenem Tagesdatum je Charge <tspan x="40" dy="19">entfällt die Losnummer</tspan></text>
+  </g>
+</svg>

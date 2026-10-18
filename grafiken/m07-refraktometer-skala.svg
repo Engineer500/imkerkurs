@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" role="img" aria-labelledby="m07-rs-titel m07-rs-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="230" fill="#ffffff"/>
+  <title id="m07-rs-titel">Wasserskala des Refraktometers</title>
+  <desc id="m07-rs-beschr">Waagerechte Wasserskala mit Marken bei 17, 18, 20 und 23 %. Bis 17 % ideal, von 17 bis 18 % erntereif, von 18 bis 20 % warten, von 20 bis 23 % nur Backhonig. Bei 20 % liegt die gesetzliche Grenze.</desc>
+
+  <defs>
+    <!-- Feines Punktmuster für die Zone erntereif -->
+    <pattern id="m07-rs-punkte" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.1" fill="#3a2a10" fill-opacity=".65"/>
+    </pattern>
+    <!-- Schräge Schraffur für die Zone warten -->
+    <pattern id="m07-rs-schraeg" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#3a2a10" stroke-width="1.6" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Dichte Gegenschraffur für die Zone nur Backhonig -->
+    <pattern id="m07-rs-dicht" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#3a2a10" stroke-width="1.6" stroke-opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <!-- Überschrift -->
+  <text x="14" y="28" font-size="19" font-weight="700" fill="#1f1a12">Wassergehalt in %</text>
+
+  <!-- Refraktometer als einfacher Umriss: Okular, Rohr, Prisma unter der Klappe -->
+  <g transform="translate(294 8)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="0" y="14" width="14" height="18" rx="3" fill="#b8bcc2"/>
+    <rect x="14" y="17" width="42" height="12" fill="#b8bcc2"/>
+    <rect x="54" y="4" width="34" height="8" rx="2" fill="#b8bcc2"/>
+    <path d="M58 12H84L71 38Z" fill="#fff4d6"/>
+    <ellipse cx="71" cy="20" rx="5" ry="3" fill="#f2c14e" stroke-width="1"/>
+  </g>
+
+  <!-- Skalenbalken: x = 14 + 45 mal (Prozent minus 15), y 96 bis 140 -->
+  <rect x="14" y="96" width="90" height="44" fill="#f2c14e"/>
+  <rect x="104" y="96" width="45" height="44" fill="#f2c14e"/>
+  <rect x="104" y="96" width="45" height="44" fill="url(#m07-rs-punkte)"/>
+  <rect x="149" y="96" width="90" height="44" fill="#e07b39"/>
+  <rect x="149" y="96" width="90" height="44" fill="url(#m07-rs-schraeg)"/>
+  <rect x="239" y="96" width="135" height="44" fill="#b45309"/>
+  <rect x="239" y="96" width="135" height="44" fill="url(#m07-rs-dicht)"/>
+  <rect x="14" y="96" width="360" height="44" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="104" y1="96" x2="104" y2="140"/>
+    <line x1="149" y1="96" x2="149" y2="140"/>
+    <line x1="239" y1="96" x2="239" y2="140"/>
+  </g>
+
+  <!-- Zonenbeschriftungen mit weißem Rand, damit Muster nicht stören -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+    <text x="59" y="123.5">ideal</text>
+    <text x="194" y="123.5">warten</text>
+    <text x="306.5" y="123.5">nur Backhonig</text>
+  </g>
+
+  <!-- Beschriftung der schmalen Zone mit Verbindungslinie -->
+  <text x="126.5" y="80" font-size="16" text-anchor="middle" fill="#1f1a12">erntereif</text>
+  <line x1="126.5" y1="86" x2="126.5" y2="96" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="126.5" cy="96" r="2.3" fill="#3a2a10"/>
+
+  <!-- Marken unter dem Balken -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="104" y1="140" x2="104" y2="152"/>
+    <line x1="149" y1="140" x2="149" y2="152"/>
+    <line x1="239" y1="140" x2="239" y2="152"/>
+    <line x1="374" y1="140" x2="374" y2="152"/>
+  </g>
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="104" y="172">17 %</text>
+    <text x="149" y="172">18 %</text>
+    <text x="239" y="172">20 %</text>
+    <text x="374" y="172">23 %</text>
+  </g>
+
+  <!-- Pfeil von unten an die Marke 20 % -->
+  <line x1="239" y1="193" x2="239" y2="204" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M239 180L233 193H245Z" fill="#b45309" stroke="#b45309" stroke-width="1" stroke-linejoin="round"/>
+  <text x="239" y="223" font-size="16" text-anchor="middle" fill="#1f1a12">gesetzliche Grenze</text>
+</svg>

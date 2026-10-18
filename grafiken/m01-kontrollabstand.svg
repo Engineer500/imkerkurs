@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267" role="img" aria-labelledby="m01-ka-titel m01-ka-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="267" fill="#ffffff"/>
+  <title id="m01-ka-titel">Warum Schwarmzellen alle 7 Tage kontrolliert werden</title>
+  <desc id="m01-ka-beschr">Zeitstrahl der Weiselzelle von 0 bis 16 Tagen: 3 Tage Ei, 5 Tage offene Larve, dann 8 Tage verdeckelt. Eine Kontrolle am Tag 0 und die nächste nach 7 Tagen liegen vor der Verdeckelung nach 8 Tagen, ab der der Vorschwarm ausziehen kann. Eine Kontrolle nach 10 Tagen kommt zu spät.</desc>
+
+  <defs>
+    <!-- Muster der offenen Larve (wie in m01-entwicklung.svg) -->
+    <pattern id="ka-streifen" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Deckelzeichen: kleiner Halbkreis -->
+    <path id="ka-deckel" d="M-6 3a6 6 0 0 1 12 0z" fill="#3a2a10" fill-opacity=".4" stroke="#3a2a10" stroke-width="1" stroke-linejoin="round"/>
+    <!-- Pfeilspitzen, die Linie endet an der Basis der Spitze -->
+    <marker id="ka-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+    <marker id="ka-spitze-gross" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+    <marker id="ka-spitze-blass" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10" fill-opacity=".45"/>
+    </marker>
+    <marker id="ka-spitze-akzent" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <!-- Zeitachse: 1 Tag = 22 Einheiten, Tag 0 bei x = 26, Tag 16 bei x = 378 -->
+
+  <!-- Balken der Weiselzelle: Ei 3 Tage, offene Larve 5 Tage, verdeckelt 8 Tage -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="26" y="112" width="66" height="40" fill="#fffaf0"/>
+    <rect x="92" y="112" width="110" height="40" fill="#fff4d6"/>
+    <rect x="92" y="112" width="110" height="40" fill="url(#ka-streifen)" stroke="none"/>
+    <rect x="202" y="112" width="176" height="40" fill="#d9a441"/>
+  </g>
+  <ellipse cx="47" cy="132" rx="6" ry="4.2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#ka-deckel" x="220" y="132"/>
+  <use href="#ka-deckel" x="238" y="132"/>
+  <use href="#ka-deckel" x="342" y="132"/>
+  <use href="#ka-deckel" x="360" y="132"/>
+
+  <!-- Skala mit einem Teilstrich je Tag (Tag 0 bis Tag 16) -->
+  <g stroke="#3a2a10" stroke-width="1" fill="none">
+    <line x1="26" y1="160" x2="378" y2="160"/>
+    <path d="M26 160V166M48 160V166M70 160V166M92 160V166M114 160V166M136 160V166M158 160V166M180 160V166M202 160V166M224 160V166M246 160V166M268 160V166M290 160V166M312 160V166M334 160V166M356 160V166M378 160V166"/>
+  </g>
+
+  <!-- Senkrechte Linie bei Tag 8 (Deckel) -->
+  <line x1="202" y1="104" x2="202" y2="230" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Vorschwarm möglich: Pfeil ab Tag 8 bis zum Bildrand -->
+  <line x1="202" y1="202" x2="380" y2="202" stroke="#b45309" stroke-width="3" marker-end="url(#ka-spitze-akzent)"/>
+  <circle cx="202" cy="202" r="4" fill="#b45309"/>
+
+  <!-- Kontrolle bei Tag 0 -->
+  <line x1="16" y1="36" x2="16" y2="98" stroke="#3a2a10" stroke-width="2" marker-end="url(#ka-spitze)"/>
+  <!-- Kontrolle bei Tag 7 (kräftig) -->
+  <line x1="180" y1="36" x2="180" y2="94" stroke="#3a2a10" stroke-width="4" marker-end="url(#ka-spitze-gross)"/>
+  <!-- Kontrolle bei Tag 10: blass und gestrichelt, zu spät -->
+  <line x1="246" y1="66" x2="246" y2="98" stroke="#3a2a10" stroke-opacity=".45" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ka-spitze-blass)"/>
+
+  <!-- Klammer über 7 Tage zwischen den beiden kräftigen Kontrollen -->
+  <path d="M16 88Q16 80 24 80H90Q98 80 98 74Q98 80 106 80H172Q180 80 180 88" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="4" y="28">Kontrolle</text>
+    <text x="180" y="28" text-anchor="middle" font-weight="700">Kontrolle</text>
+    <text x="98" y="64" text-anchor="middle" font-weight="700" fill="#b45309">7 Tage</text>
+    <text x="246" y="56" text-anchor="middle" font-style="italic">zu spät</text>
+    <text x="61" y="137.5">Ei</text>
+    <text x="147" y="137.5" text-anchor="middle" stroke="#fff4d6" stroke-width="4" stroke-linejoin="round" paint-order="stroke">offene Larve</text>
+    <text x="290" y="137.5" text-anchor="middle" stroke="#d9a441" stroke-width="4" stroke-linejoin="round" paint-order="stroke">verdeckelt</text>
+    <text x="298" y="190" text-anchor="middle" font-weight="700" fill="#b45309">Vorschwarm möglich</text>
+    <text x="202" y="248" text-anchor="middle" font-weight="700">8 Tage</text>
+  </g>
+</svg>

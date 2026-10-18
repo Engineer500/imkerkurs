@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="m04-va-titel m04-va-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="400" fill="#ffffff"/>
+  <title id="m04-va-titel">Verdacht auf Amerikanische Faulbrut: vier Schritte</title>
+  <desc id="m04-va-beschr">Ablauf bei Verdacht auf Amerikanische Faulbrut in vier Schritten untereinander: Beute und Geräte bienensicher schließen, nichts entnehmen oder verstellen, Veterinäramt anrufen, Entscheidung des Amtes abwarten.</desc>
+
+  <defs>
+    <!-- feines Zellmuster für das Wabensymbol -->
+    <pattern id="va-zellmuster" width="7.2" height="12.4" patternUnits="userSpaceOnUse">
+      <path d="M0 2.1L3.6 0L7.2 2.1V6.2L3.6 8.3L0 6.2ZM3.6 8.3V12.4" fill="none" stroke="#3a2a10" stroke-width=".7" stroke-opacity=".5"/>
+    </pattern>
+  </defs>
+
+  <!-- Pfeile zwischen den Kästen -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="200" y1="110" x2="200" y2="124"/>
+    <line x1="200" y1="198" x2="200" y2="212"/>
+    <line x1="200" y1="286" x2="200" y2="300"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M194.5 123H205.5L200 134Z"/>
+    <path d="M194.5 211H205.5L200 222Z"/>
+    <path d="M194.5 299H205.5L200 310Z"/>
+  </g>
+
+  <!-- vier Kästen, der dritte (Anruf) mit kräftigem Rand im Akzent -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="30" y="46" width="340" height="64" rx="10"/>
+    <rect x="30" y="134" width="340" height="64" rx="10"/>
+    <rect x="30" y="310" width="340" height="64" rx="10"/>
+  </g>
+  <rect x="31.5" y="223.5" width="337" height="61" rx="9" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- Ziffern in Kreisen -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="60" cy="78" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="166" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="254" r="15" fill="#b45309"/>
+    <circle cx="60" cy="342" r="15" fill="#f2c14e"/>
+  </g>
+
+  <!-- Symbol 1: geschlossene Beute, Zarge mit aufgelegtem Deckel -->
+  <g transform="translate(112 78)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-20" y="17" width="40" height="5" fill="#b45309" fill-opacity=".45"/>
+    <rect x="-17" y="2" width="34" height="15" fill="#fff4d6"/>
+    <rect x="-17" y="-13" width="34" height="15" fill="#fff4d6"/>
+    <path d="M-7 -6H7M-7 9H7" fill="none"/>
+    <rect x="-22" y="-21" width="44" height="8" fill="#b45309" fill-opacity=".45"/>
+  </g>
+
+  <!-- Symbol 2: Wabe mit durchgestrichenem Pfeil nach außen -->
+  <g transform="translate(109 166)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-24" y="-17" width="24" height="34" fill="#b45309" fill-opacity=".45"/>
+    <rect x="-21" y="-14" width="18" height="28" fill="#fff4d6" stroke-width="1"/>
+    <rect x="-21" y="-14" width="18" height="28" fill="url(#va-zellmuster)" stroke="none"/>
+    <path d="M3 0H18" fill="none" stroke-width="3"/>
+    <path d="M17 -7.5L30 0L17 7.5Z" fill="#3a2a10"/>
+    <path d="M8 -13L17 13" fill="none" stroke="#b45309" stroke-width="4.5"/>
+  </g>
+
+  <!-- Symbol 3: Telefon mit Hörer auf der Gabel -->
+  <g transform="translate(112 254)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-22 19L-17 4H17L22 19Z" fill="#fff4d6"/>
+    <circle cx="0" cy="12" r="4.5" fill="#fffaf0" stroke-width="1.2"/>
+    <path d="M-17 -5Q0 -21 17 -5" fill="none" stroke-width="9"/>
+    <path d="M-17 -5Q0 -21 17 -5" fill="none" stroke="#3a2a10" stroke-width="6"/>
+    <rect x="-23" y="-9" width="12" height="15" rx="4" fill="#b45309"/>
+    <rect x="11" y="-9" width="12" height="15" rx="4" fill="#b45309"/>
+  </g>
+
+  <!-- Symbol 4: Sanduhr -->
+  <g transform="translate(112 342)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-11 -16H11L2 0L11 16H-11L-2 0Z" fill="#fffaf0"/>
+    <path d="M-9 16H9L4 7H-4Z" fill="#f2c14e" stroke-width="1"/>
+    <path d="M-8 -16H8L2 -9H-2Z" fill="#f2c14e" stroke-width="1"/>
+    <path d="M0 -4V6" fill="none" stroke-width="1"/>
+    <rect x="-14" y="-21" width="28" height="5" fill="#b45309" fill-opacity=".45"/>
+    <rect x="-14" y="16" width="28" height="5" fill="#b45309" fill-opacity=".45"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="200" y="30" text-anchor="middle" font-size="18" font-weight="700">Verdacht auf Amerikanische Faulbrut</text>
+    <g font-size="18" font-weight="700" text-anchor="middle" fill="#1f1a12">
+      <text x="60" y="84.5" fill="#1f1a12">1</text>
+      <text x="60" y="172.5">2</text>
+      <text x="60" y="260.5" fill="#ffffff">3</text>
+      <text x="60" y="348.5">4</text>
+    </g>
+    <text x="154" y="73">Beute und Geräte</text>
+    <text x="154" y="94">bienensicher schließen</text>
+    <text x="154" y="161">Nichts entnehmen</text>
+    <text x="154" y="182">oder verstellen</text>
+    <text x="154" y="260">Veterinäramt anrufen</text>
+    <text x="154" y="337">Entscheidung des</text>
+    <text x="154" y="358">Amtes abwarten</text>
+  </g>
+</svg>

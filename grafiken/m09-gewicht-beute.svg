@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-labelledby="m09-gb-titel m09-gb-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="280" fill="#ffffff"/>
+  <title id="m09-gb-titel">Zielgewicht einer eingefütterten Beute</title>
+  <desc id="m09-gb-beschr">Ein Balken aus drei Teilen: 23 kg Leergewicht der Beute, 2 kg Bienen und Pollen, 20 kg Futter, zusammen 45 kg. Daneben steht, dass eine Federzugwaage mit Hebel nur 22,5 kg anzeigt.</desc>
+
+  <defs>
+    <!-- feines Zellmuster für das Futter, Sechsecke mit Spitze nach oben -->
+    <pattern id="m09-gb-zellen" width="10.8" height="18.6" patternUnits="userSpaceOnUse">
+      <path d="M0 3.15L5.4 0L10.8 3.15V9.3L5.4 12.45L0 9.3ZM5.4 12.45V18.6" fill="none" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".4"/>
+    </pattern>
+  </defs>
+
+  <!-- Balken, maßstäblich: 340 Einheiten für 45 kg, also 7,556 je kg -->
+  <!-- Leergewicht 23 kg, helle Holzfarbe mit Maserlinien -->
+  <rect x="30" y="52" width="174" height="50" fill="#e8c99a"/>
+  <g fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".4" stroke-linecap="round">
+    <path d="M36 60Q70 56 104 60T170 60T198 59"/>
+    <path d="M36 66Q64 63 96 66T160 66T198 65"/>
+    <path d="M36 93Q68 90 100 93T166 93T198 92"/>
+    <path d="M36 99Q72 96 108 99T174 99T198 98"/>
+  </g>
+  <!-- Bienen und Pollen 2 kg: schmales Segment in Bienenfarben -->
+  <rect x="204" y="52" width="15" height="50" fill="#d9a441"/>
+  <g fill="#3a2a10">
+    <rect x="204" y="58" width="15" height="7"/>
+    <rect x="204" y="72" width="15" height="7"/>
+    <rect x="204" y="86" width="15" height="7"/>
+  </g>
+  <!-- Futter 20 kg: Honigfarbe mit feinem Zellmuster -->
+  <rect x="219" y="52" width="151" height="50" fill="#f2c14e"/>
+  <rect x="219" y="52" width="151" height="50" fill="url(#m09-gb-zellen)"/>
+  <!-- Umrisse der drei Teile -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="30" y="52" width="340" height="50"/>
+    <line x1="204" y1="52" x2="204" y2="102"/>
+    <line x1="219" y1="52" x2="219" y2="102"/>
+  </g>
+
+  <!-- Klammer über die ganze Breite -->
+  <path d="M30 46Q30 38 38 38H188Q198 38 200 32Q202 38 212 38H362Q370 38 370 46" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Linie zum schmalen Segment Bienen und Pollen -->
+  <line x1="211.5" y1="96" x2="211.5" y2="118" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="211.5" cy="96" r="2.3" fill="#3a2a10" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- Federzugwaage mit Hebel: Ring, Rohr mit Anzeigefenster, Haken, daran eine kleine Beute -->
+  <circle cx="80" cy="170" r="4.5" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="68" y="175" width="24" height="44" rx="3" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="73" y="180" width="14" height="34" fill="#ffffff" stroke="#3a2a10" stroke-width="1"/>
+  <path d="M73 185H78M73 191H78M73 197H78M73 203H78M73 209H78" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <line x1="73" y1="197" x2="87" y2="197" stroke="#b45309" stroke-width="2.5"/>
+  <line x1="80" y1="219" x2="80" y2="228" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="80" cy="231" r="3" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="50" y="234" width="60" height="6" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="54" y="240" width="52" height="22" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="70" y="254" width="20" height="3" fill="#3a2a10"/>
+
+  <!-- Anzeige der Waage -->
+  <line x1="87" y1="197" x2="124" y2="197" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="124" y="183" width="122" height="28" rx="5" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Pfeil von der Anzeige hinauf zum Balken -->
+  <path d="M246 197H340V120" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M340 105L332 122H348Z" fill="#b45309"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">
+    <text x="200" y="24" text-anchor="middle" font-size="18" font-weight="700">Summe 45 kg</text>
+    <text x="117" y="83" text-anchor="middle">Leergewicht 23 kg</text>
+    <text x="294.5" y="83" text-anchor="middle">Futter 20 kg</text>
+    <text x="211.5" y="134" text-anchor="middle">Bienen, Pollen 2 kg</text>
+    <text x="30" y="158" font-size="17" font-weight="700">Federzugwaage mit Hebel</text>
+    <text x="185" y="202" text-anchor="middle" font-weight="700">zeigt 22,5 kg</text>
+  </g>
+  <text x="293" y="221" text-anchor="middle" font-size="16" font-weight="700" fill="#b45309">Anzeige mal 2</text>
+</svg>

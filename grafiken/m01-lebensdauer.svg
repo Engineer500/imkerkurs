@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-labelledby="m01-ld-titel m01-ld-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="200" fill="#ffffff"/>
+  <title id="m01-ld-titel">Lebensdauer von Sommerbiene und Winterbiene</title>
+  <desc id="m01-ld-beschr">Zwei Balken im gleichen Zeitmaßstab. Der Balken der Sommerbiene ist kurz und endet nach etwa 4 bis 6 Wochen. Der Balken der Winterbiene ist deutlich länger und endet bei etwa 200 Tagen.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten.
+         Teilgruppen: Flügel, Beine, Rumpf (Hinterleib mit drei Streifen, Brust), Kopf. -->
+    <g id="biene-arbeiterin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-arbeiterin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-arbeiterin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-arbeiterin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-arbeiterin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Sommerbiene: gestreift, Winterbiene einfarbig -->
+    <pattern id="ld-streifen" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="9" height="9" fill="#f2c14e"/>
+      <rect width="4" height="9" fill="#3a2a10" fill-opacity=".7"/>
+    </pattern>
+    <pattern id="ld-streifen-hell" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="9" height="9" fill="#fffaf0"/>
+      <rect width="4" height="9" fill="#d9a441" fill-opacity=".45"/>
+    </pattern>
+    <!-- Winterbiene: Ende läuft hell aus, weil die Angabe "etwa" lautet -->
+    <linearGradient id="ld-verlauf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2c14e"/>
+      <stop offset=".78" stop-color="#f2c14e"/>
+      <stop offset="1" stop-color="#f2c14e" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="ld-verlauf-kontur" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a2a10"/>
+      <stop offset=".78" stop-color="#3a2a10"/>
+      <stop offset="1" stop-color="#3a2a10" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="ld-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+  </defs>
+
+  <!-- Maßstab: 200 Tage = 324 Einheiten (1 Tag = 1,62), Startlinie bei x = 56 -->
+
+  <!-- Sommerbiene: 42 Tage, der Teil von 28 bis 42 Tagen (4 bis 6 Wochen) hell und gestrichelt -->
+  <rect x="101.36" y="34" width="22.68" height="32" fill="url(#ld-streifen-hell)" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="56" y="34" width="45.36" height="32" fill="url(#ld-streifen)" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#biene-arbeiterin" transform="translate(30 50) scale(.85)"/>
+
+  <!-- Winterbiene: 200 Tage -->
+  <rect x="56" y="116" width="324" height="32" fill="url(#ld-verlauf)" stroke="url(#ld-verlauf-kontur)" stroke-width="1.5"/>
+  <use href="#biene-arbeiterin" transform="translate(30 132) scale(.85)"/>
+
+  <!-- Startlinie -->
+  <line x1="56" y1="28" x2="56" y2="154" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Pfeil auf den Anfang des unteren Balkens -->
+  <line x1="72" y1="176" x2="72" y2="162" stroke="#3a2a10" stroke-width="2" marker-end="url(#ld-spitze)"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="62" y="26" font-weight="700">Sommerbiene</text>
+    <text x="62" y="108" font-weight="700">Winterbiene</text>
+    <text x="132" y="55.5" font-weight="700" fill="#b45309">etwa 4 bis 6 Wochen</text>
+    <text x="380" y="108" text-anchor="end" font-weight="700" fill="#b45309">etwa 200 Tage</text>
+    <text x="62" y="192">ab August erbrütet</text>
+  </g>
+</svg>

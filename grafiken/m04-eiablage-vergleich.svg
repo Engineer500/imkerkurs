@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="m04-ea-titel m04-ea-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="260" fill="#ffffff"/>
+  <title id="m04-ea-titel">Eiablage im Vergleich: Königin und Afterweisel</title>
+  <desc id="m04-ea-beschr">Zwei Zellen im Längsschnitt. Links die Zelle einer Königin mit einem Ei, das am Zellgrund steht. Rechts die Zelle einer Afterweisel mit mehreren Eiern, die an der Zellwand kleben.</desc>
+
+  <defs>
+    <!-- Zelle im Längsschnitt, offen nach oben, spitz zulaufender Zellgrund; Ursprung oben in der Mitte, Breite 84 -->
+    <g id="ea-zelle">
+      <path d="M-42 0V126L0 140L42 126V0Z" fill="#fff4d6"/>
+      <path d="M-35 0V122.5L0 134L35 122.5V0Z" fill="#3a2a10" fill-opacity=".13"/>
+      <path d="M-42 0V126L0 140L42 126V0M-35 0V122.5L0 134L35 122.5V0" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-42 0H-35M35 0H42" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Trennlinie -->
+  <line x1="204" y1="36" x2="204" y2="196" stroke="#3a2a10" stroke-width="1" stroke-opacity=".5"/>
+
+  <!-- links: Königin, ein Ei steht am Zellgrund -->
+  <use href="#ea-zelle" x="142" y="44"/>
+  <ellipse cx="142" cy="163" rx="5.5" ry="14" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- rechts: Afterweisel, vier Eier an den Seitenwänden, keines am Boden -->
+  <use href="#ea-zelle" x="303" y="44"/>
+  <g fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2">
+    <ellipse cx="280" cy="82" rx="13" ry="4.8" transform="rotate(25 280 82)"/>
+    <ellipse cx="326" cy="104" rx="13" ry="4.8" transform="rotate(-25 326 104)"/>
+    <ellipse cx="280" cy="124" rx="13" ry="4.8" transform="rotate(-22 280 124)"/>
+    <ellipse cx="326" cy="145" rx="13" ry="4.8" transform="rotate(22 326 145)"/>
+  </g>
+
+  <!-- Hilfslinie zum Zellgrund -->
+  <line x1="91" y1="177.3" x2="122" y2="177.3" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="122" cy="177.3" r="2.3" fill="#3a2a10"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <g font-size="17" font-weight="700" text-anchor="middle">
+      <text x="142" y="24">Königin</text>
+      <text x="303" y="24">Afterweisel</text>
+    </g>
+    <text x="8" y="182">Zellgrund</text>
+    <g text-anchor="middle">
+      <text x="142" y="216">1 Ei,</text>
+      <text x="142" y="237">am Zellgrund</text>
+      <text x="303" y="216">mehrere Eier,</text>
+      <text x="303" y="237">an der Zellwand</text>
+    </g>
+  </g>
+</svg>

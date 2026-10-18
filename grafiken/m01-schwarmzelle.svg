@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m01-sz-titel m01-sz-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m01-sz-titel">Von der Weiselzelle zum Schwarm</title>
+  <desc id="m01-sz-beschr">Vier Stationen untereinander mit Zeitpfeil. Ein leeres Spielnäpfchen. Tag 0: ein bestiftetes Näpfchen mit Ei. Tag 8: eine verdeckelte Zelle, der Vorschwarm zieht aus. Tag 16: die Jungkönigin schlüpft, ein Nachschwarm ist möglich.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Königin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust.
+         Länger und schlanker als die Arbeiterin (etwa 50 statt 40 Einheiten), Flügel kürzer als der Hinterleib. -->
+    <g id="biene-koenigin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-koenigin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-9.3" cy="-9.9" rx="10.5" ry="4.6" transform="rotate(28 -9.3 -9.9)"/>
+        <ellipse cx="-5.5" cy="-12.8" rx="9.5" ry="4.2" transform="rotate(55 -5.5 -12.8)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-koenigin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: langer Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-koenigin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-17.5" cy="2" rx="17.5" ry="7.2" fill="#f2c14e"/>
+        <path d="M-15 -5.13A17.5 7.2 0 0 1 -12 -4.84L-12 8.84A17.5 7.2 0 0 1 -15 9.13ZM-21.5 -5.01A17.5 7.2 0 0 1 -18.5 -5.19L-18.5 9.19A17.5 7.2 0 0 1 -21.5 9.01ZM-28 -3.76A17.5 7.2 0 0 1 -25 -4.51L-25 8.51A17.5 7.2 0 0 1 -28 7.76Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-koenigin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- geschlossene Weiselzelle in Eichelform, Ursprung oben in der Mitte (an der Wabenunterkante) -->
+    <g id="weiselzelle-zu">
+      <path d="M-16 0H16V24C16 46 10 64 4 76Q0 82-4 76C-10 64-16 46-16 24Z" fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-13 34H13M-12 44H12M-10 54H10M-7 64H7" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Zeitpfeil mit Punkten: Station 1 offen (vor Tag 0), Stationen 2 bis 4 gefüllt -->
+  <line x1="32" y1="20" x2="32" y2="466" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M32 475L26.5 464H37.5Z" fill="#3a2a10"/>
+  <circle cx="32" cy="50" r="5.5" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <g fill="#3a2a10" stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="32" cy="170" r="5.5"/>
+    <circle cx="32" cy="302.5" r="5.5"/>
+    <circle cx="32" cy="417.5" r="5.5"/>
+  </g>
+
+  <!-- Station 1: Spielnäpfchen, leer, nach unten offen -->
+  <path d="M112 67.5V47C112 38 120 32.5 132 32.5C144 32.5 152 38 152 47V67.5H145V48C145 43 140 39.5 132 39.5C124 39.5 119 43 119 48V67.5Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="100" y="20" width="64" height="12.5" rx="2" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Station 2: bestiftetes Näpfchen mit Ei am geschlossenen Ende -->
+  <path d="M112 192.5V162C112 153 120 147.5 132 147.5C144 147.5 152 153 152 162V192.5H145V163C145 158 140 154.5 132 154.5C124 154.5 119 158 119 163V192.5Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <ellipse cx="132" cy="164.5" rx="4.6" ry="9" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.2"/>
+  <rect x="100" y="135" width="64" height="12.5" rx="2" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Station 3: verdeckelte Zelle -->
+  <use href="#weiselzelle-zu" x="132" y="262.5"/>
+  <rect x="100" y="250" width="64" height="12.5" rx="2" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Station 4: Schlupf, Spitze geöffnet, Kopf und Brust der Jungkönigin schauen heraus -->
+  <g transform="translate(132 447) rotate(90) scale(1.4)">
+    <use href="#biene-koenigin-beine"/>
+    <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441" stroke="#3a2a10" stroke-width="1.1"/>
+    <use href="#biene-koenigin-kopf"/>
+  </g>
+  <path d="M-16 0H16V24C16 46 12 56 10 61H-10C-12 56-16 46-16 24Z" transform="translate(132 377.5)" fill="#d9a441"/>
+  <path d="M-10 61C-12 56-16 46-16 24V0H16V24C16 46 12 56 10 61" transform="translate(132 377.5)" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M-13 34H13M-12 44H12M-11 53H11" transform="translate(132 377.5)" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45" stroke-linecap="round"/>
+  <rect x="100" y="365" width="64" height="12.5" rx="2" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- abgesprengter Deckel an der Öffnung -->
+  <path d="M142 438.5L147 441.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="153" cy="445" rx="7" ry="3.8" transform="rotate(40 153 445)" fill="#d9a441" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Tageszahlen zwischen Zeitpfeil und Zelle -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="44" y="175.5">Tag 0</text>
+    <text x="44" y="308">Tag 8</text>
+    <text x="44" y="423">Tag 16</text>
+  </g>
+
+  <!-- Beschriftungen rechts der Zellen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="192" y="55.5">Spielnäpfchen</text>
+    <text x="192" y="175.5">bestiftet</text>
+    <text x="192" y="296">verdeckelt</text>
+    <text x="192" y="411">Jungkönigin schlüpft</text>
+  </g>
+
+  <!-- Pfeile zu Vorschwarm und Nachschwarm: einzige Elemente in der Akzentfarbe -->
+  <g stroke="#b45309" stroke-width="2.5" stroke-linecap="round">
+    <line x1="192" y1="313" x2="200" y2="313"/>
+    <line x1="192" y1="428" x2="200" y2="428"/>
+  </g>
+  <g fill="#b45309">
+    <path d="M207 313L198 307.5V318.5Z"/>
+    <path d="M207 428L198 422.5V433.5Z"/>
+  </g>
+  <g fill="#1f1a12" font-size="16">
+    <text x="212" y="318.5">Vorschwarm zieht aus</text>
+    <text x="212" y="433.5">Nachschwarm möglich</text>
+  </g>
+</svg>

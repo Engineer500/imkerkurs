@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m01-sp-titel m01-sp-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m01-sp-titel">Dauer der Schwänzelphase und Entfernung</title>
+  <desc id="m01-sp-beschr">Diagramm: Auf der waagerechten Achse die Entfernung bis 2 km, auf der senkrechten Achse die Dauer der Schwänzelphase bis 2,5 s. Die Linie steigt von 0,41 s bei 100 m steil auf etwa 1,7 s bei 1 km und danach flacher auf 2,20 s bei 1,7 km.</desc>
+
+  <!-- Maßstab: waagerecht 158 Einheiten je km (0 bis 2 km = 62 bis 378), senkrecht 80 Einheiten je s (0 bis 2,5 s = 230 bis 30) -->
+
+  <!-- Achsen mit Pfeilspitzen -->
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <line x1="62" y1="230" x2="384" y2="230"/>
+    <line x1="62" y1="230" x2="62" y2="28"/>
+  </g>
+  <path d="M394 230L383 224.5V235.5ZM62 18L56.5 29H67.5Z" fill="#3a2a10"/>
+
+  <!-- Teilstriche unter der waagerechten Achse bei 100 m, 1 km und 1,7 km -->
+  <g stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round">
+    <line x1="77.8" y1="230" x2="77.8" y2="237"/>
+    <line x1="220" y1="230" x2="220" y2="237"/>
+    <line x1="330.6" y1="230" x2="330.6" y2="237"/>
+  </g>
+
+  <!-- gestrichelte Senkrechte beim Knick (1 km) -->
+  <line x1="220" y1="72" x2="220" y2="230" stroke="#3a2a10" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <!-- Linie durch die drei Punkte: erst steil, nach dem Knick flacher -->
+  <path d="M77.8 197.2L220 94L330.6 54" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Punkte: gefüllt = gemessen, offen = Modellwert -->
+  <circle cx="77.8" cy="197.2" r="5.5" fill="#3a2a10" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="220" cy="94" r="5.5" fill="#ffffff" stroke="#3a2a10" stroke-width="2"/>
+  <circle cx="330.6" cy="54" r="5.5" fill="#3a2a10" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Wertbeschriftungen neben den Punkten -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="90" y="216">0,41 s</text>
+    <text x="232" y="116">ca. 1,7 s</text>
+    <text x="331" y="40" text-anchor="middle">2,20 s</text>
+    <text x="214" y="78" text-anchor="end" font-weight="700" fill="#b45309">Knick bei 1 km</text>
+  </g>
+
+  <!-- Entfernungen unter der Achse -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="77.8" y="256">100 m</text>
+    <text x="220" y="256">1 km</text>
+    <text x="330.6" y="256">1,7 km</text>
+  </g>
+
+  <!-- Achsentitel -->
+  <text x="225" y="284" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">Entfernung</text>
+  <text transform="translate(26 130) rotate(-90)" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">Dauer der Schwänzelphase</text>
+</svg>

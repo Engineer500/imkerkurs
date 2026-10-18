@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="m04-sk-titel m04-sk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="460" fill="#ffffff"/>
+  <title id="m04-sk-titel">Muster einer Stockkarte</title>
+  <desc id="m04-sk-beschr">Muster einer Stockkarte für Volk 1 mit zehn Feldern untereinander: Datum, Belagerte Wabengassen, Brutwaben, Königin oder Eier gesehen, Futter in kg, Sanftmut, Wabensitz, Schwarmtrieb (1 bis 4), Schwarmzellen, Nächste Aufgabe.</desc>
+
+  <!-- Karteikarte -->
+  <rect x="16" y="14" width="368" height="430" rx="8" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Trennlinie unter der Kopfzeile -->
+  <line x1="30" y1="62" x2="370" y2="62" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- leere Schreiblinien der zehn Felder -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="254" y1="96" x2="374" y2="96"/>
+    <line x1="254" y1="130" x2="374" y2="130"/>
+    <line x1="254" y1="164" x2="374" y2="164"/>
+    <line x1="254" y1="198" x2="374" y2="198"/>
+    <line x1="254" y1="232" x2="374" y2="232"/>
+    <line x1="254" y1="266" x2="374" y2="266"/>
+    <line x1="254" y1="300" x2="374" y2="300"/>
+    <line x1="254" y1="334" x2="374" y2="334"/>
+    <line x1="254" y1="368" x2="374" y2="368"/>
+    <line x1="254" y1="402" x2="374" y2="402"/>
+  </g>
+
+  <!-- Bleistift als Zierde -->
+  <g transform="translate(340 426) rotate(-30)" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round">
+    <rect x="-24" y="-4.5" width="38" height="9" fill="#f2c14e"/>
+    <path d="M-24 -4.5L-24 4.5L-35 0Z" fill="#fff4d6"/>
+    <path d="M-35 0L-31.5 -1.6L-31.5 1.6Z" fill="#3a2a10"/>
+    <rect x="14" y="-4.5" width="4" height="9" fill="#ffffff"/>
+    <rect x="18" y="-4.5" width="6" height="9" rx="2" fill="#b45309"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="200" y="46" text-anchor="middle" font-size="19" font-weight="700">Stockkarte Volk 1</text>
+    <text x="30" y="94">Datum</text>
+    <text x="30" y="128">Belagerte Wabengassen</text>
+    <text x="30" y="162">Brutwaben</text>
+    <text x="30" y="196">Königin oder Eier gesehen</text>
+    <text x="30" y="230">Futter in kg</text>
+    <text x="30" y="264">Sanftmut</text>
+    <text x="30" y="298">Wabensitz</text>
+    <text x="30" y="332">Schwarmtrieb (1 bis 4)</text>
+    <text x="30" y="366">Schwarmzellen</text>
+    <text x="30" y="400">Nächste Aufgabe</text>
+  </g>
+</svg>

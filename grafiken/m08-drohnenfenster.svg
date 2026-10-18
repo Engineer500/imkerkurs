@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-labelledby="m08-df-titel m08-df-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="280" fill="#ffffff"/>
+  <title id="m08-df-titel">Das Schneidefenster für Drohnenbrut</title>
+  <desc id="m08-df-beschr">Zeitachse für einen Drohnenrahmen, Tage nach dem Einhängen nach der LWG. Tag 0: einhängen. Bis Tag 10 baut das Volk den Rahmen aus, die Brut ist offen. Von Tag 10 bis Tag 24 ist sie verdeckelt, das ist das Fenster zum Ausschneiden, ideal ist es, wenn über die Hälfte der Zellen gedeckelt ist. Ab Tag 24 schlüpfen die Drohnen, dann ist es zu spät.</desc>
+
+  <defs>
+    <!-- Deckelmuster der verdeckelten Brut: kleine Wachsdeckel, versetzt -->
+    <pattern id="m08-df-deckel" width="18" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="4.5" cy="4" r="3.7" fill="#d9a441" stroke="#3a2a10" stroke-opacity=".6" stroke-width=".9"/>
+      <circle cx="13.5" cy="12" r="3.7" fill="#d9a441" stroke="#3a2a10" stroke-opacity=".6" stroke-width=".9"/>
+    </pattern>
+
+    <!-- offene Zelle mit Larve -->
+    <g id="m08-df-larve">
+      <circle r="10" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+      <path d="M-5.5 2.5Q-7 -3.5 -1 -5.2Q5.5 -5.5 6 0.5Q6.2 5 1 5.6Q-3 5.8 -5.5 2.5Z" fill="#ffffff" stroke="#3a2a10" stroke-width="1"/>
+      <path d="M-3.4 -2.4L-1.4 1.8M0.4 -3.7L1.6 2.6M3.8 -2.6L3.6 2.4" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".6" stroke-linecap="round"/>
+    </g>
+
+    <!-- DROHN: Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, gedrungener als die Arbeiterin, große Augen -->
+    <g id="m08-df-drohn">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-11.5" rx="14" ry="5.6" transform="rotate(26 -11 -11.5)"/>
+        <ellipse cx="-4.5" cy="-15.5" rx="12.5" ry="5" transform="rotate(60 -4.5 -15.5)"/>
+      </g>
+      <path d="M-3 7L-6 13M1 7.7L1.5 14M4.5 7L8.5 12" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-13" cy="2" rx="13.5" ry="8.4" fill="#d9a441"/>
+        <path d="M-12 -6.3A13.5 8.4 0 0 1 -9 -6L-9 10A13.5 8.4 0 0 1 -12 10.3ZM-18.3 -5.3A13.5 8.4 0 0 1 -15.3 -6.1L-15.3 10.1A13.5 8.4 0 0 1 -18.3 9.3ZM-24.6 -1.7A13.5 8.4 0 0 1 -21.6 -4.3L-21.6 8.3A13.5 8.4 0 0 1 -24.6 5.7Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="8.4" ry="8" fill="#b9892f"/>
+      </g>
+      <ellipse cx="11" cy="0" rx="6.4" ry="6.6" fill="#3a2a10"/>
+      <ellipse cx="12.4" cy="-1.8" rx="2.2" ry="1.8" fill="#ffffff" fill-opacity=".6"/>
+    </g>
+
+    <!-- Schere: zwei Klingen kreuzen sich im Drehpunkt, links die Ringe -->
+    <g id="m08-df-schere">
+      <path d="M-6 -3.75L14 8.75M-6 3.75L14 -8.75" fill="none" stroke="#3a2a10" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="-10" cy="-6.5" r="4" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+      <circle cx="-10" cy="6.5" r="4" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+      <circle r="1.6" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <!-- Zeichnung und Beschriftungen um 20 Einheiten nach unten verschoben, damit oben zwei Zeilen Platz haben -->
+  <g transform="translate(0 20)">
+
+  <!-- Klammer über dem Schneidefenster -->
+  <path d="M151.4 50Q151.4 42 159.4 42H228.4Q236.4 42 236.4 34Q236.4 42 244.4 42H313.4Q321.4 42 321.4 50" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Balken, Tag 0 bis 28 über 340 Einheiten (1 Tag = 12,14) -->
+  <rect x="30" y="56" width="121.4" height="60" fill="#fff4d6"/>
+  <rect x="151.4" y="56" width="170" height="60" fill="#d9a441"/>
+  <rect x="151.4" y="56" width="170" height="60" fill="url(#m08-df-deckel)"/>
+  <rect x="321.4" y="56" width="48.6" height="60" fill="#fffaf0"/>
+  <rect x="30" y="56" width="340" height="60" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="321.4" y="56" width="48.6" height="60" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M151.4 56V116" stroke="#3a2a10" stroke-width="2"/>
+
+  <!-- Brut offen: drei Zellen mit Larven -->
+  <use href="#m08-df-larve" x="57" y="101"/>
+  <use href="#m08-df-larve" x="91" y="101"/>
+  <use href="#m08-df-larve" x="125" y="101"/>
+
+  <!-- Schild für den Text im verdeckelten Abschnitt -->
+  <rect x="165" y="68" width="143" height="32" rx="8" fill="#ffffff" fill-opacity=".93"/>
+
+  <!-- Ab Tag 24: Drohn und durchgestrichene Schere (zu spät) -->
+  <use href="#m08-df-drohn" transform="translate(347 69) scale(.54)"/>
+  <use href="#m08-df-schere" transform="translate(347 97) scale(.76)"/>
+  <circle cx="346" cy="97" r="15.5" fill="none" stroke="#b8322a" stroke-width="3"/>
+  <path d="M335 86L357 108" stroke="#b8322a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Zeitachse mit Pfeil und Marken bei Tag 0, 10, 24 -->
+  <path d="M30 128H372" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M370 123L380 128L370 133Z" fill="#3a2a10"/>
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="30" y1="121" x2="30" y2="135"/>
+    <line x1="151.4" y1="121" x2="151.4" y2="135"/>
+    <line x1="321.4" y1="121" x2="321.4" y2="135"/>
+  </g>
+  <g stroke="#3a2a10" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="30" y1="116" x2="30" y2="121"/>
+    <line x1="151.4" y1="116" x2="151.4" y2="121"/>
+    <line x1="321.4" y1="116" x2="321.4" y2="121"/>
+  </g>
+
+  <!-- Haltelinie zum Text unter dem dritten Abschnitt -->
+  <line x1="360" y1="116" x2="360" y2="192" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="360" cy="116" r="2.3" fill="#3a2a10"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="90.7" y="71" text-anchor="middle">Ausbau und</text>
+    <text x="90.7" y="87" text-anchor="middle">offene Brut</text>
+    <text x="236.4" y="89.5" text-anchor="middle">Brut verdeckelt</text>
+    <text x="30" y="154">Tag 0:</text>
+    <text x="30" y="174">einhängen</text>
+    <text x="151.4" y="154" text-anchor="middle">Tag 10</text>
+    <text x="321.4" y="154" text-anchor="middle">Tag 24</text>
+    <g text-anchor="end">
+      <text x="392" y="210">Drohnen schlüpfen:</text>
+      <text x="392" y="230">zu spät</text>
+    </g>
+  </g>
+  </g>
+
+  <!-- Klammertext oben und Achsentitel unten -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="236.4" y="16" text-anchor="middle" font-weight="700" fill="#b45309">Fenster zum Ausschneiden</text>
+    <text x="236.4" y="36" text-anchor="middle" font-weight="700" fill="#b45309">ideal: über die Hälfte gedeckelt</text>
+    <text x="30" y="272">Tage nach dem Einhängen (LWG)</text>
+  </g>
+</svg>

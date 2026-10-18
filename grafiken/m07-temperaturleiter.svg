@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" role="img" aria-labelledby="m07-tl-titel m07-tl-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="420" fill="#ffffff"/>
+  <title id="m07-tl-titel">Die Temperaturen der Lektion auf einer Skala</title>
+  <desc id="m07-tl-beschr">Senkrechte Temperaturskala. Bei 5 bis 7 °C entstehen Kristalle am schnellsten. Bei 14 °C wachsen sie am besten, hier rührst du. Unter 15 °C lagerst du. Bei 32 °C füllst du Cremehonig ab, bei 35 °C taust du im Wärmeschrank auf. Bei 40 °C liegt die Obergrenze für Honig, den du verwendest.</desc>
+
+  <defs>
+    <!-- Dichte Schraffur über 40 °C -->
+    <pattern id="m07-tl-schraffur" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1.6" stroke-opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <!-- Skalenbalken: y = 386 minus 7,5 mal Grad Celsius, von 0 °C bis 45 °C -->
+  <rect x="80" y="48.5" width="20" height="337.5" fill="#fff4d6"/>
+  <rect x="80" y="273.5" width="20" height="112.5" fill="#4a7fb5" fill-opacity=".3"/>
+  <rect x="80" y="48.5" width="20" height="37.5" fill="url(#m07-tl-schraffur)"/>
+  <rect x="80" y="333.5" width="20" height="15" fill="#4a7fb5"/>
+  <rect x="80" y="48.5" width="20" height="337.5" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+  <!-- Marken quer über den Balken -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="80" y1="123.5" x2="100" y2="123.5"/>
+    <line x1="80" y1="146" x2="100" y2="146"/>
+    <line x1="80" y1="273.5" x2="100" y2="273.5"/>
+    <line x1="80" y1="333.5" x2="100" y2="333.5"/>
+    <line x1="80" y1="348.5" x2="100" y2="348.5"/>
+  </g>
+  <!-- 40 °C: dicke Linie quer über den Balken -->
+  <line x1="74" y1="86" x2="106" y2="86" stroke="#b45309" stroke-width="4"/>
+  <!-- Kristallsymbol im Abschnitt 5 bis 7 °C -->
+  <path d="M90 335L91.5 338.9L95.7 339.2L92.5 341.8L93.5 345.9L90 343.6L86.5 345.9L87.5 341.8L84.3 339.2L88.5 338.9Z" fill="#ffffff"/>
+  <!-- 14 °C: Punktmarke -->
+  <circle cx="90" cy="281" r="4.5" fill="#b45309" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Linien von den Marken zu den Beschriftungen rechts -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="100" y1="123.5" x2="106" y2="123.5"/>
+    <line x1="100" y1="146" x2="106" y2="146"/>
+    <line x1="100" y1="281" x2="106" y2="281"/>
+    <line x1="100" y1="341" x2="106" y2="341"/>
+  </g>
+
+  <!-- Verbotszeichen neben dem schraffierten Bereich über 40 °C -->
+  <line x1="71" y1="64" x2="80" y2="64" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="60" cy="64" r="11" fill="#ffffff" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M55.5 70q-2.5-2.5 0-5t0-5M60 70q-2.5-2.5 0-5t0-5M64.5 70q-2.5-2.5 0-5t0-5" fill="none" stroke="#b45309" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="52.2" y1="56.2" x2="67.8" y2="71.8" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Wärmeschrank bei 35 °C: Kasten mit Hitzewellen -->
+  <line x1="72" y1="123.5" x2="80" y2="123.5" stroke="#3a2a10" stroke-width="1"/>
+  <g transform="translate(50 112.5)">
+    <rect x="1" y="1" width="20" height="20" rx="2" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+    <path d="M6 17q-3-3 0-6t0-6M11 17q-3-3 0-6t0-6M16 17q-3-3 0-6t0-6" fill="none" stroke="#b45309" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Eimer bei 32 °C -->
+  <line x1="72" y1="146" x2="80" y2="146" stroke="#3a2a10" stroke-width="1"/>
+  <g transform="translate(50 138)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M3 4H19L17 19H5Z" fill="#ffffff"/>
+    <path d="M3.6 9H18.4L17 19H5Z" fill="#f2c14e" stroke="none"/>
+    <path d="M3 4H19L17 19H5Z" fill="none"/>
+    <path d="M5 4Q11 -3 17 4" fill="none"/>
+  </g>
+
+  <!-- Klammer links vom unteren Balkenende bis zur Marke 15 °C -->
+  <path d="M75 273.5Q70 273.5 70 278.5V319Q70 329.75 62 329.75Q70 329.75 70 340.5V381Q70 386 75 386" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Kellersymbol: Treppe nach unten -->
+  <g transform="translate(20 352)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M2 2H14V10H22V18H30V26H2Z" fill="#e8c99a"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="110" y="80">40 °C: Obergrenze für <tspan x="110" dy="19">Honig, den du verwendest</tspan></text>
+    <text x="110" y="129">35 °C: Wärmeschrank zum Auftauen</text>
+    <text x="110" y="151.5">32 °C: Cremehonig abfüllen</text>
+    <text x="110" y="275">14 °C: Kristalle wachsen <tspan x="110" dy="19">am besten, hier rührst du</tspan></text>
+    <text x="110" y="335.5">5 bis 7 °C: Primärkristalle <tspan x="110" dy="19">entstehen am schnellsten</tspan></text>
+    <text x="5" y="306">unter <tspan x="5" dy="19">15 °C: </tspan><tspan x="5" dy="19">Lagern</tspan></text>
+  </g>
+</svg>

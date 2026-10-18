@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="m03-hb-titel m03-hb-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <title id="m03-hb-titel">Wer muss was beweisen?</title>
+  <desc id="m03-hb-beschr">Ablauf nach einem Stich: Der Geschädigte muss beweisen, dass die Biene aus deinem Volk kam. Gelingt das nicht, scheitert die Klage. Gelingt es, haftest du ohne Verschulden nach § 833 Satz 1 BGB, und die Privathaftpflicht prüft den Schaden.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin wie in den Grafiken von Modul 1. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust. -->
+    <g id="hb-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Pfeilspitze, die Linie endet an der Basis der Spitze -->
+    <marker id="hb-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+  </defs>
+
+  <!-- Pfeile (der linke Zweig ist gestrichelt) -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5">
+    <line x1="200" y1="72" x2="200" y2="97" marker-end="url(#hb-spitze)"/>
+    <line x1="112" y1="206.7" x2="98.75" y2="289.14" stroke-dasharray="6 4" marker-end="url(#hb-spitze)"/>
+    <line x1="288" y1="206.7" x2="301.25" y2="289.14" marker-end="url(#hb-spitze)"/>
+    <line x1="303" y1="380" x2="303" y2="413" marker-end="url(#hb-spitze)"/>
+  </g>
+
+  <!-- Kästchen Stich mit Biene -->
+  <rect x="130" y="18" width="140" height="54" rx="14" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <use href="#hb-biene" transform="translate(172.5 50) scale(.85)"/>
+  <text x="202" y="50.5" font-size="16" font-weight="700" fill="#1f1a12">Stich</text>
+
+  <!-- Entscheidung als Raute -->
+  <polygon points="200,108 340,180 200,252 60,180" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <g font-size="16" font-weight="700" fill="#1f1a12" text-anchor="middle">
+    <text x="200" y="162">Beweis:</text>
+    <text x="200" y="181">Biene aus</text>
+    <text x="200" y="200">deinem Volk?</text>
+  </g>
+
+  <!-- Beschriftung der Zweige -->
+  <g font-size="16" font-weight="700" fill="#1f1a12">
+    <text x="95" y="252" text-anchor="end">Nein</text>
+    <text x="311" y="252">Ja</text>
+  </g>
+
+  <!-- Linker Zweig: gestrichelte Umrandung -->
+  <rect x="17" y="300" width="160" height="58" rx="10" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="97" y="334.5" text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">Klage scheitert</text>
+
+  <!-- Rechter Zweig: durchgezogene, kräftige Umrandung -->
+  <rect x="223" y="300" width="160" height="80" rx="10" fill="#f2c14e" stroke="#3a2a10" stroke-width="2"/>
+  <g text-anchor="middle" fill="#1f1a12">
+    <text x="303" y="323" font-size="16" font-weight="700">Haftung ohne</text>
+    <text x="303" y="342" font-size="16" font-weight="700">Verschulden</text>
+    <text x="303" y="366" font-size="15">§ 833 Satz 1 BGB</text>
+  </g>
+
+  <!-- Privathaftpflicht -->
+  <rect x="218" y="424" width="170" height="58" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="16" font-weight="700" fill="#1f1a12">
+    <text x="303" y="448">Privathaftpflicht</text>
+    <text x="303" y="467">prüft</text>
+  </g>
+</svg>

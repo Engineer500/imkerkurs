@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m02-rm-titel m02-rm-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m02-rm-titel">Das Zanderrähmchen</title>
+  <desc id="m02-rm-beschr">Zanderrähmchen mit Maßen: Oberträger 477 mm mit Ohren, Unterträger 420 mm, Höhe 220 mm, zwei Seitenteile. Vier senkrechte Edelstahldrähte laufen durch Messingösen. In der Mitte hängt die Mittelwand mit 395 mal 195 mm.</desc>
+
+  <defs>
+    <!-- Sechsecke der Mittelwand, zart angedeutet -->
+    <pattern id="m02-rm-hex" width="10.392" height="18" patternUnits="userSpaceOnUse">
+      <rect width="10.392" height="18" fill="#fff4d6"/>
+      <path d="M5.196 0L10.392 3V9L5.196 12L0 9V3ZM5.196 12V18" fill="none" stroke="#3a2a10" stroke-opacity=".3" stroke-width=".8"/>
+    </pattern>
+    <!-- Messingöse: gelber Ring mit Loch -->
+    <g id="m02-rm-oese">
+      <circle r="2.6" fill="#f2c14e" stroke="#3a2a10" stroke-width="1"/>
+      <circle r=".9" fill="#3a2a10"/>
+    </g>
+  </defs>
+
+  <!-- Maßstab: 1 mm = 0,54 Einheiten. Rähmchen: Oberträger 257,6 breit, Unterträger 226,8, Höhe 118,8 -->
+
+  <!-- Mittelwand 395 mal 195 mm: 213,3 mal 105,3 -->
+  <rect x="64.14" y="96.75" width="213.3" height="105.3" fill="url(#m02-rm-hex)" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Seitenteile -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="57.39" y="96.75" width="6.75" height="105.3"/>
+    <rect x="277.44" y="96.75" width="6.75" height="105.3"/>
+    <!-- Oberträger mit Ohren links und rechts -->
+    <rect x="42" y="90" width="257.6" height="6.75"/>
+    <!-- Unterträger, so lang wie das Außenmaß der Seitenteile -->
+    <rect x="57.39" y="202.05" width="226.8" height="6.75"/>
+  </g>
+
+  <!-- Vier senkrechte Drähte -->
+  <g stroke="#7b8088" stroke-width="1.5">
+    <line x1="106.8" y1="93.4" x2="106.8" y2="205.4"/>
+    <line x1="149.46" y1="93.4" x2="149.46" y2="205.4"/>
+    <line x1="192.12" y1="93.4" x2="192.12" y2="205.4"/>
+    <line x1="234.78" y1="93.4" x2="234.78" y2="205.4"/>
+  </g>
+
+  <!-- Messingösen in Oberträger und Unterträger -->
+  <use href="#m02-rm-oese" x="106.8" y="93.4"/>
+  <use href="#m02-rm-oese" x="149.46" y="93.4"/>
+  <use href="#m02-rm-oese" x="192.12" y="93.4"/>
+  <use href="#m02-rm-oese" x="234.78" y="93.4"/>
+  <use href="#m02-rm-oese" x="106.8" y="205.4"/>
+  <use href="#m02-rm-oese" x="149.46" y="205.4"/>
+  <use href="#m02-rm-oese" x="192.12" y="205.4"/>
+  <use href="#m02-rm-oese" x="234.78" y="205.4"/>
+
+  <!-- Schild für die Mittelwand -->
+  <rect x="102.8" y="127" width="136" height="46" rx="8" fill="#ffffff" fill-opacity=".92"/>
+
+  <!-- Maßlinie oben: Oberträger -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="42" y1="62" x2="42" y2="88"/>
+    <line x1="299.6" y1="62" x2="299.6" y2="88"/>
+  </g>
+  <line x1="42" y1="68" x2="299.6" y2="68" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M42 68L52 64V72ZM299.6 68L289.6 64V72Z" fill="#3a2a10"/>
+
+  <!-- Maßlinie unten: Unterträger -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="57.39" y1="211" x2="57.39" y2="234"/>
+    <line x1="284.19" y1="211" x2="284.19" y2="234"/>
+  </g>
+  <line x1="57.39" y1="230" x2="284.19" y2="230" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M57.39 230L67.39 226V234ZM284.19 230L274.19 226V234Z" fill="#3a2a10"/>
+
+  <!-- Maßlinie links: Höhe -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="28" y1="90" x2="40" y2="90"/>
+    <line x1="28" y1="208.8" x2="55" y2="208.8"/>
+  </g>
+  <line x1="32" y1="90" x2="32" y2="208.8" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M32 90L28 100H36ZM32 208.8L28 198.8H36Z" fill="#3a2a10"/>
+
+  <!-- Linien zu den Beschriftungen rechts -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-linecap="round">
+    <line x1="292" y1="93.4" x2="302" y2="93.4"/>
+    <line x1="234.78" y1="118" x2="302" y2="118"/>
+    <line x1="280.8" y1="160" x2="302" y2="160"/>
+    <line x1="237.4" y1="205.4" x2="302" y2="205.4"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="292" cy="93.4" r="2.3"/>
+    <circle cx="234.78" cy="118" r="2.3"/>
+    <circle cx="280.8" cy="160" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="170.8" y="59" text-anchor="middle" font-weight="700">Oberträger <tspan fill="#b45309">477 mm</tspan></text>
+    <text x="170.8" y="254" text-anchor="middle" font-weight="700">Unterträger <tspan fill="#b45309">420 mm</tspan></text>
+    <text transform="translate(21 149.4) rotate(-90)" text-anchor="middle" font-weight="700">Höhe <tspan fill="#b45309">220 mm</tspan></text>
+    <text x="308" y="98.9">Ohr</text>
+    <text x="308" y="123.5">Draht</text>
+    <text x="308" y="165.5">Seitenteil</text>
+    <text x="308" y="210.9">Messingöse</text>
+    <text x="170.8" y="143.5" text-anchor="middle" font-weight="700">Mittelwand</text>
+    <text x="170.8" y="165" text-anchor="middle" font-weight="700" fill="#b45309">395 mal 195 mm</text>
+  </g>
+</svg>

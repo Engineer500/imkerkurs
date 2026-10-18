@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="m03-sa-titel m03-sa-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="460" fill="#ffffff"/>
+  <title id="m03-sa-titel">Die Schritte bis zum ersten Volk</title>
+  <desc id="m03-sa-beschr">Zeitstrahl ab sofort bis zum Frühjahr im Startjahr mit fünf Schritten: Betriebsnummer beim AELF, Anzeige beim Veterinäramt auch zusammen mit der Betriebsnummer möglich, Sperrbezirk und Zeugnis vor dem Kauf klären, Bestandsbuch vor der ersten Behandlung anlegen, im Frühjahr des Startjahres die Völker übernehmen.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin wie in den Grafiken von Modul 1. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust. -->
+    <g id="sa-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Pfeilspitze der Zeitachse, die Linie endet an der Basis der Spitze -->
+    <marker id="sa-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#3a2a10"/>
+    </marker>
+  </defs>
+
+  <!-- Zeitachse, Pfeil nach unten -->
+  <line x1="60" y1="24" x2="60" y2="429" stroke="#3a2a10" stroke-width="1.5" marker-end="url(#sa-spitze)"/>
+
+  <!-- Hervorhebung der letzten Station -->
+  <rect x="90" y="350" width="302" height="62" rx="8" fill="#fff4d6" stroke="#b45309" stroke-width="2"/>
+
+  <!-- Stationen 1 bis 5 im gleichen Abstand von 82 Einheiten -->
+  <g stroke="#3a2a10" stroke-width="1.5" fill="#fff4d6">
+    <circle cx="60" cy="62" r="17"/>
+    <circle cx="60" cy="144" r="17"/>
+    <circle cx="60" cy="226" r="17"/>
+    <circle cx="60" cy="308" r="17"/>
+  </g>
+  <circle cx="60" cy="390" r="19" fill="#b45309" stroke="#3a2a10" stroke-width="1.5"/>
+  <g font-size="18" font-weight="700" text-anchor="middle" fill="#1f1a12">
+    <text x="60" y="68.5">1</text>
+    <text x="60" y="150.5">2</text>
+    <text x="60" y="232.5">3</text>
+    <text x="60" y="314.5">4</text>
+    <text x="60" y="396.5" fill="#ffffff">5</text>
+  </g>
+
+  <!-- Texte der Stationen -->
+  <g fill="#1f1a12">
+    <g font-size="15">
+      <text x="100" y="46">Ab sofort</text>
+      <text x="100" y="88">beim AELF</text>
+      <text x="100" y="128">auch zusammen mit 1</text>
+      <text x="100" y="170">beim Veterinäramt</text>
+      <text x="100" y="252">vor dem Kauf</text>
+      <text x="100" y="334">vor der ersten Behandlung</text>
+      <text x="100" y="374">Frühjahr im Startjahr</text>
+    </g>
+    <g font-size="16" font-weight="700">
+      <text x="100" y="67.5">Betriebsnummer</text>
+      <text x="100" y="149.5">Anzeige</text>
+      <text x="100" y="231.5">Sperrbezirk, Zeugnis</text>
+      <text x="100" y="313.5">Bestandsbuch</text>
+      <text x="100" y="395.5">Völker kommen</text>
+    </g>
+  </g>
+
+  <!-- Symbol Station 1: Formular -->
+  <g transform="translate(350 62)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="-14" y="-22" width="28" height="44" rx="3" fill="#ffffff"/>
+    <rect x="-8" y="-16" width="16" height="5" fill="#f2c14e" stroke-width="1"/>
+    <path d="M-8 -3H8M-8 5H8M-8 13H2" fill="none" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Symbol Station 2: Haus mit Fahne für das Amt -->
+  <g transform="translate(350 144)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <line x1="0" y1="-10" x2="0" y2="-28" stroke-linecap="round"/>
+    <path d="M0 -28L16 -23L0 -18Z" fill="#b45309" stroke-width="1"/>
+    <rect x="-14" y="6" width="28" height="22" fill="#fff4d6"/>
+    <path d="M-18 6L0 -10L18 6Z" fill="#d9a441"/>
+    <rect x="-4" y="16" width="8" height="12" fill="#e8c99a" stroke-width="1"/>
+  </g>
+
+  <!-- Symbol Station 3: Haken auf Blatt -->
+  <g transform="translate(350 226)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="-14" y="-22" width="28" height="44" rx="3" fill="#ffffff"/>
+    <path d="M-8 -13H8M-8 -6H4" fill="none" stroke-width="1" stroke-linecap="round"/>
+    <path d="M-8 8L-2 14L9 -2" fill="none" stroke="#5b8c3a" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Symbol Station 4: Heft -->
+  <g transform="translate(350 308)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="-15" y="-22" width="30" height="44" rx="3" fill="#f2c14e"/>
+    <rect x="-7" y="-14" width="19" height="16" fill="#ffffff" stroke-width="1"/>
+    <path d="M-3 -9H8M-3 -4H8" fill="none" stroke-width="1" stroke-linecap="round"/>
+    <g fill="#ffffff" stroke-width="1">
+      <circle cx="-15" cy="-14" r="2.5"/>
+      <circle cx="-15" cy="-4" r="2.5"/>
+      <circle cx="-15" cy="6" r="2.5"/>
+      <circle cx="-15" cy="16" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Biene bei der letzten Station -->
+  <use href="#sa-biene" transform="translate(340 392) scale(1.15)"/>
+</svg>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="m02-sm-titel m02-sm-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="320" fill="#ffffff"/>
+  <title id="m02-sm-titel">Der Smoker im Schnitt</title>
+  <desc id="m02-sm-beschr">Schnitt durch einen Smoker. Unten am Brennraum sitzt der Blasebalg, der Luft von unten einbläst. Im Brennraum liegt Glut am Boden, darüber Brennmaterial. Oben schließt ein Deckel mit der Tülle ab, aus der Rauch austritt.</desc>
+
+  <defs>
+    <!-- Glut: von warmem Orange nach Rot -->
+    <linearGradient id="m02-sm-glut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e07b39"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <!-- Pfeilspitze für die Luft, hell mit weißem Rand; die Linie endet an der Basis der Spitze -->
+    <marker id="m02-sm-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#4a7fb5" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+    <!-- Rauch: weiche Schlangenlinie, Anfang im Ursprung, nach oben -->
+    <path id="m02-sm-rauch" d="M0 0C-5 -7 5 -12 0 -19C-5 -26 5 -31 0 -38" fill="none" stroke="#3a2a10" stroke-opacity=".55" stroke-width="2.5" stroke-linecap="round"/>
+  </defs>
+
+  <!-- Rauch aus der Tülle, leicht nach rechts geneigt -->
+  <use href="#m02-sm-rauch" transform="translate(172 49.9) rotate(20)"/>
+  <use href="#m02-sm-rauch" transform="translate(179.7 54.6) rotate(20)"/>
+  <use href="#m02-sm-rauch" transform="translate(187.3 59.3) rotate(20)"/>
+
+  <!-- Tülle: kurzes, nach rechts oben geneigtes Rohr, hinter dem Deckel gezeichnet -->
+  <g transform="translate(160 86) rotate(32)">
+    <rect x="-9" y="-32" width="18" height="40" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-32" rx="9" ry="3" fill="#3a2a10"/>
+  </g>
+
+  <!-- Wand des Brennraums mit kegelförmigem Deckel, außen -->
+  <path d="M100 270V116H96V109H100L134 84H186L220 109H224V116H220V270Z" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Innenraum -->
+  <path d="M105 265V111L137.5 88H182.5L215 111V265Z" fill="#ffffff"/>
+
+  <!-- Brennmaterial mit Spänen -->
+  <rect x="105" y="141" width="110" height="76" fill="#9c6b3a"/>
+  <path d="M112 150l6 -3M130 148l5 3M150 152l6 -2M172 149l5 3M194 151l6 -3M122 164l5 3M141 168l6 -2M162 163l5 3M184 167l6 -3M203 163l5 2M113 182l6 -2M133 186l5 3M154 181l6 -3M176 185l5 2M197 181l6 -2M120 200l5 3M143 204l6 -2M166 200l5 3M188 204l6 -3M207 200l5 2M112 212l6 -2M158 213l5 2" fill="none" stroke="#e8c99a" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Glut am Boden, darunter ein Rost mit Luftraum -->
+  <rect x="105" y="217" width="110" height="30" fill="url(#m02-sm-glut)"/>
+  <g fill="#f2c14e">
+    <circle cx="115" cy="226" r="1.8"/>
+    <circle cx="130" cy="238" r="1.8"/>
+    <circle cx="146" cy="224" r="1.8"/>
+    <circle cx="160" cy="236" r="1.8"/>
+    <circle cx="176" cy="226" r="1.8"/>
+    <circle cx="190" cy="239" r="1.8"/>
+    <circle cx="204" cy="225" r="1.8"/>
+    <circle cx="121" cy="241" r="1.8"/>
+    <circle cx="198" cy="231" r="1.8"/>
+  </g>
+  <line x1="105" y1="247" x2="215" y2="247" stroke="#3a2a10" stroke-width="2" stroke-dasharray="5 3"/>
+
+  <!-- Innenkontur über den Füllungen -->
+  <path d="M105 265V111L137.5 88H182.5L215 111V265Z" fill="none" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Rohrstück vom Blasebalg in den Boden -->
+  <rect x="72" y="250" width="35" height="12" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Blasebalg von der Seite: zwei Platten mit Faltenwand -->
+  <path d="M26 238L32 231L38 238L44 231L50 238L56 231L62 238V274L56 281L50 274L44 281L38 274L32 281L26 274Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M32 231V281M44 231V281M56 231V281M38 238V274M50 238V274" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="16" y="228" width="10" height="56"/>
+    <rect x="62" y="228" width="10" height="56"/>
+    <rect x="6" y="248" width="10" height="16"/>
+  </g>
+
+  <!-- Luft: hell und gestrichelt, vom Blasebalg durch das Rohr und von unten durch Glut und Brennmaterial -->
+  <g fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="butt">
+    <path d="M36 256H193"/>
+    <path d="M127 256V140"/>
+    <path d="M160 256V108"/>
+    <path d="M193 256V140"/>
+  </g>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2.5" stroke-dasharray="6 4">
+    <path d="M36 256H193"/>
+    <path d="M127 256V140" marker-end="url(#m02-sm-spitze)"/>
+    <path d="M160 256V108" marker-end="url(#m02-sm-spitze)"/>
+    <path d="M193 256V140" marker-end="url(#m02-sm-spitze)"/>
+  </g>
+  <path d="M86 256L76 251V261Z" fill="#4a7fb5" stroke="#ffffff" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="181.4" y1="68.7" x2="244" y2="68.7"/>
+    <line x1="203" y1="96.5" x2="244" y2="96.5"/>
+    <line x1="217.5" y1="128" x2="244" y2="128"/>
+    <line x1="206" y1="179" x2="244" y2="179"/>
+    <line x1="206" y1="232" x2="244" y2="232"/>
+    <line x1="44" y1="217" x2="44" y2="231"/>
+    <line x1="94" y1="296" x2="94" y2="256"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="181.4" cy="68.7" r="2.3"/>
+    <circle cx="203" cy="96.5" r="2.3"/>
+    <circle cx="217.5" cy="128" r="2.3"/>
+    <circle cx="206" cy="179" r="2.3"/>
+    <circle cx="206" cy="232" r="2.3"/>
+    <circle cx="44" cy="231" r="2.3"/>
+    <circle cx="94" cy="256" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="214" y="30">Rauch</text>
+    <text x="252" y="74.2">Tülle</text>
+    <text x="252" y="102">Deckel</text>
+    <text x="252" y="133.5">Brennraum</text>
+    <text x="252" y="184.5">Brennmaterial</text>
+    <text x="252" y="237.5">Glut</text>
+    <text x="50" y="212" text-anchor="middle">Blasebalg</text>
+    <text x="94" y="308" text-anchor="middle">Luft</text>
+  </g>
+</svg>

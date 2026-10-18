@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="m04-zd-titel m04-zd-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="260" fill="#ffffff"/>
+  <title id="m04-zd-titel">Zelle und Deckel: Arbeiterin, Drohn und Buckelbrut</title>
+  <desc id="m04-zd-beschr">Drei Zellen im Längsschnitt. Links eine Arbeiterinnenzelle mit 5,4 mm und flachem Deckel. In der Mitte eine Drohnenzelle mit 6,9 mm und gewölbtem Deckel. Rechts eine Arbeiterinnenzelle mit 5,4 mm und hoch gewölbtem Deckel, die Buckelbrut.</desc>
+
+  <defs>
+    <!-- Puppe im Längsschnitt: Ursprung oben in der Mitte (Scheitel des Kopfes), Kopf zum Deckel hin -->
+    <g id="zd-puppe" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-9 14Q-12 36-8 56Q0 66 8 56Q12 36 9 14Z" fill="#fffaf0"/>
+      <ellipse cx="0" cy="7" rx="8" ry="7" fill="#fffaf0"/>
+      <path d="M-10 30H10M-9.5 40H9.5M-8 50H8" fill="none" stroke-opacity=".6"/>
+    </g>
+  </defs>
+
+  <!-- Zellkörper mit spitz zulaufendem Zellgrund -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M25 112V198L58 208L91 198V112Z"/>
+    <path d="M109 112V198L151 208L193 198V112Z"/>
+    <path d="M211 112V198L244 208L277 198V112Z"/>
+  </g>
+
+  <!-- Puppen -->
+  <use href="#zd-puppe" x="58" y="126"/>
+  <use href="#zd-puppe" transform="translate(151 122) scale(1.25)"/>
+
+  <!-- Deckel: flach, gewölbt, hoch gewölbt -->
+  <g fill="#d9a441" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M25 112Q58 102 91 112Z"/>
+    <path d="M109 112Q151 84 193 112Z"/>
+    <path d="M211 112A33 34 0 0 1 277 112Z"/>
+  </g>
+  <!-- Hochgewölbter Deckel als Schale: Innenraum in Wachsfarbe, die größere Puppe reicht hinein -->
+  <path d="M215 113.5V112A29 30 0 0 1 273 112V113.5Z" fill="#fff4d6"/>
+  <path d="M215 112A29 30 0 0 1 273 112" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <use href="#zd-puppe" transform="translate(244 100) scale(1.3)"/>
+
+  <!-- Hilfslinien von den Beschriftungen zu den Deckeln -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="58" y1="67" x2="58" y2="107"/>
+    <line x1="151" y1="67" x2="151" y2="98"/>
+    <line x1="244" y1="67" x2="244" y2="78"/>
+    <line x1="273" y1="94" x2="329" y2="94"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="58" cy="107" r="2.3"/>
+    <circle cx="151" cy="98" r="2.3"/>
+    <circle cx="244" cy="78" r="2.3"/>
+    <circle cx="273" cy="94" r="2.3"/>
+  </g>
+
+  <!-- Warnzeichen am rechten Deckel -->
+  <path d="M338 78L354 106H322Z" fill="#b45309" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="338" y="102" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">!</text>
+
+  <!-- Maßlinien unter den Zellen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <path d="M25 218V230M25 224H91M91 218V230"/>
+    <path d="M109 218V230M109 224H193M193 218V230"/>
+    <path d="M211 218V230M211 224H277M277 218V230"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <g font-size="17" font-weight="700">
+      <text x="58" y="24">Arbeiterin</text>
+      <text x="151" y="24">Drohn</text>
+      <text x="244" y="24">Buckelbrut</text>
+    </g>
+    <text x="58" y="62">flach</text>
+    <text x="151" y="62">gewölbt</text>
+    <text x="244" y="62">hoch gewölbt</text>
+    <text x="338" y="130">Warnzeichen</text>
+    <g font-weight="700">
+      <text x="58" y="248">5,4 mm</text>
+      <text x="151" y="248">6,9 mm</text>
+      <text x="244" y="248">5,4 mm</text>
+    </g>
+  </g>
+</svg>

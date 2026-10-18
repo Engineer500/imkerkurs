@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 410" role="img" aria-labelledby="m11-bz-titel m11-bz-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="410" fill="#ffffff"/>
+  <title id="m11-bz-titel">Die totale Brutentnahme auf Zander</title>
+  <desc id="m11-bz-beschr">Zarge von oben in zwei Zuständen untereinander. Oben vor der Brutentnahme: sieben Brutwaben zwischen zwei Schieden. Unten danach: fünf Mittelwände und eine Futterwabe in der Mitte, beidseitig ein Schied, darüber der Adam Fütterer. Die sieben Brutwaben liegen in einer verschlossenen Box.</desc>
+
+  <defs>
+    <!-- Zellmuster: regelmäßige Sechsecke mit senkrechten Seitenwänden, waagrecht versetzte Reihen -->
+    <pattern id="m11-bz-zellen" width="7.500" height="12.990" patternUnits="userSpaceOnUse">
+      <path d="M0 2.165L3.750 0L7.500 2.165V6.495L3.750 8.660L0 6.495ZM3.750 8.660V12.990" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Schraffur des Schieds -->
+    <pattern id="m11-bz-schraeg" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1.500" stroke-opacity=".75"/>
+    </pattern>
+    <!-- Feine senkrechte Linien der Mittelwand, ohne Zellmuster -->
+    <pattern id="m11-bz-mw" width="3" height="6" patternUnits="userSpaceOnUse">
+      <line x1="1.500" y1="0" x2="1.500" y2="6" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Waagrechte Linien der Futterwabe -->
+    <pattern id="m11-bz-linien" width="30" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="30" y2="3" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Querstreifen des Adam Fütterers -->
+    <pattern id="m11-bz-streifen" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#b8bcc2"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#3a2a10" stroke-width="2" stroke-opacity=".3"/>
+    </pattern>
+
+    <!-- Ein Platz, 36 breit und 70 hoch mit Rahmen, Ursprung links oben, Inhalt 62 hoch ab y 4 -->
+    <g id="m11-bz-schied">
+      <rect x="10" y="4" width="16" height="62" fill="url(#m11-bz-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+    </g>
+    <g id="m11-bz-brut">
+      <rect x="3" y="4" width="30" height="62" fill="#d9a441"/>
+      <rect x="3" y="4" width="30" height="62" fill="url(#m11-bz-zellen)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-bz-mittelwand">
+      <rect x="3" y="4" width="30" height="62" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+      <rect x="7" y="8" width="22" height="54" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+      <rect x="7" y="8" width="22" height="54" fill="url(#m11-bz-mw)"/>
+    </g>
+    <g id="m11-bz-futter">
+      <rect x="3" y="4" width="30" height="62" fill="#f2c14e"/>
+      <rect x="3" y="4" width="30" height="62" fill="url(#m11-bz-linien)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-bz-frei">
+      <rect x="3" y="4" width="30" height="62" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".7" stroke-dasharray="4 3"/>
+    </g>
+  </defs>
+
+  <!-- ===== Vorher ===== -->
+  <text x="20" y="20" font-size="18" font-weight="700" fill="#1f1a12">Vorher</text>
+  <rect x="20" y="30" width="360" height="70" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Platz 1 Schied, Plätze 2 bis 8 sieben Brutwaben, Platz 9 Schied, Platz 10 frei -->
+  <use href="#m11-bz-schied" x="20" y="30"/>
+  <use href="#m11-bz-brut" x="56" y="30"/>
+  <use href="#m11-bz-brut" x="92" y="30"/>
+  <use href="#m11-bz-brut" x="128" y="30"/>
+  <use href="#m11-bz-brut" x="164" y="30"/>
+  <use href="#m11-bz-brut" x="200" y="30"/>
+  <use href="#m11-bz-brut" x="236" y="30"/>
+  <use href="#m11-bz-brut" x="272" y="30"/>
+  <use href="#m11-bz-schied" x="308" y="30"/>
+  <use href="#m11-bz-frei" x="344" y="30"/>
+  <!-- Klammer unter den Plätzen 2 bis 8 -->
+  <path d="M59 106Q59 112 67 112H174Q182 112 182 118Q182 112 190 112H297Q305 112 305 106" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- ===== Nachher ===== -->
+  <text x="20" y="170" font-size="18" font-weight="700" fill="#1f1a12">Nachher</text>
+  <rect x="20" y="178" width="360" height="70" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Platz 1 Schied, 2 bis 4 Mittelwände, 5 Futterwabe, 6 und 7 Mittelwände, 8 Schied, 9 und 10 frei -->
+  <use href="#m11-bz-schied" x="20" y="178"/>
+  <use href="#m11-bz-mittelwand" x="56" y="178"/>
+  <use href="#m11-bz-mittelwand" x="92" y="178"/>
+  <use href="#m11-bz-mittelwand" x="128" y="178"/>
+  <use href="#m11-bz-futter" x="164" y="178"/>
+  <use href="#m11-bz-mittelwand" x="200" y="178"/>
+  <use href="#m11-bz-mittelwand" x="236" y="178"/>
+  <use href="#m11-bz-schied" x="272" y="178"/>
+  <use href="#m11-bz-frei" x="308" y="178"/>
+  <use href="#m11-bz-frei" x="344" y="178"/>
+  <!-- Adam Fütterer als Balken über den Plätzen 3 bis 7 -->
+  <rect x="92" y="195" width="180" height="36" rx="8" fill="url(#m11-bz-streifen)" opacity=".88" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Klammern unter den Mittelwänden (Plätze 2 bis 4 und 6 bis 7), durch eine Linie verbunden -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round">
+    <path d="M59 254Q59 260 67 260H102Q110 260 110 266Q110 260 118 260H153Q161 260 161 254"/>
+    <path d="M203 254Q203 260 211 260H228Q236 260 236 266Q236 260 244 260H261Q269 260 269 254"/>
+  </g>
+  <path d="M110 266V300H236V266M173 300V306" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <!-- Linie zur Futterwabe -->
+  <path d="M182 242V270" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="182" cy="242" r="2.500" fill="#3a2a10"/>
+
+  <!-- Dünner Pfeil von der Zarge Vorher zur Box, am rechten Rand entlang -->
+  <path d="M380 65H392V365H390" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linejoin="round"/>
+  <path d="M382 365L391 360.500V369.500Z" fill="#3a2a10"/>
+
+  <!-- Box mit Deckel und sieben dicht gestellten Brutwaben -->
+  <rect x="230" y="344" width="150" height="56" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+  <rect x="236" y="348" width="138" height="48" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+  <g fill="#d9a441">
+    <rect x="241" y="352" width="14" height="40"/>
+    <rect x="260.500" y="352" width="14" height="40"/>
+    <rect x="280" y="352" width="14" height="40"/>
+    <rect x="299.500" y="352" width="14" height="40"/>
+    <rect x="319" y="352" width="14" height="40"/>
+    <rect x="338.500" y="352" width="14" height="40"/>
+    <rect x="358" y="352" width="14" height="40"/>
+  </g>
+  <g fill="url(#m11-bz-zellen)" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="241" y="352" width="14" height="40"/>
+    <rect x="260.500" y="352" width="14" height="40"/>
+    <rect x="280" y="352" width="14" height="40"/>
+    <rect x="299.500" y="352" width="14" height="40"/>
+    <rect x="319" y="352" width="14" height="40"/>
+    <rect x="338.500" y="352" width="14" height="40"/>
+    <rect x="358" y="352" width="14" height="40"/>
+  </g>
+  <!-- Deckel mit Schloss -->
+  <rect x="226" y="326" width="158" height="18" rx="2" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+  <rect x="300.500" y="333" width="9" height="8" rx="1" fill="#3a2a10"/>
+  <path d="M302.500 333V330.500Q302.500 327.500 305 327.500Q307.500 327.500 307.500 330.500V333" fill="none" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Linie zum Schied oben -->
+  <path d="M326 24V37" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="326" cy="37" r="2.500" fill="#3a2a10"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="326" y="20" text-anchor="middle">Schied</text>
+    <text x="182" y="138" text-anchor="middle">7 Brutwaben</text>
+    <text x="182" y="286" text-anchor="middle">Futterwabe</text>
+    <text x="173" y="322" text-anchor="middle">5 Mittelwände</text>
+    <text x="222" y="350" text-anchor="end">Box mit 7</text>
+    <text x="222" y="368" text-anchor="end">Brutwaben,</text>
+    <text x="222" y="386" text-anchor="end">verschlossen</text>
+  </g>
+  <text x="182" y="218.500" text-anchor="middle" font-size="16" fill="#1f1a12" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">Adam Fütterer</text>
+</svg>

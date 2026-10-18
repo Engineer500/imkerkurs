@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 464" role="img" aria-labelledby="m08-bb-titel m08-bb-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="464" fill="#ffffff"/>
+  <title id="m08-bb-titel">Beispielzeile des Bestandsbuchs auf einer Karteikarte</title>
+  <desc id="m08-bb-beschr">Karteikarte Bestandsbuch mit einer Beispielzeile aus erfundenen Werten: Datum 02.08.20XX, Mittel Ameisensäure 60 Bernburg Charge 12345, Menge 300 ml je Volk, Lieferant Imkereibedarf Muster in Musterstadt, Beleg Rechnung 0815, Standort Musterort, Völker Volk 1 und 2, Wartezeit 0 Tage, Dauer 10 Tage.</desc>
+
+  <!-- Karteikarte in Wachsfarbe mit Rand -->
+  <rect x="20" y="12" width="360" height="440" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Trennlinie unter der Kopfzeile -->
+  <line x1="34" y1="56" x2="366" y2="56" stroke="#b45309" stroke-width="2.5"/>
+
+  <!-- Linien zwischen den neun Zeilen (Abstand 42) -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".35">
+    <line x1="34" y1="102" x2="366" y2="102"/>
+    <line x1="34" y1="144" x2="366" y2="144"/>
+    <line x1="34" y1="186" x2="366" y2="186"/>
+    <line x1="34" y1="228" x2="366" y2="228"/>
+    <line x1="34" y1="270" x2="366" y2="270"/>
+    <line x1="34" y1="312" x2="366" y2="312"/>
+    <line x1="34" y1="354" x2="366" y2="354"/>
+    <line x1="34" y1="396" x2="366" y2="396"/>
+    <line x1="34" y1="438" x2="366" y2="438"/>
+  </g>
+
+  <!-- Kopfzeile und Feldnamen -->
+  <g fill="#1f1a12" font-size="16" font-weight="700">
+    <text x="34" y="43" font-size="17">Bestandsbuch (erfundene Werte)</text>
+    <text x="34" y="88">Datum:</text>
+    <text x="34" y="120">Mittel</text>
+    <text x="34" y="139">(Charge):</text>
+    <text x="34" y="172">Menge je Volk:</text>
+    <text x="34" y="204">Lieferant:</text>
+    <text x="34" y="256">Beleg:</text>
+    <text x="34" y="298">Standort:</text>
+    <text x="34" y="340">Völker:</text>
+    <text x="34" y="382">Wartezeit:</text>
+    <text x="34" y="424">Dauer:</text>
+  </g>
+
+  <!-- Werte, handschriftlich wirkend (kursiv) -->
+  <g fill="#1f1a12" font-size="16" font-style="italic">
+    <text x="176" y="88">02.08.20XX</text>
+    <text x="176" y="120">Ameisensäure 60</text>
+    <text x="176" y="139">Bernburg (12345)</text>
+    <text x="176" y="172">300 ml</text>
+    <text x="176" y="204">Imkereibedarf Muster,</text>
+    <text x="176" y="223">Musterstadt</text>
+    <text x="176" y="256">Rechnung 0815</text>
+    <text x="176" y="298">Musterort</text>
+    <text x="176" y="340">Volk 1 und 2</text>
+    <text x="176" y="382">0 Tage</text>
+    <text x="176" y="424">10 Tage</text>
+  </g>
+</svg>

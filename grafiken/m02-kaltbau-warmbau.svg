@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="m02-kw-titel m02-kw-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="240" fill="#ffffff"/>
+  <title id="m02-kw-titel">Kaltbau und Warmbau von oben</title>
+  <desc id="m02-kw-beschr">Aufsicht auf zwei Zargen. Links Kaltbau: Das Flugloch liegt an der Schmalseite, die Wabenebenen laufen in Flugrichtung. Rechts Warmbau: Das Flugloch liegt an der Längsseite, die Waben stehen quer dazu.</desc>
+
+  <defs>
+    <!-- Pfeilspitze, die Linie endet an der Basis der Spitze -->
+    <marker id="m02-kw-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309"/>
+    </marker>
+    <!-- Zarge von oben, Ursprung links oben, 140 mal 113 (Seitenverhältnis 520 zu 420).
+         Zehn Wabenebenen laufen parallel zur langen Seite. -->
+    <g id="m02-kw-zarge">
+      <rect x="0" y="0" width="140" height="113" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="7" y="7" width="126" height="99" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+      <path d="M7 16H133M7 25H133M7 34H133M7 43H133M7 52H133M7 61H133M7 70H133M7 79H133M7 88H133M7 97H133" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </g>
+  </defs>
+
+  <!-- Überschriften -->
+  <g fill="#1f1a12" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="154" y="26">Kaltbau</text>
+    <text x="320" y="26">Warmbau</text>
+  </g>
+
+  <!-- Beide Zargen gleich gezeichnet -->
+  <use href="#m02-kw-zarge" x="84" y="40"/>
+  <use href="#m02-kw-zarge" x="250" y="40"/>
+
+  <!-- Flugloch links: Lücke in der linken Schmalseite -->
+  <rect x="83" y="84" width="8.6" height="25" fill="#fff4d6"/>
+  <path d="M84 84H91M84 109H91" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Flugloch rechts: Lücke in der unteren Längsseite -->
+  <rect x="302" y="145.4" width="36" height="8.6" fill="#fff4d6"/>
+  <path d="M302 146V153M338 146V153" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Flugrichtung -->
+  <line x1="12" y1="96.5" x2="192" y2="96.5" stroke="#b45309" stroke-width="4" marker-end="url(#m02-kw-spitze)"/>
+  <line x1="320" y1="206" x2="320" y2="80" stroke="#b45309" stroke-width="4" marker-end="url(#m02-kw-spitze)"/>
+
+  <!-- Linie zu den Wabenlinien -->
+  <line x1="110" y1="119" x2="110" y2="165" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="110" cy="119" r="2.4" fill="#3a2a10"/>
+
+  <!-- Schild: Zander führst du im Kaltbau -->
+  <line x1="154" y1="153" x2="154" y2="196" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="114" y="196" width="80" height="28" rx="14" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="8" y="86">Flugloch</text>
+    <text x="312" y="176" text-anchor="end">Flugloch</text>
+    <text x="110" y="181" text-anchor="middle">Waben</text>
+    <text x="154" y="215" text-anchor="middle" font-weight="700">Zander</text>
+  </g>
+</svg>

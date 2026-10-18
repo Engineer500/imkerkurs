@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 470" role="img" aria-labelledby="m10-wz-titel m10-wz-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="470" fill="#ffffff"/>
+  <title id="m10-wz-titel">Der Weg der Winterbehandlung</title>
+  <desc id="m10-wz-beschr">Zeitachse von Anfang November bis Januar mit sechs Schritten: Einschub einlegen und Gemüll 7 Tage zählen, bei über 0,5 Milben je Tag die Königin käfigen, nach 3 Wochen Brut kontrollieren, einen Tag später Einschub einlegen und früh bei kaltem Wetter träufeln, nach 10 Tagen das Gemüll zählen, im Januar den Fall kontrollieren.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Königin, Seitenansicht, Blick nach rechts (wie in den Grafiken von Modul 1) -->
+    <g id="wz-koenigin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-9.3" cy="-9.9" rx="10.5" ry="4.6" transform="rotate(28 -9.3 -9.9)"/>
+        <ellipse cx="-5.5" cy="-12.8" rx="9.5" ry="4.2" transform="rotate(55 -5.5 -12.8)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-17.5" cy="2" rx="17.5" ry="7.2" fill="#f2c14e"/>
+        <path d="M-15 -5.13A17.5 7.2 0 0 1 -12 -4.84L-12 8.84A17.5 7.2 0 0 1 -15 9.13ZM-21.5 -5.01A17.5 7.2 0 0 1 -18.5 -5.19L-18.5 9.19A17.5 7.2 0 0 1 -21.5 9.01ZM-28 -3.76A17.5 7.2 0 0 1 -25 -4.51L-25 8.51A17.5 7.2 0 0 1 -28 7.76Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- feines Zellmuster für das Wabensymbol -->
+    <pattern id="wz-zellmuster" width="7.2" height="12.4" patternUnits="userSpaceOnUse">
+      <path d="M0 2.1L3.6 0L7.2 2.1V6.2L3.6 8.3L0 6.2ZM3.6 8.3V12.4" fill="none" stroke="#3a2a10" stroke-width=".7" stroke-opacity=".5"/>
+    </pattern>
+
+    <!-- Ausziehschub (Einschub) ohne Milben, Ursprung in der Mitte -->
+    <g id="wz-einschub" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round">
+      <rect x="-21" y="-11" width="42" height="24" rx="2" fill="#e8c99a"/>
+      <rect x="-17" y="-7" width="34" height="16" fill="#fff4d6" stroke-width="1"/>
+      <rect x="-25" y="-3" width="5" height="8" rx="1.5" fill="#e8c99a"/>
+    </g>
+
+    <!-- Tropfen -->
+    <path id="wz-tropfen" d="M0 -6C2.6 -1.5 4.3 1 4.3 3A4.3 4.3 0 0 1 -4.3 3C-4.3 1 -2.6 -1.5 0 -6Z" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.2" stroke-linejoin="round"/>
+  </defs>
+
+  <!-- Zeitachse mit Pfeilspitze nach unten -->
+  <line x1="60" y1="34" x2="60" y2="450" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M60 462L54.5 450H65.5Z" fill="#3a2a10"/>
+
+  <!-- Verbindungen von der Zeitachse zu den Kästen -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <line x1="75" y1="66" x2="84" y2="66"/>
+    <line x1="75" y1="136" x2="84" y2="136"/>
+    <line x1="75" y1="206" x2="84" y2="206"/>
+    <line x1="75" y1="276" x2="84" y2="276"/>
+    <line x1="75" y1="346" x2="84" y2="346"/>
+    <line x1="75" y1="416" x2="84" y2="416"/>
+  </g>
+
+  <!-- sechs Kästen, der vierte (Behandlung) mit kräftigem Rand im Akzent -->
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5">
+    <rect x="84" y="36" width="306" height="60" rx="10"/>
+    <rect x="84" y="106" width="306" height="60" rx="10"/>
+    <rect x="84" y="176" width="306" height="60" rx="10"/>
+    <rect x="84" y="316" width="306" height="60" rx="10"/>
+    <rect x="84" y="386" width="306" height="60" rx="10"/>
+  </g>
+  <rect x="85.75" y="247.75" width="302.5" height="56.5" rx="9" fill="#fff4d6" stroke="#b45309" stroke-width="3.5"/>
+
+  <!-- Ziffern in Kreisen auf der Zeitachse -->
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <circle cx="60" cy="66" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="136" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="206" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="276" r="15" fill="#b45309"/>
+    <circle cx="60" cy="346" r="15" fill="#f2c14e"/>
+    <circle cx="60" cy="416" r="15" fill="#f2c14e"/>
+  </g>
+
+  <!-- Symbol 1: Einschub mit wenigen Milbenpunkten -->
+  <g transform="translate(114 66)">
+    <use href="#wz-einschub"/>
+    <g fill="#5a3a1a">
+      <circle cx="-9" cy="-2" r="1.8"/>
+      <circle cx="-2" cy="4.5" r="1.8"/>
+      <circle cx="5" cy="-3" r="1.8"/>
+      <circle cx="11" cy="3" r="1.8"/>
+    </g>
+  </g>
+
+  <!-- Symbol 2: Käfig mit Königin -->
+  <g transform="translate(114 136)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-22" y="-12" width="44" height="24" fill="#fffaf0" stroke="none"/>
+    <use href="#wz-koenigin" transform="translate(2 1) scale(.56)"/>
+    <path d="M-15 -12V12M-7.5 -12V12M0 -12V12M7.5 -12V12M15 -12V12" fill="none" stroke-width="1.2"/>
+    <rect x="-24" y="-16" width="48" height="5" rx="1.5" fill="#b8bcc2"/>
+    <rect x="-24" y="11" width="48" height="5" rx="1.5" fill="#b8bcc2"/>
+  </g>
+
+  <!-- Symbol 3: Wabe mit Lupe -->
+  <g transform="translate(114 206)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-23" y="-17" width="30" height="34" fill="#b45309" fill-opacity=".45"/>
+    <rect x="-20" y="-14" width="24" height="28" fill="#fff4d6" stroke-width="1"/>
+    <rect x="-20" y="-14" width="24" height="28" fill="url(#wz-zellmuster)" stroke="none"/>
+    <circle cx="9" cy="-2" r="9.5" fill="#ffffff" fill-opacity=".75"/>
+    <path d="M15.7 4.7L24 13" fill="none" stroke-width="4.5"/>
+  </g>
+
+  <!-- Symbol 4: Spritze mit Tropfen -->
+  <g transform="translate(113 273)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-12 -9H-21" fill="none" stroke-width="3"/>
+    <path d="M-21 -15V-3" fill="none" stroke-width="3.5"/>
+    <rect x="-14" y="-14" width="20" height="10" fill="#fffaf0"/>
+    <rect x="-5" y="-12.7" width="10" height="7.4" fill="#4a7fb5" fill-opacity=".55" stroke="none"/>
+    <rect x="-16" y="-17" width="3" height="16" fill="#b8bcc2" stroke-width="1.2"/>
+    <path d="M6 -9H20" fill="none" stroke-width="2"/>
+    <use href="#wz-tropfen" x="20" y="4"/>
+    <use href="#wz-tropfen" transform="translate(20 19) scale(.75)"/>
+  </g>
+
+  <!-- Symbol 5: Einschub mit vielen Milbenpunkten -->
+  <g transform="translate(114 346)">
+    <use href="#wz-einschub"/>
+    <g fill="#5a3a1a">
+      <circle cx="-13" cy="-3" r="1.7"/>
+      <circle cx="-9" cy="3.5" r="1.7"/>
+      <circle cx="-6" cy="-4" r="1.7"/>
+      <circle cx="-3" cy="5" r="1.7"/>
+      <circle cx="0" cy="-0.5" r="1.7"/>
+      <circle cx="3" cy="4.5" r="1.7"/>
+      <circle cx="5" cy="-4.5" r="1.7"/>
+      <circle cx="8" cy="0.5" r="1.7"/>
+      <circle cx="11" cy="5" r="1.7"/>
+      <circle cx="13" cy="-3" r="1.7"/>
+      <circle cx="-13" cy="5.5" r="1.7"/>
+      <circle cx="-1" cy="-5" r="1.7"/>
+    </g>
+  </g>
+
+  <!-- Symbol 6: Kalenderblatt -->
+  <g transform="translate(114 416)" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-17" y="-17" width="34" height="34" rx="3" fill="#ffffff"/>
+    <rect x="-5.7" y="0" width="11.4" height="8.5" fill="#f2c14e" stroke="none"/>
+    <path d="M-17 -8V-14Q-17 -17 -14 -17H14Q17 -17 17 -14V-8Z" fill="#b45309"/>
+    <path d="M-8 -20V-13M8 -20V-13" fill="none" stroke-width="2.5"/>
+    <path d="M-17 0H17M-17 8.5H17M-5.7 -8V17M5.7 -8V17" fill="none" stroke-width="1"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="84" y="26" font-size="14">Anfang November</text>
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <text x="60" y="72.5">1</text>
+      <text x="60" y="142.5">2</text>
+      <text x="60" y="212.5">3</text>
+      <text x="60" y="282.5" fill="#ffffff">4</text>
+      <text x="60" y="352.5">5</text>
+      <text x="60" y="422.5">6</text>
+    </g>
+    <text x="146" y="59">Einschub einlegen:</text>
+    <text x="146" y="80">Gemüll 7 Tage zählen</text>
+    <text x="146" y="129">Über 0,5 Milben je Tag:</text>
+    <text x="146" y="150">Königin käfigen</text>
+    <text x="146" y="199">Nach 3 Wochen:</text>
+    <text x="146" y="220">Brut kontrollieren</text>
+    <text x="146" y="269">Am Tag darauf: Einschub</text>
+    <text x="146" y="290">einlegen, früh träufeln</text>
+    <text x="146" y="339">Nach 10 Tagen:</text>
+    <text x="146" y="360">Gemüll, 80 % gefallen</text>
+    <text x="146" y="409">Januar:</text>
+    <text x="146" y="430">Fall unter 0,5 je Tag</text>
+  </g>
+</svg>

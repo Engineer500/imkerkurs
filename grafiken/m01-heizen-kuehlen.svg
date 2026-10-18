@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="m01-hk-titel m01-hk-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <title id="m01-hk-titel">Heizen und Kühlen im Brutnest</title>
+  <desc id="m01-hk-beschr">Ausschnitt einer Wabe mit verdeckelter Brut. In einer leeren Zelle sitzt eine Heizerbiene, ihr Thorax erreicht bis 40,6 °C. Rechts kühlen eine fächelnde Biene und verdunstendes Wasser. Das Brutnest bleibt bei 34 bis 36 °C.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin. Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust, Länge etwa 40 Einheiten.
+         Teilgruppen: Flügel, Beine, Rumpf (Hinterleib mit drei Streifen, Brust), Kopf. -->
+    <g id="biene-arbeiterin">
+      <!-- Flügel: halbtransparent, hinter dem Körper -->
+      <g id="biene-arbeiterin-fluegel" fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <!-- Beine -->
+      <path id="biene-arbeiterin-beine" d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Rumpf: Hinterleib mit drei dunklen Streifen, davor die Brust -->
+      <g id="biene-arbeiterin-rumpf" stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <!-- Kopf mit Auge und Fühlern -->
+      <g id="biene-arbeiterin-kopf">
+        <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+        <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+        <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <!-- Wabenzelle mit Wachsdeckel (verdeckelte Brut), Mittelpunkt im Ursprung -->
+    <g id="zelle-verdeckelt">
+      <path d="M0-20L17.32-10V10L0 20L-17.32 10V-10Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <circle r="13" fill="#d9a441" stroke="#3a2a10" stroke-width="1"/>
+      <circle r="1.5" fill="#3a2a10" fill-opacity=".55"/>
+    </g>
+
+    <!-- Leere, offene Zelle: dunkler Zellgrund, Mittelpunkt im Ursprung -->
+    <g id="zelle-leer">
+      <path d="M0-20L17.32-10V10L0 20L-17.32 10V-10Z" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M0-15L12.99-7.5V7.5L0 15L-12.99 7.5V-7.5Z" fill="#3a2a10" fill-opacity=".92"/>
+    </g>
+
+    <!-- Wärmeglut an der Brust der Heizerbiene -->
+    <radialGradient id="glut">
+      <stop offset="0" stop-color="#e07b39" stop-opacity=".95"/>
+      <stop offset=".6" stop-color="#b45309" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Wärmewellen um die Heizerbiene, Mittelpunkt der Zelle (113.9 144) -->
+    <g id="waerme" fill="none" stroke-linecap="round">
+      <path d="M136.1 138A23 23 0 0 1 136.1 150M141.9 136.5A29 29 0 0 1 141.9 151.5"/>
+      <path d="M130.2 160.3A23 23 0 0 1 119.9 166.2M134.4 164.5A29 29 0 0 1 121.4 172"/>
+      <path d="M108 166.2A23 23 0 0 1 97.7 160.3M106.4 172A29 29 0 0 1 93.4 164.5"/>
+      <path d="M91.7 150A23 23 0 0 1 91.7 138M85.9 151.5A29 29 0 0 1 85.9 136.5"/>
+      <path d="M97.7 127.7A23 23 0 0 1 108 121.8M93.4 123.5A29 29 0 0 1 106.4 116"/>
+    </g>
+  </defs>
+
+  <!-- Überschriften und Trennlinie -->
+  <line x1="250" y1="8" x2="250" y2="292" stroke="#3a2a10" stroke-width="1" stroke-opacity=".45"/>
+  <text x="105" y="24" text-anchor="middle" font-size="19" font-weight="700" fill="#b45309">Heizen</text>
+  <text x="324" y="24" text-anchor="middle" font-size="19" font-weight="700" fill="#4a7fb5">Kühlen</text>
+
+  <!-- Wabenausschnitt: 5 mal 4 Zellen, eine leere Zelle in der Mitte -->
+  <use href="#zelle-verdeckelt" x="27.3" y="114"/>
+  <use href="#zelle-verdeckelt" x="62" y="114"/>
+  <use href="#zelle-verdeckelt" x="96.6" y="114"/>
+  <use href="#zelle-verdeckelt" x="131.2" y="114"/>
+  <use href="#zelle-verdeckelt" x="165.9" y="114"/>
+  <use href="#zelle-verdeckelt" x="44.6" y="144"/>
+  <use href="#zelle-verdeckelt" x="79.3" y="144"/>
+  <use href="#zelle-verdeckelt" x="148.6" y="144"/>
+  <use href="#zelle-verdeckelt" x="183.2" y="144"/>
+  <use href="#zelle-verdeckelt" x="27.3" y="174"/>
+  <use href="#zelle-verdeckelt" x="62" y="174"/>
+  <use href="#zelle-verdeckelt" x="96.6" y="174"/>
+  <use href="#zelle-verdeckelt" x="131.2" y="174"/>
+  <use href="#zelle-verdeckelt" x="165.9" y="174"/>
+  <use href="#zelle-verdeckelt" x="44.6" y="204"/>
+  <use href="#zelle-verdeckelt" x="79.3" y="204"/>
+  <use href="#zelle-verdeckelt" x="113.9" y="204"/>
+  <use href="#zelle-verdeckelt" x="148.6" y="204"/>
+  <use href="#zelle-verdeckelt" x="183.2" y="204"/>
+
+  <!-- Leere, offene Zelle mit der Heizerbiene (Kopf nach innen, nur Brust und Hinterleib sichtbar) -->
+  <use href="#zelle-leer" x="113.9" y="144"/>
+  <circle cx="113.9" cy="136.7" r="13.5" fill="url(#glut)"/>
+  <use href="#biene-arbeiterin-rumpf" transform="translate(113.9 136.7) rotate(-90) scale(.92)"/>
+
+  <!-- Wärmewellen mit weißem Rand, damit sie auf der Brut lesbar bleiben -->
+  <use href="#waerme" stroke="#ffffff" stroke-width="4.5"/>
+  <use href="#waerme" stroke="#b45309" stroke-width="1.8"/>
+
+  <!-- Klammer Brutnest -->
+  <path d="M10 230Q10 238 18 238H97.3Q105.3 238 105.3 246Q105.3 238 113.3 238H192.5Q200.5 238 200.5 230" fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Linien zu den Beschriftungen links -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="27.3" y1="56" x2="27.3" y2="106"/>
+    <line x1="143" y1="84" x2="118.4" y2="131.4"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="27.3" cy="106" r="2.4"/>
+    <circle cx="118.4" cy="131.4" r="2.3"/>
+  </g>
+
+  <!-- Beschriftungen links -->
+  <g fill="#1f1a12">
+    <text x="10" y="50" font-size="16">Verdeckelte Brut</text>
+    <text x="146" y="68" font-size="16">Heizerbiene</text>
+    <text x="146" y="86" font-size="16" font-weight="700" fill="#b45309">bis 40,6 °C</text>
+    <text x="105.3" y="266" text-anchor="middle" font-size="16" font-weight="700">Brutnest</text>
+    <text x="105.3" y="288" text-anchor="middle" font-size="16" font-weight="700" fill="#b45309">34 bis 36 °C</text>
+  </g>
+
+  <!-- Kühlen: fächelnde Biene mit gespreizten Flügeln und drei gebogenen Luftpfeilen -->
+  <g transform="translate(292 96) scale(-1.5 1.5)">
+    <use href="#biene-arbeiterin"/>
+  </g>
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M340 70C354 62 368 75 380 71"/>
+    <path d="M340 94C354 86 368 99 380 95"/>
+    <path d="M340 118C354 110 368 123 380 119"/>
+  </g>
+  <g fill="#4a7fb5">
+    <path d="M387.6 68.5L381.3 75L378.7 67Z"/>
+    <path d="M387.6 92.5L381.3 99L378.7 91Z"/>
+    <path d="M387.6 116.5L381.3 123L378.7 115Z"/>
+  </g>
+  <text x="300" y="140" text-anchor="middle" font-size="16" fill="#1f1a12">Fächeln</text>
+
+  <!-- Kühlen: Wassertropfen mit aufsteigendem Dampf -->
+  <g fill="none" stroke="#4a7fb5" stroke-width="2" stroke-linecap="round">
+    <path d="M308 194q6-6 0-12t0-12t0-12"/>
+    <path d="M324 194q6-6 0-12t0-12t0-12"/>
+    <path d="M340 194q6-6 0-12t0-12t0-12"/>
+  </g>
+  <path d="M324 200C328 209 339 217 339 227A15 15 0 0 1 309 227C309 217 320 209 324 200Z" fill="#4a7fb5" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M315.5 229A9 9 0 0 0 321 236" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-opacity=".85"/>
+  <text x="324" y="266" text-anchor="middle" font-size="16" fill="#1f1a12">Wasser <tspan x="324" y="288">verdunstet</tspan></text>
+</svg>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 232" role="img" aria-labelledby="m11-wa-titel m11-wa-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="232" fill="#ffffff"/>
+  <title id="m11-wa-titel">Das Alter der Königin nach Armbruster</title>
+  <desc id="m11-wa-beschr">Zeitleiste für eine Königin mit Farbpunkt. Das Geburtsjahr ist Jahr null, danach folgen Jahr eins und Jahr zwei. Im Herbst des Jahres zwei oder im Frühjahr danach wird sie durch eine junge Königin ersetzt.</desc>
+
+  <defs>
+    <!-- Verlauf des Balkens von dunkel nach hell -->
+    <linearGradient id="m11-wa-verlauf" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="380" y2="0">
+      <stop offset="0" stop-color="#8c5a1a"/>
+      <stop offset=".55" stop-color="#d9a441"/>
+      <stop offset="1" stop-color="#fff4d6"/>
+    </linearGradient>
+    <!-- Kreuzmuster (rechtwinkliges Gitter) für die alte Königin -->
+    <pattern id="m11-wa-kreuz" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 2H4M2 0V4" fill="none" stroke="#3a2a10" stroke-width=".7" stroke-opacity=".6"/>
+    </pattern>
+    <!-- Rautenmuster (schräges Gitter) für die neue Königin -->
+    <pattern id="m11-wa-raute" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 2H4M2 0V4" fill="none" stroke="#3a2a10" stroke-width=".7" stroke-opacity=".6"/>
+    </pattern>
+  </defs>
+
+  <!-- Kopfzeile mit den drei Spalten, Spaltenbreite 120 ab x = 20 -->
+  <rect x="20" y="10" width="360" height="28" rx="6" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Hilfslinien zwischen den Jahren -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-opacity=".3">
+    <line x1="20" y1="38" x2="20" y2="222"/>
+    <line x1="140" y1="10" x2="140" y2="222"/>
+    <line x1="260" y1="10" x2="260" y2="222"/>
+    <line x1="380" y1="38" x2="380" y2="222"/>
+    <line x1="20" y1="222" x2="380" y2="222"/>
+  </g>
+
+  <!-- Balken über alle drei Jahre, von dunkel nach hell, am Ende ausgefranst -->
+  <path d="M20 160H368L373 164L367 167L376 171L369 175L378 179L370 183L375 188H20Z" fill="url(#m11-wa-verlauf)" stroke="#3a2a10" stroke-width="1.500" stroke-linejoin="round"/>
+
+  <!-- Alte Königin: Kreis mit Kreuzmuster und rotem Punkt am Anfang des Balkens -->
+  <circle cx="36" cy="174" r="14" fill="#ffffff"/>
+  <circle cx="36" cy="174" r="14" fill="url(#m11-wa-kreuz)" stroke="#3a2a10" stroke-width="1.500"/>
+  <circle cx="36" cy="174" r="6.500" fill="#b8322a" stroke="#3a2a10" stroke-width="1.200"/>
+
+  <!-- Klammer über dem Balken ab Herbst des Jahres zwei -->
+  <path d="M316 154Q316 148 324 148H336Q344 148 344 142Q344 148 352 148H364Q372 148 372 154" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- Pfeil nach oben zur neuen Königin -->
+  <path d="M344 138L347.700 118.500" fill="none" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+  <path d="M349.400 109.700L351.600 119.300L343.800 117.800Z" fill="#b45309" stroke="#b45309" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Neue Königin: Kreis mit Rautenmuster und blauem Punkt -->
+  <circle cx="352" cy="96" r="14" fill="#ffffff"/>
+  <circle cx="352" cy="96" r="14" fill="url(#m11-wa-raute)" stroke="#3a2a10" stroke-width="1.500"/>
+  <circle cx="352" cy="96" r="6.500" fill="#2e6aa3" stroke="#3a2a10" stroke-width="1.200"/>
+
+  <!-- Linie von der Beschriftung zur alten Königin -->
+  <path d="M60 146L47 163" fill="none" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="47" cy="163" r="2.500" fill="#3a2a10"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <text x="80" y="29">Geburtsjahr</text>
+    <text x="200" y="29">+ 1 Jahr</text>
+    <text x="320" y="29">+ 2 Jahre</text>
+    <text x="80" y="212">Jahr null</text>
+    <text x="200" y="212">Jahr eins</text>
+    <text x="320" y="212">Jahr zwei</text>
+  </g>
+  <g fill="#1f1a12" font-size="16" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">
+    <text x="58" y="146">mit Farbpunkt</text>
+    <text x="300" y="100" text-anchor="end">Tausch im Herbst des Jahres zwei</text>
+    <text x="300" y="120" text-anchor="end">oder im Frühjahr danach</text>
+    <text x="380" y="72" text-anchor="end">neue Königin</text>
+  </g>
+</svg>

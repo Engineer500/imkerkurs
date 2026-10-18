@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 390" role="img" aria-labelledby="m11-ka-titel m11-ka-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="390" fill="#ffffff"/>
+  <title id="m11-ka-titel">Der Kunstschwarmableger im Schnitt</title>
+  <desc id="m11-ka-beschr">Schnitt durch den Aufbau eines Kunstschwarmablegers. Unten eine Zarge mit Futterwabe, Mittelwänden und der Königin im Käfig. Darüber die Bienenflucht, darüber zwei Honigräume mit Überschussbienen. Pfeile zeigen den Weg der Bienen nach unten, das Flugloch ist verschlossen.</desc>
+
+  <defs>
+    <!-- Waagrechte Linien der Futterwabe -->
+    <pattern id="m11-ka-linien" width="12" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="12" y2="3" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Feine senkrechte Linien der Mittelwand -->
+    <pattern id="m11-ka-mw" width="3" height="6" patternUnits="userSpaceOnUse">
+      <line x1="1.500" y1="0" x2="1.500" y2="6" stroke="#3a2a10" stroke-width=".8" stroke-opacity=".5"/>
+    </pattern>
+    <!-- Gitter des Käfigs -->
+    <pattern id="m11-ka-gitter" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 0H4M0 0V4" fill="none" stroke="#3a2a10" stroke-width=".7" stroke-opacity=".6"/>
+    </pattern>
+
+    <!-- BIENENFORM: Königin mit kleiner Krone (wie in m06-zusetzkaefig.svg), Seitenansicht, Blick nach rechts -->
+    <g id="m11-ka-koenigin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.100">
+        <ellipse cx="-9.300" cy="-9.900" rx="10.500" ry="4.600" transform="rotate(28 -9.300 -9.900)"/>
+        <ellipse cx="-5.500" cy="-12.800" rx="9.500" ry="4.200" transform="rotate(55 -5.500 -12.800)"/>
+      </g>
+      <path d="M-3 6.500L-6 12.500M1 7.200L1.500 13.500M4.500 6.500L8.500 11.500" fill="none" stroke="#3a2a10" stroke-width="1.200" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.500">
+        <ellipse cx="-17.500" cy="2" rx="17.500" ry="7.200" fill="#f2c14e"/>
+        <path d="M-15 -5.130A17.500 7.200 0 0 1 -12 -4.840L-12 8.840A17.500 7.200 0 0 1 -15 9.130ZM-21.500 -5.010A17.500 7.200 0 0 1 -18.500 -5.190L-18.500 9.190A17.500 7.200 0 0 1 -21.500 9.010ZM-28 -3.760A17.500 7.200 0 0 1 -25 -4.510L-25 8.510A17.500 7.200 0 0 1 -28 7.760Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.800" ry="7.200" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.500 -9M14.500 -1.500L21 -5.500" fill="none" stroke="#3a2a10" stroke-width="1.200" stroke-linecap="round"/>
+      <ellipse cx="10.600" cy="0.600" rx="5" ry="4.800" fill="#3a2a10"/>
+      <circle cx="12.200" cy="-0.800" r="1.300" fill="#ffffff"/>
+      <path d="M5.500 -4.500L6.500 -12L9.500 -8.500L12.500 -13.500L15.500 -8.500L18.500 -12L19.500 -4.500Z" fill="#f2c14e" stroke="#3a2a10" stroke-width="1.200" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- Innenräume: zwei Honigräume, Zarge -->
+  <rect x="26" y="46" width="188" height="152" fill="#fffaf0"/>
+  <rect x="26" y="206" width="188" height="130" fill="#fffaf0"/>
+
+  <!-- Seitenwände im Schnitt, Stoßfuge zwischen den Honigräumen -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500">
+    <rect x="20" y="46" width="6" height="152"/>
+    <rect x="214" y="46" width="6" height="152"/>
+    <rect x="20" y="206" width="6" height="142"/>
+    <rect x="214" y="206" width="6" height="142"/>
+  </g>
+  <g stroke="#3a2a10" stroke-width="1.500">
+    <line x1="20" y1="122" x2="26" y2="122"/>
+    <line x1="214" y1="122" x2="220" y2="122"/>
+  </g>
+
+  <!-- Honigraum oben: Tragleisten und fünf flache Waben im Schnitt -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1">
+    <rect x="30.800" y="48" width="28" height="4"/>
+    <rect x="68.400" y="48" width="28" height="4"/>
+    <rect x="106" y="48" width="28" height="4"/>
+    <rect x="143.600" y="48" width="28" height="4"/>
+    <rect x="181.200" y="48" width="28" height="4"/>
+  </g>
+  <g fill="#f2c14e" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="40.800" y="52" width="8" height="56"/>
+    <rect x="78.400" y="52" width="8" height="56"/>
+    <rect x="116" y="52" width="8" height="56"/>
+    <rect x="153.600" y="52" width="8" height="56"/>
+    <rect x="191.200" y="52" width="8" height="56"/>
+  </g>
+  <!-- Honigraum unten: Tragleisten und fünf flache Waben, darunter ein Gang für die Bienen -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1">
+    <rect x="30.800" y="124" width="28" height="4"/>
+    <rect x="68.400" y="124" width="28" height="4"/>
+    <rect x="106" y="124" width="28" height="4"/>
+    <rect x="143.600" y="124" width="28" height="4"/>
+    <rect x="181.200" y="124" width="28" height="4"/>
+  </g>
+  <g fill="#f2c14e" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="40.800" y="128" width="8" height="56"/>
+    <rect x="78.400" y="128" width="8" height="56"/>
+    <rect x="116" y="128" width="8" height="56"/>
+    <rect x="153.600" y="128" width="8" height="56"/>
+    <rect x="191.200" y="128" width="8" height="56"/>
+  </g>
+
+  <!-- Überschussbienen als kleine Punkte -->
+  <g fill="#3a2a10" fill-opacity=".8">
+    <circle cx="62" cy="62" r="1.800"/> <circle cx="66" cy="88" r="1.800"/> <circle cx="56" cy="104" r="1.800"/>
+    <circle cx="100" cy="58" r="1.800"/> <circle cx="102" cy="82" r="1.800"/> <circle cx="98" cy="102" r="1.800"/>
+    <circle cx="138" cy="66" r="1.800"/> <circle cx="140" cy="92" r="1.800"/> <circle cx="136" cy="106" r="1.800"/>
+    <circle cx="176" cy="60" r="1.800"/> <circle cx="178" cy="86" r="1.800"/> <circle cx="174" cy="104" r="1.800"/>
+    <circle cx="206" cy="70" r="1.800"/> <circle cx="32" cy="80" r="1.800"/>
+    <circle cx="62" cy="138" r="1.800"/> <circle cx="66" cy="162" r="1.800"/> <circle cx="56" cy="178" r="1.800"/>
+    <circle cx="100" cy="134" r="1.800"/> <circle cx="102" cy="156" r="1.800"/> <circle cx="98" cy="176" r="1.800"/>
+    <circle cx="138" cy="140" r="1.800"/> <circle cx="140" cy="164" r="1.800"/> <circle cx="136" cy="180" r="1.800"/>
+    <circle cx="176" cy="136" r="1.800"/> <circle cx="178" cy="160" r="1.800"/> <circle cx="174" cy="178" r="1.800"/>
+    <circle cx="206" cy="146" r="1.800"/> <circle cx="32" cy="156" r="1.800"/>
+    <circle cx="74" cy="190" r="1.800"/> <circle cx="90" cy="188" r="1.800"/> <circle cx="150" cy="190" r="1.800"/> <circle cx="166" cy="188" r="1.800"/>
+  </g>
+
+  <!-- Deckel -->
+  <rect x="16" y="26" width="208" height="20" rx="2" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.500"/>
+  <line x1="28" y1="32" x2="212" y2="32" stroke="#ffffff" stroke-width="2" stroke-opacity=".7" stroke-linecap="round"/>
+
+  <!-- Zarge: Tragleisten, Futterwabe, drei Mittelwände, Königin im Käfig -->
+  <g fill="#e8c99a" stroke="#3a2a10" stroke-width="1">
+    <rect x="30.800" y="210" width="28" height="6"/>
+    <rect x="68.400" y="210" width="28" height="6"/>
+    <rect x="106" y="210" width="28" height="6"/>
+    <rect x="143.600" y="210" width="28" height="6"/>
+    <rect x="181.200" y="210" width="28" height="6"/>
+  </g>
+  <rect x="38.800" y="216" width="12" height="106" fill="#f2c14e"/>
+  <rect x="38.800" y="216" width="12" height="106" fill="url(#m11-ka-linien)" stroke="#3a2a10" stroke-width="1.200"/>
+  <g fill="#fff4d6" stroke="#3a2a10" stroke-width="1.200">
+    <rect x="77.400" y="216" width="10" height="106"/>
+    <rect x="152.600" y="216" width="10" height="106"/>
+    <rect x="190.200" y="216" width="10" height="106"/>
+  </g>
+  <g fill="url(#m11-ka-mw)">
+    <rect x="77.400" y="216" width="10" height="106"/>
+    <rect x="152.600" y="216" width="10" height="106"/>
+    <rect x="190.200" y="216" width="10" height="106"/>
+  </g>
+  <!-- Käfig mit Gitter und Königin, hängt zwischen zwei Platten unter dem Trichter -->
+  <rect x="110" y="218" width="20" height="46" fill="#ffffff"/>
+  <rect x="110" y="218" width="20" height="46" fill="url(#m11-ka-gitter)" stroke="#3a2a10" stroke-width="1.500"/>
+  <use href="#m11-ka-koenigin" transform="translate(120 244) rotate(-90) scale(.42)"/>
+  <!-- ein paar Bienen am Käfig -->
+  <g fill="#3a2a10" fill-opacity=".8">
+    <circle cx="103" cy="228" r="1.800"/> <circle cx="138" cy="236" r="1.800"/> <circle cx="104" cy="252" r="1.800"/> <circle cx="137" cy="258" r="1.800"/> <circle cx="106" cy="272" r="1.800"/>
+  </g>
+
+  <!-- Flugloch zu: Keil über die ganze Breite mit Kreuz -->
+  <rect x="26" y="337" width="188" height="10" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.200"/>
+  <path d="M113 338.500L127 345.500M127 338.500L113 345.500" fill="none" stroke="#b45309" stroke-width="2.500" stroke-linecap="round"/>
+
+  <!-- Boden -->
+  <rect x="16" y="348" width="208" height="20" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+
+  <!-- Bienenflucht: flache Platte mit kleinem Trichter in der Mitte -->
+  <g fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.500" stroke-linejoin="round">
+    <rect x="20" y="198" width="84" height="8"/>
+    <rect x="136" y="198" width="84" height="8"/>
+    <path d="M104 198H109L117 216H113Z"/>
+    <path d="M136 198H131L123 216H127Z"/>
+  </g>
+
+  <!-- Pfeile: Weg der Überschussbienen nach unten durch die Honigräume und den Trichter in die Zarge -->
+  <g fill="none" stroke="#ffffff" stroke-width="5.500" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M63.600 62V176Q63.600 191 88 191H100"/>
+    <path d="M176.400 62V176Q176.400 191 152 191H140"/>
+    <path d="M120 58V206"/>
+  </g>
+  <g fill="none" stroke="#b45309" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M63.600 62V176Q63.600 191 88 191H100"/>
+    <path d="M176.400 62V176Q176.400 191 152 191H140"/>
+    <path d="M120 58V206"/>
+  </g>
+  <g fill="#b45309" stroke="#b45309" stroke-width="1" stroke-linejoin="round">
+    <path d="M108 191L99 186.500V195.500Z"/>
+    <path d="M132 191L141 186.500V195.500Z"/>
+    <path d="M120 215L115.500 206V206H124.500Z"/>
+  </g>
+
+  <!-- Klammer um die beiden Honigräume -->
+  <path d="M222 50Q228 50 228 56V116Q228 122 234 122Q228 122 228 128V188Q228 194 222 194" fill="none" stroke="#3a2a10" stroke-width="1.500" stroke-linecap="round"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <path d="M216 36H232"/>
+    <path d="M208 202H234"/>
+    <path d="M129 244H234"/>
+    <path d="M217 299H234"/>
+    <path d="M205 342H234"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="216" cy="36" r="2.500"/>
+    <circle cx="208" cy="202" r="2.500"/>
+    <circle cx="129" cy="244" r="2.500"/>
+    <circle cx="217" cy="299" r="2.500"/>
+    <circle cx="205" cy="342" r="2.500"/>
+  </g>
+
+  <!-- Beschriftungen rechts -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="238" y="41.500">Deckel</text>
+    <text x="240" y="117">2 Honigräume mit</text>
+    <text x="240" y="135">Überschussbienen</text>
+    <text x="238" y="207.500">Bienenflucht</text>
+    <text x="238" y="249.500">Königin im Käfig</text>
+    <text x="238" y="286">Zarge mit</text>
+    <text x="238" y="304">Futterwabe und</text>
+    <text x="238" y="322">Mittelwänden</text>
+    <text x="238" y="347.500">Flugloch zu</text>
+  </g>
+</svg>

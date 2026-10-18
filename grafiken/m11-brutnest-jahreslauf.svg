@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 358" role="img" aria-labelledby="m11-bj-titel m11-bj-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="358" fill="#ffffff"/>
+  <title id="m11-bj-titel">Das Brutnest im Jahreslauf</title>
+  <desc id="m11-bj-beschr">Drei Aufsichten auf die zehn Plätze einer Zarge. Winter: zwei Schiede mit fünf besetzten Waben dazwischen, davor und dahinter Futterwaben. April: zwei Schiede mit sieben Waben. Mai: zwei Schiede, sieben Brutwaben und das Drohnenrähmchen am Rand, alle zehn Plätze besetzt.</desc>
+
+  <defs>
+    <!-- Zellmuster: regelmäßige Sechsecke mit senkrechten Seitenwänden, waagrecht versetzte Reihen -->
+    <pattern id="m11-bj-zellen" width="7.500" height="12.990" patternUnits="userSpaceOnUse">
+      <path d="M0 2.165L3.750 0L7.500 2.165V6.495L3.750 8.660L0 6.495ZM3.750 8.660V12.990" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Schraffur des Schieds -->
+    <pattern id="m11-bj-schraeg" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#d8d2c4"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#3a2a10" stroke-width="1.500" stroke-opacity=".75"/>
+    </pattern>
+    <!-- Punktmuster des Drohnenrähmchens -->
+    <pattern id="m11-bj-punkte" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.500" cy="2.500" r="1.100" fill="#3a2a10" fill-opacity=".7"/>
+    </pattern>
+
+    <!-- Waagrechte Linien der Futterwabe -->
+    <pattern id="m11-bj-linien" width="30" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="30" y2="3" stroke="#3a2a10" stroke-width="1" stroke-opacity=".55"/>
+    </pattern>
+    <!-- Bienen auf der Wabe: kleine dunkle Punkte mit Strich -->
+    <pattern id="m11-bj-bienen" width="10" height="9" patternUnits="userSpaceOnUse">
+      <ellipse cx="5" cy="4.500" rx="2.800" ry="1.700" fill="#3a2a10" fill-opacity=".8"/>
+    </pattern>
+
+    <!-- Ein Platz, Ursprung links oben, 30 breit und 44 hoch -->
+    <g id="m11-bj-schied">
+      <rect x="7.500" y="0" width="15" height="44" fill="url(#m11-bj-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+    </g>
+    <g id="m11-bj-brut">
+      <rect width="30" height="44" fill="#d9a441"/>
+      <rect width="30" height="44" fill="url(#m11-bj-zellen)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-bj-besetzt">
+      <rect width="30" height="44" fill="#fff4d6"/>
+      <rect width="30" height="44" fill="url(#m11-bj-zellen)"/>
+      <rect width="30" height="44" fill="url(#m11-bj-bienen)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-bj-futter">
+      <rect width="30" height="44" fill="#f2c14e"/>
+      <rect width="30" height="44" fill="url(#m11-bj-linien)" stroke="#3a2a10" stroke-width="1.500"/>
+    </g>
+    <g id="m11-bj-drohne">
+      <rect width="30" height="44" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+      <rect x="4" y="4" width="22" height="36" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+      <rect x="4" y="4" width="22" height="36" fill="url(#m11-bj-punkte)"/>
+    </g>
+    <g id="m11-bj-frei">
+      <rect width="30" height="44" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".7" stroke-dasharray="4 3"/>
+    </g>
+  </defs>
+
+  <!-- Überschriften der Zeilen -->
+  <g fill="#1f1a12" font-size="18" font-weight="700">
+    <text x="20" y="20">Winter</text>
+    <text x="20" y="100">April</text>
+    <text x="20" y="180">Mai</text>
+  </g>
+
+  <!-- Zargenrahmen, zehn Plätze zu je 30 Breite und 4 Abstand -->
+  <g fill="#fffaf0" stroke="#3a2a10" stroke-width="1.500">
+    <rect x="16" y="26" width="344" height="52"/>
+    <rect x="16" y="106" width="344" height="52"/>
+    <rect x="16" y="186" width="344" height="52"/>
+  </g>
+
+  <!-- Winter: Futterwabe, Schied, fünf besetzte Waben, Schied, zwei Futterwaben -->
+  <use href="#m11-bj-futter" x="20" y="30"/>
+  <use href="#m11-bj-schied" x="54" y="30"/>
+  <use href="#m11-bj-besetzt" x="88" y="30"/>
+  <use href="#m11-bj-besetzt" x="122" y="30"/>
+  <use href="#m11-bj-besetzt" x="156" y="30"/>
+  <use href="#m11-bj-besetzt" x="190" y="30"/>
+  <use href="#m11-bj-besetzt" x="224" y="30"/>
+  <use href="#m11-bj-schied" x="258" y="30"/>
+  <use href="#m11-bj-futter" x="292" y="30"/>
+  <use href="#m11-bj-futter" x="326" y="30"/>
+
+  <!-- April: Schied, sieben Waben, Schied, ein freier Platz -->
+  <use href="#m11-bj-schied" x="20" y="110"/>
+  <use href="#m11-bj-brut" x="54" y="110"/>
+  <use href="#m11-bj-brut" x="88" y="110"/>
+  <use href="#m11-bj-brut" x="122" y="110"/>
+  <use href="#m11-bj-brut" x="156" y="110"/>
+  <use href="#m11-bj-brut" x="190" y="110"/>
+  <use href="#m11-bj-brut" x="224" y="110"/>
+  <use href="#m11-bj-brut" x="258" y="110"/>
+  <use href="#m11-bj-schied" x="292" y="110"/>
+  <use href="#m11-bj-frei" x="326" y="110"/>
+
+  <!-- Mai: Schied, sieben Brutwaben, Drohnenrähmchen am Rand, Schied -->
+  <use href="#m11-bj-schied" x="20" y="190"/>
+  <use href="#m11-bj-brut" x="54" y="190"/>
+  <use href="#m11-bj-brut" x="88" y="190"/>
+  <use href="#m11-bj-brut" x="122" y="190"/>
+  <use href="#m11-bj-brut" x="156" y="190"/>
+  <use href="#m11-bj-brut" x="190" y="190"/>
+  <use href="#m11-bj-brut" x="224" y="190"/>
+  <use href="#m11-bj-brut" x="258" y="190"/>
+  <use href="#m11-bj-drohne" x="292" y="190"/>
+  <use href="#m11-bj-schied" x="326" y="190"/>
+
+  <!-- Legende mit sechs Darstellungen -->
+  <line x1="20" y1="250" x2="380" y2="250" stroke="#3a2a10" stroke-opacity=".25" stroke-width="1"/>
+  <!-- Schied -->
+  <rect x="27.500" y="260" width="15" height="24" fill="url(#m11-bj-schraeg)" stroke="#3a2a10" stroke-width="1.200"/>
+  <!-- Brutwabe -->
+  <rect x="200" y="260" width="30" height="24" fill="#d9a441"/>
+  <rect x="200" y="260" width="30" height="24" fill="url(#m11-bj-zellen)" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- besetzte Wabe -->
+  <rect x="20" y="292" width="30" height="24" fill="#fff4d6"/>
+  <rect x="20" y="292" width="30" height="24" fill="url(#m11-bj-zellen)"/>
+  <rect x="20" y="292" width="30" height="24" fill="url(#m11-bj-bienen)" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Futterwabe -->
+  <rect x="200" y="292" width="30" height="24" fill="#f2c14e"/>
+  <rect x="200" y="292" width="30" height="24" fill="url(#m11-bj-linien)" stroke="#3a2a10" stroke-width="1.500"/>
+  <!-- Drohnenrähmchen -->
+  <rect x="20" y="324" width="30" height="24" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.500"/>
+  <rect x="24" y="328" width="22" height="16" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+  <rect x="24" y="328" width="22" height="16" fill="url(#m11-bj-punkte)"/>
+  <!-- frei -->
+  <rect x="200" y="324" width="30" height="24" fill="none" stroke="#3a2a10" stroke-width="1" stroke-opacity=".7" stroke-dasharray="4 3"/>
+
+  <g fill="#1f1a12" font-size="16">
+    <text x="58" y="277.500">Schied</text>
+    <text x="238" y="277.500">Brutwabe</text>
+    <text x="58" y="309.500">besetzte Wabe</text>
+    <text x="238" y="309.500">Futterwabe</text>
+    <text x="58" y="341.500">Drohnenrähmchen</text>
+    <text x="238" y="341.500">frei</text>
+  </g>
+</svg>

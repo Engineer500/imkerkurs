@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" role="img" aria-labelledby="m08-kp-titel m08-kp-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="380" fill="#ffffff"/>
+  <title id="m08-kp-titel">Kontrolle einer Ameisensäurebehandlung in drei Messphasen</title>
+  <desc id="m08-kp-beschr">Ablauf einer Ameisensäurebehandlung in fünf Abschnitten untereinander: Vorher 3 Tage Gemüll, Behandlung 10 Tage mit grobem Zählen des Milbenfalls, Nachwirkzeit 12 Tage, danach frühestens 14 Tage nach dem Ende 3 bis 7 Tage Gemüll, Ziel unter 0,5 Milben pro Tag.</desc>
+
+  <defs>
+    <!-- MILBE: Varroamilbe von oben, breit-ovaler rotbrauner Körper mit vier Beinpaaren -->
+    <g id="m08-kp-milbe">
+      <path d="M-3.5 -3L-7.5 -6.5M-1.5 -3.8L-3.5 -8M1.5 -3.8L3.5 -8M3.5 -3L7.5 -6.5M-3.5 3L-7.5 6.5M-1.5 3.8L-3.5 8M1.5 3.8L3.5 8M3.5 3L7.5 6.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse rx="6.5" ry="5" fill="#b8322a" stroke="#3a2a10" stroke-width="1.2"/>
+      <ellipse cx="-1.5" cy="-1.5" rx="2.6" ry="1.5" fill="#ffffff" fill-opacity=".35"/>
+    </g>
+
+    <!-- Einschub mit Ölpapier: Holzrahmen, Papier mit Milben, Griff vorn, Ursprung in der Mitte -->
+    <g id="m08-kp-einschub">
+      <rect x="-20" y="-9" width="40" height="18" rx="2" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="-16" y="-5.5" width="32" height="10" fill="#fffaf0" stroke="#3a2a10" stroke-width="1"/>
+      <use href="#m08-kp-milbe" transform="translate(-9 0) scale(.5)"/>
+      <use href="#m08-kp-milbe" transform="translate(0 -1) scale(.5)"/>
+      <use href="#m08-kp-milbe" transform="translate(9 1) scale(.5)"/>
+      <rect x="-6" y="9" width="12" height="4" rx="1.5" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- Fünf Kästen, die sich in Randstärke und Strichart unterscheiden -->
+  <rect x="20" y="40" width="360" height="54" rx="8" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="20" y="106" width="360" height="54" rx="8" fill="#fff4d6" stroke="#3a2a10" stroke-width="3.5"/>
+  <rect x="20" y="172" width="360" height="54" rx="8" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <rect x="20" y="238" width="360" height="54" rx="8" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="20" y="304" width="360" height="54" rx="8" fill="#fff4d6" stroke="#b45309" stroke-width="4.5"/>
+
+  <!-- Pfeile nach unten -->
+  <g stroke="#3a2a10" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M200 96V101M200 162V167M200 228V233M200 294V299"/>
+  </g>
+  <g fill="#3a2a10">
+    <path d="M194.5 100L205.5 100L200 105Z"/>
+    <path d="M194.5 166L205.5 166L200 171Z"/>
+    <path d="M194.5 232L205.5 232L200 237Z"/>
+    <path d="M194.5 298L205.5 298L200 303Z"/>
+  </g>
+
+  <!-- Nummernkreise der drei Messungen und Behandlung -->
+  <g fill="#b45309">
+    <circle cx="46" cy="67" r="13"/>
+    <circle cx="46" cy="133" r="13"/>
+    <circle cx="46" cy="265" r="13"/>
+  </g>
+  <g fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="46" y="72.5">1</text>
+    <text x="46" y="138.5">2</text>
+    <text x="46" y="270.5">3</text>
+  </g>
+
+  <!-- Kasten 1: Einschub mit Ölpapier -->
+  <use href="#m08-kp-einschub" x="90" y="67"/>
+
+  <!-- Kasten 2: Verdunster, flache Wanne mit liegender Flasche -->
+  <rect x="72" y="137" width="36" height="7" rx="2" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="76" y="124" width="24" height="13" rx="5" fill="#4a7fb5" fill-opacity=".45" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="100" y="127" width="8" height="7" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+
+  <!-- Kasten 3: Sanduhr, Wartezeit -->
+  <rect x="77" y="181" width="26" height="4" rx="1" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.2"/>
+  <rect x="77" y="213" width="26" height="4" rx="1" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.2"/>
+  <path d="M80 185H100L91 198V200L100 213H80L89 200V198Z" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M84 188H96L90 195Z" fill="#f2c14e"/>
+  <path d="M90 204L95 211H85Z" fill="#f2c14e"/>
+
+  <!-- Kasten 4: Einschub mit Ölpapier -->
+  <use href="#m08-kp-einschub" x="90" y="265"/>
+
+  <!-- Kasten 5: Zielscheibe -->
+  <circle cx="90" cy="331" r="17" fill="#ffffff" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="90" cy="331" r="12" fill="#b45309" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="90" cy="331" r="7.5" fill="#ffffff" stroke="#3a2a10" stroke-width="1"/>
+  <circle cx="90" cy="331" r="3.4" fill="#b45309"/>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="200" y="24" text-anchor="middle" font-weight="700">Kontrolle einer Ameisensäurebehandlung</text>
+    <text x="124" y="72.5">Vorher: 3 Tage Gemüll</text>
+    <text x="124" y="128.5" font-weight="700">Behandlung: 10 Tage</text>
+    <text x="124" y="148.5">Milbenfall grob zählen</text>
+    <text x="124" y="204.5">Nachwirkzeit: 12 Tage</text>
+    <text x="124" y="260.5">Frühestens 14 Tage nach</text>
+    <text x="124" y="280.5">Ende: 3 bis 7 Tage Gemüll</text>
+    <text x="124" y="326.5" font-weight="700" fill="#b45309">Ziel:</text>
+    <text x="124" y="346.5" font-weight="700">unter 0,5 Milben pro Tag</text>
+  </g>
+</svg>

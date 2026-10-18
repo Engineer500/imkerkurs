@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" role="img" aria-labelledby="m06-zf-titel m06-zf-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="360" fill="#ffffff"/>
+  <title id="m06-zf-titel">Die Zargenfolge des Zwischenablegers</title>
+  <desc id="m06-zf-beschr">Drei Säulen nebeneinander für die Beute nach Eingriff 1, 2 und 3. Nach Eingriff 1 steht unten die Honigzarge mit offener Brutwabe, darüber Trenngitter, Brutzarge 1 mit zweitem Flugloch, Absperrgitter und Brutzarge 2. Nach Eingriff 2 steht unten die Brutzarge ohne Königin, darüber Absperrgitter, Honigzarge, Trenngitter und die Brutzarge mit Königin. Nach Eingriff 3 stehen unten die Brutzarge mit Königin, darüber Brutzarge, Absperrgitter und Honigzarge.</desc>
+
+  <defs>
+    <!-- Kreuzschraffur des Trenngitters -->
+    <pattern id="m06-zf-kreuz" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 0L5 5M5 0L0 5" fill="none" stroke="#3a2a10" stroke-width=".8"/>
+    </pattern>
+    <!-- Trenngitter 112 mal 8, Ursprung links oben -->
+    <g id="m06-zf-trenn">
+      <rect width="112" height="8" fill="#b8bcc2"/>
+      <rect width="112" height="8" fill="url(#m06-zf-kreuz)" stroke="#3a2a10" stroke-width="1.5"/>
+    </g>
+    <!-- Absperrgitter 112 mal 8, Ursprung links oben: graue Leiste mit gestrichelter Punktlinie -->
+    <g id="m06-zf-absperr">
+      <rect width="112" height="8" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+      <line x1="3" y1="4" x2="109" y2="4" stroke="#3a2a10" stroke-width="2.200" stroke-dasharray="5 3 0.1 3" stroke-linecap="round"/>
+    </g>
+    <!-- Boden 112 mal 10 -->
+    <rect id="m06-zf-boden" width="112" height="10" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+    <!-- Brutzarge und Honigzarge 112 mal 62 -->
+    <g id="m06-zf-brut">
+      <rect width="112" height="62" fill="#f2d9a0" stroke="#3a2a10" stroke-width="1.5"/>
+    </g>
+    <g id="m06-zf-honig">
+      <rect width="112" height="62" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Spaltenköpfe -->
+  <g fill="#1f1a12" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="68" y="20">Eingriff 1</text>
+    <text x="200" y="20">Eingriff 2</text>
+    <text x="332" y="20">Eingriff 3</text>
+  </g>
+
+  <!-- Spalte 1: nach Eingriff 1, von unten nach oben -->
+  <use href="#m06-zf-boden" x="12" y="232"/>
+  <use href="#m06-zf-honig" x="12" y="170"/>
+  <use href="#m06-zf-trenn" x="12" y="162"/>
+  <use href="#m06-zf-brut" x="12" y="100"/>
+  <use href="#m06-zf-absperr" x="12" y="92"/>
+  <use href="#m06-zf-brut" x="12" y="30"/>
+
+  <!-- Spalte 2: nach Eingriff 2 -->
+  <use href="#m06-zf-boden" x="144" y="232"/>
+  <use href="#m06-zf-brut" x="144" y="170"/>
+  <use href="#m06-zf-absperr" x="144" y="162"/>
+  <use href="#m06-zf-honig" x="144" y="100"/>
+  <use href="#m06-zf-trenn" x="144" y="92"/>
+  <use href="#m06-zf-brut" x="144" y="30"/>
+
+  <!-- Spalte 3: nach Eingriff 3 -->
+  <use href="#m06-zf-boden" x="276" y="232"/>
+  <use href="#m06-zf-brut" x="276" y="170"/>
+  <use href="#m06-zf-brut" x="276" y="108"/>
+  <use href="#m06-zf-absperr" x="276" y="100"/>
+  <use href="#m06-zf-honig" x="276" y="38"/>
+
+  <!-- Fluglöcher: unten das alte (links), über dem Trenngitter das zweite (rechts) -->
+  <g fill="#3a2a10">
+    <rect x="12" y="214" width="6" height="12"/>
+    <rect x="118" y="110" width="6" height="12"/>
+    <rect x="144" y="214" width="6" height="12"/>
+    <rect x="250" y="42" width="6" height="12"/>
+    <rect x="276" y="214" width="6" height="12"/>
+  </g>
+
+  <!-- Beschriftungen der Zargen -->
+  <g fill="#1f1a12" font-size="16" text-anchor="middle">
+    <!-- Spalte 1 -->
+    <text x="68" y="193">Honigzarge</text>
+    <text x="68" y="212">mit Brutwabe</text>
+    <text x="68" y="123">Brutzarge 1</text>
+    <text x="68" y="142">Flugloch 2</text>
+    <text x="68" y="53">Brutzarge 2</text>
+    <!-- Spalte 2 -->
+    <text x="200" y="193">Brutzarge</text>
+    <text x="200" y="212">ohne Königin</text>
+    <text x="200" y="123">Honigzarge</text>
+    <text x="200" y="50">Brutzarge</text>
+    <text x="200" y="68">mit Königin</text>
+    <text x="200" y="86">Flugloch 2</text>
+    <!-- Spalte 3 -->
+    <text x="332" y="193">Brutzarge</text>
+    <text x="332" y="212">mit Königin</text>
+    <text x="332" y="131">Brutzarge</text>
+    <text x="332" y="61">Honigzarge</text>
+  </g>
+
+  <!-- Legende -->
+  <g>
+    <rect x="12" y="278" width="34" height="8" fill="#b8bcc2"/>
+    <rect x="12" y="278" width="34" height="8" fill="url(#m06-zf-kreuz)" stroke="#3a2a10" stroke-width="1.5"/>
+    <rect x="12" y="300" width="34" height="8" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+    <line x1="15" y1="304" x2="43" y2="304" stroke="#3a2a10" stroke-width="2.200" stroke-dasharray="5 3 0.1 3" stroke-linecap="round"/>
+    <rect x="26" y="322" width="6" height="12" fill="#3a2a10"/>
+  </g>
+  <g fill="#1f1a12" font-size="16">
+    <text x="56" y="290">Trenngitter</text>
+    <text x="56" y="312">Absperrgitter</text>
+    <text x="56" y="334">Flugloch, unten das alte,</text>
+    <text x="56" y="354">oben das zweite</text>
+  </g>
+</svg>

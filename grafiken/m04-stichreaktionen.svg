@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" role="img" aria-labelledby="m04-sr-titel m04-sr-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="380" fill="#ffffff"/>
+  <title id="m04-sr-titel">Drei Arten von Stichreaktionen</title>
+  <desc id="m04-sr-beschr">Drei Stufen untereinander. Normale Lokalreaktion: Schwellung unter 10 cm, binnen 24 Stunden rückläufig. Gesteigerte Lokalreaktion: Schwellung über 10 cm, länger als 24 Stunden. Allgemeinreaktion: Zeichen fern der Stichstelle, Notruf 112.</desc>
+
+  <!-- Band 1: hell, dünner Rand. Band 2: kräftiger, mittlerer Rand. Band 3: Akzent, dicker Rand -->
+  <rect x="14.75" y="14.75" width="370.5" height="109.5" rx="10" fill="#fff4d6" stroke="#3a2a10" stroke-width="1.5"/>
+  <rect x="15.75" y="135.75" width="368.5" height="107.5" rx="10" fill="#f2c14e" fill-opacity=".4" stroke="#3a2a10" stroke-width="3.5"/>
+  <rect x="16.5" y="256.5" width="367" height="105" rx="10" fill="#b45309" fill-opacity=".14" stroke="#b45309" stroke-width="5"/>
+
+  <!-- Symbol Band 1: kleine Schwellung mit Stichpunkt und Maßpfeil quer über den Kreis -->
+  <circle cx="62" cy="66" r="16" fill="#b45309" fill-opacity=".2" stroke="#3a2a10" stroke-width="1.5"/>
+  <circle cx="62" cy="59" r="3" fill="#3a2a10"/>
+  <line x1="50" y1="73" x2="74" y2="73" stroke="#3a2a10" stroke-width="1.5"/>
+  <path d="M46 73L54 69V77ZM78 73L70 69V77Z" fill="#3a2a10"/>
+
+  <!-- Symbol Band 2: deutlich größere Schwellung mit Stichpunkt und Maßpfeil -->
+  <circle cx="62" cy="189" r="34" fill="#b45309" fill-opacity=".32" stroke="#3a2a10" stroke-width="2.5"/>
+  <circle cx="62" cy="176" r="3.5" fill="#3a2a10"/>
+  <line x1="36" y1="199" x2="88" y2="199" stroke="#3a2a10" stroke-width="2"/>
+  <path d="M28 199L38 194V204ZM96 199L86 194V204Z" fill="#3a2a10"/>
+
+  <!-- Symbol Band 3: Strichfigur mit drei Zeichen fern der Stichstelle -->
+  <g fill="none" stroke="#3a2a10" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="62" cy="282" r="9" fill="#fff4d6" stroke-width="2.5"/>
+    <path d="M62 291V328M62 300L42 316M62 300L82 316M62 328L48 352M62 328L76 352"/>
+  </g>
+  <g fill="#b45309" stroke="#ffffff" stroke-width="1.5">
+    <circle cx="62" cy="318" r="4.5"/>
+    <circle cx="49" cy="309.5" r="4.5"/>
+    <circle cx="75" cy="309.5" r="4.5"/>
+  </g>
+
+  <!-- Kasten Notruf 112 -->
+  <rect x="112" y="314" width="164" height="40" rx="8" fill="#b45309" stroke="#3a2a10" stroke-width="1.5"/>
+  <text x="194" y="343" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Notruf <tspan font-size="30">112</tspan></text>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <g font-size="17" font-weight="700">
+      <text x="112" y="48">Normale Lokalreaktion</text>
+      <text x="112" y="168">Gesteigerte Lokalreaktion</text>
+      <text x="112" y="284">Allgemeinreaktion</text>
+    </g>
+    <text x="112" y="76">unter 10 cm</text>
+    <text x="112" y="100">binnen 24 Stunden rückläufig</text>
+    <text x="112" y="196">über 10 cm</text>
+    <text x="112" y="220">länger als 24 Stunden</text>
+    <text x="112" y="308">Zeichen fern der Stichstelle</text>
+  </g>
+</svg>

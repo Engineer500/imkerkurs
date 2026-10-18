@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-labelledby="m04-lf-titel m04-lf-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="280" fill="#ffffff"/>
+  <title id="m04-lf-titel">Liebefelder Methode: Wabenseite in acht Felder geteilt</title>
+  <desc id="m04-lf-beschr">Eine Wabenseite, in acht gleich große Felder geteilt. Fünf Felder sind mit Bienen besetzt, drei sind frei. Daneben steht die Auswertung: 5 von 8 Achteln besetzt.</desc>
+
+  <defs>
+    <!-- Feines Zellmuster der freien Felder (wie in m01-wabe-aufbau.svg) -->
+    <pattern id="lf-zellmuster" width="12.124" height="21" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5L6.062 0L12.124 3.5V10.5L6.062 14L0 10.5ZM6.062 14V21" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".45"/>
+    </pattern>
+
+    <!-- BIENENFORM: Arbeiterin, Seitenansicht, Blick nach rechts, Ursprung in der Mitte der Brust (wie in m01) -->
+    <g id="lf-biene">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+  </defs>
+
+  <!-- Holzrahmen der Wabenseite, Zanderwabe etwa 2 zu 1 -->
+  <rect x="12" y="36" width="300" height="158" rx="4" fill="#b45309" fill-opacity=".45" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Felder: zwei Zeilen mal vier Spalten, je 71,5 mal 72 -->
+  <rect x="19" y="43" width="286" height="144" fill="#fff4d6"/>
+  <!-- freie Felder: leer mit feinem Zellmuster -->
+  <rect x="90.5" y="115" width="214.5" height="72" fill="url(#lf-zellmuster)"/>
+
+  <!-- besetzte Felder: Muster aus kleinen Bienen -->
+  <g>
+    <use href="#lf-biene" transform="translate(37 63) rotate(-15) scale(0.6)"/>
+    <use href="#lf-biene" transform="translate(72 66) rotate(10) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(38 97) rotate(-10) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(70 96) rotate(18) scale(0.6)"/>
+
+    <use href="#lf-biene" transform="translate(110 64) rotate(12) scale(0.6)"/>
+    <use href="#lf-biene" transform="translate(142 62) rotate(-12) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(108 96) rotate(-18) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(143 98) rotate(8) scale(0.6)"/>
+
+    <use href="#lf-biene" transform="translate(181 62) rotate(-8) scale(0.6)"/>
+    <use href="#lf-biene" transform="translate(214 65) rotate(16) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(180 98) rotate(14) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(215 95) rotate(-14) scale(0.6)"/>
+
+    <use href="#lf-biene" transform="translate(252 65) rotate(15) scale(0.6)"/>
+    <use href="#lf-biene" transform="translate(285 62) rotate(-10) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(253 96) rotate(-12) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(284 98) rotate(10) scale(0.6)"/>
+
+    <use href="#lf-biene" transform="translate(37 137) rotate(-14) scale(0.6)"/>
+    <use href="#lf-biene" transform="translate(72 134) rotate(12) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(39 169) rotate(8) scale(-0.6 0.6)"/>
+    <use href="#lf-biene" transform="translate(70 168) rotate(-16) scale(0.6)"/>
+  </g>
+
+  <!-- Feldgrenzen -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1">
+    <path d="M90.5 43V187M162 43V187M233.5 43V187M19 115H305"/>
+  </g>
+  <rect x="19" y="43" width="286" height="144" fill="none" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Hilfslinien -->
+  <g stroke="#3a2a10" stroke-width="1">
+    <line x1="55" y1="28" x2="55" y2="43"/>
+    <line x1="320" y1="79" x2="298" y2="79"/>
+    <line x1="320" y1="151" x2="298" y2="151"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="55" cy="43" r="2.3"/>
+    <circle cx="298" cy="79" r="2.3"/>
+    <circle cx="298" cy="151" r="2.3"/>
+  </g>
+
+  <!-- Auswertungsfeld mit Zählleiste: 5 von 8 Kästchen gefüllt -->
+  <rect x="12" y="212" width="376" height="56" rx="8" fill="#fffaf0" stroke="#3a2a10" stroke-width="1.5"/>
+  <g stroke="#3a2a10" stroke-width="1.5">
+    <rect x="66" y="244" width="30" height="16" fill="#f2c14e"/>
+    <rect x="100" y="244" width="30" height="16" fill="#f2c14e"/>
+    <rect x="134" y="244" width="30" height="16" fill="#f2c14e"/>
+    <rect x="168" y="244" width="30" height="16" fill="#f2c14e"/>
+    <rect x="202" y="244" width="30" height="16" fill="#f2c14e"/>
+    <rect x="236" y="244" width="30" height="16" fill="#ffffff"/>
+    <rect x="270" y="244" width="30" height="16" fill="#ffffff"/>
+    <rect x="304" y="244" width="30" height="16" fill="#ffffff"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="162" y="22" text-anchor="middle" font-size="18" font-weight="700">Wabenseite</text>
+    <text x="55" y="22" text-anchor="middle">1 Achtel</text>
+    <text x="326" y="84">besetzt</text>
+    <text x="326" y="156">frei</text>
+    <text x="200" y="234" text-anchor="middle" font-weight="700">5 von 8 Achteln besetzt</text>
+  </g>
+</svg>

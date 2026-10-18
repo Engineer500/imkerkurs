@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 356" role="img" aria-labelledby="m06-za-titel m06-za-beschr" xml:lang="de" font-family="system-ui, 'Segoe UI', Arial, sans-serif">
+  <rect width="400" height="356" fill="#ffffff"/>
+  <title id="m06-za-titel">Der Zwischenableger nach dem ersten Eingriff</title>
+  <desc id="m06-za-beschr">Schnitt durch die Beute nach dem ersten Eingriff. Unten steht auf dem Boden mit dem alten Flugloch die untere Einheit mit einer offenen Brutwabe in der Mitte von fünf Waben. Darüber liegt das Trenngitter, dann folgen zwei Brutzargen mit einem Absperrgitter dazwischen. Die obere Einheit hat ein zweites Flugloch. Pfeile zeigen, dass die Flugbienen durch das zweite Flugloch ausfliegen und am alten Flugloch unten einfliegen.</desc>
+
+  <defs>
+    <!-- BIENENFORM: Arbeiterin (wie in m01-nektar-zu-honig.svg), Seitenansicht, Blick nach rechts -->
+    <g id="biene-arbeiterin">
+      <g fill="#ffffff" fill-opacity="0.7" stroke="#3a2a10" stroke-width="1.1">
+        <ellipse cx="-11" cy="-10.9" rx="12.5" ry="5.2" transform="rotate(28 -11 -10.9)"/>
+        <ellipse cx="-5.4" cy="-15.2" rx="11.5" ry="4.8" transform="rotate(62 -5.4 -15.2)"/>
+      </g>
+      <path d="M-3 6.5L-6 12.5M1 7.2L1.5 13.5M4.5 6.5L8.5 11.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="#3a2a10" stroke-width="1.5">
+        <ellipse cx="-12.5" cy="2" rx="12.5" ry="7.5" fill="#f2c14e"/>
+        <path d="M-12.6 -5.5A12.5 7.5 0 0 1 -9.6 -5.3L-9.6 9.3A12.5 7.5 0 0 1 -12.6 9.5ZM-18.4 -4.61A12.5 7.5 0 0 1 -15.4 -5.3L-15.4 9.3A12.5 7.5 0 0 1 -18.4 8.61ZM-24.2 -0.64A12.5 7.5 0 0 1 -21.2 -3.39L-21.2 7.39A12.5 7.5 0 0 1 -24.2 4.64Z" fill="#3a2a10" stroke="none"/>
+        <ellipse cx="0" cy="0" rx="7.8" ry="7.2" fill="#d9a441"/>
+      </g>
+      <path d="M13 -3L18.5 -9M14.5 -1.5L21 -5.5" fill="none" stroke="#3a2a10" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="10.6" cy="0.6" rx="5" ry="4.8" fill="#3a2a10"/>
+      <circle cx="12.2" cy="-0.8" r="1.3" fill="#ffffff"/>
+    </g>
+
+    <!-- Zellmuster der Honigwaben, Deckelmuster der Brutwaben, Kreuzschraffur des Trenngitters -->
+    <pattern id="m06-za-zellen" width="12.124" height="21" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5L6.062 0L12.124 3.5V10.5L6.062 14L0 10.5ZM6.062 14V21" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".3"/>
+    </pattern>
+    <pattern id="m06-za-deckel" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="3.200" fill="none" stroke="#3a2a10" stroke-width=".9" stroke-opacity=".45"/>
+    </pattern>
+    <pattern id="m06-za-kreuz" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 0L5 5M5 0L0 5" fill="none" stroke="#3a2a10" stroke-width=".8"/>
+    </pattern>
+
+    <!-- Zarge von der Seite, Ursprung links oben, 104 mal 72: Holzrahmen mit hellem Fenster -->
+    <g id="m06-za-zarge">
+      <rect width="104" height="72" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+      <rect x="6" y="5" width="92" height="62" fill="#fff4d6" stroke="#3a2a10" stroke-width="1"/>
+    </g>
+    <!-- Waben im Schnitt, Ursprung links oben, 14 mal 62 -->
+    <g id="m06-za-honig">
+      <rect width="14" height="62" fill="#f2c14e"/>
+      <rect width="14" height="62" fill="url(#m06-za-zellen)" stroke="#3a2a10" stroke-width="1.2"/>
+    </g>
+    <g id="m06-za-brut">
+      <rect width="14" height="62" fill="#d9a441"/>
+      <rect width="14" height="62" fill="url(#m06-za-deckel)" stroke="#3a2a10" stroke-width="1.2"/>
+    </g>
+    <!-- Pfeilspitze -->
+    <marker id="m06-za-spitze" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <!-- zweite Brutzarge (oben) -->
+  <use href="#m06-za-zarge" x="140" y="30"/>
+  <use href="#m06-za-brut" x="150" y="35"/>
+  <use href="#m06-za-brut" x="167" y="35"/>
+  <use href="#m06-za-brut" x="184" y="35"/>
+  <use href="#m06-za-brut" x="201" y="35"/>
+  <use href="#m06-za-brut" x="218" y="35"/>
+  <rect x="143" y="54" width="98" height="24" rx="8" fill="#ffffff" fill-opacity=".92"/>
+
+  <!-- erste Brutzarge -->
+  <use href="#m06-za-zarge" x="140" y="108"/>
+  <use href="#m06-za-brut" x="150" y="113"/>
+  <use href="#m06-za-brut" x="167" y="113"/>
+  <use href="#m06-za-brut" x="184" y="113"/>
+  <use href="#m06-za-brut" x="201" y="113"/>
+  <use href="#m06-za-brut" x="218" y="113"/>
+  <rect x="143" y="132" width="98" height="24" rx="8" fill="#ffffff" fill-opacity=".92"/>
+
+  <!-- untere Zarge: fünf Waben, die mittlere offene Brutwabe hervorgehoben -->
+  <use href="#m06-za-zarge" x="140" y="186"/>
+  <use href="#m06-za-honig" x="150" y="191"/>
+  <use href="#m06-za-honig" x="167" y="191"/>
+  <use href="#m06-za-brut" x="184" y="191"/>
+  <rect x="184" y="191" width="14" height="62" fill="none" stroke="#b45309" stroke-width="2.500"/>
+  <use href="#m06-za-honig" x="201" y="191"/>
+  <use href="#m06-za-honig" x="218" y="191"/>
+
+  <!-- Absperrgitter: gestrichelte Linie mit kleinen Punkten -->
+  <rect x="134" y="102" width="116" height="6" fill="#b8bcc2" stroke="#3a2a10" stroke-width="1.2"/>
+  <line x1="136" y1="105" x2="248" y2="105" stroke="#3a2a10" stroke-width="2.200" stroke-dasharray="5 3 0.1 3" stroke-linecap="round"/>
+
+  <!-- Trenngitter: Kreuzschraffur -->
+  <rect x="134" y="180" width="116" height="6" fill="#b8bcc2"/>
+  <rect x="134" y="180" width="116" height="6" fill="url(#m06-za-kreuz)" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- Boden -->
+  <rect x="134" y="258" width="116" height="12" fill="#e8c99a" stroke="#3a2a10" stroke-width="1.5"/>
+
+  <!-- zweites Flugloch rechts über dem Trenngitter, altes Flugloch links über dem Boden -->
+  <rect x="238" y="164" width="6" height="12" fill="#3a2a10"/>
+  <rect x="140" y="242" width="6" height="12" fill="#3a2a10"/>
+
+  <!-- Klammern: obere Einheit links, untere Einheit rechts -->
+  <g fill="none" stroke="#3a2a10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M136 32Q130 32 130 40V95Q130 102 122 102Q130 102 130 109V164Q130 172 136 172"/>
+    <path d="M273 188Q280 188 280 196V214Q280 222 287 222Q280 222 280 230V248Q280 256 273 256"/>
+  </g>
+
+  <!-- Flugbienen: ein Pfeil vom zweiten Flugloch rechts nach außen und unten herum zum alten Flugloch -->
+  <path d="M244 170H252Q262 170 262 180V300Q262 312 250 312H130Q118 312 118 300V254Q118 242 130 242" fill="none" stroke="#b45309" stroke-width="6" stroke-linecap="round" marker-end="url(#m06-za-spitze)"/>
+  <use href="#biene-arbeiterin" transform="translate(272 276) rotate(90) scale(.55)"/>
+  <use href="#biene-arbeiterin" transform="translate(212 297) scale(-.55 .55)"/>
+  <use href="#biene-arbeiterin" transform="translate(160 297) scale(-.55 .55)"/>
+  <use href="#biene-arbeiterin" transform="translate(104 276) rotate(-90) scale(.55)"/>
+
+  <!-- Linien zu den Beschriftungen -->
+  <g stroke="#3a2a10" stroke-width="1" stroke-linecap="round">
+    <line x1="250" y1="105" x2="256" y2="105"/>
+    <line x1="243" y1="164" x2="252" y2="152"/>
+    <line x1="130" y1="183" x2="134" y2="183"/>
+    <line x1="131" y1="228" x2="141" y2="242"/>
+  </g>
+  <g fill="#3a2a10">
+    <circle cx="250" cy="105" r="2.300"/>
+    <circle cx="243" cy="164" r="2.300"/>
+    <circle cx="134" cy="183" r="2.300"/>
+    <circle cx="141" cy="242" r="2.300"/>
+  </g>
+
+  <!-- Beschriftungen -->
+  <g fill="#1f1a12" font-size="16">
+    <text x="192" y="71.500" text-anchor="middle">Brutzarge 2</text>
+    <text x="192" y="149.500" text-anchor="middle">Brutzarge 1</text>
+
+    <text x="116" y="56" text-anchor="end">obere</text>
+    <text x="116" y="76" text-anchor="end">Einheit:</text>
+    <text x="116" y="96" text-anchor="end">Königin in</text>
+    <text x="116" y="116" text-anchor="end">einer der</text>
+    <text x="116" y="136" text-anchor="end">beiden</text>
+    <text x="116" y="156" text-anchor="end">Brutzargen</text>
+
+    <text x="258" y="99">Absperrgitter,</text>
+    <text x="258" y="119">königinnendicht</text>
+    <text x="254" y="148">zweites Flugloch</text>
+
+    <text x="128" y="188" text-anchor="end">Trenngitter,</text>
+    <text x="128" y="208" text-anchor="end">bienendicht</text>
+
+    <text x="128" y="232" text-anchor="end">altes Flugloch</text>
+
+    <text x="292" y="190">untere</text>
+    <text x="292" y="211">Einheit mit</text>
+    <text x="292" y="232">offener</text>
+    <text x="292" y="253">Brutwabe</text>
+
+    <text x="190" y="340" text-anchor="middle">Flugbienen</text>
+  </g>
+</svg>
