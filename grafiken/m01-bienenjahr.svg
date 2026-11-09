@@ -46,11 +46,19 @@
   <rect x="170" y="164" width="104" height="31" fill="#ffffff"/>
   <text x="272" y="185.8" text-anchor="end" font-size="16" fill="#1f1a12">Schwarmzeit</text>
 
-  <!-- Monate -->
-  <g fill="#1f1a12" font-size="16" text-anchor="middle">
-    <text x="27.7" y="248.3">Aug</text>
-    <text x="121.7" y="248.3">Nov</text>
-    <text x="215.7" y="248.3">Feb</text>
-    <text x="309.7" y="248.3">Mai</text>
+  <!-- Monate, jeder in der Mitte seiner Spalte; Schrift 14, damit die Kürzel nebeneinander passen -->
+  <g fill="#1f1a12" font-size="14" text-anchor="middle">
+    <text x="27.7" y="246">Aug</text>
+    <text x="59" y="246">Sep</text>
+    <text x="90.3" y="246">Okt</text>
+    <text x="121.7" y="246">Nov</text>
+    <text x="153" y="246">Dez</text>
+    <text x="184.3" y="246">Jan</text>
+    <text x="215.7" y="246">Feb</text>
+    <text x="247" y="246">Mär</text>
+    <text x="278.3" y="246">Apr</text>
+    <text x="309.7" y="246">Mai</text>
+    <text x="341" y="246">Jun</text>
+    <text x="372.3" y="246">Jul</text>
   </g>
 </svg>
